@@ -28,6 +28,7 @@ jobs:
       # 3. Cài thư viện
       - name: Install libraries
         run: |
+          cd News
           pip install -r requirements.txt
 
       # 4. Chạy script
@@ -35,4 +36,7 @@ jobs:
         env:
           # Lấy secret nạp vào biến môi trường cho code dùng
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: python ./News/Firms_news.py
+         
+        run: |
+          cd News
+          python ./News/Firms_news.py
