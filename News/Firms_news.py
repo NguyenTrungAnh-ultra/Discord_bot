@@ -36,9 +36,3 @@ def fetch_and_filter_news(raw_meat: dict)->list:
             for item in raw_meat
         ]
         return filtered_list
-
-print(str(datetime.today().strftime('%Y-%m-%d')))
-
-# with open('/Users/nguyentrunganhonichan/Documents/Discord_bot/News/tin_moi.json', 'r', encoding="utf-8") as p:
-#     articals = pd.DataFrame(json.load(p))
-#     print(articals)
