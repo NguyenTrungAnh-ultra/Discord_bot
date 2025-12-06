@@ -29,7 +29,7 @@ jobs:
       - name: Install libraries
         run: |
           cd News
-          pip install -r requirements.txt
+          pip install requests discord.py python-dotenv
 
       # 4. Chạy script
       - name: Run Main Script
