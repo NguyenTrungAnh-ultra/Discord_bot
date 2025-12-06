@@ -28,11 +28,15 @@ jobs:
       # 3. Cài thư viện
       - name: Install libraries
         run: |
-          pip install -r requirements.txt
+          cd News
+          pip install requests discord.py python-dotenv
 
       # 4. Chạy script
       - name: Run Main Script
         env:
           # Lấy secret nạp vào biến môi trường cho code dùng
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: python ./News/Firms_news.py
+         
+        run: |
+          cd News
+          python Firms_news.py
