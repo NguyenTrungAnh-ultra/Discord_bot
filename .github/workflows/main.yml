@@ -1,0 +1,38 @@
+name: VCI News Auto Sender
+
+on:
+  schedule:
+    # Chạy mỗi 30 phút. 
+    # Cú pháp cron: phút giờ ngày tháng thứ
+    # */30 nghĩa là các phút 0, 30, 60...
+    - cron: '*/10 * * * *'
+  
+  # Cho phép bấm nút chạy thủ công để test
+  workflow_dispatch:
+
+jobs:
+  run-news-script:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Tải code về máy ảo
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Cài Python
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      # 3. Cài thư viện
+      - name: Install libraries
+        run: |
+          pip install -r requirements.txt
+
+      # 4. Chạy script
+      - name: Run Main Script
+        env:
+          # Lấy secret nạp vào biến môi trường cho code dùng
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python ./News/Firms_news.py
