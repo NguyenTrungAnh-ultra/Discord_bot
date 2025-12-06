@@ -28,8 +28,7 @@ jobs:
       # 3. Cài thư viện
       - name: Install libraries
         run: |
-          cd News
-          pip install requests discord.py python-dotenv
+          pip install -r requirements.txt
 
       # 4. Chạy script
       - name: Run Main Script
@@ -38,5 +37,4 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
          
         run: |
-          cd News
           python Firms_news.py
