@@ -60,14 +60,13 @@ class VCI_news:
         return filtered_list
 
     def get_news(self):
-        raw_data = self._request_news(page=1, page_size=5)
+        raw_data = self._request_news(page=1, page_size=12)
         return self._fetch_and_filter_news(raw_data)
 
 def main():
     # 1. Lấy Webhook URL từ biến môi trường (Cài trong GitHub Secrets sau)
     load_dotenv()
     webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
-
     if not webhook_url:
         print("Lỗi: Chưa cài đặt DISCORD_WEBHOOK_URL")
         return
@@ -97,9 +96,9 @@ def main():
             # Tính khoảng cách thời gian
             time_diff = now_vn - news_time
             
-            # Nếu tin tức xuất hiện trong khoảng thời gian đã định (35 phút)
+            # Nếu tin tức xuất hiện trong khoảng thời gian đã định (TIME_WINDOW_MINUTES+1 phút)
             # time_diff.total_seconds() > 0 để tránh tin tương lai (nếu giờ server lệch)
-            if 0 <= time_diff.total_seconds() <= (TIME_WINDOW_MINUTES * 60):
+            if 0 <= time_diff.total_seconds() <= (TIME_WINDOW_MINUTES * 60) + 21:
                 
                 title = item.get('news_title', 'Không tiêu đề')
                 link = item.get('news_source_link', '#')
@@ -108,10 +107,10 @@ def main():
                 print(f"--> Gửi tin: {title}")
                 
                 # Gửi qua Webhook
-                webhook.send(f"🔥 **{title}**\nNguồn: {source}\n{link}")
+                webhook.send(f"🔥 **{title}**\nNguồn: {source} {news_time_str}\n{link}")
                 count += 1
             else:
-                # print(f"Bỏ qua tin cũ lúc {news_time_str}")
+                print(f"Bỏ qua tin cũ lúc {news_time_str}")
                 pass
                 
         except Exception as e:
