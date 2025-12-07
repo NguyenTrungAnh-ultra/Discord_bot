@@ -5,7 +5,7 @@ on:
     # Chạy mỗi 30 phút. 
     # Cú pháp cron: phút giờ ngày tháng thứ
     # */30 nghĩa là các phút 0, 30, 60...
-    - cron: '*/10 * * * *'
+    - cron: '*/90 * * * *'
   
   # Cho phép bấm nút chạy thủ công để test
   workflow_dispatch:
