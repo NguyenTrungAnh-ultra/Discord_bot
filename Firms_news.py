@@ -11,8 +11,7 @@ from dotenv import load_dotenv
 format = "%Y-%m-%d %H:%M:%S"
 MIN_WAIT_SECONDS = 300 
 CHANNEL_ID = 1445423293841805464
-HISTORY_LIMIT = 10 # Tăng nhẹ limit để check kỹ hơn
-TIME_WINDOW_MINUTES = 10
+TIME_WINDOW_MINUTES = 90
 
 class VCI_news:
     def __init__(self):
@@ -98,7 +97,7 @@ def main():
             
             # Nếu tin tức xuất hiện trong khoảng thời gian đã định (TIME_WINDOW_MINUTES+1 phút)
             # time_diff.total_seconds() > 0 để tránh tin tương lai (nếu giờ server lệch)
-            if 0 <= time_diff.total_seconds() <= (TIME_WINDOW_MINUTES * 60) + 21:
+            if 0 <= time_diff.total_seconds() <= ((TIME_WINDOW_MINUTES+10) * 60):
                 
                 title = item.get('news_title', 'Không tiêu đề')
                 link = item.get('news_source_link', '#')
