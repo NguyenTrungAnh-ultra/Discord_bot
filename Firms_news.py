@@ -2,7 +2,7 @@ import os
 import requests
 import json
 from datetime import datetime, timedelta
-from core.utils.user_agent import get_headers # Giữ lại import của bạn
+from core.utils.user_agent import get_headers 
 import discord
 from dotenv import load_dotenv
 
@@ -55,7 +55,7 @@ class VCI_news:
 
     def get_news(self):
         # Lấy 12 tin mới nhất
-        raw_data = self._request_news(page=1, page_size=12)
+        raw_data = self._request_news(page=1, page_size=50)
         return self._fetch_and_filter_news(raw_data)
 
 # --- CÁC HÀM XỬ LÝ FILE JSON ---
