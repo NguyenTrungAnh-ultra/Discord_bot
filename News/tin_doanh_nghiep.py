@@ -32,8 +32,7 @@ class VCI_news:
             return {}
 
     def _fetch_and_filter_news(self, raw_meat: dict) -> list:
-        needed_keys = ['id', 'news_title', 'update_date', 'news_from_name', 'news_source_link']
-
+        needed_keys = ['id', 'news_title', 'update_date', 'news_from_name', 'news_source_link', 'slug']
         if not raw_meat or 'news_info' not in raw_meat:
             return []
 

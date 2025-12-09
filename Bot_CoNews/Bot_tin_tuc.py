@@ -2,9 +2,10 @@ import discord
 from discord.ext import commands
 import logging
 from News.config import DATA_FILE
-from News.tin_doanh_nghiep import run
+from News.tin_doanh_nghiep import VCI_news
 import json
 from dotenv import load_dotenv
+from datetime import datetime, timedelta
 import random
 import asyncio
 import os
@@ -13,6 +14,7 @@ import os
 MIN_WAIT_SECONDS = 300 
 MAX_WAIT_SECONDS = 600
 CHANNEL_ID = 1445423293841805464
+today = str(datetime.today().strftime('%Y-%m-%d'))
 
 # Khởi tạo Bot
 load_dotenv()
@@ -23,48 +25,9 @@ intents.message_content = True
 intents.members = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
-async def background_loop_task():
-    await bot.wait_until_ready()
-    channel = bot.get_channel(CHANNEL_ID)
-
-    while not bot.is_closed():
-        print("---------- Bắt đầu quét tin tức ----------")
-        
-        # --- QUAN TRỌNG: Chạy hàm run() trong một luồng riêng (Executor) ---
-        # Điều này giúp Bot không bị đơ khi Playwright đang cào dữ liệu
-        try:
-            # run_in_executor trả về Future, ta dùng await để đợi kết quả mà không chặn bot
-            is_sth = await bot.loop.run_in_executor(None, run)
-        except Exception as e:
-            print(f"Lỗi khi chạy run(): {e}")
-            is_sth = False
-
-        # --- Xử lý kết quả ---
-        if is_sth:
-            print(f"Tìm thấy {len(is_sth)} tin mới. Đang gửi...")
-            for item in is_sth:
-                try:
-                    # Gửi từng tin một cho đẹp (hoặc gom vào Embed)
-                    # Lưu ý: channel.send không nhận dict trực tiếp, phải format string
-                    await channel.send(f"**{item['title']}**\n{item['link']}")
-                    await asyncio.sleep(1) # Nghỉ 1 xíu giữa các tin để tránh spam rate limit
-                except Exception as e:
-                    print(f"Lỗi gửi tin nhắn: {e}")
-        else:
-            print("Không có tin tức mới.")
-
-        # --- Tính toán thời gian ngủ ---
-        sleep_time = random.randint(MIN_WAIT_SECONDS, MAX_WAIT_SECONDS)
-        print(f"💤 Sẽ ngủ trong {sleep_time} giây...")
-        print("------------------------------------------")
-
-        await asyncio.sleep(sleep_time)
-
 @bot.event
 async def on_ready():
     print(f"we are going in, {bot.user.name}")
-
-    bot.loop.create_task(background_loop_task())
 
 @bot.event
 async def on_message(message):
@@ -108,5 +71,17 @@ async def tin_doanh_nghiep(ctx):
     except Exception as e:
         await ctx.send(f"Đã xảy ra lỗi: {e}")
 
+@bot.command()
+async def news(ctx = f'{today}, {today}'):
+    date = [x.strip() for x in ctx.split(',')]
+    if ctx:
+        p = 1
+        while True:
+            NEWS = VCI_news().get_news(page=p, start_date=date[0], end_date=[-1])
+            for new in NEWS:
+                new.get()
+                return VCI_news().get_news(page=p, start_date=date[0], end_date=[-1])
+    
 
+# chay bot
 bot.run(token=token, log_handler=handler, log_level=logging.DEBUG)
