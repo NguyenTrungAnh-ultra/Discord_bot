@@ -85,7 +85,8 @@ async def news(ctx, *, time_range: str = None):
         
         # Nếu không có dữ liệu trả về thì thoát vòng lặp
         if not news_data:
-            print('#####\n#####\n HET #####\n#####\n')
+            await ctx.send('#####\n#####\n HET \n#####\n#####')
+            print('#####\n#####\n HET \n#####\n#####')
             break
 
         # Gửi tin nhắn
