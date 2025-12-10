@@ -468,5 +468,65 @@
         "slug": "hag-bau-duc-trong-10000ha-ca-phe-nong-dan-trong-ca-phe-co-ai-lo-khong-ai-cung-giau-ca",
         "news_short_content": "Ông Đoàn Nguyên Đức dự kiến, đến tháng 10/2027 sẽ bắt đầu thu năm đầu tiên. Tùy theo diễn biến của thị trường, nếu tính theo giá thu mua hiện tại, Hoàng Anh Gia Lai sẽ thu về khoảng 600 triệu USD/năm, trên diện tích 10.000 ha này.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "910532c79d9f65b6374236c08a78bda8b370b1f4363713900e901e56af4110d0",
+        "news_title": "VCK: Đã xác định 5 nhà đầu tư mua 161.85 triệu cp riêng lẻ của VPS",
+        "update_date": "2025-12-10 16:30:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/da-xac-dinh-5-nha-dau-tu-mua-16185-trieu-cp-rieng-le-cua-vps-764-1379958.htm",
+        "slug": "vck-da-xac-dinh-5-nha-dau-tu-mua-16185-trieu-cp-rieng-le-cua-vps",
+        "news_short_content": "CTCP Chứng khoán VPS (HOSE: VCK) sắp chào bán riêng lẻ 161.85 triệu cp cho 5 cá nhân, với giá thấp nhất 50,000 đồng/cp và cao nhất 65,000 đồng/cp, hướng đến việc hoàn tất chuỗi 3 phương án tăng vốn quan trọng trong thời gian ngắn.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "1a7a37b16c8982ec30982cd2daa67343a7599597805a0e0dfe75ae551868b56f",
+        "news_title": "CKG: CIC Group kiện toàn nhân sự, chuyển giao cho thế hệ lãnh đạo tiếp theo",
+        "update_date": "2025-12-10 16:30:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/cic-group-ckg-kien-toan-nhan-su-chuyen-giao-cho-the-he-lanh-dao-tiep-theo-99854.html",
+        "slug": "ckg-cic-group-kien-toan-nhan-su-chuyen-giao-cho-the-he-lanh-dao-tiep-theo",
+        "news_short_content": "Công ty cổ phần Tập đoàn CIC (CIC Group, mã CKG – sàn HOSE) đã kiện toàn nhân sự, thay đổi vị trí Chủ tịch HĐQT từ ông Trần Thọ Thắng sang ông Nguyễn Xuân Dũng.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "f6b713845ce293a76eefc7db3aba4a1183248daa66106aa6e38f1d22eefe0cbc",
+        "news_title": "VIC: Cổ phiếu VIC, VPL nằm sàn, VN-Index “bốc hơi” hơn 28 điểm",
+        "update_date": "2025-12-10 16:25:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/co-phieu-vic-vpl-nam-san-vn-index-boc-hoi-hon-28-diem-99862.html",
+        "slug": "vic-co-phieu-vic-vpl-nam-san-vn-index-boc-hoi-hon-28-diem",
+        "news_short_content": "Sau chuỗi tăng nóng, cổ phiếu VIC và VPL đồng loạt nằm sàn giảm 7% và 6,99% trong phiên 10/12. Chỉ số chính VN-Index “bốc hơi” hơn 28 điểm, “thủng mốc” 1.720 điểm.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "df902a7b980d8fdf49b9f1f12635f2f4b5cf44af25ec236ea8ed87145fcd156f",
+        "news_title": "ACB: Vì sao nói gói giải pháp tài trợ ngành dệt may của ACB là “đúng người, đúng thời điểm”?",
+        "update_date": "2025-12-10 16:15:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/acb-vi-sao-noi-goi-giai-phap-tai-tro-nganh-det-may-cua-acb-la-dung-nguoi-dung-thoi-diem/37182351",
+        "slug": "acb-vi-sao-noi-goi-giai-phap-tai-tro-nganh-det-may-cua-acb-la-dung-nguoi-dung-thoi-diem",
+        "news_short_content": "Gói giải pháp tài chính chuyên biệt cho ngành dệt may của ACB một lần nữa khẳng định tính “đúng người, đúng thời điểm” khi sát cánh cùng hoạt động sản xuất, kinh doanh của doanh nghiệp Việt Nam trong năm 2025 - được xem là “năm vượt khó” với những thắng lợi lớn ở cả thị trường trong và ngoài nước.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "1e37c3cd9e40e7461cf4f70d4f96d0129498d29b8b76ba03a4500027faa22f63",
+        "news_title": "VIC: VIC giảm sàn, VN-Index mất hơn 28 điểm trong phiên 10/12",
+        "update_date": "2025-12-10 16:06:51",
+        "news_from_name": "Tin nhanh chứng khoán",
+        "news_source_link": "https://www.tinnhanhchungkhoan.vn/vic-giam-san-vn-index-mat-hon-28-diem-trong-phien-1012-post381946.html",
+        "slug": "vic-vic-giam-san-vn-index-mat-hon-28-diem-trong-phien-10-12",
+        "news_short_content": "Đà lao dốc mạnh của các cổ phiếu Vingroup, đặc biệt là VIC đã khiến VN-Index có phiên giảm mạnh nhất về điểm số trong hơn 1 tháng qua.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "b46d38290cb38e9d9c7f8bd64f466848927e484775ef8486e35ef5f7f41d1f01",
+        "news_title": "VIC: VinCons tuyển dụng 100.000 công nhân xây dựng trên toàn quốc",
+        "update_date": "2025-12-10 16:04:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vic-vincons-tuyen-dung-100000-cong-nhan-xay-dung-tren-toan-quoc/37182189",
+        "slug": "vic-vincons-tuyen-dung-100000-cong-nhan-xay-dung-tren-toan-quoc",
+        "news_short_content": "Ngày 10/12/2025, Công ty Cổ phần Phát triển và Đầu tư Xây dựng VinCons (thành viên Tập đoàn Vingroup) công bố tuyển dụng 100.000 công nhân xây dựng cho các đại dự án trên cả nước.",
+        "sentiment": "Positive"
     }
 ]
