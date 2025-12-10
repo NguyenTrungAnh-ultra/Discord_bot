@@ -528,5 +528,45 @@
         "slug": "vic-vincons-tuyen-dung-100000-cong-nhan-xay-dung-tren-toan-quoc",
         "news_short_content": "Ngày 10/12/2025, Công ty Cổ phần Phát triển và Đầu tư Xây dựng VinCons (thành viên Tập đoàn Vingroup) công bố tuyển dụng 100.000 công nhân xây dựng cho các đại dự án trên cả nước.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "2f6c29fbb7d7dcd22c3ce0b81009fca3feebd100bc40c9eefecf671d1c78f8ab",
+        "news_title": "VPX: Ngày mai, HoSE đón thêm cổ phiếu chứng khoán 'tỷ USD'",
+        "update_date": "2025-12-10 17:24:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/ngay-mai-hose-don-them-co-phieu-chung-khoan-ty-usd-d101416.html",
+        "slug": "vpx-ngay-mai-hose-don-them-co-phieu-chung-khoan-ty-usd",
+        "news_short_content": "Ngày 11/12, 1,875 tỷ cổ phiếu VPX sẽ chính thức giao dịch trên sàn HoSE với giá tham chiếu 33.900 đồng/cp, đưa vốn hóa doanh nghiệp đạt gần 64.000 tỷ đồng, đồng bổ sung thêm nguồn hàng hóa chất lượng cho thị trường.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "e0405679ee51315604d5d0f4e43614046aeef505b1cf07bffaaafed649547ad9",
+        "news_title": "SHB: SHB được vinh danh “Doanh nghiệp có thương vụ M&A tiêu biểu năm 2024 - 2025”",
+        "update_date": "2025-12-10 17:00:00",
+        "news_from_name": "Tạp chí Diễn đàn Doanh nghiệp",
+        "news_source_link": "https://diendandoanhnghiep.vn/shb-duoc-vinh-danh-doanh-nghiep-co-thuong-vu-m-a-tieu-bieu-nam-2024-2025-10167263.html",
+        "slug": "shb-shb-duoc-vinh-danh-doanh-nghiep-co-thuong-vu-m-and-a-tieu-bieu-nam-2024-2025",
+        "news_short_content": "Giải thưởng là minh chứng cho chiến lược chuyển đổi mạnh mẽ và toàn diện của SHB.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "10250d6593872d41a7aa6e72b951bfa24d0e33e65d12dd740c339876a4a8e4a7",
+        "news_title": "MWG: Thế Giới Di Động và realme ký kết chiến lược 2026: Mục tiêu tăng trưởng 2 chữ số, bứt tốc phân khúc trung - cao cấp",
+        "update_date": "2025-12-10 16:38:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/the-gioi-di-dong-va-realme-ky-ket-chien-luoc-2026-muc-tieu-tang-truong-2-chu-so-but-toc-phan-khuc-trung-cao-cap-99843.html",
+        "slug": "mwg-the-gioi-di-dong-va-realme-ky-ket-chien-luoc-2026-muc-tieu-tang-truong-2-chu-so-but-toc-phan-khuc-trung-cao-cap",
+        "news_short_content": "Sau năm 2025 nhiều thành công, realme và Thế Giới Di Động tiếp tục củng cố quan hệ hợp tác bằng thỏa thuận chiến lược 2026. Cả hai đặt trọng tâm vào nhóm smartphone trung - cao cấp, nơi nhu cầu của người dùng Việt đang tăng mạnh.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "8bef29dc0cd3e1fe2bfae33a8cc1e6c043f8966ace00f02e9fd2ce56540417eb",
+        "news_title": "MBB: Phiên 10/12: Gần 400 tỷ đồng cổ phiếu Việt Nam bị khối ngoại bán ròng, mã nào bị \"nhắm\" đến?",
+        "update_date": "2025-12-10 16:32:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/phien-10-12-gan-400-ty-dong-co-phieu-viet-nam-bi-khoi-ngoai-ban-rong-ma-nao-bi-nham-den-99857.html",
+        "slug": "mbb-phien-10-12-gan-400-ty-dong-co-phieu-viet-nam-bi-khoi-ngoai-ban-rong-ma-nao-bi-nham-den",
+        "news_short_content": "Chiều mua, cổ phiếu MBB đẫn dầu danh sách mua ròng, mã này được khối ngoại rót khoảng 241 tỷ đồng.",
+        "sentiment": "Negative"
     }
 ]
