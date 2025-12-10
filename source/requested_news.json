@@ -1742,5 +1742,21 @@
         "news_from_name": "FireAnt",
         "news_source_link": "https://fireant.vn/bai-viet/acb-them-bac-a-bank-va-acb-tang-lai-suat-tiet-kiem-nhieu-ky-han/37180431",
         "slug": "acb-them-bac-a-bank-va-acb-tang-lai-suat-tiet-kiem-nhieu-ky-han"
+    },
+    {
+        "id": "d6a0d139bae0c9f7045f635353fd7d1f79527ed074faf4204498f71f5e0168d3",
+        "news_title": "SCI: Vinamilk khẳng định vị thế dẫn đầu ESG với dấu ấn 'Ngôi sao SCI' và loạt giải thưởng chiến lược 2025",
+        "update_date": "2025-12-10 15:33:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/vinamilk-khang-dinh-vi-the-dan-dau-esg-voi-dau-an-ngoi-sao-sci-va-loat-giai-thuong-chien-luoc-2025-d101424.html",
+        "slug": "sci-vinamilk-khang-dinh-vi-the-dan-dau-esg-voi-dau-an-ngoi-sao-sci-va-loat-giai-thuong-chien-luoc-2025"
+    },
+    {
+        "id": "6569c6bedf976a413fb167fc0e3440f46ec03d5ef30ebc9f28aaf2ca234523b6",
+        "news_title": "CCC: Năng lượng Tái tạo Trung Nam bị đánh giá rủi ro cao với mức tín nhiệm ‘CCC’",
+        "update_date": "2025-12-10 15:24:00",
+        "news_from_name": "Vnbusiness",
+        "news_source_link": "https://vnbusiness.vn/24h/nang-luong-tai-tao-trung-nam-bi-danh-gia-rui-ro-cao-voi-muc-tin-nhiem-ccc-1111407.html",
+        "slug": "ccc-nang-luong-tai-tao-trung-nam-bi-danh-gia-rui-ro-cao-voi-muc-tin-nhiem-ccc"
     }
 ]
