@@ -71,7 +71,7 @@ async def news(ctx, *, time_range: str = None):
     page = 1
     total_count = 0
 
-    await ctx.send(f"🔍 Đang tìm tin từ {start_date} đến {end_date}...")
+    await ctx.send(f"#####\n#####\n🔍 Đang tìm tin từ {start_date} đến {end_date}...\n#####\n#####")
 
     # 3. Vòng lặp lấy tin
     while True:
@@ -85,6 +85,7 @@ async def news(ctx, *, time_range: str = None):
         
         # Nếu không có dữ liệu trả về thì thoát vòng lặp
         if not news_data:
+            print('#####\n#####\n HET #####\n#####\n')
             break
 
         # Gửi tin nhắn
@@ -93,8 +94,41 @@ async def news(ctx, *, time_range: str = None):
             link = item.get('news_source_link', '#')
             source = item.get('news_from_name', 'VCI')
             time_str = item.get('update_date')
+            sentiment = item.get('sentiment')
+
+            # Gửi Webhook
+            # Màu vang
+            HEX_COLOR_VANG = 0xFF9900
+
+            # Màu Đỏ đậm
+            HEX_COLOR_DO = 0xEE0000
+
+            # Nếu bạn muốn màu Xanh lá (Green)
+            HEX_COLOR_XANH_LA = 0x00FF00
+            # Tạo Embed
+            if sentiment == 'Positive':
+                embed = discord.Embed(
+                    title=f"🔥 {title}", 
+                    description=f"Nguồn: **{source}**\nThời gian: **{time_str}**",
+                    url=link, 
+                    color=HEX_COLOR_XANH_LA
+                )
+            elif sentiment == 'Negative':
+                embed = discord.Embed(
+                    title=f"🔥 {title}", 
+                    description=f"Nguồn: **{source}**\nThời gian: **{time_str}**",
+                    url=link, 
+                    color=HEX_COLOR_DO
+                )
+            else :
+                embed = discord.Embed(
+                    title=f"🔥 {title}", 
+                    description=f"Nguồn: **{source}**\nThời gian: **{time_str}**",
+                    url=link, 
+                    color=HEX_COLOR_VANG
+                )
             
-            await ctx.send(f"**{title}**\nNguồn: {source} ({time_str})\n<{link}>")
+            await ctx.send(embed=embed)
             
             # Thêm vào danh sách lưu trữ
             requested_news.insert(0, item)

@@ -11,7 +11,8 @@ today = str(datetime.today().strftime('%Y-%m-%d'))
 
 def main():
     load_dotenv()
-    webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
+    # webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
+    webhook_url = 'https://discord.com/api/webhooks/1446860624020902030/X1OS1Y_p19OT3oEoEqaDjlqQpDRK1k0k6Uze64a1x5mD8iZQw3ii5hFivyXjIhS8OMYV'
     
     if not webhook_url:
         print("Lỗi: Chưa cài đặt DISCORD_WEBHOOK_URL")
@@ -45,11 +46,46 @@ def main():
                 link = item.get('news_source_link', '#')
                 source = item.get('news_from_name', 'VCI')
                 time_str = item.get('update_date')
+                sentiment = item.get('sentiment')
+                short_content = item.get('news_short_content')
                 
                 print(f"--> Gửi tin mới: {title}")
                 
-                # Gửi Webhook
-                webhook.send(f"🔥 **{title}**\nNguồn: {source} ({time_str})\n{link}") ######################################
+            # Gửi Webhook
+                # Màu vang
+                HEX_COLOR_VANG = 0xFF9900
+
+                # Màu Đỏ đậm
+                HEX_COLOR_DO = 0xEE0000
+
+                # Nếu bạn muốn màu Xanh lá (Green)
+                HEX_COLOR_XANH_LA = 0x00FF00
+            # Tạo Embed
+                if sentiment == 'Positive':
+                    embed = discord.Embed(
+                        title=f"🔥 {title}", 
+                        description=f"{short_content}\nNguồn: **{source}**\nThời gian: **{time_str}**",
+                        url=link, 
+                        color=HEX_COLOR_XANH_LA
+                    )
+                elif sentiment == 'Negative':
+                    embed = discord.Embed(
+                        title=f"🔥 {title}", 
+                        description=f"{short_content}\nNguồn: **{source}**\nThời gian: **{time_str}**",
+                        url=link, 
+                        color=HEX_COLOR_DO
+                    )
+                else :
+                    embed = discord.Embed(
+                        title=f"🔥 {title}", 
+                        description=f"{short_content}\nNguồn: **{source}**\nThời gian: **{time_str}**",
+                        url=link, 
+                        color=HEX_COLOR_VANG
+                    )
+                
+                # Gửi Embed
+                webhook.send(embed=embed)
+                ##########################################################################
                 # print(f"🔥 **{title}**\nNguồn: {source} ({time_str})\n{link}")
                 
                 # Đánh dấu là đã gửi bằng cách thêm vào danh sách temp (chèn vào đầu list để giữ tính mới nhất)
