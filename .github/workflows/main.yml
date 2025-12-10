@@ -42,11 +42,11 @@ jobs:
           
           # QUAN TRỌNG: Chỉ định đúng file trong thư mục source
           git add source/requested_news.json
-          
-          # Kiểm tra thay đổi và push
-          if [[ -n $(git status -s) ]]; then
-            git commit -m "Auto update news history in source/"
+
+          if ! git diff --staged --quiet; then
+            git commit -m "Auto update news: source/requested_news.json"
             git push
           else
-            echo "No changes to commit"
+            echo "No changes to commit (Không có tin mới)."
           fi
+          
