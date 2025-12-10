@@ -2,39 +2,51 @@ name: VCI News Auto Sender
 
 on:
   schedule:
-    # Chạy mỗi 30 phút. 
-    # Cú pháp cron: phút giờ ngày tháng thứ
-    # */30 nghĩa là các phút 0, 30, 60...
     - cron: '*/60 * * * *'
-  
-  # Cho phép bấm nút chạy thủ công để test
   workflow_dispatch:
+
+# --- THÊM PHẦN NÀY ---
+permissions:
+  contents: write
+# ---------------------
 
 jobs:
   run-news-script:
     runs-on: ubuntu-latest
     
     steps:
-      # 1. Tải code về máy ảo
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # 2. Cài Python
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.12'
 
-      # 3. Cài thư viện
       - name: Install libraries
         run: |
-          pip install -r requirements.txt
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          # Cài thêm pandas hoặc requests nếu chưa có trong requirements.txt
+          pip install requests python-dotenv discord.py
 
-      # 4. Chạy script
       - name: Run Main Script
         env:
-          # Lấy secret nạp vào biến môi trường cho code dùng
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-         
         run: |
           python Firms_news.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # QUAN TRỌNG: Chỉ định đúng file trong thư mục source
+          git add source/requested_news.json
+
+          if ! git diff --staged --quiet; then
+            git commit -m "Auto update news: source/requested_news.json"
+            git push
+          else
+            echo "No changes to commit (Không có tin mới)."
+          fi
+          
