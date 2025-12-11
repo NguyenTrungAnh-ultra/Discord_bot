@@ -688,5 +688,55 @@
         "slug": "nvb-xuat-hien-mot-ngan-hang-cong-1-4-lai-suat-tiet-kiem",
         "news_short_content": "Mọi khách hàng cá nhân gửi tiết kiệm online trên ứng dụng ngân hàng số đều sẽ được cộng thêm lãi suất, lên tới 1,4%/năm.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "346e263b4708dc24e01a0392319d6ceef82ed4cec2cf0069a40e324c9dfb2440",
+        "news_title": "MCH: Cổ phiếu MCH sẽ niêm yết HOSE trong tháng 12/2025",
+        "update_date": "2025-12-11 07:32:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/co-phieu-mch-se-niem-yet-hose-trong-thang-122025-737-1379994.htm",
+        "slug": "mch-co-phieu-mch-se-niem-yet-hose-trong-thang-12-2025",
+        "news_short_content": "Ngày 04/12/2025, CTCP Hàng tiêu dùng Masan (Masan Consumer, UPCoM: MCH), chính thức công bố kế hoạch chuyển niêm yết cổ phiếu sang Sở Giao dịch Chứng khoán TP.HCM (HOSE).",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "ae759cfd67681a7cae3820e6a5d911c9b9c397f0a7bfe3a55ac20516275bac48",
+        "news_title": "KSV: Tổng Công ty Công nghiệp mỏ Việt Bắc TKV - CTCP: Nộp ngân sách 663 tỷ đồng",
+        "update_date": "2025-12-11 07:29:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/ksv-tong-cong-ty-cong-nghiep-mo-viet-bac-tkv-ctcp-nop-ngan-sach-663-ty-dong/37186433",
+        "slug": "ksv-tong-cong-ty-cong-nghiep-mo-viet-bac-tkv-ctcp-nop-ngan-sach-663-ty-dong",
+        "news_short_content": "Chiều 10-12, tại Trung tâm Hội nghị Quốc gia, Tổng Công ty Công nghiệp mỏ Việt Bắc TKV - CTCP đã tổ chức Hội nghị tổng kết hoạt động sản xuất, kinh doanh năm 2025 và Hội nghị người lao động năm 2026. Dự Hội nghị có lãnh đạo Tập đoàn Công nghiệp Than - Khoáng sản Việt Nam (TKV), Ban lãnh đạo Tổng Công ty và đại diện lãnh đạo, người lao động tiêu biểu của các đơn bị thành viên.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "1c2da3baa6afba1f11ec6f04a990b76a32afac6d6dbca8b20a34457d2986a500",
+        "news_title": "HQC: Địa ốc Hoàng Quân (HQC) hé lộ danh sách 4 chủ nợ thực hiện hoán đổi 50 triệu cổ phiếu",
+        "update_date": "2025-12-11 07:16:55",
+        "news_from_name": "Tin nhanh chứng khoán",
+        "news_source_link": "https://www.tinnhanhchungkhoan.vn/dia-oc-hoang-quan-hqc-he-lo-danh-sach-4-chu-no-thuc-hien-hoan-doi-50-trieu-co-phieu-post381962.html",
+        "slug": "hqc-dia-oc-hoang-quan-hqc-he-lo-danh-sach-4-chu-no-thuc-hien-hoan-doi-50-trieu-co-phieu",
+        "news_short_content": "CTCP Tư vấn Thương mại Dịch vụ Địa ốc Hoàng Quân (mã HQC - sàn HOSE) sẽ tiếp tục quay lại kế hoạch phát hành riêng lẻ 50 triệu cổ phiếu riêng lẻ, nâng vốn lên 6.266 tỷ đồng.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "f2e56f77e77c42246e3759fd216c40662168a3dfbce65bd748e4b0c7a03e9049",
+        "news_title": "VGC: Chưa từng có: Hà Nội sẽ kích hoạt \"kỷ lục\" hơn 800.000 tỷ đồng chỉ trong một ngày ngay tuần sau",
+        "update_date": "2025-12-11 07:08:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vgc-chua-tung-co-ha-noi-se-kich-hoat-ky-luc-hon-800000-ty-dong-chi-trong-mot-ngay-ngay-tuan-sau/37186354",
+        "slug": "vgc-chua-tung-co-ha-noi-se-kich-hoat-ky-luc-hon-800000-ty-dong-chi-trong-mot-ngay-ngay-tuan-sau",
+        "news_short_content": "Ngày 19/12, Hà Nội sẽ khởi công loạt dự án hạ tầng và đô thị có quy mô lớn, ý nghĩa chào mừng Đại hội đại biểu toàn quốc lần thứ XIV của Đảng. Đây là đợt khởi công có quy mô lớn hiếm thấy, trải rộng từ hạ tầng giao thông, chỉnh trang đô thị tới các đại dự án phát triển mới.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "0efdd5d05919834a17b06ae527e559fe6321acde5b751f8d9a00e5a40a160eaf",
+        "news_title": "VIC: VinFast, Toyota, Hyundai... vừa lập một kỷ lục 'vô tiền khoáng hậu'",
+        "update_date": "2025-12-11 07:06:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vic-vinfast-toyota-hyundai-vua-lap-mot-ky-luc-vo-tien-khoang-hau/37186347",
+        "slug": "vic-vinfast-toyota-hyundai-vua-lap-mot-ky-luc-vo-tien-khoang-hau",
+        "news_short_content": "Tính đến hết tháng 11/2025, tổng doanh số bán ra của thị trường ô tô Việt Nam đã lập kỷ lục đạt 522.644 xe, vượt qua con số gần 510.000 xe của cả năm 2022.",
+        "sentiment": "Positive"
     }
 ]
