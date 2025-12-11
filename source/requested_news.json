@@ -1128,5 +1128,45 @@
         "slug": "dnp-dnp-holding-tat-toan-1-lo-trai-phieu-phat-hanh-nam-2020",
         "news_short_content": "DNP Holding vừa thực hiện thanh toán 100 tỷ đồng gốc và gần 2,2 tỷ đồng lãi cho lô trái phiếu mã DNPH2025001, qua đó tất toán lô trái phiếu này đúng hạn.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "fb0c23d310e77b6db3c5ec136e3a8516fbf7b871fec0ea06785cc7a757384e21",
+        "news_title": "OPC: Người nhà lãnh đạo OPC đăng ký bán 1 triệu cp",
+        "update_date": "2025-12-11 15:30:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/nguoi-nha-lanh-dao-opc-dang-ky-ban-1-trieu-cp-739-1380290.htm",
+        "slug": "opc-nguoi-nha-lanh-dao-opc-dang-ky-ban-1-trieu-cp",
+        "news_short_content": "Bà Đỗ Thụy Như Hà vừa đăng ký bán 1 triệu cp của CTCP Dược phẩm OPC (HOSE: OPC) trong thời gian từ 16/12/2025-14/01/2026, nhằm thoái bớt vốn.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "03d2705d684cbb96a418ecbd53f1648b63fc7b367562c338a1b927855d6b278d",
+        "news_title": "PET: Cổ phiếu của Petrosetco ‘lăn sàn’ trong phiên Petrovietnam bán đấu giá gần 25 triệu cổ phiếu",
+        "update_date": "2025-12-11 15:20:00",
+        "news_from_name": "Vnbusiness",
+        "news_source_link": "https://vnbusiness.vn/24h/co-phieu-cua-petrosetco-lan-san-trong-phien-petrovietnam-ban-dau-gia-gan-25-trieu-co-phieu-1111461.html",
+        "slug": "pet-co-phieu-cua-petrosetco-lan-san-trong-phien-petrovietnam-ban-dau-gia-gan-25-trieu-co-phieu",
+        "news_short_content": "Phiên 11/12, cổ phiếu PET của Tổng công ty cổ phần Dịch vụ Tổng hợp Dầu khí (Petrosetco) giảm sàn về mức 32.600 đồng/cp, trong tình trạng “trắng bên mua”.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "f213a912b660239aa6655762e2f0be188782c0cdc7bc8e3c8b77b064f5820429",
+        "news_title": "BVS: Một lãnh đạo Chứng khoán Bảo Việt xin từ nhiệm",
+        "update_date": "2025-12-11 14:46:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/bvs-mot-lanh-dao-chung-khoan-bao-viet-xin-tu-nhiem/37204507",
+        "slug": "bvs-mot-lanh-dao-chung-khoan-bao-viet-xin-tu-nhiem",
+        "news_short_content": "Ông Bùi Quang Vũ - thành viên độc lập HĐQT Chứng khoán Bảo Việt, xin từ nhiệm theo nhu cầu và nguyện vọng của cá nhân.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "5665b633a40a141d8c07e7518e6cd940479cdee506c1a4ae842f77c941edcd96",
+        "news_title": "NSS: Công ty Nông Súc Sản Đồng Nai bị yêu cầu chấn chỉnh hàng loạt vi phạm về đất đai",
+        "update_date": "2025-12-11 14:36:00",
+        "news_from_name": "Vnbusiness",
+        "news_source_link": "https://vnbusiness.vn/24h/cong-ty-nong-suc-san-dong-nai-bi-yeu-cau-chan-chinh-hang-loat-vi-pham-ve-dat-dai-1111455.html",
+        "slug": "nss-cong-ty-nong-suc-san-dong-nai-bi-yeu-cau-chan-chinh-hang-loat-vi-pham-ve-dat-dai",
+        "news_short_content": "Kiểm toán Nhà nước Khu vực XII kết luận CTCP Nông Súc Sản Đồng Nai (Dolico, UPCoM: NSS) có nhiều vi phạm trong quản lý và sử dụng đất, bao gồm chậm sang tên, hết hạn nhưng không gia hạn và nguy cơ bị thu hồi đất.",
+        "sentiment": "Negative"
     }
 ]
