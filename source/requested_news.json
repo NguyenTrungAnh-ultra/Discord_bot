@@ -748,5 +748,65 @@
         "slug": "gex-duoc-vinh-danh-doanh-nghiep-co-chien-luoc-m-and-a-tieu-bieu",
         "news_short_content": "Nhờ kiên định chiến lược M&A trọng tâm và sáng tạo, Tập đoàn GELEX đã được vinh danh doanh nghiệp có chiến lược M&A tiêu biểu 2024-2025.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "9a0a1dfeef62bcc370b51b9aff77a8faf6491aa8eb0c53f30e06ae71af70ddbf",
+        "news_title": "HDB: HDBank chốt quyền chia cổ tức và cổ phiếu thưởng gần 30%",
+        "update_date": "2025-12-11 09:55:16",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/hdbank-chot-quyen-chia-co-tuc-va-co-phieu-thuong-gan-30-757-1380182.htm",
+        "slug": "hdb-hdbank-chot-quyen-chia-co-tuc-va-co-phieu-thuong-gan-30",
+        "news_short_content": "Ngân hàng TMCP Phát triển TPHCM (HDBank, HOSE: HDB) thông báo chốt quyền chi trả cổ tức và cổ phiếu thưởng với tổng tỷ lệ gần 30% vào ngày 19/12, ngày giao dịch không hưởng quyền là 18/12.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "a76efa45bc5cee5d2caf813afb1d355e4afab71f3c59d874298f446747437c05",
+        "news_title": "IDI: Trisedco – kiến tạo chuỗi giá trị xanh",
+        "update_date": "2025-12-11 09:46:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/idi-trisedco-kien-tao-chuoi-gia-tri-xanh/37190274",
+        "slug": "idi-trisedco-kien-tao-chuoi-gia-tri-xanh",
+        "news_short_content": "Trong dòng chảy hội nhập kinh tế toàn cầu, sự phát triển bền vững không chỉ là một khẩu hiệu mà đã trở thành \"kim chỉ nam\" để doanh nghiệp khẳng định vị thế. Trisedco – Công ty Cổ phần Đầu tư và Phát triển Đa quốc gia đã kiến tạo nên \"chuỗi giá trị xanh\" khép kín, gắn kết thủy sản, chăn nuôi và mỹ phẩm.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "6b5707a39a93c1d8ccda07bfa86b30d27abd9d63feb69669131f7482c8188ba5",
+        "news_title": "HSL: Thực phẩm Hồng Hà (HSL) muốn chi hơn 73 tỷ đồng thâu tóm 2 công ty bất động sản",
+        "update_date": "2025-12-11 09:41:14",
+        "news_from_name": "Tin nhanh chứng khoán",
+        "news_source_link": "https://www.tinnhanhchungkhoan.vn/thuc-pham-hong-ha-hsl-muon-chi-hon-73-ty-dong-thau-tom-2-cong-ty-bat-dong-san-post381973.html",
+        "slug": "hsl-thuc-pham-hong-ha-hsl-muon-chi-hon-73-ty-dong-thau-tom-2-cong-ty-bat-dong-san",
+        "news_short_content": "CTCP Đầu tư Phát triển Thực phẩm Hồng Hà (mã HSL) mới công bố Nghị quyết HĐQT về việc đầu tư và nhận chuyển nhượng cổ phần tại CTCP Milli Land và CTCP Đầu tư nông nghiệp Bình Thắng với mục đích mở rộng hoạt động kinh doanh trong năm 2025.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "79b7d7fa80a3d2801d75a564a8508eb5020e31206beb937fd0836b69d57cd66e",
+        "news_title": "VIC: VinSpeed vượt Chủ tịch Phạm Nhật Vượng, trở thành cổ đông lớn thứ 2 tại Vingroup",
+        "update_date": "2025-12-11 09:27:00",
+        "news_from_name": "Vnbusiness",
+        "news_source_link": "https://vnbusiness.vn/giao-dich/vinspeed-vuot-chu-tich-pham-nhat-vuong-tro-thanh-co-dong-lon-thu-2-tai-vingroup-1111441.html",
+        "slug": "vic-vinspeed-vuot-chu-tich-pham-nhat-vuong-tro-thanh-co-dong-lon-thu-2-tai-vingroup",
+        "news_short_content": "Việc nắm giữ khoảng 455,1 triệu cổ phiếu VIC, tương đương 11,7% vốn điều lệ Vingroup đưa Công ty CP Đầu tư và Phát triển Đường sắt cao tốc (VinSpeed) vượt Chủ tịch Phạm Nhật Vượng để trở thành cổ đông lớn thứ hai tại Tập đoàn.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "0a9cf0889ff37c706cfe3a9250153368b54df2867d8e3356a64375eec27ada8c",
+        "news_title": "HPG: Tập đoàn Hòa Phát sắp xây khu công nghiệp hơn 2.800 tỷ ở tỉnh Hưng Yên",
+        "update_date": "2025-12-11 09:23:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/tap-doan-hoa-phat-hpg-sap-xay-khu-cong-nghiep-hon-2-800-ty-o-tinh-hung-yen-99895.html",
+        "slug": "hpg-tap-doan-hoa-phat-sap-xay-khu-cong-nghiep-hon-2800-ty-o-tinh-hung-yen",
+        "news_short_content": "Tính đến tháng 10/2025, tổng quỹ đất KCN của Hòa Phát hiện đạt trên 2.435 ha.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "f186d95afd54e60880eeb64641930fa57d881582540635b0fd6cd4753822f2c6",
+        "news_title": "DCM: Đạm Cà Mau \"lột xác\" trở thành nhà máy thông minh",
+        "update_date": "2025-12-11 09:19:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/dcm-dam-ca-mau-lot-xac-tro-thanh-nha-may-thong-minh/37188208",
+        "slug": "dcm-dam-ca-mau-lot-xac-tro-thanh-nha-may-thong-minh",
+        "news_short_content": "Nhà máy Đạm Cà Mau thuộc Tổng công ty Phân bón Dầu khí Cà Mau-CTCP (PVCFC) đã được xây dựng trở thành một nhà máy thông minh-dấu mốc quan trọng không chỉ của riêng nhà máy mà còn của Tập đoàn Công nghiệp-Năng lượng Quốc gia Việt Nam (Petrovietnam) trên hành trình hiện thực hóa chiến lược chuyển đổi số.",
+        "sentiment": "Positive"
     }
 ]
