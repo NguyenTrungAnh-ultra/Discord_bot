@@ -1378,5 +1378,65 @@
         "slug": "vic-co-phieu-cua-ty-phu-pham-nhat-vuong-duoc-tu-doanh-ctck-gom-dot-bien-trong-phien-11-12",
         "news_short_content": "Tự doanh CTCK mua ròng 192 tỷ đồng trên HOSE.",
         "sentiment": "Neutral"
+    },
+    {
+        "id": "6bf1b1f8b64215c12ff0dc4c9e891919cc8a2e7a3db8ecb0f338856bcc71f4d9",
+        "news_title": "BMP: Một phiếu đầu ngành \"bốc đầu\" kịch trần, tiến sát đỉnh lịch sử",
+        "update_date": "2025-12-11 21:49:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/mot-phieu-dau-nganh-boc-dau-kich-tran-tien-sat-dinh-lich-su-99968.html",
+        "slug": "bmp-mot-phieu-dau-nganh-boc-dau-kich-tran-tien-sat-dinh-lich-su",
+        "news_short_content": "Được xem là doanh nghiệp đầu ngành nhựa Việt Nam, BMP duy trì đà tăng vững chắc trên sàn chứng khoán nhờ kết quả kinh doanh tăng trưởng ổn định và tỷ lệ chi trả cổ tức cao, đều đặn.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "0e956a61ee610e8513c925bce8faa084645e394750139d92e1126a5ee91a9479",
+        "news_title": "TVC: Nữ Chủ tịch TVC bán ra 1,45 triệu cổ phiếu",
+        "update_date": "2025-12-11 21:32:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/tvc-nu-chu-tich-tvc-ban-ra-1-45-trieu-co-phieu/37209337",
+        "slug": "tvc-nu-chu-tich-tvc-ban-ra-1-45-trieu-co-phieu",
+        "news_short_content": "Bà Nguyễn Thị Hằng, Chủ tịch HĐQT TVC đã hoàn tất bán 1,45 triệu cổ phiếu TVC trong thời gian 3-4/12/2025.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "6645f0ed2b0172b9448107bf5f72551e14fd44ff15c856267a02f5c30c6a2475",
+        "news_title": "ABB: ABBANK hợp tác sổ bán hàng: Đồng hành cùng hộ kinh doanh chuyển đổi từ mô hình thuế khoán sang kê khai",
+        "update_date": "2025-12-11 21:30:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/abb-abbank-hop-tac-so-ban-hang-dong-hanh-cung-ho-kinh-doanh-chuyen-doi-tu-mo-hinh-thue-khoan-sang-ke-khai/37209325",
+        "slug": "abb-abbank-hop-tac-so-ban-hang-dong-hanh-cung-ho-kinh-doanh-chuyen-doi-tu-mo-hinh-thue-khoan-sang-ke-khai",
+        "news_short_content": "Từ hôm nay, các hộ kinh doanh có thể quản lý bán hàng, theo dõi dòng tiền, thu tiền bằng QR và xuất hóa đơn điện tử chỉ trên một nền tảng duy nhất bằng điện thoại. Đây là những tiện ích được Ngân hàng TMCP An Bình (ABBANK) và Ứng dụng quản lý bán hàng thông minh Sổ Bán Hàng (SoBanHang) cùng phát triển nhằm giúp hộ kinh doanh vận hành đơn giản hơn, tiết kiệm chi phí và đáp ứng yêu cầu minh bạch trong bối cảnh chuyển đổi sang mô hình kê khai thuế.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "62fbbf3291276a455a7514510447eb27539c441c31115570235a7d636d86a8bf",
+        "news_title": "MPC: Thủy sản Minh Phú chốt ngày trả cổ tức bằng tiền",
+        "update_date": "2025-12-11 21:29:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/mpc-thuy-san-minh-phu-chot-ngay-tra-co-tuc-bang-tien/37209303",
+        "slug": "mpc-thuy-san-minh-phu-chot-ngay-tra-co-tuc-bang-tien",
+        "news_short_content": "Ngày 18/12 tới, Thủy sản Minh Phú sẽ chốt danh sách cổ đông để thực hiện trả cổ tức năm 2024 bằng tiền. Tỷ lệ thực hiện 2,5%/cổ phiếu.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "0acbfd58853ce2f322ee61987d49cb0589d02b4da52fb3364031c181f8591f69",
+        "news_title": "BMI: Chuyên gia BMI dự báo nhu cầu dầu năm 2026",
+        "update_date": "2025-12-11 21:15:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/bmi-chuyen-gia-bmi-du-bao-nhu-cau-dau-nam-2026/37209167",
+        "slug": "bmi-chuyen-gia-bmi-du-bao-nhu-cau-dau-nam-2026",
+        "news_short_content": "Trong báo cáo Fitch Group gửi AFP, các chuyên gia của BMI - thuộc Fitch Solutions - nhận định nhu cầu dầu toàn cầu “sẽ tiếp tục tăng ổn định” trong năm 2026, dù “không còn mạnh như mức tăng trưởng lịch sử”.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "894bc91d277df5c49e70671e2a641226c8b4c53f4602405c2f40bce3f0a5b8ab",
+        "news_title": "BID: Phát Lộc khi tham gia gửi tiết kiệm tại BIDV",
+        "update_date": "2025-12-11 21:12:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/bid-phat-loc-khi-tham-gia-gui-tiet-kiem-tai-bidv/37209149",
+        "slug": "bid-phat-loc-khi-tham-gia-gui-tiet-kiem-tai-bidv",
+        "news_short_content": "Trong những ngày đón năm mới nhiều niềm vui này, quý khách hàng sẽ có thêm tài lộc khi tham gia chương trình tiền gửi của BIDV. Bên cạnh 2.026 món quà Phát Lộc trúng thưởng với tổng trị giá 2 tỷ đồng dành cho khách hàng gửi tiết kiệm, BIDV còn có quà tặng tiền mặt và lãi suất ưu đãi cố định lên tới 6,6%/năm dành cho khách hàng sử dụng sản phẩm Chứng chỉ tiền gửi Phát Lộc...",
+        "sentiment": "Positive"
     }
 ]
