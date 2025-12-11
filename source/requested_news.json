@@ -1068,5 +1068,25 @@
         "slug": "mbb-mua-lai-truoc-han-lo-trai-phieu-400-ty-dong",
         "news_short_content": "Ngày 8/12/2025 vừa qua, MB đã thực hiện mua lại trước hạn toàn bộ lô trái phiếu mã MBBL2330007 có tổng giá trị phát hành 400 tỷ đồng.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "c9385832333152934bc047c5174813b9dd1ee3a15c48654b86518708da8b4109",
+        "news_title": "VPX: Ông Vũ Hữu Điền, Tổng giám đốc VPBankS (VPX): Quá trình IPO và niêm yết theo quy định mới rất nhanh chóng",
+        "update_date": "2025-12-11 13:08:07",
+        "news_from_name": "Tin nhanh chứng khoán",
+        "news_source_link": "https://www.tinnhanhchungkhoan.vn/ong-vu-huu-dien-tong-giam-doc-vpbanks-vpx-qua-trinh-ipo-va-niem-yet-theo-quy-dinh-moi-rat-nhanh-chong-post381991.html",
+        "slug": "vpx-ong-vu-huu-dien-tong-giam-doc-vpbanks-vpx-qua-trinh-ipo-va-niem-yet-theo-quy-dinh-moi-rat-nhanh-chong",
+        "news_short_content": "Sáng nay, ngày 11/12/2025, gần 1,9 tỷ cổ phiếu VPX của VPBankS đã chính thức giao dịch trên HOSE. Công ty này cũng vừa đạt 1 triệu tài khoản khách hàng, tương đương gần 10% tổng số tài khoản giao dịch toàn thị trường.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "0203779637ac0a0d8b8b383b7d4561228da371ed5f9f6540dbc5eb0fb89af1ba",
+        "news_title": "MCH: Gần 1.07 tỷ cp MCH được chấp thuận niêm yết lên HOSE",
+        "update_date": "2025-12-11 12:32:46",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/gan-107-ty-cp-mch-duoc-chap-thuan-niem-yet-len-hose-741-1380253.htm",
+        "slug": "mch-gan-107-ty-cp-mch-duoc-chap-thuan-niem-yet-len-hose",
+        "news_short_content": "Ngày 10/12, Sở Giao dịch Chứng khoán TPHCM (HOSE) thông báo chấp thuận niêm yết gần 1.07 tỷ cp MCH của CTCP Hàng tiêu dùng Masan (Masan Consumer), tương ứng vốn điều lệ 10,676 tỷ đồng.",
+        "sentiment": "Positive"
     }
 ]
