@@ -1028,5 +1028,45 @@
         "slug": "vpx-gan-1-9-ty-co-phieu-vpx-chinh-thuc-niem-yet-tren-hose",
         "news_short_content": "Ngày 11/12, VPBankS chính thức niêm yết gần 1,9 tỷ cổ phiếu trên Sở Giao dịch Chứng khoán TPHCM (HoSE).",
         "sentiment": "Positive"
+    },
+    {
+        "id": "31932ba08bcf55a40afa27d15a02abd84cb7badcc49f7be6000f187741530fc6",
+        "news_title": "VPX: Cổ phiếu VPX chính thức lên sàn HOSE",
+        "update_date": "2025-12-11 12:05:46",
+        "news_from_name": "Báo Sài Gòn Giải Phóng",
+        "news_source_link": "https://www.sggp.org.vn/co-phieu-vpx-chinh-thuc-len-san-hose-post828085.html",
+        "slug": "vpx-co-phieu-vpx-chinh-thuc-len-san-hose",
+        "news_short_content": "1,9 tỷ cổ phiếu của Công ty Chứng khoán VPBank (VPX) đã chính thức được niêm yết trên sàn HOSE với vốn hóa dự kiến đạt gần 64.000 tỷ đồng (2,4 tỷ USD).",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "ec9860cc314d5842f7f1158c929a45c3a7d0b5aeaf17f91d185a7f66bbfab420",
+        "news_title": "VPX: Gần 1,9 tỷ cổ phiếu VPX chính thức giao dịch tại HoSE",
+        "update_date": "2025-12-11 11:53:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/gan-19-ty-co-phieu-vpx-chinh-thuc-giao-dich-tai-hose-d101453.html",
+        "slug": "vpx-gan-1-9-ty-co-phieu-vpx-chinh-thuc-giao-dich-tai-hose",
+        "news_short_content": "Chưa đầy 30 ngày sau khi hoàn tất thương vụ IPO kỷ lục, cổ phiếu Chứng khoán VPBank chính thức được giao dịch tại HoSE với giá tham chiếu 33.900 đồng/cp.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "01a543571c35b2d6e0821b54487e814ca42989ce1c3b40ea98f4a1b087634861",
+        "news_title": "BMS: 11 nhà đầu tư nắm 61,86% vốn Chứng khoán Bảo Minh sau đợt chào bán cổ phiếu",
+        "update_date": "2025-12-11 11:39:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/bms-11-nha-dau-tu-nam-61-86-von-chung-khoan-bao-minh-sau-dot-chao-ban-co-phieu/37197034",
+        "slug": "bms-11-nha-dau-tu-nam-61-86-von-chung-khoan-bao-minh-sau-dot-chao-ban-co-phieu",
+        "news_short_content": "Sau khi tham gia đợt chào bán 125 triệu cổ phiếu riêng lẻ của Chứng khoán Bảo Minh, 11 nhà đầu tư sở hữu tổng cộng 61,86% vốn điều lệ công ty.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "4cab12734671bd947fbf27f07ddf42076e89076f589eaaba21bcec9bf9a57ffd",
+        "news_title": "MBB: Mua lại trước hạn lô trái phiếu 400 tỷ đồng",
+        "update_date": "2025-12-11 11:33:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/mbb-mua-lai-truoc-han-lo-trai-phieu-400-ty-dong/37196967",
+        "slug": "mbb-mua-lai-truoc-han-lo-trai-phieu-400-ty-dong",
+        "news_short_content": "Ngày 8/12/2025 vừa qua, MB đã thực hiện mua lại trước hạn toàn bộ lô trái phiếu mã MBBL2330007 có tổng giá trị phát hành 400 tỷ đồng.",
+        "sentiment": "Positive"
     }
 ]
