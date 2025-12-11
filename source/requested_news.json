@@ -808,5 +808,45 @@
         "slug": "dcm-dam-ca-mau-lot-xac-tro-thanh-nha-may-thong-minh",
         "news_short_content": "Nhà máy Đạm Cà Mau thuộc Tổng công ty Phân bón Dầu khí Cà Mau-CTCP (PVCFC) đã được xây dựng trở thành một nhà máy thông minh-dấu mốc quan trọng không chỉ của riêng nhà máy mà còn của Tập đoàn Công nghiệp-Năng lượng Quốc gia Việt Nam (Petrovietnam) trên hành trình hiện thực hóa chiến lược chuyển đổi số.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "372de76dd74a230a0316e6d0fafdef50b0ad2d6d2dc1fc3b9b445bdc11c80a77",
+        "news_title": "DC4: Điểm tin doanh nghiệp: PVTrans vượt 150% kế hoạch, DC4 giải thể công ty con",
+        "update_date": "2025-12-11 10:28:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/dc4-diem-tin-doanh-nghiep-pvtrans-vuot-150-ke-hoach-dc4-giai-the-cong-ty-con/37193210",
+        "slug": "dc4-diem-tin-doanh-nghiep-pvtrans-vuot-150-ke-hoach-dc4-giai-the-cong-ty-con",
+        "news_short_content": "Điểm tin doanh nghiệp hôm nay ghi nhận loạt tin nổi bật: DC4 giải thể công ty con DICERA Construction sau nửa năm thành lập; TNG về đích doanh thu sớm 22 ngày, dự kiến vượt 5% kế hoạch năm; PVTrans vượt 150% kế hoạch doanh thu, mở rộng đội tàu và đẩy mạnh chiến lược LNG; HHV rót thêm 790 tỷ đồng, nâng tỷ lệ sở hữu tại Hạ tầng Đô thị Đèo Cả lên 17,8%.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "f1cf51d03190491c3b47d294678bcd33b6a49eafb1754cbf7b4f17c7c0095bfc",
+        "news_title": "HQC: Phát hành riêng lẻ 50 triệu cổ phiếu để hoán đổi 500 tỷ đồng nợ",
+        "update_date": "2025-12-11 10:23:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/hqc-phat-hanh-rieng-le-50-trieu-co-phieu-de-hoan-doi-500-ty-dong-no/37192785",
+        "slug": "hqc-phat-hanh-rieng-le-50-trieu-co-phieu-de-hoan-doi-500-ty-dong-no",
+        "news_short_content": "CTCP Tư vấn Thương mại Dịch vụ Địa ốc Hoàng Quân (mã HQC, HoSE) vừa quyết định khôi phục kế hoạch phát hành riêng lẻ 50 triệu cổ phiếu, qua đó nâng vốn điều lệ lên 6.266 tỷ đồng nếu phương án được triển khai thành công.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "f6d334efb6f746e4aef256f918ab200bf11ea2fb3a609af31f8db10e9fedc882",
+        "news_title": "PET: 6 cá nhân chi hơn 900 tỷ mua trọn lô đấu giá cổ phiếu PET",
+        "update_date": "2025-12-11 10:14:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/6-ca-nhan-chi-hon-900-ty-mua-tron-lo-dau-gia-co-phieu-pet-d101446.html",
+        "slug": "pet-6-ca-nhan-chi-hon-900-ty-mua-tron-lo-dau-gia-co-phieu-pet",
+        "news_short_content": "PVN thực hiện đấu giá bán thành công 23,21% vốn Petrosetco và thu về hơn 900 tỷ đồng. Đối tượng mua là 6 nhà đầu tư cá nhân.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "9e41244b1649d0a868fce8aebee7bd544fccc08f37bb047b28a7e399830ff46c",
+        "news_title": "DC4: Dicera Holdings giải thể công ty Dicera Construction",
+        "update_date": "2025-12-11 10:06:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/dc4-dicera-holdings-giai-the-cong-ty-dicera-construction/37191384",
+        "slug": "dc4-dicera-holdings-giai-the-cong-ty-dicera-construction",
+        "news_short_content": "Công ty Cổ phần Dicera Holdings (mã DC4 - sàn HoSE) cho biết sẽ giải thể Công ty Cổ phần Dicera Construction do chủ đầu tư dự án chưa hoàn thiện xong thủ tục pháp lý để triển khai thi công.",
+        "sentiment": "Neutral"
     }
 ]
