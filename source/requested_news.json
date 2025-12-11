@@ -1168,5 +1168,75 @@
         "slug": "nss-cong-ty-nong-suc-san-dong-nai-bi-yeu-cau-chan-chinh-hang-loat-vi-pham-ve-dat-dai",
         "news_short_content": "Kiểm toán Nhà nước Khu vực XII kết luận CTCP Nông Súc Sản Đồng Nai (Dolico, UPCoM: NSS) có nhiều vi phạm trong quản lý và sử dụng đất, bao gồm chậm sang tên, hết hạn nhưng không gia hạn và nguy cơ bị thu hồi đất.",
         "sentiment": "Negative"
+    },
+    {
+        "id": "bf8682ca71ac5da81eab300c0969bc3aa3dbbb057a2c5219d7f7092552d3767c",
+        "news_title": "VPX: CEO Vũ Hữu Điền: VPX đã chọn thời điểm chín muồi để niêm yết, đặt kỳ vọng lớn cho 2026",
+        "update_date": "2025-12-11 16:26:12",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/ceo-vu-huu-dien-vpx-da-chon-thoi-diem-chin-muoi-de-niem-yet-dat-ky-vong-lon-cho-2026-741-1380325.htm",
+        "slug": "vpx-ceo-vu-huu-dien-vpx-da-chon-thoi-diem-chin-muoi-de-niem-yet-dat-ky-vong-lon-cho-2026",
+        "news_short_content": "Tại sự kiện trao quyết định niêm yết và chào mừng ngày giao dịch chính thức cổ phiếu trên sàn HOSE sáng 11/12, ông Vũ Hữu Điền - Tổng Giám đốc CTCP Chứng khoán VPBank (VPBankS, HOSE: VPX) đã có nhiều chia sẻ đáng chú ý.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "88fd074527f6e4369ce6a6ec0e47e18c97ca09772abaa85dfcb498ba8dd269b6",
+        "news_title": "CEO: Tin cực vui cho người mua nhà tại Hà Nội: Mở bán loạt căn hộ giá từ 10 triệu đồng/m2",
+        "update_date": "2025-12-11 16:22:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/ceo-tin-cuc-vui-cho-nguoi-mua-nha-tai-ha-noi-mo-ban-loat-can-ho-gia-tu-10-trieu-dong-m2/37206590",
+        "slug": "ceo-tin-cuc-vui-cho-nguoi-mua-nha-tai-ha-noi-mo-ban-loat-can-ho-gia-tu-10-trieu-dong-m2",
+        "news_short_content": "Hàng trăm căn nhà ở xã hội đã cho thuê đủ thời hạn trên địa bàn TP Hà Nội được chuyển sang mở bán với giá 10 - 15 triệu đồng/m2.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "3d666b60560d30e8248da5635b2484af1043cdf0725d22d5fe498e43e9c3ae5c",
+        "news_title": "BID: Ngân hàng BIDV phát cảnh báo mới",
+        "update_date": "2025-12-11 16:20:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/bid-ngan-hang-bidv-phat-canh-bao-moi/37206576",
+        "slug": "bid-ngan-hang-bidv-phat-canh-bao-moi",
+        "news_short_content": "Ngân hàng phát đi cảnh báo mới sau khi ghi nhận nhiều email mạo danh với nội dung như “xác minh danh tính”, “xác minh giao dịch” xuất hiện trong thời gian gần đây.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "51c4065dc7b2d0a196b4b40e75fcbefab9c35bbcc0add441253a2f88d3081293",
+        "news_title": "HUT: Tasco: Trái ngọt từ hệ sinh thái 'kiềng 3 chân'",
+        "update_date": "2025-12-11 15:53:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/tasco-trai-ngot-tu-he-sinh-thai-kieng-3-chan-d101442.html",
+        "slug": "hut-tasco-trai-ngot-tu-he-sinh-thai-kieng-3-chan",
+        "news_short_content": "Đi cùng với hoạt động tái cấu trúc, kết quả kinh doanh của Tasco (giai đoạn 2021-9 tháng năm 2025) cũng cho thấy sự tăng trưởng vượt bậc.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "a4cea21132bdc5dd5039e8cc6a7d5f0b80058b4216011a3edb8594780d6693f2",
+        "news_title": "VPX: Cổ phiếu VPX rơi mạnh ngày chào sàn",
+        "update_date": "2025-12-11 15:51:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/co-phieu-vpx-roi-manh-ngay-chao-san-d101458.html",
+        "slug": "vpx-co-phieu-vpx-roi-manh-ngay-chao-san",
+        "news_short_content": "Trái với kỳ vọng của giới đầu tư, cổ phiếu VPX của VPBankS có phiên giao dịch đầu tiên gây thất vọng lớn khi giảm tới hơn 9%.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "f85f4f374c2d9c1d91fbd1e3d1ed75a87fa1f22c7fa93f31fd8157242e3827c7",
+        "news_title": "VPX: Gần 1,9 tỷ cổ phiếu VPX chính thức lên sàn HOSE",
+        "update_date": "2025-12-11 15:42:00",
+        "news_from_name": "VnEconomy",
+        "news_source_link": "https://vneconomy.vn/gan-19-ty-co-phieu-vpx-chinh-thuc-len-san-hose.htm",
+        "slug": "vpx-gan-1-9-ty-co-phieu-vpx-chinh-thuc-len-san-hose",
+        "news_short_content": "Chỉ 30 ngày sau thương vụ IPO kỷ lục, VPBankS (mã VPX) đã chính thức đưa gần 1,9 tỷ cổ phiếu cổ phiếu trên HOSE với giá tham chiếu 33.900 đồng/cổ phiếu, biên độ dao động trong phiên đầu tiên là +-20%...",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "aa7f0f1569a9c2eb8b3ca23199d7a664e5338add57e293cf1f95fd96128999bc",
+        "news_title": "DC4: DIC Corp không bán hết lượng cổ phiếu DC4 đã đăng ký",
+        "update_date": "2025-12-11 15:31:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/dc4-dic-corp-khong-ban-het-luong-co-phieu-dc4-da-dang-ky/37205966",
+        "slug": "dc4-dic-corp-khong-ban-het-luong-co-phieu-dc4-da-dang-ky",
+        "news_short_content": "DIC Corp đã bán ra gần 2,17 triệu cổ phiếu DC4 trong tổng số 2,3 triệu cổ phiếu đăng ký bán, qua đó giảm tỷ lệ sở hữu xuống còn 25,33% vốn tại Dicera Holdings.",
+        "sentiment": "Neutral"
     }
 ]
