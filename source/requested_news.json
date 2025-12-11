@@ -1088,5 +1088,45 @@
         "slug": "mch-gan-107-ty-cp-mch-duoc-chap-thuan-niem-yet-len-hose",
         "news_short_content": "Ngày 10/12, Sở Giao dịch Chứng khoán TPHCM (HOSE) thông báo chấp thuận niêm yết gần 1.07 tỷ cp MCH của CTCP Hàng tiêu dùng Masan (Masan Consumer), tương ứng vốn điều lệ 10,676 tỷ đồng.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "8df97e29a3b05aa3099dea01ffb30e481ab182aa1191a0913882063f9eb7acfa",
+        "news_title": "PDV: PVT Logistics hoàn tất phát hành hơn 13 triệu cổ phiếu trả cổ tức cho hơn 1.400 cổ đông",
+        "update_date": "2025-12-11 14:30:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/pdv-pvt-logistics-hoan-tat-phat-hanh-hon-13-trieu-co-phieu-tra-co-tuc-cho-hon-1400-co-dong/37203604",
+        "slug": "pdv-pvt-logistics-hoan-tat-phat-hanh-hon-13-trieu-co-phieu-tra-co-tuc-cho-hon-1400-co-dong",
+        "news_short_content": "Ngày 3/12/2025, PVT Logistics đã hoàn tất phân phối hơn 13,2 triệu cổ phiếu để trả cổ tức cho 1.469 cổ đông, qua đó tăng vốn điều lệ lên mức gần 793,2 tỷ đồng.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "7decf57b8629acf47d889d8f6627de296b8ba3e0f1e2ada822521880bf96557f",
+        "news_title": "VIC: Thần tốc: Vingroup của tỷ phú Phạm Nhật Vượng cùng một xã tại Hà Nội lấy ý kiến về quy hoạch 1/500 khu đô thị thể thao Olympic",
+        "update_date": "2025-12-11 14:29:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vic-than-toc-vingroup-cua-ty-phu-pham-nhat-vuong-cung-mot-xa-tai-ha-noi-lay-y-kien-ve-quy-hoach-1-500-khu-do-thi-the-thao-olympic/37203474",
+        "slug": "vic-than-toc-vingroup-cua-ty-phu-pham-nhat-vuong-cung-mot-xa-tai-ha-noi-lay-y-kien-ve-quy-hoach-1-500-khu-do-thi-the-thao-olympic",
+        "news_short_content": "Vingroup đã có văn bản gửi tới UBND xã Thường Tín (Hà Nội) về việc phối hợp lấy ý kiến cơ quan quản lý nhà nước, tổ chức, chuyên gia và cộng đồng dân cư có liên quan đối với quy hoạch chi tiết tỷ lệ 1/500 khu đô thị thể thao Olympic - Khu B.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "361e5298b12d63fce5abab366893d627bec1598ac80206f24b2f25ebeb711b8e",
+        "news_title": "BWE: Biwase muốn gom cổ phần tại một công ty nước",
+        "update_date": "2025-12-11 14:12:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/bwe-biwase-muon-gom-co-phan-tai-mot-cong-ty-nuoc/37202277",
+        "slug": "bwe-biwase-muon-gom-co-phan-tai-mot-cong-ty-nuoc",
+        "news_short_content": "Biwase muốn mua từ 20% đến 100% cổ phần có quyền biểu quyết tại Phú Hưng Long để \"đưa\" doanh nghiệp này thành công ty con/liên kết của Biwase.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "f8970a7a6fbec433df3f23f07001d49a08b1db44317c494688a873f038d3c8d8",
+        "news_title": "DNP: DNP Holding tất toán 1 lô trái phiếu phát hành năm 2020",
+        "update_date": "2025-12-11 13:37:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/dnp-dnp-holding-tat-toan-1-lo-trai-phieu-phat-hanh-nam-2020/37199918",
+        "slug": "dnp-dnp-holding-tat-toan-1-lo-trai-phieu-phat-hanh-nam-2020",
+        "news_short_content": "DNP Holding vừa thực hiện thanh toán 100 tỷ đồng gốc và gần 2,2 tỷ đồng lãi cho lô trái phiếu mã DNPH2025001, qua đó tất toán lô trái phiếu này đúng hạn.",
+        "sentiment": "Positive"
     }
 ]
