@@ -1828,5 +1828,45 @@
         "slug": "vic-tinh-la-que-nha-cua-ty-phu-pham-nhat-vuong-noi-sap-khoi-dong-4-du-an-tren-127000-ty-dong-cua-vingroup-dang-phat-trien-ra-sao",
         "news_short_content": "Năm 2025, tăng trưởng GRDP của tỉnh này ước đạt 8,78%, đứng đầu khu vực Bắc Trung Bộ.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "2d39416e21fe962c9e633dfcd90641d599a08dabbac1a77d086d215fd161a347",
+        "news_title": "KHD: Làn sóng điều chỉnh kế hoạch cận ngày chốt năm: Thêm 1 doanh nghiệp khoáng sản góp mặt",
+        "update_date": "2025-12-12 14:49:48",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/lan-song-dieu-chinh-ke-hoach-can-ngay-chot-nam-them-1-doanh-nghiep-khoang-san-gop-mat-737-1380643.htm",
+        "slug": "khd-lan-song-dieu-chinh-ke-hoach-can-ngay-chot-nam-them-1-doanh-nghiep-khoang-san-gop-mat",
+        "news_short_content": "CTCP Khai thác Chế biến Khoáng sản Hải Dương (UPCoM: KHD) trở thành cái tên tiếp theo điều chỉnh giảm kế hoạch kinh doanh 2025 khi chỉ còn 3 tuần là kết năm, dù các chỉ tiêu sau điều chỉnh vẫn cao hơn đáng kể so với thực hiện 2024.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "d847682f406d56c05d083436afc13f556b6f26535c575cbb87723385787d3cea",
+        "news_title": "SGT: Saigontel loay hoay tìm dòng tiền trước áp lực nợ vay",
+        "update_date": "2025-12-12 14:44:00",
+        "news_from_name": "Vnbusiness",
+        "news_source_link": "https://vnbusiness.vn/co-phieu/saigontel-loay-hoay-tim-dong-tien-truoc-ap-luc-no-vay-1111472.html",
+        "slug": "sgt-saigontel-loay-hoay-tim-dong-tien-truoc-ap-luc-no-vay",
+        "news_short_content": "Sau khi liên tục điều chỉnh các phương án về vốn, CTCP Công nghệ Viễn thông Sài Gòn (Saigontel, mã: SGT) chuẩn bị chào bán lượng lớn cổ phiếu cho cổ đông hiện hữu để huy động vốn, ưu tiên sử dụng tiền để thanh toán các khoản nợ vay.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "70bb160d0d09b0b7a5c4b712be99838a0cdef13b8255fac1edf211837f261aed",
+        "news_title": "ACV: Thủ tướng yêu cầu khai thác thương mại sân bay Long Thành vào đầu năm 2026",
+        "update_date": "2025-12-12 14:41:00",
+        "news_from_name": "VietnamFinance",
+        "news_source_link": "https://vietnamfinance.vn/thu-tuong-yeu-cau-khai-thac-thuong-mai-san-bay-long-thanh-vao-dau-nam-2026-d137135.html",
+        "slug": "acv-thu-tuong-yeu-cau-khai-thac-thuong-mai-san-bay-long-thanh-vao-dau-nam-2026",
+        "news_short_content": "Thủ tướng yêu cầu bảo đảm đáp ứng đầy đủ tiêu chuẩn, điều kiện, quy trình theo quy định để tổ chức khai thác thương mại cảng hàng không quốc tế Long Thành vào đầu năm 2026.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "01b94a03b667a0971d05fb70657919c7245ec9bc10384eb652117d1647cb78de",
+        "news_title": "VAB: VietABank lên kế hoạch tất toán lô trái phiếu chỉ sau 1 năm phát hành",
+        "update_date": "2025-12-12 14:38:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vab-vietabank-len-ke-hoach-tat-toan-lo-trai-phieu-chi-sau-1-nam-phat-hanh/37228606",
+        "slug": "vab-vietabank-len-ke-hoach-tat-toan-lo-trai-phieu-chi-sau-1-nam-phat-hanh",
+        "news_short_content": "VietABank lên kế hoạch tất toán lô trái phiếu VABLH2431002 trị giá 270 tỷ đồng chỉ sau 1 năm phát hành.",
+        "sentiment": "Neutral"
     }
 ]
