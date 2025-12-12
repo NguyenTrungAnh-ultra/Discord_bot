@@ -1788,5 +1788,45 @@
         "slug": "vne-muon-huy-dong-300-ty-dong-tu-phat-hanh-rieng-le-de-tra-no",
         "news_short_content": "Tổng công ty Cổ phần Xây dựng điện Việt Nam (VNECO, mã VNE) cho biết muốn huy động 300 tỷ đồng từ phát hành riêng lẻ để trả nợ. Sau khi phát hành thành công, vốn điều lệ của VNECO sẽ tăng từ 904,3 tỷ đồng lên hơn 1.204 tỷ đồng.",
         "sentiment": "Neutral"
+    },
+    {
+        "id": "a158b5b75eb513e2de827848edfa6396c15e844c64e0690f50e2e9a4b767ff8e",
+        "news_title": "VIC: Ngay tuần sau Vinspeed của tỷ phú Phạm Nhật Vượng động thổ dự án đường sắt cao tốc gần 4 tỷ USD",
+        "update_date": "2025-12-12 14:17:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vic-ngay-tuan-sau-vinspeed-cua-ty-phu-pham-nhat-vuong-dong-tho-du-an-duong-sat-cao-toc-gan-4-ty-usd/37226480",
+        "slug": "vic-ngay-tuan-sau-vinspeed-cua-ty-phu-pham-nhat-vuong-dong-tho-du-an-duong-sat-cao-toc-gan-4-ty-usd",
+        "news_short_content": "Để kỷ niệm ngày Toàn quốc kháng chiến và chào mừng Đại hội Đảng toàn quốc lần thứ XIV, VinSpeed đề xuất tổ chức lễ động thổ dự án đường sắt Bến Thành – Cần Giờ vào ngày 19/12/2025.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "5a33526c87a560449b4144a2233e9403a0f9dd8fc62687c55d8e0faaf8de625e",
+        "news_title": "HUT: Những cú bắt tay với đối tác ngoại của Tasco",
+        "update_date": "2025-12-12 14:11:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/nhung-cu-bat-tay-voi-doi-tac-ngoai-cua-tasco-d101455.html",
+        "slug": "hut-nhung-cu-bat-tay-voi-doi-tac-ngoai-cua-tasco",
+        "news_short_content": "Sự hợp tác với các cổ đông ngoại giàu tiềm lực và kinh nghiệm được kỳ vọng sẽ là động lực quan trọng thúc đẩy hoạt động kinh doanh của Tasco.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "086887e36f3dbfc179c954fdbd2af5ea1f98bd9b02648a35f9685077579548ee",
+        "news_title": "MBB: Được vinh danh là ngân hàng dẫn đầu về tăng trưởng chi tiêu quốc tế",
+        "update_date": "2025-12-12 13:43:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/mbb-duoc-vinh-danh-la-ngan-hang-dan-dau-ve-tang-truong-chi-tieu-quoc-te/37223754",
+        "slug": "mbb-duoc-vinh-danh-la-ngan-hang-dan-dau-ve-tang-truong-chi-tieu-quoc-te",
+        "news_short_content": "Tại Mastercard Customer Forum 2025, Ngân hàng TMCP Quân đội (MB) tiếp tục khẳng định sức bật mạnh mẽ trên thị trường trong năm qua khi xuất sắc ghi danh ở loạt hạng mục giải thưởng danh giá.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "40952ef7870a651fa4b875b726c0207f92d44fbec41a0d364f5d70fccb36f29a",
+        "news_title": "VIC: Tỉnh là quê nhà của tỷ phú Phạm Nhật Vượng, nơi sắp khởi động 4 dự án trên 127.000 tỷ đồng của Vingroup đang phát triển ra sao?",
+        "update_date": "2025-12-12 13:11:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vic-tinh-la-que-nha-cua-ty-phu-pham-nhat-vuong-noi-sap-khoi-dong-4-du-an-tren-127000-ty-dong-cua-vingroup-dang-phat-trien-ra-sao/37222988",
+        "slug": "vic-tinh-la-que-nha-cua-ty-phu-pham-nhat-vuong-noi-sap-khoi-dong-4-du-an-tren-127000-ty-dong-cua-vingroup-dang-phat-trien-ra-sao",
+        "news_short_content": "Năm 2025, tăng trưởng GRDP của tỉnh này ước đạt 8,78%, đứng đầu khu vực Bắc Trung Bộ.",
+        "sentiment": "Positive"
     }
 ]
