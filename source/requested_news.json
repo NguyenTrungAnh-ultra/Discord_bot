@@ -2068,5 +2068,55 @@
         "slug": "vic-qua-khung-khu-do-thi-lon-nhat-ha-noi-rong-10000-ha-do-vingroup-cua-ty-phu-pham-nhat-vuong-de-xuat-du-kien-xay-san-van-dong-lon-thu-2-the-gioi",
         "news_short_content": "Vingroup trình đề xuất quy hoạch khu đô thị thể thao Olympic - khu B với điểm nhấn là sân vận động Lạc Việt quy mô 135.000 chỗ ngồi, lớn thứ 2 thế giới .",
         "sentiment": "Positive"
+    },
+    {
+        "id": "4c21d54e9168e09624de89fea8beec056364c478c3f4743baa3069e1ee94ebeb",
+        "news_title": "TPB: Thanh tra Chính phủ kiến nghị xem xét trách nhiệm của TPBank tại dự án cao tốc Hữu Nghị - Chi Lăng",
+        "update_date": "2025-12-12 19:44:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/tpb-thanh-tra-chinh-phu-kien-nghi-xem-xet-trach-nhiem-cua-tpbank-tai-du-an-cao-toc-huu-nghi-chi-lang/37235067",
+        "slug": "tpb-thanh-tra-chinh-phu-kien-nghi-xem-xet-trach-nhiem-cua-tpbank-tai-du-an-cao-toc-huu-nghi-chi-lang",
+        "news_short_content": "Thanh tra Chính phủ (TTCP) vừa thông báo kết luận thanh tra việc chấp hành chính sách, pháp luật Dự án tuyến cao tốc cửa khẩu Hữu Nghị - Chi Lăng.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "452332b3a34fbec04022b692582cbc841d0235c285557722ceedfaf2e319d5d5",
+        "news_title": "VIC: 'Bé 3' VF 3 vừa giúp VinFast lập một kỷ lục 'vô đối'",
+        "update_date": "2025-12-12 19:41:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vic-be-3-vf-3-vua-giup-vinfast-lap-mot-ky-luc-vo-doi/37235058",
+        "slug": "vic-be-3-vf-3-vua-giup-vinfast-lap-mot-ky-luc-vo-doi",
+        "news_short_content": "Với tổng cộng 40.660 xe được bàn giao tính đến hết tháng 11 năm 2025, VinFast VF 3 đã chính thức vượt qua kỷ lục doanh năm ngoái của mẫu xe \"anh em\" là VF 5.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "4f428d0b0dd6ee2e1fd431f331d6b7a34c93c0dfa198a53e72b0f8b94d9cab59",
+        "news_title": "SBG: Siba Group lập liên doanh với đơn vị Trung Quốc xây nhà máy cung ứng chăn nuôi 40 triệu USD",
+        "update_date": "2025-12-12 19:32:33",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/siba-group-lap-lien-doanh-voi-don-vi-trung-quoc-xay-nha-may-cung-ung-chan-nuoi-40-trieu-usd-737-1380713.htm",
+        "slug": "sbg-siba-group-lap-lien-doanh-voi-don-vi-trung-quoc-xay-nha-may-cung-ung-chan-nuoi-40-trieu-usd",
+        "news_short_content": "Ngày 12/12/2025, CTCP Tập Đoàn Cơ Khí Công Nghệ Cao SIBA (Siba Group, HOSE: SBG) tiến hành ký kết thỏa thuận hợp tác với Công ty TNHH Chuỗi Cung Ứng Quốc Tế Hải Liên (Hải Liên) - doanh nghiệp chuyên cung cấp, phát triển sản phẩm và giải pháp cho lĩnh vực chăn nuôi.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "fc96780871753b2b9c3420c4bc18d99192c66e549574d2e6238c9501cdea9a0f",
+        "news_title": "EVS: Chứng khoán EVS dính liên hoàn án phạt từ UBCKNN, tổng tiền phạt hơn 1 tỷ đồng",
+        "update_date": "2025-12-12 19:32:26",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/chung-khoan-evs-dinh-lien-hoan-an-phat-tu-ubcknn-tong-tien-phat-hon-1-ty-dong-737-1380931.htm",
+        "slug": "evs-chung-khoan-evs-dinh-lien-hoan-an-phat-tu-ubcknn-tong-tien-phat-hon-1-ty-dong",
+        "news_short_content": "Ngày 11/12, Ủy ban Chứng khoán Nhà nước (UBCKNN) quyết định xử phạt CTCP Chứng khoán EVS (HNX: EVS) vì hàng loạt vi phạm, tổng tiền phạt vượt mức 1.1 tỷ đồng. Cùng ngày, CTCP Bất động sản BNP Global cũng bị phạt 92.5 triệu đồng do lỗi công bố thông tin.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "37cdf3afad73e6a6e99897ffd4d0ef8d5e74d290b0daee91bcbfe4f7b7022b9f",
+        "news_title": "CT3: Hồ sơ NOXH CT3 Kim Chung bị trả hàng loạt vì thiếu photo bảng lương cả công ty",
+        "update_date": "2025-12-12 19:05:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/ct3-ho-so-noxh-ct3-kim-chung-bi-tra-hang-loat-vi-thieu-photo-bang-luong-ca-cong-ty/37234749",
+        "slug": "ct3-ho-so-noxh-ct3-kim-chung-bi-tra-hang-loat-vi-thieu-photo-bang-luong-ca-cong-ty",
+        "news_short_content": "Ngày 12.12, nhiều người dân đến nộp hồ sơ tại dự án nhà ở xã hội (NOXH) CT3 Kim Chung bị trả hồ sơ do thiếu bản photo bảng lương cả công ty.",
+        "sentiment": "Negative"
     }
 ]
