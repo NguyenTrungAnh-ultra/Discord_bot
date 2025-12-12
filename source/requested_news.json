@@ -1518,5 +1518,45 @@
         "slug": "tcb-doanh-nghiep-du-an-cao-toc-gia-nghia-chon-thanh-xin-chuyen-tu-bot-sang-bt",
         "news_short_content": "Doanh nghiệp dự án thành phần 1 cao tốc Gia Nghĩa - Chơn Thành đề nghị UBND tỉnh Đồng Nai xem xét đề xuất chuyển đổi hình thức đầu tư từ xây dựng - kinh doanh - chuyển giao (BOT) sang hình thức xây dựng - chuyển giao (BT) với nhiều lý do, khó khăn, trong đó có việc nguy cơ giảm lưu lượng xe.",
         "sentiment": "Negative"
+    },
+    {
+        "id": "f68979df5d76c4f3fa2eb9f53739b80ffc98c93f47d532109562ee5f126c632a",
+        "news_title": "EVF: EVF củng cố năng lực tài chính sau tái định vị, thẳng tiến tới mục tiêu lợi nhuận 960 tỷ đồng năm 2025",
+        "update_date": "2025-12-12 08:32:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/evf-cung-co-nang-luc-tai-chinh-sau-tai-dinh-vi-thang-tien-toi-muc-tieu-loi-nhuan-960-ty-dong-nam-2025-d101465.html",
+        "slug": "evf-evf-cung-co-nang-luc-tai-chinh-sau-tai-dinh-vi-thang-tien-toi-muc-tieu-loi-nhuan-960-ty-dong-nam-2025",
+        "news_short_content": "Năm 2025 được xem là giai đoạn bản lề đối với EVF khi công ty cùng lúc triển khai chiến lược tái định vị thương hiệu và đặt ra mục tiêu kinh doanh đầy thách thức với lợi nhuận trước thuế 960 tỷ đồng. Trước thềm kết thúc năm tài khóa 2025, các chỉ số tài chính tích cực cho thấy EVF đang củng cố vững chắc nền tảng tài chính, qua đó tạo đà tăng tốc cho những tháng cuối năm.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "be1330e43020f09e5092265be8325957712d42266019168d013ecf36e7fcbcb0",
+        "news_title": "HHV: Sau khi học \"trị thủy\" từ Trung Quốc, sang Hàn Quốc học dự án sông Hàn, Đèo Cả đề xuất 2 phương án triển khai đại dự án 300.000 tỷ đồng, quyết hiện thực hóa \"kỳ tích sông Hồng\"",
+        "update_date": "2025-12-12 07:14:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/hhv-sau-khi-hoc-tri-thuy-tu-trung-quoc-sang-han-quoc-hoc-du-an-song-han-deo-ca-de-xuat-2-phuong-an-trien-khai-dai-du-an-300000-ty-dong-quyet-hien-thuc-hoa-ky-tich-song-hong/37210396",
+        "slug": "hhv-sau-khi-hoc-tri-thuy-tu-trung-quoc-sang-han-quoc-hoc-du-an-song-han-deo-ca-de-xuat-2-phuong-an-trien-khai-dai-du-an-300000-ty-dong-quyet-hien-thuc-hoa-ky-tich-song-hong",
+        "news_short_content": "Đèo Cả cho biết 2 phương án được xây dựng trên nguyên tắc hạ tầng giao thông đi trước, tạo tiền đề để mở ra không gian xây dựng đô thị, tạo động lực phát triển kinh tế, xã hội.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "2159cbe48607cf4c9a89c16e3a82ba71bc0fff9ceea940e742ad104f1e00c35d",
+        "news_title": "DXG: TP.HCM: Nguồn cung cao cấp dồn về tay các \"đại gia\" Masterise Homes, Gamuda Land, Đất Xanh Group",
+        "update_date": "2025-12-12 07:08:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/dxg-tphcm-nguon-cung-cao-cap-don-ve-tay-cac-dai-gia-masterise-homes-gamuda-land-dat-xanh-group/37210375",
+        "slug": "dxg-tphcm-nguon-cung-cao-cap-don-ve-tay-cac-dai-gia-masterise-homes-gamuda-land-dat-xanh-group",
+        "news_short_content": "Thị trường TP.HCM ghi nhận sự phân cực rõ nét trong phân khúc cao cấp và hạng sang khi hơn 80% nguồn cung mới được dẫn dắt bởi Đất Xanh Group, Gamuda Land và Masterise Homes.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "fb6eee1a989a7849e3ad2b833b1c5b5bb86d8fb13d6dd0a08f5cbf38314686d6",
+        "news_title": "PET: PVN đấu giá thành công 23,21% vốn tại PET",
+        "update_date": "2025-12-12 06:42:00",
+        "news_from_name": "VnEconomy",
+        "news_source_link": "https://vneconomy.vn/pvn-dau-gia-thanh-cong-2321-von-tai-pet.htm",
+        "slug": "pet-pvn-dau-gia-thanh-cong-23-21-von-tai-pet",
+        "news_short_content": "Phiên đấu giá ngày 11/12 do HOSE tổ chức đã thu hút 6 nhà đầu tư cá nhân trong nước, tất cả trúng giá tại mức khởi điểm 36.500 đồng/cổ phiếu.",
+        "sentiment": "Positive"
     }
 ]
