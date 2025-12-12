@@ -1558,5 +1558,85 @@
         "slug": "pet-pvn-dau-gia-thanh-cong-23-21-von-tai-pet",
         "news_short_content": "Phiên đấu giá ngày 11/12 do HOSE tổ chức đã thu hút 6 nhà đầu tư cá nhân trong nước, tất cả trúng giá tại mức khởi điểm 36.500 đồng/cổ phiếu.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "9b58c1715aa3c1a0ff2e35089f3d51022083b71868daa80a3967ed5aefcac75f",
+        "news_title": "FLC: Hương Trần Kiều Dung - Nữ phó tướng của ông Trịnh Văn Quyết tại FLC tái xuất",
+        "update_date": "2025-12-12 09:53:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/huong-tran-kieu-dung-nu-pho-tuong-cua-ong-trinh-van-quyet-tai-flc-tai-xuat-99980.html",
+        "slug": "flc-huong-tran-kieu-dung-nu-pho-tuong-cua-ong-trinh-van-quyet-tai-flc-tai-xuat",
+        "news_short_content": "Bà Hương Trần Kiều Dung từng nắm vai trò là Phó chủ tịch thường trực HĐQT tập đoàn FLC.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "68cd908da394f622d9badd63c54f354dd3f5ea307e799e683f9f89706e398ef1",
+        "news_title": "CKG: CIC Group biến động nhân sự cấp cao",
+        "update_date": "2025-12-12 09:49:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/ckg-cic-group-bien-dong-nhan-su-cap-cao/37214179",
+        "slug": "ckg-cic-group-bien-dong-nhan-su-cap-cao",
+        "news_short_content": "CTCP Tập đoàn CIC (mã CKG) vừa ban hành nghị quyết liên quan đến việc thay đổi nhân sự cấp cao.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "635c2661af3d594f50c89c0f50e3dc13158b293a0920b3c09554ca43b0bdd6f7",
+        "news_title": "PET: 6 nhà đầu tư chi gần 910 tỷ mua trọn 23.21% vốn Petrosetco từ PVN",
+        "update_date": "2025-12-12 09:38:20",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/6-nha-dau-tu-chi-gan-910-ty-mua-tron-2321-von-petrosetco-tu-pvn-739-1380568.htm",
+        "slug": "pet-6-nha-dau-tu-chi-gan-910-ty-mua-tron-2321-von-petrosetco-tu-pvn",
+        "news_short_content": "HOSE công bố toàn bộ 24.9 triệu cp CTCP Dịch vụ Tổng hợp Dầu khí (Petrosetco, HOSE: PET) do PVN sở hữu đã được 6 nhà đầu tư mua hết với giá trúng bình quân 36,500 đồng/cp, đúng bằng giá khởi điểm, trong bối cảnh mã PET giảm sàn ngay ngày đấu giá.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "ab9dd03ce4030f76ae9579dcea458e87b8f8134f8b7590c197f37b98bd9494e5",
+        "news_title": "PET: Vừa chi 900 tỷ ôm trọn lô, 6 đại gia \"tạm lỗ\" gần 100 tỷ khi cổ phiếu bất ngờ giảm sàn",
+        "update_date": "2025-12-12 09:34:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/vua-chi-900-ty-om-tron-lo-6-dai-gia-tam-lo-gan-100-ty-khi-co-phieu-bat-ngo-giam-san-99976.html",
+        "slug": "pet-vua-chi-900-ty-om-tron-lo-6-dai-gia-tam-lo-gan-100-ty-khi-co-phieu-bat-ngo-giam-san",
+        "news_short_content": "Nhóm nhà đầu tư chấp nhận mức giá cao hơn thị trường để sở hữu 23% vốn từ cổ đông nhà nước, kỳ vọng vào khối tài sản tài chính lớn và sự chuyển dịch trong mô hình kinh doanh lõi.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "c544fd5d9e81380b6a6d614b8a08f9e9b1ee6f7096616bcdff62e86b8c1c9c5e",
+        "news_title": "OCB: Huy động thành công 1.000 tỷ đồng từ kênh trái phiếu",
+        "update_date": "2025-12-12 09:12:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/ocb-huy-dong-thanh-cong-1000-ty-dong-tu-kenh-trai-phieu/37211633",
+        "slug": "ocb-huy-dong-thanh-cong-1000-ty-dong-tu-kenh-trai-phieu",
+        "news_short_content": "OCB đã huy động thành công 1.000 tỷ đồng thông qua việc phát hành lô trái phiếu mã OCB12530.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "adfa09f8d1de9cbd72ea332f888fb0ce61057c8679b7dd17bd94da76626ffc6d",
+        "news_title": "APG: Chứng khoán APG phát hành 300 tỷ đồng trái phiếu để cơ cấu nợ",
+        "update_date": "2025-12-12 09:10:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/apg-chung-khoan-apg-phat-hanh-300-ty-dong-trai-phieu-de-co-cau-no/37211584",
+        "slug": "apg-chung-khoan-apg-phat-hanh-300-ty-dong-trai-phieu-de-co-cau-no",
+        "news_short_content": "Chứng khoán APG ngày 8/12 vừa qua đã phát hành trái phiếu mã APG12501 trị giá 300 tỷ đồng.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "61d5da3c0badabcd17569252c877892f2b74c36b64f52ddd57804bec27bdf549",
+        "news_title": "TIG: Hệ sinh thái của Chủ tịch TIG Nguyễn Phúc Long",
+        "update_date": "2025-12-12 09:02:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/he-sinh-thai-cua-chu-tich-tig-nguyen-phuc-long-737-1378772.htm",
+        "slug": "tig-he-sinh-thai-cua-chu-tich-tig-nguyen-phuc-long",
+        "news_short_content": "TIG chuyển nhượng hàng loạt khoản đầu tư và gom mạnh bất động sản nhưng dòng tiền lại xoay quanh nhiều cái tên có liên hệ mật thiết với hệ thống của Chủ tịch Nguyễn Phúc Long.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "4bccc8ee3eaeed01055419f83bfd5b8ebd67d9e4c7f89a797c80e2571e9df7dc",
+        "news_title": "GEE: Hạ tầng GELEX IPO: Thương vụ đáng kỳ vọng cho nhà đầu tư dài hạn",
+        "update_date": "2025-12-12 09:02:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/ha-tang-gelex-ipo-thuong-vu-dang-ky-vong-cho-nha-dau-tu-dai-han-746-1380364.htm",
+        "slug": "gee-ha-tang-gelex-ipo-thuong-vu-dang-ky-vong-cho-nha-dau-tu-dai-han",
+        "news_short_content": "Giới phân tích nhận định, CTCP Hạ tầng GELEX hội tụ đầy lợi thế để trở thành một trong những thương vụ IPO có sức hấp dẫn nhất trong những tháng cuối năm 2025.",
+        "sentiment": "Positive"
     }
 ]
