@@ -1688,5 +1688,105 @@
         "slug": "mpc-minh-phu-chot-quyen-chia-hon-100-ty-dong-co-tuc",
         "news_short_content": "CTCP Tập đoàn Thủy sản Minh Phú (UPCoM: MPC) thông báo 17/12 là ngày giao dịch không hưởng quyền nhận cổ tức năm 2024 bằng tiền mặt. Doanh nghiệp dự kiến chi trả vào ngày 25/12 với tỷ lệ 2.5%, tương đương 250 đồng/cp, tổng giá trị giải ngân hơn 100 tỷ đồng.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "0951403aad8ae22aa3490b6bcf67b7f433557cb9bc88fba0db25b87a0a7266c8",
+        "news_title": "HNM: Biến tại Hanoimilk: Con gái Chủ tịch liên tục mua bán cổ phiếu",
+        "update_date": "2025-12-12 12:48:13",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/bien-tai-hanoimilk-con-gai-chu-tich-lien-tuc-mua-ban-co-phieu-739-1380623.htm",
+        "slug": "hnm-bien-tai-hanoimilk-con-gai-chu-tich-lien-tuc-mua-ban-co-phieu",
+        "news_short_content": "Bà Hà Phương Thảo, con gái ông Hà Quang Tuấn - Chủ tịch CTCP Sữa Hà Nội (Hanoimilk, UPCoM: HNM), vừa đăng ký bán toàn bộ 10 triệu cp HNM, tương đương 22.52% vốn. Số cổ phần này được bà nhận từ chính ông Tuấn hồi tháng 5.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "f84e051ffc20be582b926e5d183ba7ae83ce34fb22d6b454f4de7822132b21c9",
+        "news_title": "BCM: Becamex Group ‘hút’ thêm 900 tỷ đồng từ kênh trái phiếu",
+        "update_date": "2025-12-12 12:28:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/bcm-becamex-group-hut-them-900-ty-dong-tu-kenh-trai-phieu/37220970",
+        "slug": "bcm-becamex-group-hut-them-900-ty-dong-tu-kenh-trai-phieu",
+        "news_short_content": "Becamex Group vừa huy động thành công 900 tỷ đồng thông qua phát hành lô trái phiếu mã BCM12504, kỳ hạn 3 năm.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "8976f96a7bf00f92e89c15e56e3d1dc5085238a57e51259ad9f049e108cb64a1",
+        "news_title": "TDP: Thuận Đức chốt ngày chào bán hơn 22 triệu cổ phiếu cho cổ đông",
+        "update_date": "2025-12-12 12:27:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/tdp-thuan-duc-chot-ngay-chao-ban-hon-22-trieu-co-phieu-cho-co-dong/37220948",
+        "slug": "tdp-thuan-duc-chot-ngay-chao-ban-hon-22-trieu-co-phieu-cho-co-dong",
+        "news_short_content": "Thuận Đức dự kiến chào bán gần 22,1 triệu cổ phiếu cho cổ đông hiện hữu với giá 15.000 đồng/cổ phiếu. Ngày đăng ký cuối cùng chốt danh sách cổ đông thực hiện quyền là 24/12/2025.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "c60d3b6971d6fcedf90e4ca56f9bc7bbe72c385f0ecd9cef4bf157e146b20f57",
+        "news_title": "SHS: Dự kiến chào bán 5.000 tỷ đồng trái phiếu ra công chúng năm 2026",
+        "update_date": "2025-12-12 12:26:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/shs-du-kien-chao-ban-5000-ty-dong-trai-phieu-ra-cong-chung-nam-2026/37220932",
+        "slug": "shs-du-kien-chao-ban-5000-ty-dong-trai-phieu-ra-cong-chung-nam-2026",
+        "news_short_content": "SHS dự kiến chào bán ra công chúng tối đa 5.000 tỷ đồng trái phiếu, chia làm 2 đợt. Thời gian thực hiện từ quý I-IV/2026.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "63d4edfccf8d746b577f7d2286f24dc91209440097d6ba828d999cdfda8a5442",
+        "news_title": "VPB: VPBank lên kế hoạch phát hành 3.000 tỷ đồng trái phiếu riêng lẻ",
+        "update_date": "2025-12-12 12:24:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vpb-vpbank-len-ke-hoach-phat-hanh-3000-ty-dong-trai-phieu-rieng-le/37220905",
+        "slug": "vpb-vpbank-len-ke-hoach-phat-hanh-3000-ty-dong-trai-phieu-rieng-le",
+        "news_short_content": "Toàn bộ số tiền huy động được từ trái phiếu được VPBank dự kiến dùng để cho vay cá nhân và doanh nghiệp, giải ngân trong giai đoạn cuối năm 2025 - đầu năm 2026.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "908593fee9427616084c13fe6e50dee8f9fa8faf41c635238b5a8e93cea4a972",
+        "news_title": "HHV: Hạ tầng Đèo Cả sắp chào bán gần 50 triệu cổ phiếu",
+        "update_date": "2025-12-12 12:23:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/hhv-ha-tang-deo-ca-sap-chao-ban-gan-50-trieu-co-phieu/37220883",
+        "slug": "hhv-ha-tang-deo-ca-sap-chao-ban-gan-50-trieu-co-phieu",
+        "news_short_content": "Doanh nghiệp dự kiến thu về gần 500 tỷ đồng, dùng để thanh toán tiền nhận chuyển nhượng cổ phần cho Tập đoàn Đèo Cả.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "5d9592d4ed263d606a6327013d4879ca7aeafa1f1966be130ec250fd6dc3d8e1",
+        "news_title": "TSA: Tân binh ngành xây lắp được HOSE bật đèn xanh niêm yết hơn 40 triệu cp",
+        "update_date": "2025-12-12 12:00:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/tan-binh-nganh-xay-lap-duoc-hose-bat-den-xanh-niem-yet-hon-40-trieu-cp-741-1380609.htm",
+        "slug": "tsa-tan-binh-nganh-xay-lap-duoc-hose-bat-den-xanh-niem-yet-hon-40-trieu-cp",
+        "news_short_content": "Sau hơn 7 tháng nộp hồ sơ, cổ phiếu của CTCP Đầu tư và Xây lắp Trường Sơn (UPCoM: TSA) chính thức được HOSE chấp thuận niêm yết, đánh dấu thêm 1 mã ngành xây lắp vào nhóm doanh nghiệp chuẩn bị gia nhập sàn chứng khoán lớn nhất thị trường.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "66c2ec80aa5b7cbb708173c90c28c6e4d92cd1471e69d1328a5e470d4921d3d5",
+        "news_title": "SCS: Một 'đại gia' ngành hàng không chốt ngày chi trả cổ tức tiền mặt tỷ lệ 25%",
+        "update_date": "2025-12-12 11:58:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/mot-dai-gia-nganh-hang-khong-chot-ngay-chi-tra-co-tuc-tien-mat-ty-le-25-99992.html",
+        "slug": "scs-mot-dai-gia-nganh-hang-khong-chot-ngay-chi-tra-co-tuc-tien-mat-ty-le-25",
+        "news_short_content": "Với hơn 102 triệu cổ phiếu đang lưu hành, tổng số tiền SCSC dự kiến chi cho đợt tạm ứng cổ tức này vào khoảng trên 255 tỷ đồng.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "a1d4aee86777bd0595dc545c87ea51bb5175ef172d0501ebca35f6eb93a71e01",
+        "news_title": "IBD: Bất ngờ tăng sốc 40% trong 1 phiên giữa lúc thị trường rơi mạnh",
+        "update_date": "2025-12-12 11:55:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/mot-co-phieu-bat-ngo-tang-soc-40-trong-1-phien-giua-luc-thi-truong-roi-manh-100006.html",
+        "slug": "ibd-bat-ngo-tang-soc-40-trong-1-phien-giua-luc-thi-truong-roi-manh",
+        "news_short_content": "Mức tăng này tương đương vài năm gửi tiết kiệm.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "c69182ca59e88a2dc91f32f642a1517749378ef13c4c3ec815b1f487352ef56f",
+        "news_title": "VNE: Muốn huy động 300 tỷ đồng từ phát hành riêng lẻ để trả nợ",
+        "update_date": "2025-12-12 11:48:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vne-muon-huy-dong-300-ty-dong-tu-phat-hanh-rieng-le-de-tra-no/37220328",
+        "slug": "vne-muon-huy-dong-300-ty-dong-tu-phat-hanh-rieng-le-de-tra-no",
+        "news_short_content": "Tổng công ty Cổ phần Xây dựng điện Việt Nam (VNECO, mã VNE) cho biết muốn huy động 300 tỷ đồng từ phát hành riêng lẻ để trả nợ. Sau khi phát hành thành công, vốn điều lệ của VNECO sẽ tăng từ 904,3 tỷ đồng lên hơn 1.204 tỷ đồng.",
+        "sentiment": "Neutral"
     }
 ]
