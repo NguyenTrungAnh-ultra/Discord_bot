@@ -1868,5 +1868,55 @@
         "slug": "vab-vietabank-len-ke-hoach-tat-toan-lo-trai-phieu-chi-sau-1-nam-phat-hanh",
         "news_short_content": "VietABank lên kế hoạch tất toán lô trái phiếu VABLH2431002 trị giá 270 tỷ đồng chỉ sau 1 năm phát hành.",
         "sentiment": "Neutral"
+    },
+    {
+        "id": "8237e9703263390ede26051657378c01cfaa7a877530ab359b050fd1370ce0b2",
+        "news_title": "ABB: Hộ kinh doanh có thêm công cụ quản lý dòng tiền minh bạch với giải pháp từ ABBANK và sổ bán hàng",
+        "update_date": "2025-12-12 16:05:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/ho-kinh-doanh-co-them-cong-cu-quan-ly-dong-tien-minh-bach-voi-giai-phap-tu-abbank-va-so-ban-hang-100028.html",
+        "slug": "abb-ho-kinh-doanh-co-them-cong-cu-quan-ly-dong-tien-minh-bach-voi-giai-phap-tu-abbank-va-so-ban-hang",
+        "news_short_content": "Từ hôm nay, các hộ kinh doanh có thể quản lý bán hàng, theo dõi dòng tiền, thu tiền bằng QR và xuất hóa đơn điện tử chỉ trên một nền tảng duy nhất bằng điện thoại.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "aeb9bf5bb8b20271df0d458550dac2b7864c9000aa06562b3b63b4d061f6059c",
+        "news_title": "CAN: Đồ hộp Hạ Long đầu tư hơn 166 tỷ đồng để đầu tư nhà máy mới tại Hải Phòng",
+        "update_date": "2025-12-12 16:00:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/do-hop-ha-long-can-dau-tu-hon-166-ty-dong-de-dau-tu-nha-may-moi-tai-hai-phong-100019.html",
+        "slug": "can-do-hop-ha-long-dau-tu-hon-166-ty-dong-de-dau-tu-nha-may-moi-tai-hai-phong",
+        "news_short_content": "Cổ đông CAN đã thông qua việc thuê lại lô đất rộng 20.000 m² (2ha) tại Khu công nghiệp Nam Đình Vũ (Khu 1), phường Đông Hải, Hải Phòng. Thời hạn thuê đất kéo dài 34 năm, đến năm 2059 với tổng giá trị thuê dự kiến hơn 68 tỷ đồng.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "8c51fb3d521be9aeadd9c17b6ca99dc8114fe694af8c287d68bbc15137f7c8d2",
+        "news_title": "QCG: Điểm nhấn cổ phiếu Quốc Cường Gia Lai (QCG) “tím lịm” phiên thứ 3 trong ngày VN-Index “bốc hơi” hơn 52 điểm",
+        "update_date": "2025-12-12 15:57:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/nguoc-dong-co-phieu-qcg-tim-lim-phien-thu-2-giua-luc-vn-index-lao-doc-manh-99937.html",
+        "slug": "qcg-diem-nhan-co-phieu-quoc-cuong-gia-lai-qcg-tim-lim-phien-thu-3-trong-ngay-vn-index-boc-hoi-hon-52-diem",
+        "news_short_content": "Ngược dòng thị trường, cổ phiếu QCG của Quốc Cường Gia Lai tăng hết biên độ phiên thứ 2 liên tiếp giữa lúc chỉ số chính VN-Index tiếp đà sụt giảm, “bốc hơi” thêm hơn 20 điểm trong phiên 11/12.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "5df551eca791fe4d6f585aa771aa654e4ffb6b73d079e18f8b6c8133c074c94b",
+        "news_title": "PSH: Ghế Tổng Giám đốc PSH tìm được chủ nhân mới sau gần 2 tháng bỏ trống",
+        "update_date": "2025-12-12 15:52:12",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/ghe-tong-giam-doc-psh-tim-duoc-chu-nhan-moi-sau-gan-2-thang-bo-trong-214-1380658.htm",
+        "slug": "psh-ghe-tong-giam-doc-psh-tim-duoc-chu-nhan-moi-sau-gan-2-thang-bo-trong",
+        "news_short_content": "CTCP Thương mại Đầu tư Dầu khí Nam Sông Hậu (UPCoM: PSH) thông báo bổ nhiệm bà Nguyễn Thị Thanh Thảo vào vị trí Tổng Giám đốc kể từ ngày 12/12/2025, thời hạn bổ nhiệm 6 tháng.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "51d13747b460e5fc771436e2ffc6074371ecf825dd27169b4bbaf86c2289919b",
+        "news_title": "BMP: VN-Index giảm mạnh, một “ông lớn” ngược dòng phá đỉnh lịch sử",
+        "update_date": "2025-12-12 15:44:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/vn-index-giam-manh-nhat-chau-a-mot-ong-lon-nguoc-dong-pha-dinh-lich-su-100023.html",
+        "slug": "bmp-vn-index-giam-manh-mot-ong-lon-nguoc-dong-pha-dinh-lich-su",
+        "news_short_content": "Trong bối cảnh thị trường chung mất phương hướng, \"ông lớn\" đầu ngành nhựa Việt Nam tiếp tục diễn biến thăng hoa.",
+        "sentiment": "Positive"
     }
 ]
