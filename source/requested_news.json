@@ -1918,5 +1918,65 @@
         "slug": "bmp-vn-index-giam-manh-mot-ong-lon-nguoc-dong-pha-dinh-lich-su",
         "news_short_content": "Trong bối cảnh thị trường chung mất phương hướng, \"ông lớn\" đầu ngành nhựa Việt Nam tiếp tục diễn biến thăng hoa.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "3b03f809c678b8f409db3955a106f0d90284efc4c36e715af49ce870156f45ef",
+        "news_title": "ORS: UBCKNN yêu cầu Chứng khoán TPS bàn lại phương án tăng vốn",
+        "update_date": "2025-12-12 17:16:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/ubcknn-yeu-cau-chung-khoan-tps-ban-lai-phuong-an-tang-von-d101481.html",
+        "slug": "ors-ubcknn-yeu-cau-chung-khoan-tps-ban-lai-phuong-an-tang-von",
+        "news_short_content": "Phương án tăng vốn của Chứng khoán TPS đã được cổ đông thông qua khi lấy ý kiến bằng văn bản. Song, UBCKNN yêu cầu công ty phải tổ chức họp ĐHĐCĐ để lấy ý kiến trực tiếp.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "de42f21df67fd0c23a269b302f7aa856cb92ddd273ade07a0955dd3545bcf0f5",
+        "news_title": "GEX: GELEX đăng ký thoái hơn 2% vốn tại GELEX Electric",
+        "update_date": "2025-12-12 17:06:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/gelex-dang-ky-thoai-hon-2-von-tai-gelex-electric-100029.html",
+        "slug": "gex-gelex-dang-ky-thoai-hon-2-von-tai-gelex-electric",
+        "news_short_content": "CTCP Tập đoàn GELEX (mã GEX) vừa công bố đăng ký bán 10 triệu cổ phiếu GEE của CTCP Điện lực GELEX (GELEX Electric), dự kiến thu về khoảng 1.800 tỷ đồng nếu giao dịch hoàn tất.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "b30579c64d9a4013f42e1303ad13c5f5d82d56c402e1b1e38ea08fb2d0fd9c08",
+        "news_title": "CTD: Coteccons chốt ngày phát hành hơn 5 triệu cổ phiếu thưởng cho cổ đông",
+        "update_date": "2025-12-12 17:03:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/ctd-coteccons-chot-ngay-phat-hanh-hon-5-trieu-co-phieu-thuong-cho-co-dong/37233245",
+        "slug": "ctd-coteccons-chot-ngay-phat-hanh-hon-5-trieu-co-phieu-thuong-cho-co-dong",
+        "news_short_content": "Coteccons dự kiến phát hành gần 5,1 triệu cổ phiếu thưởng cho cổ đông với tỷ lệ thực hiện quyền 20:1. Ngày đăng ký cuối cùng để phân bổ quyền là 25/12/2025.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "8d5aeca6277edc84a24a664a0328af7de9881672e9588f32531583528d8a7399",
+        "news_title": "VIC: Hoàn tất chia cổ phiếu thưởng, Vingroup tăng vốn lên mức 77.335 tỷ đồng",
+        "update_date": "2025-12-12 17:00:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vic-hoan-tat-chia-co-phieu-thuong-vingroup-tang-von-len-muc-77335-ty-dong/37233210",
+        "slug": "vic-hoan-tat-chia-co-phieu-thuong-vingroup-tang-von-len-muc-77335-ty-dong",
+        "news_short_content": "Hoàn tất thương vụ phát hành cổ phiếu lớn nhất lịch sử sàn chứng khoán, Vingroup tăng vốn lên mức 77.335 tỷ đồng.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "19ca7cd1a639452187ab3dfbe8ec3bbccb330324a5351a04a16e650e486ba7a7",
+        "news_title": "ACV: Sân bay Vinh sẽ hoạt động trở lại và thu phí ôtô không dùng tiền mặt từ 19/12",
+        "update_date": "2025-12-12 16:35:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/acv-san-bay-vinh-se-hoat-dong-tro-lai-va-thu-phi-oto-khong-dung-tien-mat-tu-19-12/37232832",
+        "slug": "acv-san-bay-vinh-se-hoat-dong-tro-lai-va-thu-phi-oto-khong-dung-tien-mat-tu-19-12",
+        "news_short_content": "Sân bay Vinh - Nghệ An sẽ hoạt động trở lại với nhiều công nghệ mới để đáp ứng nhu cầu của khách hàng tốt hơn sau 6 tháng phải đóng cửa để sửa chữa, nâng cấp.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "b724478e24f20f9040f56a98a44b4276be193daadb1a8ac317d3b110db316446",
+        "news_title": "MCH: MCH sẽ lên sàn HOSE vào ngày 25/12 tới",
+        "update_date": "2025-12-12 15:51:00",
+        "news_from_name": "VnEconomy",
+        "news_source_link": "https://vneconomy.vn/mch-se-len-san-hose-vao-ngay-2512-toi.htm",
+        "slug": "mch-mch-se-len-san-hose-vao-ngay-25-12-toi",
+        "news_short_content": "Cổ phiếu MCH sẽ giao dịch phiên cuối cùng trên UPCoM ngày 17/12 và chuyển sang sàn HOSE ngày 25/12/2025.",
+        "sentiment": "Positive"
     }
 ]
