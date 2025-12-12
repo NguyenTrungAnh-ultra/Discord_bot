@@ -2118,5 +2118,45 @@
         "slug": "ct3-ho-so-noxh-ct3-kim-chung-bi-tra-hang-loat-vi-thieu-photo-bang-luong-ca-cong-ty",
         "news_short_content": "Ngày 12.12, nhiều người dân đến nộp hồ sơ tại dự án nhà ở xã hội (NOXH) CT3 Kim Chung bị trả hồ sơ do thiếu bản photo bảng lương cả công ty.",
         "sentiment": "Negative"
+    },
+    {
+        "id": "57f68e05ad57824737c6cbc20dd6cbb270cd684db9729bb6f08d48323cef9b0d",
+        "news_title": "MWG: MWG chốt chủ trương IPO Điện Máy Xanh trong năm 2026",
+        "update_date": "2025-12-12 21:00:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/mwg-chot-chu-truong-ipo-dien-may-xanh-trong-nam-2026-746-1380950.htm",
+        "slug": "mwg-mwg-chot-chu-truong-ipo-dien-may-xanh-trong-nam-2026",
+        "news_short_content": "CTCP Đầu tư Thế Giới Di Động (HOSE: MWG) xác nhận chủ trương để Điện Máy Xanh chào bán lần đầu ra công chúng và niêm yết từ năm 2026, kỳ vọng thúc đẩy tăng trưởng lợi nhuận 2 chữ số và mở rộng hệ sinh thái bán lẻ.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "131f5c3bada522c73cbec0d53025762eb4f958ddb5d413a317ada149c0b36403",
+        "news_title": "TPB: TPBank tiên phong số hóa, kiến tạo E-Việt Nam thịnh vượng",
+        "update_date": "2025-12-12 20:56:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/tpbank-tien-phong-so-hoa-kien-tao-e-viet-nam-thinh-vuong-100035.html",
+        "slug": "tpb-tpbank-tien-phong-so-hoa-kien-tao-e-viet-nam-thinh-vuong",
+        "news_short_content": "TPBank khẳng định vị thế khi được The Asian Banker vinh danh \"Ngân hàng Vững mạnh hàng đầu Việt Nam năm 2025\", dựa trên các chỉ số tài chính vượt trội. Với định hướng số hóa mạnh mẽ, TPBank trở thành biểu tượng công nghệ của ngành, đạt 98% giao dịch số và nằm trong nhóm ngân hàng đóng góp ngân sách lớn nhất, góp phần thúc đẩy một E-Vietnam thịnh vượng.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "634d6837f7dea4c2721d6fe17eb035ba4af22cfa4de980055b1a3900f5f16da0",
+        "news_title": "GAS: PV GAS khẳng định vị thế với 03 Kỷ lục Việt Nam",
+        "update_date": "2025-12-12 20:33:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/gas-pv-gas-khang-dinh-vi-the-voi-03-ky-luc-viet-nam/37235608",
+        "slug": "gas-pv-gas-khang-dinh-vi-the-voi-03-ky-luc-viet-nam",
+        "news_short_content": "Tổng công ty Khí Việt Nam (PV GAS) vừa được Hội đồng Xác lập Tổ chức Kỷ lục Việt Nam (VietKings) trao tặng 03 Kỷ lục Việt Nam, ghi nhận những công trình tiêu biểu mang dấu ấn tiên phong trong lĩnh vực khai thác, vận hành và chế biến khí thiên nhiên, khẳng định vị thế tiên phong trong lĩnh vực khí – năng lượng, góp phần quan trọng bảo đảm an ninh năng lượng quốc gia và dẫn dắt lộ trình chuyển đổi xanh của đất nước.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "9475942b9702f9398d0b1d686acdaade57caa54e638735e6bea81fc0a645e66b",
+        "news_title": "VGC: Viglacera miễn nhiệm một Phó Tổng Giám đốc",
+        "update_date": "2025-12-12 20:09:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vgc-viglacera-mien-nhiem-mot-pho-tong-giam-doc/37235355",
+        "slug": "vgc-viglacera-mien-nhiem-mot-pho-tong-giam-doc",
+        "news_short_content": "HĐQT Viglacera đã tiến hành miễn nhiệm chức vụ Phó Tổng Giám đốc đối với ông Quách Hữu Thuận theo đơn từ nhiệm.",
+        "sentiment": "Negative"
     }
 ]
