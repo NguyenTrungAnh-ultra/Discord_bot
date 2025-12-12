@@ -1638,5 +1638,55 @@
         "slug": "gee-ha-tang-gelex-ipo-thuong-vu-dang-ky-vong-cho-nha-dau-tu-dai-han",
         "news_short_content": "Giới phân tích nhận định, CTCP Hạ tầng GELEX hội tụ đầy lợi thế để trở thành một trong những thương vụ IPO có sức hấp dẫn nhất trong những tháng cuối năm 2025.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "fe3609eed34eeb064465aedfeb02690f43dd2df8999ab5d246d19502fa389db1",
+        "news_title": "VIC: Giao dịch chứng khoán phiên sáng 12/12: Sức ép vẫn chưa dừng lại",
+        "update_date": "2025-12-12 11:30:18",
+        "news_from_name": "Tin nhanh chứng khoán",
+        "news_source_link": "https://www.tinnhanhchungkhoan.vn/giao-dich-chung-khoan-phien-sang-1212-suc-ep-van-chua-dung-lai-post382033.html",
+        "slug": "vic-giao-dich-chung-khoan-phien-sang-12-12-suc-ep-van-chua-dung-lai",
+        "news_short_content": "Đà suy yếu của nhóm cổ phiếu Vingroup đang tác động lớn cả về mặt điểm số và tâm lý trên thị trường, khiến chỉ số chính tiếp tục lùi bước sau khi để mất mốc quan trọng 1.700 điểm sau phiên hôm qua.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "cc0bf117fdf91cc67da40e5a87ece20c6636ceeed8b9903baf78ad31fe41fd2c",
+        "news_title": "BED: Doanh nghiệp sách đầu tiên mở màn mùa kế hoạch 2026",
+        "update_date": "2025-12-12 11:24:34",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/doanh-nghiep-sach-dau-tien-mo-man-mua-ke-hoach-2026-737-1380603.htm",
+        "slug": "bed-doanh-nghiep-sach-dau-tien-mo-man-mua-ke-hoach-2026",
+        "news_short_content": "CTCP Sách và Thiết bị Trường học Đà Nẵng (HNX: BED) trở thành một trong những doanh nghiệp ngành sách hiếm hoi sớm thông qua kế hoạch 2026, với mục tiêu doanh thu 75 tỷ và lãi ròng hơn 5 tỷ đồng - tương đương kế hoạch 2024-2025, trong khi mức cổ tức dự kiến tiếp tục thu hẹp.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "38c4fc8cf425ff1804e0681c372bbf658b0287e25c525c69079d22751f29c3b1",
+        "news_title": "PNJ: Sức mua giảm có làm khó PNJ?",
+        "update_date": "2025-12-12 11:05:00",
+        "news_from_name": "Tạp chí Diễn đàn Doanh nghiệp",
+        "news_source_link": "https://diendandoanhnghiep.vn/suc-mua-giam-co-lam-kho-pnj-10167383.html",
+        "slug": "pnj-suc-mua-giam-co-lam-kho-pnj",
+        "news_short_content": "Thị trường tiêu dùng bán lẻ tăng trưởng nhưng dưới mức kỳ vọng và người tiêu dùng vẫn “thắt lưng buộc bụng”, có khiến vàng trang sức bán lẻ gặp khó khăn?",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "9c41829e94cc9c4536bca5849048dfcafa44aa20d470ec8d92e84dbd281df701",
+        "news_title": "CTP: Chứng khoán hôm nay 12/12: 7 doanh nghiệp giao dịch cổ phiếu số lượng lớn",
+        "update_date": "2025-12-12 11:05:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/ctp-chung-khoan-hom-nay-12-12-7-doanh-nghiep-giao-dich-co-phieu-so-luong-lon/37218818",
+        "slug": "ctp-chung-khoan-hom-nay-12-12-7-doanh-nghiep-giao-dich-co-phieu-so-luong-lon",
+        "news_short_content": "Hôm nay 12/12, có 7 doanh nghiệp bắt đầu giao dịch cổ phiếu số lượng lớn, trong đó đang chú ý có giao dịch bán toàn bộ của lãnh đạo CTCP Hòa Bình Takara (mã chứng khoán CTP).",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "bfa17e4c8c4fc828de12a29d074693dbe25677d21f6c460fbed10b18d1928341",
+        "news_title": "MPC: Minh Phú chốt quyền chia hơn 100 tỷ đồng cổ tức",
+        "update_date": "2025-12-12 10:35:44",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/minh-phu-chot-quyen-chia-hon-100-ty-dong-co-tuc-738-1380602.htm",
+        "slug": "mpc-minh-phu-chot-quyen-chia-hon-100-ty-dong-co-tuc",
+        "news_short_content": "CTCP Tập đoàn Thủy sản Minh Phú (UPCoM: MPC) thông báo 17/12 là ngày giao dịch không hưởng quyền nhận cổ tức năm 2024 bằng tiền mặt. Doanh nghiệp dự kiến chi trả vào ngày 25/12 với tỷ lệ 2.5%, tương đương 250 đồng/cp, tổng giá trị giải ngân hơn 100 tỷ đồng.",
+        "sentiment": "Positive"
     }
 ]
