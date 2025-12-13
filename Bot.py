@@ -3,7 +3,8 @@ from discord.ext import commands
 import logging
 from News.config import DATA_FILE
 from News.tin_doanh_nghiep import VCI_news
-from News.tool import save_history, load_history, update_history
+from News.tool import update_history, clean_title, get_artical
+from gg_service.gemini import tomtat100
 import json
 from dotenv import load_dotenv
 from datetime import datetime, timedelta
@@ -143,5 +144,67 @@ async def news(ctx, *, time_range: str = None):
     else:
         await ctx.send("❌ Không tìm thấy tin nào trong khoảng thời gian này.")
 
+
+@bot.command()
+async def tomtat(ctx):
+    """
+    Reply tin nhắn tin tức -> Tìm trong JSON -> Trả vsề Link
+    """
+    # 1. Kiểm tra Reply
+    if not ctx.message.reference:
+        await ctx.send("⚠️ Vui lòng Reply vào tin nhắn tin tức cần lấy link.")
+        return
+
+    try:
+        # 2. Lấy nội dung tin nhắn gốc
+        message_id = ctx.message.reference.message_id
+        original_message = await ctx.channel.fetch_message(message_id)
+
+        if not original_message.embeds:
+            await ctx.send("❌ Tin nhắn này không có nội dung tin tức.")
+            return
+
+        # 3. Lấy Title từ Embed và làm sạch
+        embed_title = original_message.embeds[0].title
+        real_title = clean_title(embed_title)
+        
+        # Debug nhẹ để xem title bot đọc được là gì (có thể xóa sau này)
+        print(f"Searching for title: {real_title}")
+
+        # 4. Đọc file JSON lịch sử
+        # Đảm bảo đường dẫn file đúng với biến HISTORY_FILE của bạn
+        HISTORY_FILE = "./source/requested_news.json"
+        
+        try:
+            with open(HISTORY_FILE, 'r', encoding='utf-8') as f:
+                saved_news = json.load(f)
+        except FileNotFoundError:
+            await ctx.send("❌ Chưa có dữ liệu lịch sử nào được lưu.")
+            return
+
+        # 5. So sánh tìm Slug
+        found_slug = None
+        
+        # Duyệt qua từng bài trong file json
+        for item in saved_news:
+            # So sánh tiêu đề trong JSON với tiêu đề lấy từ tin nhắn
+            if item.get('news_title').strip() == real_title:
+                found_slug = item.get('slug') 
+                break
+        
+        # 6. Trả kết quả
+        if found_slug:
+            url = f"https://trading.vietcap.com.vn/ai-news/post-detail/{found_slug}?language=vi"
+            art = await get_artical(link=url)
+            print(art)
+            sumarize = await tomtat100(artical=art)
+            await ctx.send(f"{sumarize}")
+            print('trả lời xong')
+    except Exception as e:
+        print(e)
+        await ctx.send("Có lỗi xảy ra khi lấy link.")
+
+
 # chay bot
 bot.run(token=token, log_handler=handler, log_level=logging.DEBUG)
+

@@ -11,8 +11,8 @@ today = str(datetime.today().strftime('%Y-%m-%d'))
 
 def main():
     load_dotenv()
-    # webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
-    webhook_url = 'https://discord.com/api/webhooks/1446860624020902030/X1OS1Y_p19OT3oEoEqaDjlqQpDRK1k0k6Uze64a1x5mD8iZQw3ii5hFivyXjIhS8OMYV'
+    webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
+    # webhook_url = os.environ.get('DISCORD_WEBHOOK_URL')
     
     if not webhook_url:
         print("Lỗi: Chưa cài đặt DISCORD_WEBHOOK_URL")
