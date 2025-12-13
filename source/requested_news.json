@@ -2368,5 +2368,15 @@
         "slug": "tin-pho-tong-vietcredit-muon-chi-gan-50-ty-gom-co-phieu-giua-nhip-dieu-chinh-manh",
         "news_short_content": "Giữa nhịp điều chỉnh hơn 11% chỉ trong 1 tuần, Phó Tổng Giám đốc VietCredit Lê Hữu Sơn đăng ký mua thêm 1 triệu cp TIN, ước chi khoảng 49 tỷ đồng theo thị giá hiện tại.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "340be219b4929977c4ce7bbff4a451e2d20eab606017cd12b6027924f57a37ec",
+        "news_title": "EVS: Chứng khoán EVS bị phạt 1,35 tỷ đồng vì dính hàng loạt vi phạm",
+        "update_date": "2025-12-13 16:11:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/chung-khoan-evs-bi-phat-1-35-ty-dong-vi-dinh-hang-loat-vi-pham-100080.html",
+        "slug": "evs-chung-khoan-evs-bi-phat-1-35-ty-dong-vi-dinh-hang-loat-vi-pham",
+        "news_short_content": "Do hàng loạt vi phạm trong hoạt động chứng khoán, từ tư vấn trái phiếu, giao dịch ký quỹ đến báo cáo an toàn tài chính, Công ty CP Chứng khoán EVS vừa bị Ủy ban Chứng khoán Nhà nước xử phạt tổng cộng 1,135 tỷ đồng và đình chỉ nghiệp vụ bù trừ, thanh toán chứng khoán phái sinh trong 2 tháng.",
+        "sentiment": "Negative"
     }
 ]
