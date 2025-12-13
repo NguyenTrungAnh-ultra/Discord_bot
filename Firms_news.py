@@ -12,7 +12,6 @@ today = str(datetime.today().strftime('%Y-%m-%d'))
 def main():
     load_dotenv()
     webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
-    # webhook_url = os.environ.get('DISCORD_WEBHOOK_URL')
     
     if not webhook_url:
         print("Lỗi: Chưa cài đặt DISCORD_WEBHOOK_URL")
