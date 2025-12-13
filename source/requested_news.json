@@ -2168,5 +2168,35 @@
         "slug": "fpt-fpt-cung-bo-tu-phap-trien-khai-nen-tang-so-trong-linh-vuc-thi-hanh-an-dan-su-va-trung-tam-giam-sat-dieu-hanh-thong-minh",
         "news_short_content": "Ngày 12/12, Bộ Tư pháp tổ chức kích hoạt triển khai Nền tảng số trong lĩnh vực thi hành án dân sự và Trung tâm Giám sát, Điều hành thông minh Hệ thống thi hành án dân sự trên quy mô toàn quốc.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "6df559223d418a6b180a877b3fdd17ebe94224a871fe620600e547a93357ade4",
+        "news_title": "VC3: Nam Mê Kông muốn vay gần 1.3 ngàn tỷ để đầu tư The Charms Bình Dương",
+        "update_date": "2025-12-13 08:02:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/nam-me-kong-muon-vay-gan-13-ngan-ty-de-dau-tu-the-charms-binh-duong-737-1380672.htm",
+        "slug": "vc3-nam-me-kong-muon-vay-gan-13-ngan-ty-de-dau-tu-the-charms-binh-duong",
+        "news_short_content": "HĐQT Tập đoàn Nam Mê Kông (HNX: VC3) thông qua chủ trương ký kết hợp đồng vay 1,285 tỷ đồng tại Ngân hàng TMCP Công Thương Việt Nam (VietinBank, HOSE: CTG).",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "3c79c5c9e0ef84cfd705a048e354d48b111161ddcf4ffc4e9c3a8df941b9edc2",
+        "news_title": "PGV: Liên danh 3 thành viên trúng gói thầu 61 tỷ đồng tại EVNGENCO 3",
+        "update_date": "2025-12-13 07:41:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/pgv-lien-danh-3-thanh-vien-trung-goi-thau-61-ty-dong-tai-evngenco-3/37237366",
+        "slug": "pgv-lien-danh-3-thanh-vien-trung-goi-thau-61-ty-dong-tai-evngenco-3",
+        "news_short_content": "Tổng công ty Phát điện 3 (EVNGENCO 3) vừa phê duyệt kết quả lựa chọn nhà thầu Gói thầu Thiết kế bản vẽ thi công, cung cấp vật tư thiết bị và thi công lắp đặt, thí nghiệm - công trình điện mặt trời mặt đất khu vực đất trống trong Nhà máy Điện mặt trời Vĩnh Tân 2 và Hang Cò cấp tự dùng cho Nhà máy Nhiệt điện Vĩnh Tân 2.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "a240f76d7ad68f356c97e9aacd2a588a476c06f9ad31ab88b5ada58d3ba27d6e",
+        "news_title": "HID: Cổ phiếu của Halcom Việt Nam tạo ‘mô hình cây thông’?",
+        "update_date": "2025-12-13 07:33:00",
+        "news_from_name": "Vnbusiness",
+        "news_source_link": "https://vnbusiness.vn/24h/co-phieu-cua-halcom-viet-nam-tao-mo-hinh-cay-thong-1111484.html",
+        "slug": "hid-co-phieu-cua-halcom-viet-nam-tao-mo-hinh-cay-thong",
+        "news_short_content": "Sau đợt tăng nóng, cổ phiếu HID của CTCP Halcom Việt Nam hạ nhiệt và giảm điểm 4 phiên liên tiếp, trong đó có 3 phiên giảm sàn liên tục (10, 11 và 12/12), đưa thị giá về mức 8.460 đồng/cp.",
+        "sentiment": "Negative"
     }
 ]
