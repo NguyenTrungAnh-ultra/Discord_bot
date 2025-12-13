@@ -22,7 +22,7 @@ def main():
     #############################################################################################################
     # Lấy tin từ API
     news_tool = VCI_news()
-    current_news_list = news_tool.get_news(page=1, page_size=50)
+    current_news_list = news_tool.get_news(page=1, page_size=99)
     
     if not current_news_list:
         print("Không lấy được dữ liệu từ API.")
