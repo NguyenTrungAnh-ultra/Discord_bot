@@ -2368,5 +2368,55 @@
         "slug": "tin-pho-tong-vietcredit-muon-chi-gan-50-ty-gom-co-phieu-giua-nhip-dieu-chinh-manh",
         "news_short_content": "Giữa nhịp điều chỉnh hơn 11% chỉ trong 1 tuần, Phó Tổng Giám đốc VietCredit Lê Hữu Sơn đăng ký mua thêm 1 triệu cp TIN, ước chi khoảng 49 tỷ đồng theo thị giá hiện tại.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "340be219b4929977c4ce7bbff4a451e2d20eab606017cd12b6027924f57a37ec",
+        "news_title": "EVS: Chứng khoán EVS bị phạt 1,35 tỷ đồng vì dính hàng loạt vi phạm",
+        "update_date": "2025-12-13 16:11:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/chung-khoan-evs-bi-phat-1-35-ty-dong-vi-dinh-hang-loat-vi-pham-100080.html",
+        "slug": "evs-chung-khoan-evs-bi-phat-1-35-ty-dong-vi-dinh-hang-loat-vi-pham",
+        "news_short_content": "Do hàng loạt vi phạm trong hoạt động chứng khoán, từ tư vấn trái phiếu, giao dịch ký quỹ đến báo cáo an toàn tài chính, Công ty CP Chứng khoán EVS vừa bị Ủy ban Chứng khoán Nhà nước xử phạt tổng cộng 1,135 tỷ đồng và đình chỉ nghiệp vụ bù trừ, thanh toán chứng khoán phái sinh trong 2 tháng.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "342f8e9f75fe4d5a333010c4bda961ec49dda6d2f4b39fe8280051821539e905",
+        "news_title": "HPG: Hòa Phát làm khu công nghiệp 2.800 tỷ ở tỉnh Hưng Yên",
+        "update_date": "2025-12-13 16:57:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/hpg-hoa-phat-lam-khu-cong-nghiep-2800-ty-o-tinh-hung-yen/37239777",
+        "slug": "hpg-hoa-phat-lam-khu-cong-nghiep-2800-ty-o-tinh-hung-yen",
+        "news_short_content": "Chủ đầu tư dự án KCN Lý Thường Kiệt là CTCP Phát triển Hạ tầng Khu công nghiệp Lý Thường Kiệt, đơn vị thành viên của Tập đoàn Hòa Phát. Một diễn biến cũng đáng chú ý khác là câu chuyện IPO của công ty Nông nghiệp Hòa Phát.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "6c1a5de4e43360a305f54b3c3babddc473970c5ff64fae7c9b6caf978cdaa33b",
+        "news_title": "HDB: HDBank sắp chia cổ tức & cổ phiếu thưởng tổng cộng 30%",
+        "update_date": "2025-12-13 18:04:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/hdbank-sap-chia-co-tuc-co-phieu-thuong-tong-cong-30-d101523.html",
+        "slug": "hdb-hdbank-sap-chia-co-tuc-and-co-phieu-thuong-tong-cong-30",
+        "news_short_content": "Ngân hàng TMCP Phát triển TP.HCM (HDBank) sắp triển khai tăng vốn điều lệ thông qua trả cổ tức bằng cổ phiếu và phát hành cổ phiếu thưởng, với tổng tỷ lệ 30% (cổ tức năm 2024 là 25% và cổ phiếu thưởng tối đa 5%), từ nguồn lợi nhuận chưa phân phối và các quỹ theo Báo cáo tài chính hợp nhất kiểm toán 2024.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "bc0818923c733769705add99d3e4e6e7539fd1c0c3465da8ab483ef1b3722d25",
+        "news_title": "HDB: Cơ hội nhận giải thưởng 3 tỷ đồng khi gửi tiết kiệm tại HDBank trong mùa lễ hội cuối năm",
+        "update_date": "2025-12-13 18:01:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/co-hoi-nhan-giai-thuong-3-ty-dong-khi-gui-tiet-kiem-tai-hdbank-trong-mua-le-hoi-cuoi-nam-d101524.html",
+        "slug": "hdb-co-hoi-nhan-giai-thuong-3-ty-dong-khi-gui-tiet-kiem-tai-hdbank-trong-mua-le-hoi-cuoi-nam",
+        "news_short_content": "Thị trường tiết kiệm những ngày cuối năm đang nóng và hấp dẫn hơn bao giờ hết khi người dân săn tìm kênh gửi tiền vừa an toàn, vừa có cơ hội “bật” tài lộc đón Tết Nguyên đán.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "de806e318750975116e72e85c3fc11b5365cbeefbaab28a64a55270cb34c6df6",
+        "news_title": "EVS: Vì sao Chứng khoán EVS bị phạt hơn 1 tỷ đồng",
+        "update_date": "2025-12-13 17:50:00",
+        "news_from_name": "Tạp chí Diễn đàn Doanh nghiệp",
+        "news_source_link": "https://diendandoanhnghiep.vn/vi-sao-chung-khoan-evs-bi-phat-hon-1-ty-dong-10167448.html",
+        "slug": "evs-vi-sao-chung-khoan-evs-bi-phat-hon-1-ty-dong",
+        "news_short_content": "Mới đây, Ủy ban Chứng khoán Nhà nước (UBCKNN) quyết định xử phạt Công ty CP Chứng khoán EVS (HNX: EVS) vì hàng loạt vi phạm, với tổng tiền phạt lên đến hơn 1,1 tỷ đồng.",
+        "sentiment": "Negative"
     }
 ]
