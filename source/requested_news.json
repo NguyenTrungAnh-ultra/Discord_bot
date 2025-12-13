@@ -2388,5 +2388,35 @@
         "slug": "hpg-hoa-phat-lam-khu-cong-nghiep-2800-ty-o-tinh-hung-yen",
         "news_short_content": "Chủ đầu tư dự án KCN Lý Thường Kiệt là CTCP Phát triển Hạ tầng Khu công nghiệp Lý Thường Kiệt, đơn vị thành viên của Tập đoàn Hòa Phát. Một diễn biến cũng đáng chú ý khác là câu chuyện IPO của công ty Nông nghiệp Hòa Phát.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "6c1a5de4e43360a305f54b3c3babddc473970c5ff64fae7c9b6caf978cdaa33b",
+        "news_title": "HDB: HDBank sắp chia cổ tức & cổ phiếu thưởng tổng cộng 30%",
+        "update_date": "2025-12-13 18:04:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/hdbank-sap-chia-co-tuc-co-phieu-thuong-tong-cong-30-d101523.html",
+        "slug": "hdb-hdbank-sap-chia-co-tuc-and-co-phieu-thuong-tong-cong-30",
+        "news_short_content": "Ngân hàng TMCP Phát triển TP.HCM (HDBank) sắp triển khai tăng vốn điều lệ thông qua trả cổ tức bằng cổ phiếu và phát hành cổ phiếu thưởng, với tổng tỷ lệ 30% (cổ tức năm 2024 là 25% và cổ phiếu thưởng tối đa 5%), từ nguồn lợi nhuận chưa phân phối và các quỹ theo Báo cáo tài chính hợp nhất kiểm toán 2024.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "bc0818923c733769705add99d3e4e6e7539fd1c0c3465da8ab483ef1b3722d25",
+        "news_title": "HDB: Cơ hội nhận giải thưởng 3 tỷ đồng khi gửi tiết kiệm tại HDBank trong mùa lễ hội cuối năm",
+        "update_date": "2025-12-13 18:01:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/co-hoi-nhan-giai-thuong-3-ty-dong-khi-gui-tiet-kiem-tai-hdbank-trong-mua-le-hoi-cuoi-nam-d101524.html",
+        "slug": "hdb-co-hoi-nhan-giai-thuong-3-ty-dong-khi-gui-tiet-kiem-tai-hdbank-trong-mua-le-hoi-cuoi-nam",
+        "news_short_content": "Thị trường tiết kiệm những ngày cuối năm đang nóng và hấp dẫn hơn bao giờ hết khi người dân săn tìm kênh gửi tiền vừa an toàn, vừa có cơ hội “bật” tài lộc đón Tết Nguyên đán.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "de806e318750975116e72e85c3fc11b5365cbeefbaab28a64a55270cb34c6df6",
+        "news_title": "EVS: Vì sao Chứng khoán EVS bị phạt hơn 1 tỷ đồng",
+        "update_date": "2025-12-13 17:50:00",
+        "news_from_name": "Tạp chí Diễn đàn Doanh nghiệp",
+        "news_source_link": "https://diendandoanhnghiep.vn/vi-sao-chung-khoan-evs-bi-phat-hon-1-ty-dong-10167448.html",
+        "slug": "evs-vi-sao-chung-khoan-evs-bi-phat-hon-1-ty-dong",
+        "news_short_content": "Mới đây, Ủy ban Chứng khoán Nhà nước (UBCKNN) quyết định xử phạt Công ty CP Chứng khoán EVS (HNX: EVS) vì hàng loạt vi phạm, với tổng tiền phạt lên đến hơn 1,1 tỷ đồng.",
+        "sentiment": "Negative"
     }
 ]
