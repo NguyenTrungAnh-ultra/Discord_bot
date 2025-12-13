@@ -2278,5 +2278,45 @@
         "slug": "vpl-2-co-phieu-nha-ty-phu-bi-khoi-ngoai-ban-rong-hon-4000-ty-trong-tuan-8-12-12",
         "news_short_content": "Khối ngoại sau tuần mua ròng trước đó đã quay đầu xả hàng xuyên suốt tuần qua.",
         "sentiment": "Negative"
+    },
+    {
+        "id": "e8cc5e96e7277509507e4c5a097fa48650649df196aaed25b4c5e1c7ff580247",
+        "news_title": "VIC: VNM ETF thêm 1 cổ phiếu IPO, bán mạnh VIC trong đợt review quý 4",
+        "update_date": "2025-12-13 10:17:18",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/vnm-etf-them-1-co-phieu-ipo-ban-manh-vic-trong-dot-review-quy-4-3358-1380999.htm",
+        "slug": "vic-vnm-etf-them-1-co-phieu-ipo-ban-manh-vic-trong-dot-review-quy-4",
+        "news_short_content": "Theo kết quả đợt review quý 4/2025 công bố vào rạng sáng ngày 13/12/2025, MarketVector Indexes chỉ thêm 1 mã cổ phiếu vào danh mục của MarketVector Vietnam Local Index - chỉ số tham chiếu cho quỹ trăm triệu đô VanEck Vectors Vietnam ETF (VNM ETF). Chiều ngược lại, không cổ phiếu nào bị loại ra.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "da72865f0d2308b1e511d430154f163c02a7eb815408ba89e04836b6c907f6af",
+        "news_title": "BID: BIDV tăng mạnh lãi suất tiền gửi tại tất cả kỳ hạn",
+        "update_date": "2025-12-13 10:06:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/bid-bidv-tang-manh-lai-suat-tien-gui-tai-tat-ca-ky-han/37238110",
+        "slug": "bid-bidv-tang-manh-lai-suat-tien-gui-tai-tat-ca-ky-han",
+        "news_short_content": "Là ngân hàng thứ 2 trong nhóm Big 4 điều chỉnh lãi suất tiền gửi sau một khoảng thời gian dài đứng im, BIDV đã 'mạnh tay' nâng mức lãi suất kỳ hạn 6 đến 11 tháng tới 0,7%/năm.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "9bcbc5530a5111152e1ab8a92c3cc182055eebe0920bf73261d29219a04b0c8a",
+        "news_title": "NLG: Nam Long chào bán thành công 97 triệu cổ phiếu cho cổ đông",
+        "update_date": "2025-12-13 10:03:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/nlg-nam-long-chao-ban-thanh-cong-97-trieu-co-phieu-cho-co-dong/37238105",
+        "slug": "nlg-nam-long-chao-ban-thanh-cong-97-trieu-co-phieu-cho-co-dong",
+        "news_short_content": "Đợt chào bán 100,1 triệu cổ phiếu của Nam Long nhận được mức độ quan tâm cao khi cổ đông đã nộp tiền mua hơn 97 triệu đơn vị, chỉ còn hơn 3 triệu cổ phiếu tiếp tục được phân phối cho các nhà đầu tư cá nhân.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "dc953a5234f576e0733717cdf80288bff6c81b9e809ddcc5ff6553cbac5dceab",
+        "news_title": "PDR: Phát Đạt đặt mục tiêu doanh thu 45.000 tỷ đồng giai đoạn 2026 – 2030",
+        "update_date": "2025-12-13 10:00:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/pdr-phat-dat-dat-muc-tieu-doanh-thu-45000-ty-dong-giai-doan-2026-2030/37238082",
+        "slug": "pdr-phat-dat-dat-muc-tieu-doanh-thu-45000-ty-dong-giai-doan-2026-2030",
+        "news_short_content": "Giai đoạn 2026 – 2030, Phát Đạt lên kế hoạch kinh doanh với tổng doanh thu gần 45.000 tỷ đồng, đẩy mạnh triển khai loạt dự án tại TP HCM, Đà Nẵng, Gia Lai và Côn Đảo.",
+        "sentiment": "Positive"
     }
 ]
