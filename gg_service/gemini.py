@@ -5,8 +5,8 @@ from google.genai import types
 async def tomtat100(artical):
     # 1. Khởi tạo Client
     client = genai.Client(
-        # api_key=os.environ.get("GEMINI_API_KEY"),
-        api_key='AIzaSyDyR1Pd07U1fgEz6MdsPMzkbjez9XtW_Hc'
+        api_key=os.getenv("GEMINI_API_KEY"),
+
     )
 
     model = "gemini-flash-latest"
@@ -48,6 +48,6 @@ async def tomtat100(artical):
     )
     return response.text
 
-# if __name__ == "__main__":
-#     p = open('bao.txt', 'r').read()
-#     print(tomtat100(p))
+if __name__ == "__main__":
+    api_key=os.getenv("GEMINI_API_KEY")
+    print(api_key)
