@@ -2418,5 +2418,25 @@
         "slug": "evs-vi-sao-chung-khoan-evs-bi-phat-hon-1-ty-dong",
         "news_short_content": "Mới đây, Ủy ban Chứng khoán Nhà nước (UBCKNN) quyết định xử phạt Công ty CP Chứng khoán EVS (HNX: EVS) vì hàng loạt vi phạm, với tổng tiền phạt lên đến hơn 1,1 tỷ đồng.",
         "sentiment": "Negative"
+    },
+    {
+        "id": "a8e31239ff85ef00a6165a63857b3e4fbf316a2037edb30b4d323bbefb598cbf",
+        "news_title": "GVR: Bất chấp xuất khẩu cao su giảm tốc, VRG vẫn giữ đà tăng trưởng",
+        "update_date": "2025-12-13 19:53:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/gvr-bat-chap-xuat-khau-cao-su-giam-toc-vrg-van-giu-da-tang-truong/37240337",
+        "slug": "gvr-bat-chap-xuat-khau-cao-su-giam-toc-vrg-van-giu-da-tang-truong",
+        "news_short_content": "Trái ngược với đà suy giảm về xuất khẩu của toàn ngành Cao Su Việt Nam năm 2025, Tập đoàn Công nghiệp Cao su Việt Nam (VRG) vẫn đạt doanh thu hơn 32.000 tỷ đồng và lợi nhuận tăng hơn 23%. Kết quả này không chỉ giúp VRG vượt kế hoạch, củng cố vị thế dẫn đầu ngành cao su, mà còn tạo nền tảng hướng đến mục tiêu mới trong năm 2026.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "5e0e79016b882b90d221b7ece57b42647396deac38ba60362ca291bed5a076ca",
+        "news_title": "POW: Lãnh đạo Petrovietnam kiểm tra công tác chuẩn bị khánh thành Dự án NMĐ Nhơn Trạch 3 và 4",
+        "update_date": "2025-12-13 19:49:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/pow-lanh-dao-petrovietnam-kiem-tra-cong-tac-chuan-bi-khanh-thanh-du-an-nmd-nhon-trach-3-va-4/37240329",
+        "slug": "pow-lanh-dao-petrovietnam-kiem-tra-cong-tac-chuan-bi-khanh-thanh-du-an-nmd-nhon-trach-3-va-4",
+        "news_short_content": "Lãnh đạo Petrovietnam kiểm tra công tác chuẩn bị khánh thành Dự án NMĐ Nhơn Trạch 3 và 4",
+        "sentiment": "Positive"
     }
 ]
