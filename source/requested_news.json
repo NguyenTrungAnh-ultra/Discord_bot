@@ -2528,5 +2528,35 @@
         "slug": "pow-thu-tuong-pham-minh-chinh-du-le-khanh-thanh-nha-may-dien-khi-lng-1-4-ti-usd",
         "news_short_content": "Nhà máy điện khí LNG Nhơn Trạch 3 và 4 vừa khánh thành với hàng loạt cái nhất về công nghệ, quy mô và tiến độ triển khai",
         "sentiment": "Positive"
+    },
+    {
+        "id": "03f5954553b545c629efaa7fffe5e6eba91ab883e70fc856946abadf9996259f",
+        "news_title": "VGC: Câu chuyện thoái vốn cuối năm tại Viglacera (VGC)",
+        "update_date": "2025-12-14 16:03:00",
+        "news_from_name": "Tạp chí Diễn đàn Doanh nghiệp",
+        "news_source_link": "https://diendandoanhnghiep.vn/cau-chuyen-thoai-von-cuoi-nam-tai-viglacera-vgc-10167489.html",
+        "slug": "vgc-cau-chuyen-thoai-von-cuoi-nam-tai-viglacera-vgc",
+        "news_short_content": "Bộ Xây dựng có kế hoạch thoái hơn 38% vốn lại Tổng Công ty Viglacera – CTCP trong cuối năm 2025.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "6d8bcc9f40dbef6de40e074918cbcd8da0fae4322814bc905978dfc9e5df7537",
+        "news_title": "PDR: Bản tin Nhà đầu tư tháng 12/2025: Nhiều hoạt động đầu tư nổi bật",
+        "update_date": "2025-12-14 16:01:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/pdr-ban-tin-nha-dau-tu-thang-12-2025-nhieu-hoat-dong-dau-tu-noi-bat/37242820",
+        "slug": "pdr-ban-tin-nha-dau-tu-thang-12-2025-nhieu-hoat-dong-dau-tu-noi-bat",
+        "news_short_content": "Công ty Cổ phần Phát triển Bất động sản Phát Đạt (PDR: HOSE) vừa phát hành Bản tin Nhà đầu tư tháng 12/2025, ghi nhận nhiều dấu ấn quan trọng trong hoạt động đầu tư, mở rộng quỹ đất, triển khai dự án và thực hiện trách nhiệm xã hội. Cụ thể như sau: \r\n\r\n\r\nCông ty Cổ phần Phát triển Bất động sản Phát Đạt (PDR: HOSE) vừa phát hành Bản tin Nhà đầu tư tháng 12/2025, ghi nhận nhiều dấu ấn quan trọng trong hoạt động đầu tư, mở rộng quỹ đất, triển khai dự án và thực hiện trách nhiệm xã hội. Cụ thể như sau:",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "193acadd0254f19e73a90cf0069471f1f0616e7555224ea7dbc583fad6b97a0a",
+        "news_title": "CSI: Nhận định thị trường phiên giao dịch ngày 15/12: Việc bắt đáy sớm tiềm ẩn nhiều rủi ro",
+        "update_date": "2025-12-14 15:43:55",
+        "news_from_name": "Tin nhanh chứng khoán",
+        "news_source_link": "https://www.tinnhanhchungkhoan.vn/nhan-dinh-thi-truong-phien-giao-dich-ngay-1512-viec-bat-day-som-tiem-an-nhieu-rui-ro-post382108.html",
+        "slug": "csi-nhan-dinh-thi-truong-phien-giao-dich-ngay-15-12-viec-bat-day-som-tiem-an-nhieu-rui-ro",
+        "news_short_content": "(ĐTCK) Các chỉ báo xung lực RSI (14) lao về vùng ~40, trong khi Stochastic RSI suy yếu cho thấy đà giảm ngắn hạn đang chiếm ưu thế, trong khi thanh khoản có xu hướng tăng cho thấy áp lực phân phối.",
+        "sentiment": "Negative"
     }
 ]
