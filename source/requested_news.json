@@ -2448,5 +2448,25 @@
         "slug": "pom-gan-16-trieu-co-phieu-chat-mua-gia-tran-dai-gia-thep-mot-thoi-lieu-co-hoi-sinh-sau-cai-bat-tay-voi-vingroup",
         "news_short_content": "Đà tăng trần 6 phiên liên tiếp cũng đưa thị giá cổ phiếu lên cao nhất trong gần 2 năm qua (kể từ hồi tháng 4/2024).",
         "sentiment": "Positive"
+    },
+    {
+        "id": "7fee62efe49edd5c3d8c9cf30af2ec5a84417b69dde742dc64715f98ee38d818",
+        "news_title": "DPM: “Phao cứu sinh” cho DPM",
+        "update_date": "2025-12-14 11:03:00",
+        "news_from_name": "Tạp chí Diễn đàn Doanh nghiệp",
+        "news_source_link": "https://diendandoanhnghiep.vn/phao-cuu-sinh-cho-dpm-10167477.html",
+        "slug": "dpm-phao-cuu-sinh-cho-dpm",
+        "news_short_content": "Dù nhu cầu kinh doanh phân bón trong nước vẫn đi ngang nhưng mảng xuất khẩu đang là “phao cứu sinh” giúp PVFCCo, (HoSE: DPM) lấy lại đà tăng trưởng.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "1924083d0e258f2cb23d91d4753044d08f780db942dbb09d0a7afc1a8e0919c1",
+        "news_title": "HQC: Địa ốc Hoàng Quân phát hành 50 triệu cổ phiếu hoán đổi cho 4 chủ nợ",
+        "update_date": "2025-12-14 10:38:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/hqc-dia-oc-hoang-quan-phat-hanh-50-trieu-co-phieu-hoan-doi-cho-4-chu-no/37241827",
+        "slug": "hqc-dia-oc-hoang-quan-phat-hanh-50-trieu-co-phieu-hoan-doi-cho-4-chu-no",
+        "news_short_content": "Địa ốc Hoàng Quân thông dự kiến phát hành 50 triệu cổ phiếu để hoán đổi tổng cộng 500 tỷ đồng nợ phải trả của 4 chủ nợ, trong đó có Chủ tịch Trương Anh Tuấn.",
+        "sentiment": "Neutral"
     }
 ]
