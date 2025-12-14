@@ -2468,5 +2468,35 @@
         "slug": "hqc-dia-oc-hoang-quan-phat-hanh-50-trieu-co-phieu-hoan-doi-cho-4-chu-no",
         "news_short_content": "Địa ốc Hoàng Quân thông dự kiến phát hành 50 triệu cổ phiếu để hoán đổi tổng cộng 500 tỷ đồng nợ phải trả của 4 chủ nợ, trong đó có Chủ tịch Trương Anh Tuấn.",
         "sentiment": "Neutral"
+    },
+    {
+        "id": "e327522e401693a470a6eabe518df5aebe00df9bb28244fc9b20860b83d53766",
+        "news_title": "VCA: Biến động thượng tầng tại Thép Vicasa - VNSteel",
+        "update_date": "2025-12-14 12:19:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vca-bien-dong-thuong-tang-tai-thep-vicasa-vnsteel/37242206",
+        "slug": "vca-bien-dong-thuong-tang-tai-thep-vicasa-vnsteel",
+        "news_short_content": "Thép Vicasa – VNSteel cho biết đã tiếp nhận đơn từ nhiệm của các Thành viên HĐQT và Ban kiểm soát nhiệm kỳ 2023 - 2028, dự kiến sẽ được trình cổ đông thông qua tại ĐHĐCĐ bất thường sắp tới.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "70185e1394cd49c303aef3e4e2928dd8d35424194f8abbd2b6a8d17bea83589f",
+        "news_title": "VCB: Vietcombank lên kế hoạch phát hành 2.000 tỷ đồng trái phiếu",
+        "update_date": "2025-12-14 12:15:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vcb-vietcombank-len-ke-hoach-phat-hanh-2000-ty-dong-trai-phieu/37242195",
+        "slug": "vcb-vietcombank-len-ke-hoach-phat-hanh-2000-ty-dong-trai-phieu",
+        "news_short_content": "Vietcombank dự kiến phát hành 2.000 tỷ đồng trái phiếu loại không chuyển đổi, không kèm chứng quyền và không có đảm bảo, kỳ hạn 2 năm.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "b80d1909b9b1b7b63a14bea065ce4cba2dbcd1e78c76b7bafb3cc5e90f765595",
+        "news_title": "BCG: Một đại gia địa ốc - năng lượng đối mặt khoản lỗ hơn 8.000 tỷ: Những ai đang cho vay gần 12.000 tỷ đồng?",
+        "update_date": "2025-12-14 12:00:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/bcg-mot-dai-gia-dia-oc-nang-luong-doi-mat-khoan-lo-hon-8000-ty-nhung-ai-dang-cho-vay-gan-12000-ty-dong/37242184",
+        "slug": "bcg-mot-dai-gia-dia-oc-nang-luong-doi-mat-khoan-lo-hon-8000-ty-nhung-ai-dang-cho-vay-gan-12000-ty-dong",
+        "news_short_content": "Dự kiến lỗ kiểm toán 8.400 tỷ đồng, Bamboo Capital đối mặt áp lực thanh khoản lớn khi gánh nợ vay hơn 11.500 tỷ đồng trong lúc phần lớn tài sản lại nằm ở các khoản phải thu.",
+        "sentiment": "Negative"
     }
 ]
