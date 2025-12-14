@@ -2518,5 +2518,15 @@
         "slug": "hid-mot-co-phieu-vua-tang-nong-240-bat-ngo-bi-cat-margin",
         "news_short_content": "Tính đến 12/12/2025, danh sách chứng khoán không đủ điều kiện giao dịch ký quỹ (margin) của HOSE gồm 70 mã.",
         "sentiment": "Negative"
+    },
+    {
+        "id": "0d4cc6024f666121b4a2e8ca664cbd89161ffb3692c6be497de51c2ec05138e9",
+        "news_title": "POW: Thủ tướng Phạm Minh Chính dự lễ khánh thành nhà máy điện khí LNG 1,4 tỉ USD",
+        "update_date": "2025-12-14 15:03:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/pow-thu-tuong-pham-minh-chinh-du-le-khanh-thanh-nha-may-dien-khi-lng-1-4-ti-usd/37242667",
+        "slug": "pow-thu-tuong-pham-minh-chinh-du-le-khanh-thanh-nha-may-dien-khi-lng-1-4-ti-usd",
+        "news_short_content": "Nhà máy điện khí LNG Nhơn Trạch 3 và 4 vừa khánh thành với hàng loạt cái nhất về công nghệ, quy mô và tiến độ triển khai",
+        "sentiment": "Positive"
     }
 ]
