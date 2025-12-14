@@ -2578,5 +2578,25 @@
         "slug": "pow-co-che-mua-ban-dien-truc-tiep-dppa-co-go-duoc-nut-that-dien-lng",
         "news_short_content": "Tại sự kiện nhà máy điện Nhơn Trạch 3 & 4 chính thức khánh thành và phát điện thương mại vào ngày 14/12, đại diện chủ đâu tư là ông Nguyễn Duy Giang - Phó Tổng Giám đốc Tổng Công ty Điện lực Dầu khí Việt Nam (PV Power), đơn vị thành viên của Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam (Petrovietnam) đã chia sẻ với phóng viên TTXVN về những giải pháp để thúc đẩy triển khai các dự án điện LNG khác trong quy hoạch điện VIII.",
         "sentiment": "Neutral"
+    },
+    {
+        "id": "aca0ec5d39582e32b0f7ef98a26074aa7a66a4bfab90c09fc794055f4342630b",
+        "news_title": "ACV: 'Lấy sân bay Long Thành làm trung tâm để phát triển kinh tế hàng không'",
+        "update_date": "2025-12-14 21:56:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/lay-san-bay-long-thanh-lam-trung-tam-de-phat-trien-kinh-te-hang-khong-d101535.html",
+        "slug": "acv-lay-san-bay-long-thanh-lam-trung-tam-de-phat-trien-kinh-te-hang-khong",
+        "news_short_content": "Trong trung và dài hạn, Thủ tướng Phạm Minh Chính lưu ý, phải lấy sân bay Long Thành làm trung tâm để phát triển kinh tế hàng không, hệ sinh thái hàng không, tạo ra cực tăng trưởng mới chứ không chỉ đơn thuần là khai thác, vận hành một sân bay.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "22a13324bf32c5e125d040afe555d7f689712600c532b8b20f87d65221b89b85",
+        "news_title": "SEA: Nổi bật tuần qua: Bế mạc Kỳ họp thứ 10, Quốc hội khóa XV; Thể thao Việt Nam đạt nhiều thành tích tại SEA Games 33",
+        "update_date": "2025-12-14 21:46:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/sea-noi-bat-tuan-qua-be-mac-ky-hop-thu-10-quoc-hoi-khoa-xv-the-thao-viet-nam-dat-nhieu-thanh-tich-tai-sea-games-33/37244035",
+        "slug": "sea-noi-bat-tuan-qua-be-mac-ky-hop-thu-10-quoc-hoi-khoa-xv-the-thao-viet-nam-dat-nhieu-thanh-tich-tai-sea-games-33",
+        "news_short_content": "Tuần từ ngày 8 - 14/12, trong nước diễn ra một số sự kiện nổi bật: Bế mạc Kỳ họp thứ 10, Quốc hội khóa XV; Hội nghị tổng kết công tác phòng chống tham nhũng, lãng phí, tiêu cực nhiệm kỳ Đại hội XIII của Đảng; Hội nghị Thủ tướng Chính phủ đối thoại với Nông dân lần thứ 7 năm 2025; Không khí ở Hà Nội nhiều ngày trong top ô nhiễm nhất thế giới; Đoàn Thể thao Việt Nam đạt nhiều thành tích tại SEA Games 33.",
+        "sentiment": "Neutral"
     }
 ]
