@@ -2508,5 +2508,15 @@
         "slug": "nvl-novaland-muon-vay-2500-ty-dong-co-the-chuyen-doi-thanh-co-phan",
         "news_short_content": "Novaland muốn huy động tối đa 2.500 tỷ đồng trong đợt vay mới. Khoản vay không có tài sản đảm bảo và có thể chuyển đổi thành cổ phiếu NVL.",
         "sentiment": "Neutral"
+    },
+    {
+        "id": "691cc3589e4064874cd49ead0632d4c229e24ad037d30edbbbb77ad3f0cb0f2f",
+        "news_title": "HID: Một cổ phiếu vừa tăng \"nóng\" 240% bất ngờ bị cắt margin",
+        "update_date": "2025-12-14 14:19:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/mot-co-phieu-vua-tang-nong-240-bat-ngo-bi-cat-margin-100114.html",
+        "slug": "hid-mot-co-phieu-vua-tang-nong-240-bat-ngo-bi-cat-margin",
+        "news_short_content": "Tính đến 12/12/2025, danh sách chứng khoán không đủ điều kiện giao dịch ký quỹ (margin) của HOSE gồm 70 mã.",
+        "sentiment": "Negative"
     }
 ]
