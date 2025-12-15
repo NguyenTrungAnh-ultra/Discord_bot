@@ -3198,5 +3198,35 @@
         "slug": "dph-chot-tra-co-tuc-ky-luc-bang-tien-mat",
         "news_short_content": "Mức tạm ứng cổ tức trên tương đương kế hoạch đã được ĐHĐCĐ thường niên 2025 thông qua.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "e824a1c4df6aafcbd7992ffae0e94e35cf5ebdb4b5f2ef4bdced75373da3a085",
+        "news_title": "DIG: Thị giá DIG \"bốc hơi\" 16% chỉ trong ít ngày, gia đình Chủ tịch lập tức bị bán giải chấp",
+        "update_date": "2025-12-15 17:30:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/thi-gia-dig-boc-hoi-16-chi-trong-it-ngay-gia-dinh-chu-tich-lap-tuc-bi-ban-giai-chap-739-1381242.htm",
+        "slug": "dig-thi-gia-dig-boc-hoi-16-chi-trong-it-ngay-gia-dinh-chu-tich-lap-tuc-bi-ban-giai-chap",
+        "news_short_content": "Từ ngày 15/12, Chứng khoán MB (MBS) sẽ bán giải chấp chứng khoán ký quỹ của Chủ tịch và Phó Chủ tịch Tổng CTCP Đầu tư Phát triển Xây dựng (HOSE: DIG), tổng cộng 935.8 ngàn cp.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "c0dfbd69218d1323dfbfdd8113512d9962b9fb5b0277a6fbddf1b0e9660c9240",
+        "news_title": "CAG: Thành viên HĐQT Cảng An Giang muốn thoái sạch vốn sau hơn 2 năm nắm giữ",
+        "update_date": "2025-12-15 17:00:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/thanh-vien-hdqt-cang-an-giang-muon-thoai-sach-von-sau-hon-2-nam-nam-giu-739-1381195.htm",
+        "slug": "cag-thanh-vien-hdqt-cang-an-giang-muon-thoai-sach-von-sau-hon-2-nam-nam-giu",
+        "news_short_content": "Ông Nguyễn Văn Linh - Ủy viên HĐQT CTCP Cảng An Giang (HNX: CAG) - đăng ký bán toàn bộ vốn trong giai đoạn 15/12/2025 - 13/01/2026.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "03a919d657e79c7893d70826a00b07b1795c2d2c66f9b3f14eb9f2432edac818",
+        "news_title": "QCG: Cổ phiếu QCG tăng 'sốc' 30% trước tin vui từ dự án Phước Kiển",
+        "update_date": "2025-12-15 16:44:00",
+        "news_from_name": "VietnamFinance",
+        "news_source_link": "https://vietnamfinance.vn/co-phieu-qcg-tang-soc-30-truoc-tin-vui-tu-du-an-phuoc-kien-d137248.html",
+        "slug": "qcg-co-phieu-qcg-tang-soc-30-truoc-tin-vui-tu-du-an-phuoc-kien",
+        "news_short_content": "Dự án Phước Kiển của QCG mới đây đã được đề xuất vào danh mục thí điểm theo Nghị quyết 171/2024/QH15, cho phép thực hiện dự án nhà ở thương mại thông qua thỏa thuận về nhận quyền sử dụng đất hoặc đang có quyền sử dụng đất.",
+        "sentiment": "Positive"
     }
 ]
