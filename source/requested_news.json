@@ -2648,5 +2648,75 @@
         "slug": "msb-go-kho-ban-von-cho-doanh-nghiep-nha-nuoc",
         "news_short_content": "\"Sóng\" thoái vốn ở các doanh nghiệp có vốn Nhà nước dồn dập cuối năm. Tuy nhiên việc thoái vốn khu vực này vẫn còn nhiều rào cản...",
         "sentiment": "Neutral"
+    },
+    {
+        "id": "6a8bbe8cf2e93c52783271441e352cfa5a23c3bae684bd61e60df85bfc7a3008",
+        "news_title": "NAF: Dự án của 'Vua chanh leo' Nafoods tại Gia Lai tăng vốn lên 744 tỷ",
+        "update_date": "2025-12-15 08:52:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/du-an-cua-vua-chanh-leo-nafoods-tai-gia-lai-tang-von-len-744-ty-d101536.html",
+        "slug": "naf-du-an-cua-vua-chanh-leo-nafoods-tai-gia-lai-tang-von-len-744-ty",
+        "news_short_content": "Dự án Tổ hợp công nghệ cao chế biến trái cây xuất khẩu của CTCP Nafoods Tây Nguyên (thuộc Nafoods Group) tại Gia Lai vừa được điều chỉnh tăng vốn lên 744 tỷ đồng.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "4d61316b0cff14003e4d166b3d2ae2188cf126ea0749b1a3c33e31843445f1d3",
+        "news_title": "EVS: Vi phạm tới 9 lỗi giao dịch, Chứng khoán EVS bị phạt 1,135 tỷ",
+        "update_date": "2025-12-15 07:43:00",
+        "news_from_name": "VnEconomy",
+        "news_source_link": "https://vneconomy.vn/vi-pham-toi-9-loi-giao-dich-chung-khoan-evs-bi-phat-1135-ty.htm",
+        "slug": "evs-vi-pham-toi-9-loi-giao-dich-chung-khoan-evs-bi-phat-1-135-ty",
+        "news_short_content": "Bên cạnh đó, công ty bị đình chỉ hoạt động bù trừ và thanh toán giao dịch chứng khoán phái sinh có thời hạn 2 tháng theo quy định...",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "84e7365c260bfb93b49bd0d3855b5c538f805a63a58e2e04f8dcf96833d21321",
+        "news_title": "SJC: Chuyện tiêu tiền 'bẩn’ của những đại gia bất chính",
+        "update_date": "2025-12-15 07:42:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/sjc-chuyen-tieu-tien-ban-cua-nhung-dai-gia-bat-chinh/37244626",
+        "slug": "sjc-chuyen-tieu-tien-ban-cua-nhung-dai-gia-bat-chinh",
+        "news_short_content": "Kiếm bộn tiền từ những hành vi trái pháp luật, những đại gia như CEO Bất động sản Nhật Nam Vũ Thị Thúy hay Thân Văn Thoại (nguyên Tổng Giám đốc Công ty CP BBA Toàn Cầu) \"phóng tay\" chi tiền vào những đâu?",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "9a0582e3034e0d2aa941d834d1f7328a5464438e47f6a704bd5133dac0d314ff",
+        "news_title": "VIC: Vợ chồng tỷ phú Phạm Nhật Vượng có thể trở thành hai người giàu nhất và nhì TTCK Việt Nam?",
+        "update_date": "2025-12-15 07:40:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/vo-chong-ty-phu-pham-nhat-vuong-co-the-tro-thanh-hai-nguoi-giau-nhat-va-nhi-ttck-viet-nam-100141.html",
+        "slug": "vic-vo-chong-ty-phu-pham-nhat-vuong-co-the-tro-thanh-hai-nguoi-giau-nhat-va-nhi-ttck-viet-nam",
+        "news_short_content": "Bà Phạm Thu Hương, vợ ông Vượng vươn lên vị trí thứ 3 với khối tài sản khoảng 48.900 tỷ đồng, tăng 11% so với cuối tháng trước và hiện chỉ kém người xếp thứ là ông Trần Đình Long (Chủ tịch Hoà Phát) khoảng 2.600 tỷ đồng.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "c530c044d19c1e67528af340f9a6bf8aca03d29572c15417556a4655c39a8730",
+        "news_title": "MWG: MWG sẽ IPO Điện Máy Xanh trong 2026",
+        "update_date": "2025-12-15 07:37:00",
+        "news_from_name": "VnEconomy",
+        "news_source_link": "https://vneconomy.vn/mwg-se-ipo-dien-may-xanh-trong-2026.htm",
+        "slug": "mwg-mwg-se-ipo-dien-may-xanh-trong-2026",
+        "news_short_content": "Theo nội dung công bố thông tin bất thường, trong tháng 11/2025, HĐQT MWG đã thông qua chủ trương tái cấu trúc các công ty con theo hướng chuyên biệt hóa hoạt động kinh doanh.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "b760542ee2ebb637b0970b5ddd1a34b4ee1ffb2966c06f54d824fb7b5b6fb658",
+        "news_title": "GEE: GELEX đăng ký bán 2,74% vốn tại GEE",
+        "update_date": "2025-12-15 07:36:00",
+        "news_from_name": "VnEconomy",
+        "news_source_link": "https://vneconomy.vn/gelex-dang-ky-ban-274-von-tai-gee.htm",
+        "slug": "gee-gelex-dang-ky-ban-2-74-von-tai-gee",
+        "news_short_content": "GELEX đăng ký bán 10 triệu cổ phiếu GEE, chiếm 2,74% vốn điều lệ tại GEX, giao dịch dự kiến thực hiện từ ngày 17/12/2025 đến 15/01/2026, thông qua phương thức khớp lệnh và/hoặc thỏa thuận.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "4975b345f3fabdc02cfb79321bafe30eabf901029199e9b1289fd5c82bd1f2cc",
+        "news_title": "C4G: Tiến độ dự án sân bay Quảng Trị hơn 5.800 tỷ đồng do Liên danh T&T và CIENCO4 đầu tư sau hơn 1 năm khởi công",
+        "update_date": "2025-12-15 07:12:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/c4g-tien-do-du-an-san-bay-quang-tri-hon-5800-ty-dong-do-lien-danh-t-and-t-va-cienco4-dau-tu-sau-hon-1-nam-khoi-cong/37244529",
+        "slug": "c4g-tien-do-du-an-san-bay-quang-tri-hon-5800-ty-dong-do-lien-danh-t-and-t-va-cienco4-dau-tu-sau-hon-1-nam-khoi-cong",
+        "news_short_content": "Đoàn công tác UBND tỉnh Quảng Trị đã đến kiểm tra tình hình thực hiện dự án Đầu tư xây dưng Cảng Hàng không Quảng Trị.",
+        "sentiment": "Positive"
     }
 ]
