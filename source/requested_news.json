@@ -3228,5 +3228,25 @@
         "slug": "qcg-co-phieu-qcg-tang-soc-30-truoc-tin-vui-tu-du-an-phuoc-kien",
         "news_short_content": "Dự án Phước Kiển của QCG mới đây đã được đề xuất vào danh mục thí điểm theo Nghị quyết 171/2024/QH15, cho phép thực hiện dự án nhà ở thương mại thông qua thỏa thuận về nhận quyền sử dụng đất hoặc đang có quyền sử dụng đất.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "194b90b0bb2e7c994b9d9a427b03daf9a5859b13be8809c60df7e4b8030aa841",
+        "news_title": "GEE: Sự kiện chứng khoán đáng chú ý ngày 16/12",
+        "update_date": "2025-12-15 18:00:04",
+        "news_from_name": "Tin nhanh chứng khoán",
+        "news_source_link": "https://www.tinnhanhchungkhoan.vn/su-kien-chung-khoan-dang-chu-y-ngay-1612-post382211.html",
+        "slug": "gee-su-kien-chung-khoan-dang-chu-y-ngay-16-12",
+        "news_short_content": "Thông tin lịch sự kiện chứng khoán đáng chú ý ngày 16/12 về các doanh nghiệp niêm yết trên thị trường chứng khoán.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "418cc3e4b6045dd3fea4f87cad3272827ed6f6194043e80f59356643388f8c75",
+        "news_title": "CMN: Cổ phiếu CMN tăng trần trước thềm đấu giá lô 20% vốn, 4 tổ chức tranh mua",
+        "update_date": "2025-12-15 17:58:51",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/co-phieu-cmn-tang-tran-truoc-them-dau-gia-lo-20-von-4-to-chuc-tranh-mua-739-1381267.htm",
+        "slug": "cmn-co-phieu-cmn-tang-tran-truoc-them-dau-gia-lo-20-von-4-to-chuc-tranh-mua",
+        "news_short_content": "Lô 20% vốn CTCP Lương thực Thực phẩm Colusa - Miliket (UPCoM: CMN) do Vinataba thoái ghi nhận lượng đăng ký mua gấp 4 lần chào bán. Thông tin này đã kích hoạt nhịp tăng trần của cổ phiếu CMN trong ngày 15/12, đưa thị giá áp sát đỉnh lịch sử.",
+        "sentiment": "Positive"
     }
 ]
