@@ -2718,5 +2718,55 @@
         "slug": "c4g-tien-do-du-an-san-bay-quang-tri-hon-5800-ty-dong-do-lien-danh-t-and-t-va-cienco4-dau-tu-sau-hon-1-nam-khoi-cong",
         "news_short_content": "Đoàn công tác UBND tỉnh Quảng Trị đã đến kiểm tra tình hình thực hiện dự án Đầu tư xây dưng Cảng Hàng không Quảng Trị.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "cd501b575f85c19eeecc6b394972316d4d38447bff0670e71ecaf66dd6d1e144",
+        "news_title": "SMC: Thép SMC giữa vòng xoáy thua lỗ và cuộc tái cấu trúc sinh tồn",
+        "update_date": "2025-12-15 10:15:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/smc-thep-smc-giua-vong-xoay-thua-lo-va-cuoc-tai-cau-truc-sinh-ton/37248794",
+        "slug": "smc-thep-smc-giua-vong-xoay-thua-lo-va-cuoc-tai-cau-truc-sinh-ton",
+        "news_short_content": "Từ vị thế một doanh nghiệp từng thuộc nhóm dẫn đầu ngành thép, SMC nay phải gồng mình tái cấu trúc để giữ dòng tiền, khi thua lỗ kéo dài, áp lực nợ lớn và cạnh tranh ngày càng khốc liệt.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "83b9b7bd270bdec9fae4c94fb3db4e5c62f7604b93b2748e214e3205f9eec6f1",
+        "news_title": "SCS: Dịch vụ Hàng hóa Sài Gòn sắp chi hơn 237 tỷ đồng tạm ứng cổ tức đợt 1/2025",
+        "update_date": "2025-12-15 10:04:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/scs-dich-vu-hang-hoa-sai-gon-sap-chi-hon-237-ty-dong-tam-ung-co-tuc-dot-1-2025/37248020",
+        "slug": "scs-dich-vu-hang-hoa-sai-gon-sap-chi-hon-237-ty-dong-tam-ung-co-tuc-dot-1-2025",
+        "news_short_content": "Dịch vụ Hàng hóa Sài Gòn dự kiến chi hơn 237,2 tỷ đồng để tạm ứng cổ tức đợt 1/2025 cho cổ đông bằng tiền mặt với tỷ lệ 25%, ngày đăng ký cuối cùng thực hiện quyền là 22/12/2025.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "f5958c7b93adda2eb552f20ada731a451a4c3fd735a42eac8f0222206bf87d4f",
+        "news_title": "PTI: Bị xử phạt, truy thu hơn 6 tỷ đồng tiền thuế",
+        "update_date": "2025-12-15 10:00:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/pti-bi-xu-phat-truy-thu-hon-6-ty-dong-tien-thue/37247944",
+        "slug": "pti-bi-xu-phat-truy-thu-hon-6-ty-dong-tien-thue",
+        "news_short_content": "PTI bị xử phạt vi phạm hành chính về thuế, truy thu thuế, tiền nộp chậm... tổng cộng hơn 6,2 tỷ đồng.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "302d9077c6ed7bfab358b3a8ee11810192ed71d9a16185ada0a4d9dca2b7d4bf",
+        "news_title": "SCS: SCS sắp tạm ứng cổ tức 2,500 đồng/cp, Gemadept hưởng lợi lớn",
+        "update_date": "2025-12-15 09:43:34",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/scs-sap-tam-ung-co-tuc-2500-dongcp-gemadept-huong-loi-lon-738-1381072.htm",
+        "slug": "scs-scs-sap-tam-ung-co-tuc-2-500-dong-cp-gemadept-huong-loi-lon",
+        "news_short_content": "CTCP Dịch vụ Hàng hóa Sài Gòn (HOSE: SCS) thông báo chốt quyền tạm ứng cổ tức đợt 1/2025 bằng tiền. Ngày giao dịch không hưởng quyền là 19/12, dự kiến chi trả vào 26/01/2026.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "5db152fcbf68a4991d12246112e19f7a6f32c5b0eaa94cff9d61ae2a33ace78b",
+        "news_title": "MWG: “Bom tấn” của ông Nguyễn Đức Tài trước quyết định IPO: Hệ thống hơn 3.000 cửa hàng, doanh thu gần 9.000 tỷ mỗi tháng",
+        "update_date": "2025-12-15 09:05:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/bom-tan-cua-ong-nguyen-duc-tai-truoc-quyet-dinh-ipo-he-thong-hon-3-000-cua-hang-doanh-thu-gan-9-000-ty-moi-thang-100137.html",
+        "slug": "mwg-bom-tan-cua-ong-nguyen-duc-tai-truoc-quyet-dinh-ipo-he-thong-hon-3000-cua-hang-doanh-thu-gan-9000-ty-moi-thang",
+        "news_short_content": "ĐMX quyết định IPO và niêm yết được xem là bước chuyển chiến lược, mang tính bản lề, mở ra giai đoạn tăng trưởng mới cho doanh nghiệp này, với kỳ vọng duy trì tốc độ tăng trưởng lợi nhuận hai chữ số trong trung và dài hạn.",
+        "sentiment": "Positive"
     }
 ]
