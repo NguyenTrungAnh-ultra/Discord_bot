@@ -3038,5 +3038,115 @@
         "slug": "vpb-vpbank-phat-hanh-3000-ty-dong-trai-phieu-4-khong",
         "news_short_content": "VPBank đã phát hành trái phiếu mã VPB12516 trị giá 3.000 tỷ đồng. Đây là trái phiếu không có bảo đảm, không chuyển đổi, không kèm chứng quyền, xác lập nghĩa vụ trả nợ trực tiếp và không phải nợ thứ cấp của tổ chức phát hành.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "90d13c83be1b94b7a00d2831c100b1dfb7876545d7ea0b0b3d1cf9c403e13c72",
+        "news_title": "VIC: VN-Index đã về vùng 1.370 điểm nếu loại nhóm Vingroup, loạt nhóm cổ phiếu được dự báo bật tăng sau nhịp \"rũ bỏ\"",
+        "update_date": "2025-12-15 15:31:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/vn-index-da-ve-vung-1-370-diem-neu-loai-nhom-vingroup-loat-nhom-co-phieu-duoc-du-bao-bat-tang-sau-nhip-ru-bo-100183.html",
+        "slug": "vic-vn-index-da-ve-vung-1370-diem-neu-loai-nhom-vingroup-loat-nhom-co-phieu-duoc-du-bao-bat-tang-sau-nhip-ru-bo",
+        "news_short_content": "Thị trường điều chỉnh trong bối cảnh không xuất hiện thông tin bất lợi và diễn ra trong thời gian ngắn, do đó cung – cầu nhiều khả năng sẽ sớm cân bằng trở lại.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "492db7ca4b29fb39339e085b92afd570d11c7daa917264d1a941cde478794400",
+        "news_title": "TCX: TCX xin ý kiến cổ đông vay nước ngoài 50 triệu USD, rót 165 tỷ đồng vào TokenBay",
+        "update_date": "2025-12-15 15:30:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/tcx-xin-y-kien-co-dong-vay-nuoc-ngoai-50-trieu-usd-rot-165-ty-dong-vao-tokenbay-737-1381192.htm",
+        "slug": "tcx-tcx-xin-y-kien-co-dong-vay-nuoc-ngoai-50-trieu-usd-rot-165-ty-dong-vao-tokenbay",
+        "news_short_content": "CTCP Chứng khoán Kỹ Thương (HOSE: TCX) gây chú ý với thông báo lấy ý kiến cổ đông bằng văn bản từ ngày 12-25/12 để vay vốn nước ngoài lên đến 50 triệu USD, chào bán hơn 275 ngàn cp ESOP. Ngoài ra, Công ty cũng có ý định rót 165 tỷ đồng vào TokenBay và cơ cấu lại khoản góp vốn tại Wealthtech Innovations.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "f97573e2cfd3fb8266d5e0787c7ce13e4297d25e6a08d1d2cb62b1a735636d2c",
+        "news_title": "MWG: Thế Giới Di Động vừa chi hơn 800 tỷ vào một việc quan trọng",
+        "update_date": "2025-12-15 15:29:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/the-gioi-di-dong-mwg-vua-chi-hon-800-ty-vao-mot-viec-quan-trong-100186.html",
+        "slug": "mwg-the-gioi-di-dong-vua-chi-hon-800-ty-vao-mot-viec-quan-trong",
+        "news_short_content": "Đây là số tiền MWG chi ra để mua 10 triệu cổ phiếu quỹ trong khoảng thời gian từ ngày 19/11 đến 12/12.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "ae2941301e95cfc4102dee8d7cedc7ea999bef635ffc16483a99fa289f53f665",
+        "news_title": "LHG: Long Hậu (LHG): Lợi nhuận ngược chiều giá cổ phiếu",
+        "update_date": "2025-12-15 15:27:24",
+        "news_from_name": "Tin nhanh chứng khoán",
+        "news_source_link": "https://www.tinnhanhchungkhoan.vn/long-hau-lhg-loi-nhuan-nguoc-chieu-gia-co-phieu-post382089.html",
+        "slug": "lhg-long-hau-lhg-loi-nhuan-nguoc-chieu-gia-co-phieu",
+        "news_short_content": "(ĐTCK) Dù kết quả kinh doanh tăng trưởng mạnh, vượt xa kế hoạch năm 2025 và thị trường chứng khoán diễn biến tích cực, nhưng cổ phiếu LHG của Công ty cổ phần Long Hậu vẫn giảm giá.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "0307b4234aa6fdbbcff4b16fa6430699c8b89f53cc99ded42641935031664d2c",
+        "news_title": "SAM: SAM Holdings: Nỗi lo tiến độ dự án!",
+        "update_date": "2025-12-15 15:27:00",
+        "news_from_name": "Tin nhanh chứng khoán",
+        "news_source_link": "https://www.tinnhanhchungkhoan.vn/sam-holdings-noi-lo-tien-do-du-an-post382090.html",
+        "slug": "sam-sam-holdings-noi-lo-tien-do-du-an",
+        "news_short_content": "(ĐTCK) Từng được kỳ vọng hưởng lợi từ thị trường vốn và chiến lược đa ngành, nhưng nhiều dự án chậm tiến độ kéo dài khiến giới đầu tư và cổ đông e ngại.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "69b11edaa1a6b9ed493ae133b7456e2e1ac43ee35101281d8890984b1244afb8",
+        "news_title": "EVF: Củng cố năng lực tài chính sau tái định vị,  thẳng tiến tới mục tiêu lợi nhuận 960 tỷ đồng năm 2025",
+        "update_date": "2025-12-15 15:13:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/evf-cung-co-nang-luc-tai-chinh-sau-tai-dinh-vi-thang-tien-toi-muc-tieu-loi-nhuan-960-ty-dong-nam-2025/37259278",
+        "slug": "evf-cung-co-nang-luc-tai-chinh-sau-tai-dinh-vi-thang-tien-toi-muc-tieu-loi-nhuan-960-ty-dong-nam-2025",
+        "news_short_content": "Năm 2025 được xem là giai đoạn bản lề đối với Công ty Tài chính Tổng hợp Cổ phần Điện lực (EVF) khi công ty cùng lúc triển khai chiến lược tái định vị thương hiệu và đặt ra mục tiêu kinh doanh đầy thách thức với lợi nhuận trước thuế 960 tỷ đồng. Trước thềm kết thúc năm tài khóa 2025, các chỉ số tài chính tích cực cho thấy EVF đang củng cố vững chắc nền tảng tài chính, qua đó tạo đà tăng tốc cho những tháng cuối năm.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "d799e7cf40d73a97b0b4119abe5c908eee9e9635f5f3b023c4a213ddf0eb15de",
+        "news_title": "DPH: Cổ tức kỷ lục tại một doanh nghiệp dược trên UPCoM",
+        "update_date": "2025-12-15 15:02:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/co-tuc-ky-luc-tai-mot-doanh-nghiep-duoc-tren-upcom-738-1381166.htm",
+        "slug": "dph-co-tuc-ky-luc-tai-mot-doanh-nghiep-duoc-tren-upcom",
+        "news_short_content": "CTCP Dược phẩm Hải Phòng (Haipharco, UPCoM: DPH) sẽ tạm ứng cổ tức 2025 bằng tiền với tỷ lệ 20%, tương đương 2,000 đồng/cp, đánh dấu mức chi trả cao nhất kể từ khi Doanh nghiệp lên sàn.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "858e6fccabbdc970a57f46781c537fccaa460fccd56d2dd0db9be9d38e302de2",
+        "news_title": "SHB: SHB nhận giải Ngân hàng xuất sắc về đổi mới sáng tạo",
+        "update_date": "2025-12-15 15:00:00",
+        "news_from_name": "Tạp chí Diễn đàn Doanh nghiệp",
+        "news_source_link": "https://diendandoanhnghiep.vn/shb-nhan-giai-ngan-hang-xuat-sac-ve-doi-moi-sang-tao-10167530.html",
+        "slug": "shb-shb-nhan-giai-ngan-hang-xuat-sac-ve-doi-moi-sang-tao",
+        "news_short_content": "Giải thưởng ghi nhận nỗ lực tiên phong của SHB trong phát triển các giải pháp thanh toán số đột phá, thúc đẩy xu hướng không tiền mặt tại Việt Nam.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "5faaa4064b8f4e4a11e60f6a061434a3b5172e9e9ac21396e3b04c5334592cb1",
+        "news_title": "FPT: Công bố đầu tư 5 công nghệ chiến lược: Quantum AI, Cyber Security, UAV, Data và công nghệ đường sắt",
+        "update_date": "2025-12-15 15:00:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/fpt-cong-bo-dau-tu-5-cong-nghe-chien-luoc-quantum-ai-cyber-security-uav-data-va-cong-nghe-duong-sat-100182.html",
+        "slug": "fpt-cong-bo-dau-tu-5-cong-nghe-chien-luoc-quantum-ai-cyber-security-uav-data-va-cong-nghe-duong-sat",
+        "news_short_content": "Đây là bước đi chiến lược của FPT với mục tiêu làm chủ công nghệ lõi, xây dựng nguồn nhân lực chất lượng cao vì chủ quyền công nghệ quốc gia.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "51dadc553d8f678b865b3e2337ddf34f012210ff3c6ffa17d51069f34fe99675",
+        "news_title": "DBC: Dabaco chia sẻ mục tiêu mở rộng đàn nái lên 80.000 con",
+        "update_date": "2025-12-15 14:57:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/dbc-dabaco-chia-se-muc-tieu-mo-rong-dan-nai-len-80000-con/37258794",
+        "slug": "dbc-dabaco-chia-se-muc-tieu-mo-rong-dan-nai-len-80000-con",
+        "news_short_content": "Chủ tịch HĐQT Dabaco Nguyễn Như So nhấn mạnh rằng chăn nuôi lợn tiếp tục là ngành hàng chiến lược.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "2be7c7676d26aa488c33878f1fab25cc50c0de05c0900c0c13695a15254638ca",
+        "news_title": "MBB: Thi đua thúc đẩy đổi mới, sáng tạo",
+        "update_date": "2025-12-15 14:31:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/mbb-thi-dua-thuc-day-doi-moi-sang-tao/37257583",
+        "slug": "mbb-thi-dua-thuc-day-doi-moi-sang-tao",
+        "news_short_content": "Trong giai đoạn 2020 - 2025, Thủ tướng Chính phủ và Thống đốc NHNN đã phát động nhiều chương trình, phong trào thi đua quan trọng nhằm thúc đẩy toàn ngành Ngân hàng tăng tốc chuyển đổi số, tiêu biểu như phong trào “Bình dân học vụ số” và Chiến lược Chuyển đổi số ngành Ngân hàng. Từ yêu cầu đó, mỗi tổ chức tín dụng không chỉ coi chuyển đổi số là nhiệm vụ chuyên môn, mà là một phong trào thi đua yêu nước thực chất gắn với nâng cao hiệu quả hoạt động, nâng tầm chất lượng phục vụ và đóng góp vào mục tiêu phát triển kinh tế số quốc gia.",
+        "sentiment": "Positive"
     }
 ]
