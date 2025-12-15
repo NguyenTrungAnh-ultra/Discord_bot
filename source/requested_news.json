@@ -3338,5 +3338,35 @@
         "slug": "vcb-vietcombank-dung-giao-dich-chuyen-tien-rut-tien-cua-nhom-khach-hang-sau-tren-tat-ca-cac-kenh",
         "news_short_content": "Khách hàng là công dân Việt Nam sử dụng các giấy tờ tùy thân như Thẻ Căn cước công dân, Thẻ Căn cước, Căn cước điện tử trong giao dịch thanh toán/rút tiền tại Vietcombank. Khách hàng đang sử dụng Hộ Chiếu làm Giấy tờ tùy thân sẽ phải dừng giao dịch từ ngày 1/1/2026.",
         "sentiment": "Neutral"
+    },
+    {
+        "id": "04ccc46e0b011da688a0c85b0eda50db6cddac09da84b92d36e7de744a4c43c8",
+        "news_title": "GSP: Gas Shipping sắp bổ sung tàu thứ 10",
+        "update_date": "2025-12-15 21:02:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/gas-shipping-sap-bo-sung-tau-thu-10-737-1381389.htm",
+        "slug": "gsp-gas-shipping-sap-bo-sung-tau-thu-10",
+        "news_short_content": "Doanh nghiệp vận tải khí chuẩn bị vay vốn dài hạn để đầu tư thêm tàu LPG, trong bối cảnh kết quả kinh doanh chững lại và thị trường cước tàu phân hóa rõ rệt giữa các phân khúc.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "900803ab759030cb5f4f8adee0c2c3aaf39db7df61011990d0ff28f67d09a7ef",
+        "news_title": "VIC: Tỷ phú Phạm Nhật Vượng vừa làm một điều đặc biệt tại quốc gia đông dân nhất Đông Nam Á",
+        "update_date": "2025-12-15 20:10:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/ty-phu-pham-nhat-vuong-vua-lam-mot-dieu-dac-biet-tai-quoc-gia-dong-dan-nhat-dong-nam-a-100195.html",
+        "slug": "vic-ty-phu-pham-nhat-vuong-vua-lam-mot-dieu-dac-biet-tai-quoc-gia-dong-dan-nhat-dong-nam-a",
+        "news_short_content": "Nhà máy xe điện VinFast tại Indonesia được đưa vào vận hành chỉ sau 17 tháng kể từ ngày động thổ, đây là nhà máy thứ tư của hãng chính thức đi vào hoạt động trên toàn cầu, đồng thời là nhà máy đầu tiên tại Indonesia và Đông Nam Á (bên ngoài Việt Nam).",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "117c7a2deb1836ad0a557917d41e13cf14dd95db1efde7ae6799199a0c17a769",
+        "news_title": "VIC: Chỉ mất 17 tháng, ông Phạm Nhật Vượng dựng xong công trình 300 triệu USD ở Indonesia - Bộ trưởng nước bạn cũng phải thán phục",
+        "update_date": "2025-12-15 20:06:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vic-chi-mat-17-thang-ong-pham-nhat-vuong-dung-xong-cong-trinh-300-trieu-usd-o-indonesia-bo-truong-nuoc-ban-cung-phai-than-phuc/37262040",
+        "slug": "vic-chi-mat-17-thang-ong-pham-nhat-vuong-dung-xong-cong-trinh-300-trieu-usd-o-indonesia-bo-truong-nuoc-ban-cung-phai-than-phuc",
+        "news_short_content": "Nối tiếp các thành công trước đó tại thị trường Indonesia, VinFast đã chính thức đưa vào vận hành nhà máy lắp ráp xe điện thứ 4 trên toàn cầu tại Subang, Tây Java.",
+        "sentiment": "Positive"
     }
 ]
