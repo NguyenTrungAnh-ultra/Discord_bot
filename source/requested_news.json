@@ -2938,5 +2938,55 @@
         "slug": "acv-thu-tuong-lan-thu-9-den-kiem-tra-sieu-san-bay-long-thanh-110000-ty-giao-nhiem-vu-cho-acv-vietnam-airlines-vietjet",
         "news_short_content": "Theo kế hoạch, sân bay sẽ thực hiện chuyến bay kỹ thuật vào ngày 15/12 và dự kiến đón chuyến bay thương mại đầu tiên vào ngày 19/12, đánh dấu bước ngoặt quan trọng trong quá trình đưa sân bay lớn nhất cả nước vào khai thác.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "fb2231aaff1f935bf3181489b1a995d067b9d731eb5954046f8c8eff41c817a8",
+        "news_title": "SSB: SeABank được vinh danh Top 10 Báo cáo thường niên tốt nhất 2025",
+        "update_date": "2025-12-15 13:21:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/seabank-duoc-vinh-danh-top-10-bao-cao-thuong-nien-tot-nhat-2025-d101549.html",
+        "slug": "ssb-seabank-duoc-vinh-danh-top-10-bao-cao-thuong-nien-tot-nhat-2025",
+        "news_short_content": "Trong khuôn khổ Hội nghị Doanh nghiệp niêm yết thường niên (VLCA) 2025, Ngân hàng TMCP Đông Nam Á (SeABank, HOSE: SSB) được vinh danh Top 10 Báo cáo thường niên tốt nhất - nhóm ngành Tài chính, ghi nhận nỗ lực nhiều năm của Ngân hàng trong việc chuẩn hóa quản trị, minh bạch và cải thiện chất lượng công bố thông tin theo các tiêu chuẩn quốc tế.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "e819377b73e23a787587d79ae217f5a40ed0092c6e531483cd963d618af3cd3c",
+        "news_title": "VHM: Vinhomes chuyển nhượng công ty đầu tư dự án Vinhomes Ocean Park 3",
+        "update_date": "2025-12-15 13:21:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/vinhomes-chuyen-nhuong-cong-ty-dau-tu-du-an-vinhomes-ocean-park-3-100173.html",
+        "slug": "vhm-vinhomes-chuyen-nhuong-cong-ty-dau-tu-du-an-vinhomes-ocean-park-3",
+        "news_short_content": "Được biết, Công ty Đại An là chủ đầu tư (hoặc đơn vị pháp nhân trực tiếp nắm giữ) của dự án Vinhomes Ocean Park 3 (tên thương mại là The Crown), còn được biết đến với tên pháp lý là Khu đô thị Đại An.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "e778d4d88a2afbad9d9e4a156367c50afba9cd2db0b36e6a221a1e78fed49d2c",
+        "news_title": "BSR: Ấm áp nghĩa tình Petrovietnam để kịp thời hỗ trợ các tỉnh miền Trung bị thiên tai",
+        "update_date": "2025-12-15 13:21:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/am-ap-nghia-tinh-petrovietnam-de-kip-thoi-ho-tro-cac-tinh-mien-trung-bi-thien-tai-d101556.html",
+        "slug": "bsr-am-ap-nghia-tinh-petrovietnam-de-kip-thoi-ho-tro-cac-tinh-mien-trung-bi-thien-tai",
+        "news_short_content": "Nhiều năm qua, Petrovietnam cùng các đơn vị thành viên và tập thể người lao động đã luôn đồng hành với nhân dân cả nước trong các hoạt động an sinh xã hội...",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "76c4bcac449d289f1a278fe330681c6830c02d4beda7a27525e620ab223c4708",
+        "news_title": "ABB: Tăng giá 45% trong 6 tháng, cổ phiếu ABB đón triển vọng mới",
+        "update_date": "2025-12-15 12:57:29",
+        "news_from_name": "Tin nhanh chứng khoán",
+        "news_source_link": "https://www.tinnhanhchungkhoan.vn/tang-gia-45-trong-6-thang-co-phieu-abb-don-trien-vong-moi-post382179.html",
+        "slug": "abb-tang-gia-45-trong-6-thang-co-phieu-abb-don-trien-vong-moi",
+        "news_short_content": "Sau giai đoạn dài tích lũy, cổ phiếu ABB bắt đầu thu hút sự chú ý trở lại, giá tăng bền vững và thanh khoản đồng pha.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "3ce1e0f6dd176c722d06f7c5a63dd49f073faf9db884585c3a42672292e78c48",
+        "news_title": "TNW: Thiếu tiền, công ty liên quan Chủ tịch TNW mua không hết lượng đăng ký",
+        "update_date": "2025-12-15 12:45:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/thieu-tien-cong-ty-lien-quan-chu-tich-tnw-mua-khong-het-luong-dang-ky-739-1381117.htm",
+        "slug": "tnw-thieu-tien-cong-ty-lien-quan-chu-tich-tnw-mua-khong-het-luong-dang-ky",
+        "news_short_content": "CTCP VBIC Việt Nam chỉ mua thành công gần 80% lượng cổ phiếu TNW đăng ký, vì không chuẩn bị đủ nguồn.",
+        "sentiment": "Neutral"
     }
 ]
