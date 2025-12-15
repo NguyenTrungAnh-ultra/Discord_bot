@@ -2988,5 +2988,55 @@
         "slug": "tnw-thieu-tien-cong-ty-lien-quan-chu-tich-tnw-mua-khong-het-luong-dang-ky",
         "news_short_content": "CTCP VBIC Việt Nam chỉ mua thành công gần 80% lượng cổ phiếu TNW đăng ký, vì không chuẩn bị đủ nguồn.",
         "sentiment": "Neutral"
+    },
+    {
+        "id": "5830cd0035126ea5c7997839ebf06e6da0da3b0ca0ba52a4bc92b7b8036bf2df",
+        "news_title": "BCE: BCE đổi tên, duyệt kế hoạch tăng vốn lên gấp đôi",
+        "update_date": "2025-12-15 14:32:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/bce-doi-ten-duyet-ke-hoach-tang-von-len-gap-doi-737-1381157.htm",
+        "slug": "bce-bce-doi-ten-duyet-ke-hoach-tang-von-len-gap-doi",
+        "news_short_content": "Thông qua hình thức lấy ý kiến bằng văn bản, cổ đông CTCP Xây dựng và Giao thông Bình Dương (HOSE: BCE) đã thông qua việc đổi tên Công ty, địa chỉ trụ sở, bổ sung ngành nghề kinh doanh, sửa đổi Điều lệ, đồng thời tăng vốn từ 350 tỷ đồng lên 700 tỷ đồng.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "93a108813c0c953af0f73278b3517e3b4ea1098c99165d3061280ce04bb8676a",
+        "news_title": "NVL: Công ty con của Novaland chậm thanh toán lãi cho lô trái phiếu hơn 1.000 tỷ đồng",
+        "update_date": "2025-12-15 14:25:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/nvl-cong-ty-con-cua-novaland-cham-thanh-toan-lai-cho-lo-trai-phieu-hon-1000-ty-dong/37257224",
+        "slug": "nvl-cong-ty-con-cua-novaland-cham-thanh-toan-lai-cho-lo-trai-phieu-hon-1000-ty-dong",
+        "news_short_content": "Do chưa thu xếp được nguồn tiền nên Nova Final Solution đã chậm thanh toán gần 22,7 tỷ đồng tiền lãi cho lô trái phiếu mã NOVA FINAL SOLUTION.BOND.2019.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "e364dda1a5c5d6cf5dd52c4d2b09649f3adac24e7f4e45470700a0d525e31980",
+        "news_title": "DIG: DIC Corp tăng vốn lên gần 8.000 tỷ đồng, sạch nợ trái phiếu",
+        "update_date": "2025-12-15 14:03:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/dic-corp-tang-von-len-gan-8000-ty-dong-sach-no-trai-phieu-d101559.html",
+        "slug": "dig-dic-corp-tang-von-len-gan-8000-ty-dong-sach-no-trai-phieu",
+        "news_short_content": "DIC Corp đã phân phối 150 triệu cổ phiếu cho cổ đông và cán bộ công nhân viên, thu về 1.800 tỷ. Công ty có thêm nguồn lực phát triển dự án và trả nợ.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "4e6a7ed9d1792e831a9f4aaaf67690b280438979537d05e1893d5ab8f715e7af",
+        "news_title": "TNG: TNG ước lãi 346 tỷ sau 11 tháng, tăng hơn 17%",
+        "update_date": "2025-12-15 14:02:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/tng-uoc-lai-346-ty-sau-11-thang-tang-hon-17-737-1381156.htm",
+        "slug": "tng-tng-uoc-lai-346-ty-sau-11-thang-tang-hon-17",
+        "news_short_content": "Lũy kế 11 tháng 2025, CTCP Đầu tư và Thương mại TNG (HNX: TNG) ghi nhận doanh thu gần 8,000 tỷ đồng và lãi sau thuế 345.7 tỷ đồng, đều là mức cao nhất lịch sử, đồng thời sớm vượt mục tiêu lợi nhuận năm.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "0f50a6f719fab6e33c18cfc470fba53359b0d3fd8e9b42eb772a71512a437c89",
+        "news_title": "VPB: VPBank phát hành 3.000 tỷ đồng trái phiếu '4 không'",
+        "update_date": "2025-12-15 13:29:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vpb-vpbank-phat-hanh-3000-ty-dong-trai-phieu-4-khong/37254293",
+        "slug": "vpb-vpbank-phat-hanh-3000-ty-dong-trai-phieu-4-khong",
+        "news_short_content": "VPBank đã phát hành trái phiếu mã VPB12516 trị giá 3.000 tỷ đồng. Đây là trái phiếu không có bảo đảm, không chuyển đổi, không kèm chứng quyền, xác lập nghĩa vụ trả nợ trực tiếp và không phải nợ thứ cấp của tổ chức phát hành.",
+        "sentiment": "Positive"
     }
 ]
