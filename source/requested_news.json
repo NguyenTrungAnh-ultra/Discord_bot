@@ -3618,5 +3618,65 @@
         "slug": "vhm-vinhomes-thoai-von-tai-xay-dung-dai-an",
         "news_short_content": "Vinhomes vừa có thông báo về việc chuyển nhượng cổ phần và không còn là công ty mẹ tại Xây dựng Đại An.",
         "sentiment": "Neutral"
+    },
+    {
+        "id": "947ffbbbb19f49b0d71bd882fa3aba969404e89ce20f8e69a755827963a214bd",
+        "news_title": "BSR: BSR chủ động vượt “bão” năm 2026",
+        "update_date": "2025-12-16 11:12:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/bsr-chu-dong-vuot-bao-nam-2026-737-1381491.htm",
+        "slug": "bsr-bsr-chu-dong-vuot-bao-nam-2026",
+        "news_short_content": "Mặc dù vượt “bão” thành công để về đích sớm năm 2025 với nhiều thành tích đáng kể nhưng theo dự báo sẽ lại có những “cơn bão” lớn hơn đang chờ Công ty cổ phần Lọc Hóa dầu Bình Sơn (BSR) ở phía trước, đòi hỏi doanh nghiệp phải chủ động có các giải pháp trọng tâm để vượt qua và hoàn thành nhiệm vụ của năm bản lề 2026.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "e4c4c26ddfa9e5be669b2ef9d542512564ce16579d673dc229ae96f175f9b26a",
+        "news_title": "FPT: Top thương vụ M&A nổi bật 2025: Tiền ngoại phủ sóng",
+        "update_date": "2025-12-16 11:10:03",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/top-thuong-vu-ma-noi-bat-2025-tien-ngoai-phu-song-764-1381481.htm",
+        "slug": "fpt-top-thuong-vu-m-and-a-noi-bat-2025-tien-ngoai-phu-song",
+        "news_short_content": "Dòng tiền ngoại bao trùm các thương vụ nổi bật ngành y tế, hàng tiêu dùng cho đến công nghiệp, công nghệ. Trong khi đó, tiềm lực bên mua nội địa thể hiện ở lĩnh vực địa ốc.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "bf33ec4db066a48953e0b26ebd3c636991c351e3c4ad5788ab064fbc0c924078",
+        "news_title": "VLB: VLB tạm ứng cổ tức tiền với tỷ lệ 30%",
+        "update_date": "2025-12-16 11:00:00",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/vlb-tam-ung-co-tuc-tien-voi-ty-le-30-738-1381466.htm",
+        "slug": "vlb-vlb-tam-ung-co-tuc-tien-voi-ty-le-30",
+        "news_short_content": "CTCP Xây dựng và Sản xuất Vật liệu xây dựng Biên Hòa (BBCC, UPCoM: VLB) công bố nghị quyết HĐQT về việc tạm ứng cổ tức bằng tiền cho năm 2025.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "b7c1949bc80de001b6bca382d9925705e8b1f01e0dfd83493a73841071e76915",
+        "news_title": "VCK: Cổ phiếu VCK của Chứng khoán VPS chính thức niêm yết trên HOSE",
+        "update_date": "2025-12-16 10:54:39",
+        "news_from_name": "Tin nhanh chứng khoán",
+        "news_source_link": "https://www.tinnhanhchungkhoan.vn/co-phieu-vck-cua-chung-khoan-vps-chinh-thuc-niem-yet-tren-hose-post382231.html",
+        "slug": "vck-co-phieu-vck-cua-chung-khoan-vps-chinh-thuc-niem-yet-tren-hose",
+        "news_short_content": "Ngày 16/12/2025, Sở Giao dịch Chứng khoán TP. Hồ Chí Minh (HOSE) đã tổ chức Lễ trao Quyết định niêm yết cho Công ty Cổ phần Chứng khoán VPS, chính thức đưa 1.482.315.700 cổ phiếu VCK vào giao dịch trên sàn HOSE, với giá tham chiếu 60.000 đồng/cổ phiếu trong ngày giao dịch đầu tiên.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "64597b32602ddc8ddec9076e1e880c276aa04a7f28f53c88980d526a12f6ea89",
+        "news_title": "PDR: Từ ngày Chủ tịch Nguyễn Văn Đạt bán cổ phiếu “hy sinh” lợi ích cá nhân ngắn hạn đổi lại lợi ích dài hạn cho cổ đông, PDR đã giảm gần 23%",
+        "update_date": "2025-12-16 10:35:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/tu-ngay-chu-tich-phat-dat-dang-ky-ban-88-trieu-co-phieu-hy-sinh-loi-ich-ca-nhan-ngan-han-doi-lai-loi-ich-dai-han-cho-co-dong-pdr-da-giam-gan-23-100232.html",
+        "slug": "pdr-tu-ngay-chu-tich-nguyen-van-dat-ban-co-phieu-hy-sinh-loi-ich-ca-nhan-ngan-han-doi-lai-loi-ich-dai-han-cho-co-dong-pdr-da-giam-gan-23",
+        "news_short_content": "Giao dịch được thực hiện theo phương thức thỏa thuận trong giai đoạn 5/9 đến 18/9/2025. Ước tính, ông Đạt đã thu về trên 2.100 tỷ đồng từ thương vụ trên.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "ca79cc348476fc4cd7b514961478f00f293fb9e70043bc421f50709693b1903a",
+        "news_title": "SJ1: Công ty đầu tiên trên sàn công bố BCTC kiểm toán niên độ 2024 - 2025: Doanh thu bùng nổ 56%",
+        "update_date": "2025-12-16 10:32:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/cong-ty-dau-tien-tren-san-cong-bo-bctc-kiem-toan-nien-do-2024-2025-doanh-thu-bung-no-56-100235.html",
+        "slug": "sj1-cong-ty-dau-tien-tren-san-cong-bo-bctc-kiem-toan-nien-do-2024-2025-doanh-thu-bung-no-56",
+        "news_short_content": "Mở màn mùa báo cáo tài chính kiểm toán niên độ 2025, doanh nghiệp này ghi nhận doanh thu tăng trưởng ấn tượng nhưng lợi nhuận lại chững lại do gánh nặng chi phí vận hành.",
+        "sentiment": "Positive"
     }
 ]
