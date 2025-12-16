@@ -3378,5 +3378,95 @@
         "slug": "acv-chuyen-bay-ky-thuat-dau-tien-xuong-long-thanh-kiem-soat-bui-the-nao-khi-san-bay-con-thi-cong",
         "news_short_content": "Chiều 15-12, sân bay Long Thành đón chuyến bay kỹ thuật đầu tiên để kiểm tra, đánh giá toàn diện hệ thống khai thác, trong bối cảnh công trường vẫn đang thi công và nguy cơ bụi, cát, vật ngoại lai ảnh hưởng đến an toàn, đặc biệt là động cơ máy bay.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "f1c42776759be893b4092126713ee7d1524f2826c7729a1dff6440bcd829b5fd",
+        "news_title": "PET: 6 nhà đầu tư cá nhân ‘tạm lỗ’ 166 tỷ sau phiên đấu giá cổ phiếu PET",
+        "update_date": "2025-12-16 07:00:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/6-nha-dau-tu-ca-nhan-tam-lo-166-ty-sau-phien-dau-gia-co-phieu-pet-d101571.html",
+        "slug": "pet-6-nha-dau-tu-ca-nhan-tam-lo-166-ty-sau-phien-dau-gia-co-phieu-pet",
+        "news_short_content": "Cổ phiếu PET giảm 3 phiên liên tiếp sau cuộc đấu giá bán vốn thuộc sở hữu PVN. Diễn biến này khiến các nhà đầu tư tham gia đấu giá tạm lỗ lớn.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "ac3b61a8d8cbd3e7a4590a8929461ac1503ff34d3966ac1a7d7a491efa179cff",
+        "news_title": "QCG: Cổ phiếu QCG tăng trần 4 phiên liên tiếp, trước thông tin cựu CEO Nguyễn Thị Như Loan bị đề nghị truy tố",
+        "update_date": "2025-12-16 06:50:25",
+        "news_from_name": "Tin nhanh chứng khoán",
+        "news_source_link": "https://www.tinnhanhchungkhoan.vn/co-phieu-qcg-tang-tran-4-phien-lien-tiep-truoc-thong-tin-cuu-ceo-nguyen-thi-nhu-loan-bi-de-nghi-truy-to-post382217.html",
+        "slug": "qcg-co-phieu-qcg-tang-tran-4-phien-lien-tiep-truoc-thong-tin-cuu-ceo-nguyen-thi-nhu-loan-bi-de-nghi-truy-to",
+        "news_short_content": "Bộ Công an vừa hoàn tất kết luận điều tra, đề nghị truy tố bà Nguyễn Thị Như Loan, cựu Tổng giám đốc CTCP Quốc Cường Gia Lai (mã QCG - sàn HOSE) và cựu Phó chủ tịch UBND TP.HCM Nguyễn Thị Hồng cùng 20 bị can khác về 5 tội danh.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "9abb5c41a0714977eee3372d36792c0eac7c90c977fcce3ba6091ed171fcbefa",
+        "news_title": "QCG: Tình hình hiện tại của Cường Đô La",
+        "update_date": "2025-12-16 06:43:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/qcg-tinh-hinh-hien-tai-cua-cuong-do-la/37263807",
+        "slug": "qcg-tinh-hinh-hien-tai-cua-cuong-do-la",
+        "news_short_content": "Động thái trên MXH của doanh nhân Cường Đô La đang gây chú ý.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "7e3819c297d2004372bb159c8dae5d5e84457394374c9a36a10772b7b3d9cbd1",
+        "news_title": "POW: Khánh thành Nhơn Trạch 3 và Nhơn Trạch 4: Bước ngoặt trong kỷ nguyên điện khí LNG",
+        "update_date": "2025-12-16 06:42:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/pow-khanh-thanh-nhon-trach-3-va-nhon-trach-4-buoc-ngoat-trong-ky-nguyen-dien-khi-lng/37263802",
+        "slug": "pow-khanh-thanh-nhon-trach-3-va-nhon-trach-4-buoc-ngoat-trong-ky-nguyen-dien-khi-lng",
+        "news_short_content": "Tại lễ khánh thành Nhà máy điện Nhơn Trạch 3 và Nhơn Trạch 4, lãnh đạo Đảng và Nhà nước ghi nhận và đánh giá cao nỗ lực của Petrovietnam và PV Power trong việc triển khai cụm nhà máy điện khí LNG đầu tiên của Việt Nam.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "30d011531bf0af667afce141a4161ad4704416b043cb3ae65177d1f5992b77cc",
+        "news_title": "VIC: Thanh khoản cuối năm khó cải thiện",
+        "update_date": "2025-12-16 06:40:55",
+        "news_from_name": "Tin nhanh chứng khoán",
+        "news_source_link": "https://www.tinnhanhchungkhoan.vn/thanh-khoan-cuoi-nam-kho-cai-thien-post382155.html",
+        "slug": "vic-thanh-khoan-cuoi-nam-kho-cai-thien",
+        "news_short_content": "(ĐTCK) Thanh khoản thị trường chứng khoán tiếp tục duy trì ở mức thấp. Nhiều ý kiến cho rằng, thị trường cần một chất xúc tác đủ mạnh để cải thiện thanh khoản và hình thành nhịp tăng bền vững giai đoạn tới.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "e260f03a36a93f8566543b435d1531c4f126c63bd37a047b680d715261acfb1e",
+        "news_title": "DWS: Lòng tham vẫn chiến thắng nỗi sợ hãi",
+        "update_date": "2025-12-16 06:39:35",
+        "news_from_name": "Tin nhanh chứng khoán",
+        "news_source_link": "https://www.tinnhanhchungkhoan.vn/long-tham-van-chien-thang-noi-so-hai-post382161.html",
+        "slug": "dws-long-tham-van-chien-thang-noi-so-hai",
+        "news_short_content": "(ĐTCK) Hơn ba phần tư nhà quản lý tài sản toàn cầu vẫn duy trì chiến lược “chấp nhận rủi ro”, tăng tỷ trọng cổ phiếu nhờ kỳ vọng tăng trưởng kinh tế, chính sách nới lỏng và động lực từ làn sóng AI.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "028ef9344c49939188e7f51bcd515d0ac79393dbfa59c989ed744fb110535520",
+        "news_title": "VCB: NHNN lấy ý kiến việc khen thưởng 3 cá nhân ở Vietcombank",
+        "update_date": "2025-12-16 06:15:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vcb-nhnn-lay-y-kien-viec-khen-thuong-3-ca-nhan-o-vietcombank/37263744",
+        "slug": "vcb-nhnn-lay-y-kien-viec-khen-thuong-3-ca-nhan-o-vietcombank",
+        "news_short_content": "Vụ tổ chức cán bộ Ngân hàng Nhà nước Việt Nam vừa đăng tải thông tin lấy ý kiến nhân dân về việc khen thưởng Chiến sĩ thi đua toàn quốc trước khi trình khen thưởng.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "a62e960cdd740bc5b02315496e27354538b6764dfd2740582a84b047b4ce3f04",
+        "news_title": "VIC: VinFast đặt mục tiêu nâng tỷ lệ nội địa hóa lên 84% năm 2026",
+        "update_date": "2025-12-16 05:58:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vic-vinfast-dat-muc-tieu-nang-ty-le-noi-dia-hoa-len-84-nam-2026/37263709",
+        "slug": "vic-vinfast-dat-muc-tieu-nang-ty-le-noi-dia-hoa-len-84-nam-2026",
+        "news_short_content": "Hiện tỷ lệ nội địa hóa của VinFast đạt khoảng 60%, làm chủ các công nghệ lõi như thân vỏ, động cơ, hệ thống pin. Mục tiêu của hãng là nâng tỷ lệ này lên 84% vào năm 2026.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "a9bc6994129edb13d3750058aa531caf4e2b017e85d353bd1d3d5a2d120ee302",
+        "news_title": "POW: NT3 và 4: Dự án nâng cao tầm vóc Việt Nam",
+        "update_date": "2025-12-16 05:56:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/pow-nt3-va-4-du-an-nang-cao-tam-voc-viet-nam/37263706",
+        "slug": "pow-nt3-va-4-du-an-nang-cao-tam-voc-viet-nam",
+        "news_short_content": "NT3 và 4: Dự án nâng cao tầm vóc Việt Nam",
+        "sentiment": "Positive"
     }
 ]
