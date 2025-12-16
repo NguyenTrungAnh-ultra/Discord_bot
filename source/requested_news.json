@@ -3598,5 +3598,25 @@
         "slug": "no1-nhan-thua-ke-4-trieu-co-phieu-vo-co-chu-tich-no1-se-tro-thanh-co-dong-lon-nhat",
         "news_short_content": "Thời gian dự kiến chuyển quyền sở hữu từ ngày 17/12/2025 đến ngày 15/01/2026. Việc chuyển quyền sở hữu cổ phiếu không thông qua hệ thống của Sở Giao dịch Chứng khoán.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "ec67e0bf904aedd1014986669cea530670682ed2fd96548b91011fa3d671faed",
+        "news_title": "BMS: Chứng khoán Bảo Minh sử dụng 1.250 tỷ đồng từ đợt chào bán cổ phiếu riêng lẻ như thế nào?",
+        "update_date": "2025-12-16 10:09:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/bms-chung-khoan-bao-minh-su-dung-1250-ty-dong-tu-dot-chao-ban-co-phieu-rieng-le-nhu-the-nao/37269888",
+        "slug": "bms-chung-khoan-bao-minh-su-dung-1250-ty-dong-tu-dot-chao-ban-co-phieu-rieng-le-nhu-the-nao",
+        "news_short_content": "Chứng khoán Bảo Minh thay đổi phương án sử dụng số 1.250 tỷ đồng thu được từ đợt chào bán cổ phiếu riêng lẻ.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "8e432e043c950183c9c50761cf4cacdccd0479d379b26ad04f6fb37faa71953d",
+        "news_title": "VHM: Vinhomes thoái vốn tại Xây dựng Đại An",
+        "update_date": "2025-12-16 10:07:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vhm-vinhomes-thoai-von-tai-xay-dung-dai-an/37269706",
+        "slug": "vhm-vinhomes-thoai-von-tai-xay-dung-dai-an",
+        "news_short_content": "Vinhomes vừa có thông báo về việc chuyển nhượng cổ phần và không còn là công ty mẹ tại Xây dựng Đại An.",
+        "sentiment": "Neutral"
     }
 ]
