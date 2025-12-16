@@ -3468,5 +3468,95 @@
         "slug": "pow-nt3-va-4-du-an-nang-cao-tam-voc-viet-nam",
         "news_short_content": "NT3 và 4: Dự án nâng cao tầm vóc Việt Nam",
         "sentiment": "Positive"
+    },
+    {
+        "id": "4589a4f8e971434bdbe6ca21132da2d212d9f4c0219e6183819a22206d525aab",
+        "news_title": "FPT: Chủ tịch Trương Gia Bình - UAV, đường sắt là chiến lược mới của FPT",
+        "update_date": "2025-12-16 08:45:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/chu-tich-truong-gia-binh-uav-duong-sat-la-chien-luoc-moi-cua-fpt-100220.html",
+        "slug": "fpt-chu-tich-truong-gia-binh-uav-duong-sat-la-chien-luoc-moi-cua-fpt",
+        "news_short_content": "Tập đoàn FPT công bố đi vào công nghệ chiến lược với 5 đơn vị: Viện Quantum AI và Cyber Security (QACI), FPT UAV, Công nghệ Đường sắt FPT (FMT), FPT Cyber Security và DC5.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "46b6825266af6fbd43699a2b7e8cc733488a7f73226744582a221d95988eb60f",
+        "news_title": "PDR: Giải mã tham vọng 1,5 tỷ USD của Phát Đạt",
+        "update_date": "2025-12-16 08:39:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/giai-ma-tham-vong-1-5-ty-usd-cua-phat-dat-100224.html",
+        "slug": "pdr-giai-ma-tham-vong-1-5-ty-usd-cua-phat-dat",
+        "news_short_content": "Trong bối cảnh dòng tiền kinh doanh âm, lượng tiền mặt giảm, Công ty CP Phát triển Bất động sản Phát Đạt (PDR) bất ngờ công bố kế hoạch 5 năm đầy tham vọng với doanh thu hơn 1,5 tỷ USD.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "042b8d48e287832784aaaa32f338babd49db3a077fb7f63d9f1b541a5699bd8f",
+        "news_title": "EVF: Tối ưu nguồn lực, củng cố năng lực quản trị trong giai đoạn bứt phá",
+        "update_date": "2025-12-16 08:00:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/evf-toi-uu-nguon-luc-cung-co-nang-luc-quan-tri-trong-giai-doan-but-pha-d101572.html",
+        "slug": "evf-toi-uu-nguon-luc-cung-co-nang-luc-quan-tri-trong-giai-doan-but-pha",
+        "news_short_content": "Sở hữu quy mô vốn chủ sở hữu trên 9.700 tỷ đồng và tổng tài sản hơn 70.000 tỷ đồng nhưng chỉ vận hành với chưa đến 300 nhân sự, Công ty Tài chính Tổng hợp Cổ phần Điện lực (EVF) đang trở thành ví dụ điển hình về mô hình doanh nghiệp tài chính tinh gọn, hiệu quả và dựa trên nền tảng công nghệ số.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "40ff28c2643bf69b3ba3096bffc24626d799ad18864078765ad5e4635f022ec5",
+        "news_title": "HBC: Xây dựng Hòa Bình vẫn nằm trong nhóm doanh nghiệp nợ BHXH lớn nhất, với số tiền nợ lên tới hơn 56,7 tỷ đồng",
+        "update_date": "2025-12-16 08:00:00",
+        "news_from_name": "Vnbusiness",
+        "news_source_link": "https://vnbusiness.vn/24h/xay-dung-hoa-binh-van-nam-trong-nhom-doanh-nghiep-no-bhxh-lon-nhat-voi-so-tien-no-len-toi-hon-56-7-ty-dong-1111534.html",
+        "slug": "hbc-xay-dung-hoa-binh-van-nam-trong-nhom-doanh-nghiep-no-bhxh-lon-nhat-voi-so-tien-no-len-toi-hon-56-7-ty-dong",
+        "news_short_content": "Theo danh sách vừa được Bảo hiểm xã hội TP.HCM công bố, CTCP Tập đoàn Xây dựng Hòa Bình đang chậm đóng hơn 56,7 tỷ đồng, nằm trong nhóm doanh nghiệp nợ lớn nhất.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "4b2849015b5cd70937b766770dcd1bf2e18e7fe6324b93694049eb829d18eef9",
+        "news_title": "VIC: Áp lực cạnh tranh từ VinFast đè nặng lên công ty ô tô lớn nhất sàn chứng khoán Việt",
+        "update_date": "2025-12-16 07:42:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/ap-luc-canh-tranh-tu-vinfast-de-nang-len-cong-ty-o-to-lon-nhat-san-chung-khoan-viet-100219.html",
+        "slug": "vic-ap-luc-canh-tranh-tu-vinfast-de-nang-len-cong-ty-o-to-lon-nhat-san-chung-khoan-viet",
+        "news_short_content": "Mặc dù có yếu tố mua sắm mang tính mùa vụ cuối năm, động lực cơ bản vẫn yếu với doanh số giảm 26% so với cùng kỳ năm trước trong tháng 11/2025, cho thấy áp lực tiếp diễn đối với các mẫu xe sử dụng động cơ đốt trong (ICE) truyền thống giữa bối cảnh rủi ro chính sách và đà tăng tốc của xe điện.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "6adf5aae4f1103604dcedb52298716eb2d6426af8a177590a5e427340f2c6cd4",
+        "news_title": "QCG: Chủ tịch Quốc Cường Gia Lai khai báo về thỏa thuận “bán lúa non” khu Bến Vân Đồn với Novaland",
+        "update_date": "2025-12-16 07:37:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/qcg-chu-tich-quoc-cuong-gia-lai-khai-bao-ve-thoa-thuan-ban-lua-non-khu-ben-van-don-voi-novaland/37264032",
+        "slug": "qcg-chu-tich-quoc-cuong-gia-lai-khai-bao-ve-thoa-thuan-ban-lua-non-khu-ben-van-don-voi-novaland",
+        "news_short_content": "Dù chưa sở hữu 100% vốn góp tại Công ty Phú Việt Tín, bà Nguyễn Thị Như Loan đã thống nhất với ông Bùi Cao Nhật Quân của Novaland về việc bán lại khu đất 39 Bến Vân Đồn với giá hơn 800 tỷ đồng để hưởng lợi 381 tỷ đồng.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "b54d1b0d63f8a89de230026e7f878cac2300b39cc547ed8fc0183f3fdf775cd8",
+        "news_title": "ABB: Lý do ABB là mã ngân hàng có dư địa tăng trưởng cao",
+        "update_date": "2025-12-16 07:35:00",
+        "news_from_name": "Báo Sài Gòn Giải Phóng",
+        "news_source_link": "https://dttc.sggp.org.vn/ly-do-abb-la-ma-ngan-hang-co-du-dia-tang-truong-cao-post129588.html",
+        "slug": "abb-ly-do-abb-la-ma-ngan-hang-co-du-dia-tang-truong-cao",
+        "news_short_content": "Với nền tảng kinh doanh tăng tốt, kế hoạch tăng vốn, mã ABB đang được đánh giá là cổ phiếu ngân hàng có dư địa tăng trưởng trung hạn đáng chú ý.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "952a716ac7b1fce10d9fbdf22b5d58cfa1d2a25f1ff184caf20a379f7b653848",
+        "news_title": "VNM: Vì sao Vinamilk tăng trưởng chậm lại dù hiệu quả vẫn cao?",
+        "update_date": "2025-12-16 07:33:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vnm-vi-sao-vinamilk-tang-truong-cham-lai-du-hieu-qua-van-cao/37264010",
+        "slug": "vnm-vi-sao-vinamilk-tang-truong-cham-lai-du-hieu-qua-van-cao",
+        "news_short_content": "CTCP Sữa Việt Nam (Vinamilk) là doanh nghiệp dẫn đầu ngành sữa Việt Nam, niêm yết trên HOSE từ năm 2006 với mã VNM. Tính đến đầu tháng 12/2025, VNM có vốn hóa khoảng 128.500 tỷ đồng, thuộc nhóm doanh nghiệp có quy mô lớn và tính ổn định cao trên thị trường chứng khoán Việt Nam.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "85595f01aa282ae2efa6613ee64637f3e2b9e35bec50302b5d7c5eef279c1ed4",
+        "news_title": "VIC: Thông báo đến tài xế Xanh SM",
+        "update_date": "2025-12-16 07:16:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/vic-thong-bao-den-tai-xe-xanh-sm/37263922",
+        "slug": "vic-thong-bao-den-tai-xe-xanh-sm",
+        "news_short_content": "Xanh SM tiếp tục nâng cấp hệ thống vận hành để hỗ trợ tài xế làm việc hiệu quả hơn.",
+        "sentiment": "Neutral"
     }
 ]
