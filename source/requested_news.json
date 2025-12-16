@@ -3738,5 +3738,35 @@
         "slug": "bsr-giai-phap-nao-de-bsr-vuot-qua-thach-thuc-trong-nam-ban-le-2026",
         "news_short_content": "Theo dự báo sẽ lại có những \"cơn bão\" lớn đang chờ CTCP Lọc Hóa dầu Bình Sơn (BSR) ở phía trước, đòi hỏi doanh nghiệp phải chủ động có các giải pháp để hoàn thành nhiệm vụ của năm bản lề 2026.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "c77f61f32a0f3a3b0d4a569e2b345bde603ae809262e53d22ace18ad609cb0a5",
+        "news_title": "SSI: Chủ tịch SSI Nguyễn Duy Hưng: Nhiều cổ phiếu đang ở mức định giá rất thấp!",
+        "update_date": "2025-12-16 13:24:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/chu-tich-ssi-nguyen-duy-hung-nhieu-co-phieu-dang-o-muc-dinh-gia-rat-thap-d101591.html",
+        "slug": "ssi-chu-tich-ssi-nguyen-duy-hung-nhieu-co-phieu-dang-o-muc-dinh-gia-rat-thap",
+        "news_short_content": "Ngoại trừ một số cổ phiếu vốn hóa lớn tăng giá kéo VN-Index thì đa phần đều giảm sâu. Chủ tịch SSI cho rằng nhiều cổ phiếu đang ở mức định giá hấp dẫn.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "8febdfc29203766098843cc93dda1cac5880ceb4c7dad3fa95b1d075293a0c4f",
+        "news_title": "QCG: Cổ phiếu của Quốc Cường Gia Lai ‘xanh lơ’ sau chuỗi 'tím'",
+        "update_date": "2025-12-16 12:39:00",
+        "news_from_name": "Vnbusiness",
+        "news_source_link": "https://vnbusiness.vn/co-phieu/co-phieu-cua-quoc-cuong-gia-lai-xanh-lo-sau-chuoi-tim-1111537.html",
+        "slug": "qcg-co-phieu-cua-quoc-cuong-gia-lai-xanh-lo-sau-chuoi-tim",
+        "news_short_content": "Ngay đầu phiên giao dịch 16/12, cổ phiếu QCG của CTCP Quốc Cường Gia Lai lập tức giảm sàn về mức 17.500 đồng/cp, trong tình trạng “trắng bên mua”. Tính đến 10h35' có gần 2,9 triệu đơn vị kê bán giá sàn.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "d000406fe90cbec6b95933aa30d4df3ee52142afc301ce941af735c2580a5788",
+        "news_title": "PCT: Bốn cổ đông cá nhân dự chi 300 tỷ mua cổ phần riêng lẻ của PCT",
+        "update_date": "2025-12-16 12:35:25",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/bon-co-dong-ca-nhan-du-chi-300-ty-mua-co-phan-rieng-le-cua-pct-764-1381524.htm",
+        "slug": "pct-bon-co-dong-ca-nhan-du-chi-300-ty-mua-co-phan-rieng-le-cua-pct",
+        "news_short_content": "CTCP Vận tải biển Global Pacific (HNX: PCT) dự kiến chào bán riêng lẻ 30 triệu cp trong năm 2026 để trả nợ ngân hàng, trong bối cảnh chi phí lãi vay tăng mạnh và dư nợ dài hạn phình to.",
+        "sentiment": "Neutral"
     }
 ]
