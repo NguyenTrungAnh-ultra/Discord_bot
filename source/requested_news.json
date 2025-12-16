@@ -3768,5 +3768,35 @@
         "slug": "pct-bon-co-dong-ca-nhan-du-chi-300-ty-mua-co-phan-rieng-le-cua-pct",
         "news_short_content": "CTCP Vận tải biển Global Pacific (HNX: PCT) dự kiến chào bán riêng lẻ 30 triệu cp trong năm 2026 để trả nợ ngân hàng, trong bối cảnh chi phí lãi vay tăng mạnh và dư nợ dài hạn phình to.",
         "sentiment": "Neutral"
+    },
+    {
+        "id": "574d6a3ff5eedb874811598465b644866a8a001f380391775650a5a97a92bba8",
+        "news_title": "VPX: VPBankS (VPX) bổ nhiệm Tổng giám đốc",
+        "update_date": "2025-12-16 14:20:34",
+        "news_from_name": "Tin nhanh chứng khoán",
+        "news_source_link": "https://www.tinnhanhchungkhoan.vn/vpbanks-vpx-bo-nhiem-tong-giam-doc-post382240.html",
+        "slug": "vpx-vpbanks-vpx-bo-nhiem-tong-giam-doc",
+        "news_short_content": "(ĐTCK) Để chuẩn bị cho giai đoạn tăng trưởng mới, VPBankS vừa công bố bổ nhiệm ông Nhâm Hà Hải giữ chức Tổng giám đốc kể từ ngày 15/12 .",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "5cdd0bad5269d4ec3ef6c8cdb858364567d5e3f17769396069c164e7df3894ed",
+        "news_title": "MCH: Niêm yết HOSE: MCH được Vietcap đánh giá tiềm năng vào rổ VN30",
+        "update_date": "2025-12-16 13:55:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/mch-niem-yet-hose-mch-duoc-vietcap-danh-gia-tiem-nang-vao-ro-vn30/37282390",
+        "slug": "mch-niem-yet-hose-mch-duoc-vietcap-danh-gia-tiem-nang-vao-ro-vn30",
+        "news_short_content": "Sự chuyển sàn của Masan Consumer sang HOSE không chỉ mang ý nghĩa kỹ thuật mà còn mở ra loạt động lực mới từ dòng vốn mạnh mẽ hơn, khả năng lọt vào các rổ chỉ số lớn và cơ hội tiếp cận sâu hơn với nhà đầu tư toàn cầu. Trên nền tảng tăng trưởng đã chứng minh, Công ty tiếp tục mở rộng thị trường, nâng cấp danh mục sản phẩm và theo đuổi chiến lược dài hạn hướng đến vị thế FMCG hàng đầu khu vực.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "ff236f2c836846efbb5c949f2999750ea88f4633172af7442450cb597326646d",
+        "news_title": "QNP: Báo lãi quý III/2025 tăng hơn 38%, đạt 35,1 tỷ đồng",
+        "update_date": "2025-12-16 13:48:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/qnp-bao-lai-quy-iii-2025-tang-hon-38-dat-35-1-ty-dong/37281155",
+        "slug": "qnp-bao-lai-quy-iii-2025-tang-hon-38-dat-35-1-ty-dong",
+        "news_short_content": "Công ty cho biết nguyên nhân giúp lợi nhuận tăng do năm 2024 giảm 30% tiền thuê đất được ghi nhận vào kỳ quý III/2025, giúp giảm chi phí hơn 8,1 tỷ đồng. Bên cạnh đó, Công ty còn được ghi nhận lợi nhuận sau thuế chưa phân phối năm 2024 từ công ty con là hơn 5,5 tỷ đồng.",
+        "sentiment": "Positive"
     }
 ]
