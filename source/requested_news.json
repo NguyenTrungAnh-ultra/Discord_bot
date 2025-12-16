@@ -3678,5 +3678,65 @@
         "slug": "sj1-cong-ty-dau-tien-tren-san-cong-bo-bctc-kiem-toan-nien-do-2024-2025-doanh-thu-bung-no-56",
         "news_short_content": "Mở màn mùa báo cáo tài chính kiểm toán niên độ 2025, doanh nghiệp này ghi nhận doanh thu tăng trưởng ấn tượng nhưng lợi nhuận lại chững lại do gánh nặng chi phí vận hành.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "2d907056679b6fbe5699f54ed0dfeb1da6f394723e329de8b79c560fe66d2856",
+        "news_title": "SEA: Petrovietnam đứng vị trí 11 trong Bảng xếp hạng doanh nghiệp lớn nhất Đông Nam Á Fortune 500 SEA 2025",
+        "update_date": "2025-12-16 12:25:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/petrovietnam-dung-vi-tri-11-trong-bang-xep-hang-doanh-nghiep-lon-nhat-dong-nam-a-fortune-500-sea-2025-d101584.html",
+        "slug": "sea-petrovietnam-dung-vi-tri-11-trong-bang-xep-hang-doanh-nghiep-lon-nhat-dong-nam-a-fortune-500-sea-2025",
+        "news_short_content": "Bảng xếp hạng Fortune Southeast Asia 500 (500 doanh nghiệp lớn nhất Đông Nam Á) chính thức vinh danh Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam (Petrovietnam) ở vị trí thứ 11 khu vực Đông Nam Á, đồng thời đứng Top 5 các doanh nghiệp năng lượng trong khu vực và là Top 1 doanh nghiệp lớn nhất Việt Nam...",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "bfa0e76979adaabd68e956fb5f1cb276aa64541946cf50b2d9ec6586f17f38b9",
+        "news_title": "DGC: Cổ phiếu DGC bất ngờ bị bán mạnh",
+        "update_date": "2025-12-16 12:06:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/co-phieu-dgc-bat-ngo-bi-ban-manh-d101589.html",
+        "slug": "dgc-co-phieu-dgc-bat-ngo-bi-ban-manh",
+        "news_short_content": "Cổ phiếu DGC ghi nhận giảm sàn cùng khối lượng giao dịch đột biến phiên 16/12. Doanh nghiệp sắp chốt quyền tạm ứng cổ tức tiền mặt tỷ lệ 30%.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "29aa7a1bdf7d90d8c1a63e01ced6454cd4bed5fba57884490c24531364afc626",
+        "news_title": "QCG: Đứt chuỗi 4 phiên trần, cổ phiếu QCG quay đầu giảm sàn",
+        "update_date": "2025-12-16 11:55:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/dut-chuoi-4-phien-tran-co-phieu-qcg-quay-dau-giam-san-100251.html",
+        "slug": "qcg-dut-chuoi-4-phien-tran-co-phieu-qcg-quay-dau-giam-san",
+        "news_short_content": "Cổ phiếu QCG quay đầu giảm, chấm dứt chuỗi 4 phiên tăng trần liên tiếp ngay sau khi cựu Chủ tịch Nguyễn Thị Như Loan bị đề nghị truy tố trong vụ án gây thất thoát hơn 542 tỷ đồng tại Tập đoàn Cao su Việt Nam.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "b905793ef149a522f467b2ea6a3f0bfd1fd8f49015d608daae9d84a5f53f1b99",
+        "news_title": "TCB: Techcombank huy động thêm 2.000 tỷ đồng từ kênh trái phiếu",
+        "update_date": "2025-12-16 11:42:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/tcb-techcombank-huy-dong-them-2000-ty-dong-tu-kenh-trai-phieu/37276034",
+        "slug": "tcb-techcombank-huy-dong-them-2000-ty-dong-tu-kenh-trai-phieu",
+        "news_short_content": "Techcombank vừa phát hành thành công lô trái phiếu mã TCB12525 trị giá 2.000 tỷ đồng, lãi suất 6,5%/năm, kỳ hạn 36 tháng.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "d16a3e872ff0021ab209bcda4c94fc3386fc282251621a588200c83d4b22fadf",
+        "news_title": "TPB: TPBank mua lại hơn 1.200 tỷ đồng trái phiếu trước hạn",
+        "update_date": "2025-12-16 11:39:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/tpb-tpbank-mua-lai-hon-1200-ty-dong-trai-phieu-truoc-han/37275980",
+        "slug": "tpb-tpbank-mua-lai-hon-1200-ty-dong-trai-phieu-truoc-han",
+        "news_short_content": "TPBank vừa chi tổng cộng 1.216,9 tỷ đồng để thực hiện mua lại trái phiếu trước hạn, qua đó tất toán sớm một số lô trái phiếu.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "cc0bc3252e80fd999392ddd95724f73d994bc0e06e9098b7a3ef3dd5be6a0513",
+        "news_title": "BSR: Giải pháp nào để BSR vượt qua thách thức trong năm bản lề 2026?",
+        "update_date": "2025-12-16 10:52:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/bsr-giai-phap-nao-de-bsr-vuot-qua-thach-thuc-trong-nam-ban-le-2026/37274818",
+        "slug": "bsr-giai-phap-nao-de-bsr-vuot-qua-thach-thuc-trong-nam-ban-le-2026",
+        "news_short_content": "Theo dự báo sẽ lại có những \"cơn bão\" lớn đang chờ CTCP Lọc Hóa dầu Bình Sơn (BSR) ở phía trước, đòi hỏi doanh nghiệp phải chủ động có các giải pháp để hoàn thành nhiệm vụ của năm bản lề 2026.",
+        "sentiment": "Positive"
     }
 ]
