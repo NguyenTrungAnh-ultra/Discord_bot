@@ -9516,5 +9516,82 @@
         "slug": "stb-co-phieu-sacombank-tang-tran-phien-thu-2-giua-luc-co-phieu-ngan-hang-bi-ban-thao",
         "news_short_content": "Cổ phiếu STB của Sacombank tăng hết biên độ trong phiên giao dịch 23/12 giữa lúc các nhà đầu tư bán tháo cổ phiếu nhóm ngân hàng.",
         "sentiment": "Positive"
+    },
+    {
+        "id": "e7e455632147d7c792c4b1d5b1345f741dcbeff2461134f79ccce10db2996dbc",
+        "ticker": "MSB",
+        "news_title": "MSB: Hủy nhiều phiên đấu giá cổ phần vì ‘trắng’ nhà đầu tư",
+        "update_date": "2025-12-23 16:55:00",
+        "news_from_name": "Người quan sát",
+        "news_source_link": "https://nguoiquansat.vn/huy-nhieu-phien-dau-gia-co-phan-vi-trang-nha-dau-tu-262531.html",
+        "slug": "msb-huy-nhieu-phien-dau-gia-co-phan-vi-trang-nha-dau-tu",
+        "news_short_content": "Nhiều phiên đấu giá cổ phần nhà nước không đủ điều kiện tổ chức do không có nhà đầu tư đăng ký mua, từ thương vụ VNPT bán cổ phần MSB cho đến các đợt thoái vốn của Vicem, Vinataba…",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "ae7dea67809a91baf16233fb0769fce719fcb9a9419ede7d8ad98f3825deef9c",
+        "ticker": "MWG",
+        "news_title": "MWG: Vốn hóa Thế Giới Di Động (MWG) lập kỷ lục, cú bứt tốc trước thềm IPO 'át chủ bài'",
+        "update_date": "2025-12-23 16:35:00",
+        "news_from_name": "Người quan sát",
+        "news_source_link": "https://nguoiquansat.vn/von-hoa-the-gioi-di-dong-mwg-lap-ky-luc-cu-but-toc-truoc-them-ipo-at-chu-bai-262525.html",
+        "slug": "mwg-von-hoa-the-gioi-di-dong-mwg-lap-ky-luc-cu-but-toc-truoc-them-ipo-at-chu-bai",
+        "news_short_content": "Cổ phiếu MWG lập lịch sử khi dòng tiền tiếp tục nhập cuộc. Tính từ đầu năm đến nay, thị giá của ông lớn bán lẻ này đã tăng hơn 45%.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "e5c18c3ca231d58407fbd77d64e232a5c516ad60aa43c7aae1f2f7e548710ca6",
+        "ticker": "HTG",
+        "news_title": "HTG: Doanh nghiệp dệt may lập kỷ lục lợi nhuận gần 400 tỷ đồng năm 2025, P/E chỉ hơn 4 lần",
+        "update_date": "2025-12-23 16:17:00",
+        "news_from_name": "Người quan sát",
+        "news_source_link": "https://nguoiquansat.vn/doanh-nghiep-det-may-lap-ky-luc-loi-nhuan-gan-400-ty-dong-nam-2025-p-e-chi-hon-4-lan-262516.html",
+        "slug": "htg-doanh-nghiep-det-may-lap-ky-luc-loi-nhuan-gan-400-ty-dong-nam-2025-p-e-chi-hon-4-lan",
+        "news_short_content": "Doanh thu, xuất khẩu và lợi nhuận đều vượt kế hoạch, khiến 2025 trở thành năm kinh doanh thành công nhất trong lịch sử của Tổng CTCP Dệt may Hòa Thọ (HTG).",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "d7dd8378e0d2f7df9721c41728fc27c638911adf69fdb0e13ed7ee7009990b80",
+        "ticker": "SSB",
+        "news_title": "SSB: Phó Tổng Giám đốc SeABank đăng ký bán hơn 3 triệu cổ phiếu SSB",
+        "update_date": "2025-12-23 15:44:00",
+        "news_from_name": "Người quan sát",
+        "news_source_link": "https://nguoiquansat.vn/pho-tong-giam-doc-seabank-dang-ky-ban-hon-3-trieu-co-phieu-ssb-262513.html",
+        "slug": "ssb-pho-tong-giam-doc-seabank-dang-ky-ban-hon-3-trieu-co-phieu-ssb",
+        "news_short_content": "Giao dịch dự kiến diễn ra trong khoảng thời gian từ 25/12/2025 đến 23/1/2026.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "dc1542b566a8c4666e3e22961f6fd51374c0d39660a01f9bb906ac1bbf2f7b01",
+        "ticker": "VIC",
+        "news_title": "VIC: Được khối ngoại liên tục 'chi viện', một cổ phiếu VN30 lập đỉnh cùng VIC",
+        "update_date": "2025-12-23 15:36:00",
+        "news_from_name": "Người quan sát",
+        "news_source_link": "https://nguoiquansat.vn/duoc-khoi-ngoai-lien-tuc-chi-vien-mot-co-phieu-vn30-lap-dinh-cung-vic-262511.html",
+        "slug": "vic-duoc-khoi-ngoai-lien-tuc-chi-vien-mot-co-phieu-vn30-lap-dinh-cung-vic",
+        "news_short_content": "Trong phiên giao dịch 23/12, khối ngoại duy trì đà mua ròng phiên thứ ba liên tiếp, với tổng giá trị gần 700 tỷ đồng trên toàn thị trường, riêng sàn HoSE ghi nhận mua ròng 103 tỷ đồng.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "17e9e8ada01f4660a144b823666c2bdf6e15472412148210368eee891dba88c2",
+        "ticker": "VIC",
+        "news_title": "VIC: Cổ phiếu VIC và VN-Index cùng vượt đỉnh, ông Phạm Nhật Vượng cán mốc 30 tỷ USD tài sản",
+        "update_date": "2025-12-23 15:16:00",
+        "news_from_name": "Người quan sát",
+        "news_source_link": "https://nguoiquansat.vn/co-phieu-vic-va-vn-index-cung-vuot-dinh-ong-pham-nhat-vuong-can-moc-30-ty-usd-tai-san-262508.html",
+        "slug": "vic-co-phieu-vic-va-vn-index-cung-vuot-dinh-ong-pham-nhat-vuong-can-moc-30-ty-usd-tai-san",
+        "news_short_content": "VN-Index tăng hơn 21 điểm trong phiên 23/12, riêng 4 cổ phiếu họ Vingroup góp cho chỉ số hơn 30 điểm.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "18f40d0c434c23d54a6b4e816f5499e6c332dcd876eb8a1f013015066fdb5994",
+        "ticker": "POW",
+        "news_title": "POW: Năm đầu tiên vận hành nhà máy điện 1,4 tỷ USD, đơn vị quản lý ước tính lợi nhuận toàn công ty giảm 50%",
+        "update_date": "2025-12-23 15:08:00",
+        "news_from_name": "Người quan sát",
+        "news_source_link": "https://nguoiquansat.vn/nam-dau-tien-van-hanh-nha-may-dien-1-4-ty-usd-don-vi-quan-ly-uoc-tinh-loi-nhuan-toan-cong-ty-giam-50-262503.html",
+        "slug": "pow-nam-dau-tien-van-hanh-nha-may-dien-1-4-ty-usd-don-vi-quan-ly-uoc-tinh-loi-nhuan-toan-cong-ty-giam-50",
+        "news_short_content": "PV Power bước vào năm bản lề khi nhà máy điện khí LNG Nhơn Trạch 3 và 4 chính thức vận hành thương mại. Doanh nghiệp đặt mục tiêu doanh thu năm 2026 gần 50.000 tỷ đồng, tăng mạnh so với năm trước, nhưng lợi nhuận dự kiến giảm sâu.",
+        "sentiment": "Neutral"
     }
 ]
