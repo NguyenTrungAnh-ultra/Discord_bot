@@ -99,8 +99,8 @@ def main():
                 }
                 emoji = status_emoji_map.get(tiker_status['up_down_same'], '⚪')
                 
-                # Format Footer
-                footer_text = f"{emoji} {tiker_status['diff']}% | {tiker_status['match_price']} | Vol: {tiker_status['accumulated_volume']:,}"
+                # Format description
+                description = f"{short_content}\n\n{emoji} {tiker_status['diff']}% | {tiker_status['match_price']} | Vol: {tiker_status['accumulated_volume']:,}"
 
                 # Choose Color based on Sentiment
                 if sentiment == 'Positive':
@@ -113,11 +113,11 @@ def main():
                 # Tạo Embed
                 embed = discord.Embed(
                     title=f"🔥 {title}", 
-                    description=f"{short_content}\nNguồn: **{source}**\nThời gian: **{time_str}**",
+                    description=description,
                     url=link, 
                     color=embed_color
                 )
-                embed.set_footer(text=footer_text)
+                embed.set_footer(text=f"Nguồn: **{source}** | Thời gian: **{time_str}**")
                 
                 # Gửi Embed
                 webhook.send(embed=embed)
