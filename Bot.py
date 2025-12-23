@@ -66,7 +66,7 @@ async def news(ctx, *, time_range: str = None):
     end_date = date_list[-1] # Lấy phần tử cuối cùng (nếu chỉ nhập 1 ngày thì start=end)
 
     # 2. Khởi tạo
-    HISTORY_FILE = "./source/requested_news.json" 
+    HISTORY_FILE = "/app/source/requested_news.json" 
     news_tool = VCI_news() # Khởi tạo 1 lần duy nhất
     requested_news = []
     page = 1
