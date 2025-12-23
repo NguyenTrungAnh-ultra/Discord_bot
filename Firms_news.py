@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from vnstock import Trading
 
 # Config
-HISTORY_FILE = "./source/requested_news.json" 
+HISTORY_FILE = "/app/source/requested_news.json" 
 today = str(datetime.today().strftime('%Y-%m-%d'))
 trading = Trading(source='VCI') 
 
@@ -37,7 +37,7 @@ def _status(tickers: list):
 def main():
     load_dotenv()
     webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
-    webhook_url = 'https://discord.com/api/webhooks/1452905466693685299/yCdvoSw8_sYWsRGqq8zdw1iNq3l2Ts4FEK3u7jtrP6Od4D2_DMkIqYlaVQf5jT7ClEZH'
+    # webhook_url = 'https://discord.com/api/webhooks/1452905466693685299/yCdvoSw8_sYWsRGqq8zdw1iNq3l2Ts4FEK3u7jtrP6Od4D2_DMkIqYlaVQf5jT7ClEZH'
     
     if not webhook_url:
         print("Lỗi: Chưa cài đặt DISCORD_WEBHOOK_URL")
