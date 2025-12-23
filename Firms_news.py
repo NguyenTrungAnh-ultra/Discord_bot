@@ -100,7 +100,7 @@ def main():
                 emoji = status_emoji_map.get(tiker_status['up_down_same'], '⚪')
                 
                 # Format description
-                description = f"{short_content}\n\n{emoji} {tiker_status['diff']}% | {tiker_status['match_price']} | Vol: {tiker_status['accumulated_volume']:,}"
+                description = f"{short_content}\n\n**{emoji} {tiker_status['diff']}%** | **{tiker_status['match_price']}** | Vol: **{tiker_status['accumulated_volume']:,}**"
 
                 # Choose Color based on Sentiment
                 if sentiment == 'Positive':
@@ -117,7 +117,7 @@ def main():
                     url=link, 
                     color=embed_color
                 )
-                embed.set_footer(text=f"Nguồn: **{source}** | Thời gian: **{time_str}**")
+                embed.set_footer(text=f"Nguồn: {source} | Thời gian: {time_str}")
                 
                 # Gửi Embed
                 webhook.send(embed=embed)
