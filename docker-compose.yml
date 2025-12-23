@@ -35,7 +35,7 @@ services:
       echo 'GhostSnap (VisionGuard) đã khởi động, đang đợi đến 14:45...';
       while true; do
         CURRENT_TIME=$(date +%H:%M);
-        if [ \"$CURRENT_TIME\" = \"14:45\" ]; then
+        if [ \"$CURRENT_TIME\" = \"15:00\" ]; then
           echo 'Đúng 14:45 rồi! GhostSnap xuất kích...';
           python -u VisionGuard.py;
           echo 'Nhiệm vụ hoàn thành, nghỉ ngơi đợi ngày mai...';
