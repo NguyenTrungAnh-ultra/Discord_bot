@@ -154,7 +154,7 @@ async def tomtat(ctx):
     if not ctx.message.reference:
         await ctx.send("⚠️ Vui lòng Reply vào tin nhắn tin tức cần lấy link.")
         return
-
+    await ctx.send("chờ xíu bro...")
     try:
         # 2. Lấy nội dung tin nhắn gốc
         message_id = ctx.message.reference.message_id
