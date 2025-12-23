@@ -9593,5 +9593,60 @@
         "slug": "pow-nam-dau-tien-van-hanh-nha-may-dien-1-4-ty-usd-don-vi-quan-ly-uoc-tinh-loi-nhuan-toan-cong-ty-giam-50",
         "news_short_content": "PV Power bước vào năm bản lề khi nhà máy điện khí LNG Nhơn Trạch 3 và 4 chính thức vận hành thương mại. Doanh nghiệp đặt mục tiêu doanh thu năm 2026 gần 50.000 tỷ đồng, tăng mạnh so với năm trước, nhưng lợi nhuận dự kiến giảm sâu.",
         "sentiment": "Neutral"
+    },
+    {
+        "id": "aaf8b717764b591f2fb557bd691d0901eab70e7da04add167edf8528b086bba0",
+        "ticker": "NLG",
+        "news_title": "NLG: Nam Long tăng vốn điều lệ vượt 4.850 tỷ đồng sau đợt chào bán cổ phiếu",
+        "update_date": "2025-12-23 18:53:00",
+        "news_from_name": "FireAnt",
+        "news_source_link": "https://fireant.vn/bai-viet/nlg-nam-long-tang-von-dieu-le-vuot-4850-ty-dong-sau-dot-chao-ban-co-phieu/37423949",
+        "slug": "nlg-nam-long-tang-von-dieu-le-vuot-4850-ty-dong-sau-dot-chao-ban-co-phieu",
+        "news_short_content": "Nam Long vừa kết thúc đợt chào bán hơn 100 triệu cổ phiếu cho cổ đông hiện hữu, qua đó tăng vốn điều lệ từ gần 3.851 tỷ đồng lên mức gần 4.851 tỷ đồng.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "9fc6197d3a25393a311f1dc746ab4ecd8ca4d84ed0de1c3edf110b4c2bb715ed",
+        "ticker": "PBC",
+        "news_title": "PBC: Cổ đông lớn Pharbaco bán hơn 7.5 triệu cp với giá thấp hơn thị trường",
+        "update_date": "2025-12-23 18:45:39",
+        "news_from_name": "Vietstock",
+        "news_source_link": "https://vietstock.vn/2025/12/co-dong-lon-pharbaco-ban-hon-75-trieu-cp-voi-gia-thap-hon-thi-truong-739-1383999.htm",
+        "slug": "pbc-co-dong-lon-pharbaco-ban-hon-75-trieu-cp-voi-gia-thap-hon-thi-truong",
+        "news_short_content": "Giao dịch thỏa thuận hàng triệu cổ phiếu CTCP Dược phẩm Trung ương I - Pharbaco (UPCoM: PBC) trong ngày 18/12 diễn ra ở mức giá thấp hơn 25% so với giá đóng cửa cùng phiên.",
+        "sentiment": "Negative"
+    },
+    {
+        "id": "18231b4b50a6884cc6f43c927ab18b9e1b00c42da2e4774810c4a79138e87cd4",
+        "ticker": "KSV",
+        "news_title": "KSV: Bán ra gần 1 tấn vàng trong năm 2025, một doanh nghiệp Việt báo lãi tăng vọt lên 2.399 tỷ bất chấp thiên tai",
+        "update_date": "2025-12-23 18:43:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/ban-ra-gan-1-tan-vang-trong-nam-2025-mot-doanh-nghiep-viet-bao-lai-tang-vot-len-2-399-ty-bat-chap-thien-tai-100845.html",
+        "slug": "ksv-ban-ra-gan-1-tan-vang-trong-nam-2025-mot-doanh-nghiep-viet-bao-lai-tang-vot-len-2399-ty-bat-chap-thien-tai",
+        "news_short_content": "Tại Hội nghị tổng kết vừa diễn ra, Vimico công bố mức lợi nhuận 2.399 tỷ đồng, vượt kế hoạch năm 2025. Bên cạnh điểm sáng từ vàng và đồng, doanh nghiệp cũng thẳng thắn nhìn nhận khó khăn từ mảng thép và áp lực thiên tai chưa từng có.",
+        "sentiment": "Positive"
+    },
+    {
+        "id": "593928960cfe1260c39f8f360800620eadb3621d8402120d1672dab6c27d83ca",
+        "ticker": "CRE",
+        "news_title": "CRE: Startup Hyra Holdings đang gây xôn xao của Shark Hưng: Tăng vốn điều lệ gấp 14 lần trong hơn 1 năm",
+        "update_date": "2025-12-23 18:40:00",
+        "news_from_name": "Markettimes",
+        "news_source_link": "https://markettimes.vn/startup-hyra-holdings-dang-gay-xon-xao-cua-shark-hung-tang-von-dieu-le-gap-14-lan-trong-hon-1-nam-100818.html",
+        "slug": "cre-startup-hyra-holdings-dang-gay-xon-xao-cua-shark-hung-tang-von-dieu-le-gap-14-lan-trong-hon-1-nam",
+        "news_short_content": "Ông Hưng nhấn mạnh, các hoạt động đầu tư khởi nghiệp được nhắc tới trên mạng xã hội hoàn toàn mang tính cá nhân và không có bất kỳ sự liên quan nào về pháp lý, tài chính hay vận hành, tới Cen Land.",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "0325cc3230b792a75ae3d763d3c932d5e03a2215739e74c8b1a51f03cfcb7b90",
+        "ticker": "SSB",
+        "news_title": "SSB: SeABank hỗ trợ trồng gần 671 nghìn cây xanh tại Hà Tĩnh, vượt mục tiêu 1 triệu cây xanh",
+        "update_date": "2025-12-23 18:21:00",
+        "news_from_name": "Nhà đầu tư",
+        "news_source_link": "https://nhadautu.vn/seabank-ho-tro-trong-gan-671-nghin-cay-xanh-tai-ha-tinh-vuot-muc-tieu-1-trieu-cay-xanh-d101804.html",
+        "slug": "ssb-seabank-ho-tro-trong-gan-671-nghin-cay-xanh-tai-ha-tinh-vuot-muc-tieu-1-trieu-cay-xanh",
+        "news_short_content": "Ngân hàng TMCP Đông Nam Á (SeABank, HOSE:SSB) đã trao tặng 670.800 cây keo giống cho các hộ dân tại xã Kỳ Hoa, tỉnh Hà Tĩnh nhằm phục hồi hệ sinh thái rừng bị tàn phá nghiêm trọng bởi cơn bão Bualoi, đồng thời tạo sinh kế bền vững cho người dân địa phương. Qua đó nâng tổng số cây Ngân hàng trao tặng và trồng vượt 1 triệu cây xanh trên khắp cả nước nhằm phủ xanh đất trống, đồi núi trọc.",
+        "sentiment": "Positive"
     }
 ]
