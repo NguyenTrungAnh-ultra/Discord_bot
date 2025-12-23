@@ -1,0 +1,24 @@
+services:
+  # --- SERVICE 1: BOT CHÍNH (Chạy Bot.py) ---
+  discord-bot:
+    build: .
+    container_name: my_discord_bot
+    restart: always
+    env_file: .env
+    # Ánh xạ thư mục source để đọc dữ liệu tin tức
+    volumes:
+      - ./source:/app/source
+    # Chạy file Bot.py (Lệnh này sẽ ghi đè CMD trong Dockerfile để đảm bảo chạy đúng file)
+    command: python Bot.py
+
+  # --- SERVICE 2: NGƯỜI LẤY TIN (Chạy Firms_news.py mỗi 1 tiếng) ---
+  news-worker:
+    build: .
+    container_name: my_news_worker
+    restart: always
+    env_file: .env
+    # Ánh xạ chung thư mục source với con Bot ở trên
+    volumes:
+      - ./source:/app/source
+    # Vòng lặp: Chạy file -> Ngủ 3600 giây (1 tiếng) -> Lặp lại
+    command: sh -c "while true; do python -u Firms_news.py; echo 'Đã lấy tin xong, đang ngủ 1 tiếng...'; sleep 3600; done"

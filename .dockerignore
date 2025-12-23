@@ -1,0 +1,14 @@
+# Bỏ qua môi trường ảo
+.venv
+venv
+ENV
+
+# Bỏ qua file git
+.git
+
+# Bỏ qua cache của python (rác)
+__pycache__
+*.pyc
+
+# Bỏ qua file chứa token (để không bị copy cứng vào trong image - bảo mật)
+.env
