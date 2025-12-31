@@ -7,6 +7,6 @@ services:
     env_file: .env
     # Mount source for data persistence (news history, snapshots)
     volumes:
-      - ./source:/app/source
+      - ./temp:/app/temp
     # Run the orchestrator
     command: python main.py

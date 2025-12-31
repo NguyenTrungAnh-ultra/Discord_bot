@@ -17,10 +17,15 @@ VISION_SCRIPT = os.path.join("src", "modules", "vision_guard", "VisionGuard.py")
 
 def run_bot():
     """Runs the main Discord Bot. Restarts on failure."""
+    # Build environment with PYTHONPATH
+    env = os.environ.copy()
+    env["PYTHONPATH"] = os.getcwd()
+
     while True:
         print("🚀 [Main] Starting Discord Bot...")
         try:
-            subprocess.run([PYTHON_EXEC, BOT_SCRIPT], check=True)
+            # Pass the custom environment
+            subprocess.run([PYTHON_EXEC, BOT_SCRIPT], check=True, env=env)
         except subprocess.CalledProcessError as e:
             print(f"⚠️ [Main] Bot crashed with error: {e}. Restarting in 10s...")
             time.sleep(10)
@@ -31,8 +36,12 @@ def run_bot():
 def job_news():
     """Runs the news summarizer."""
     print("📰 [Main] Running News Worker...")
+    # Build environment with PYTHONPATH
+    env = os.environ.copy()
+    env["PYTHONPATH"] = os.getcwd()
+
     try:
-        subprocess.run([PYTHON_EXEC, NEWS_SCRIPT], check=True)
+        subprocess.run([PYTHON_EXEC, NEWS_SCRIPT], check=True, env=env)
         print("✅ [Main] News Worker finished. Sleeping...")
     except Exception as e:
         print(f"❌ [Main] News Worker failed: {e}")
@@ -40,8 +49,12 @@ def job_news():
 def job_vision():
     """Runs the Vision Guard."""
     print("👁️ [Main] Running Vision Guard...")
+    # Build environment with PYTHONPATH
+    env = os.environ.copy()
+    env["PYTHONPATH"] = os.getcwd()
+
     try:
-        subprocess.run([PYTHON_EXEC, VISION_SCRIPT], check=True)
+        subprocess.run([PYTHON_EXEC, VISION_SCRIPT], check=True, env=env)
         print("✅ [Main] Vision Guard finished.")
     except Exception as e:
         print(f"❌ [Main] Vision Guard failed: {e}")
