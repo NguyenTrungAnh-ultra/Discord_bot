@@ -80,12 +80,9 @@ def main():
     # Start Bot in a separate thread
     bot_thread = threading.Thread(target=run_bot, daemon=True)
     bot_thread.start()
-    # Start News in a separate thread
-    news_thread = threading.Thread(target=job_news, daemon=True)
-    news_thread.start()
-    # Start Vision in a separate thread
-    vision_thread = threading.Thread(target=job_vision, daemon=True)
-    vision_thread.start()
+    
+    job_news()
+    job_vision()
     # Start Scheduler in the main thread (or separate, but main needs to stay alive)
     # We can run scheduler in main thread
     try:
