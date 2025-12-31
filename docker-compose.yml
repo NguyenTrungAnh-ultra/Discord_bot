@@ -1,45 +1,12 @@
 services:
-  # --- SERVICE 1: BOT CHÍNH (Chạy Bot.py) ---
-  discord-bot:
+  # --- MODULAR MONOLITH SERVICE ---
+  discord-manager:
     build: .
-    container_name: my_discord_bot
+    container_name: discord_manager
     restart: always
     env_file: .env
-    # Ánh xạ thư mục source để đọc dữ liệu tin tức
+    # Mount source for data persistence (news history, snapshots)
     volumes:
       - ./source:/app/source
-    # Chạy file Bot.py (Lệnh này sẽ ghi đè CMD trong Dockerfile để đảm bảo chạy đúng file)
-    command: python Bot.py
-
-  # --- SERVICE 2: NGƯỜI LẤY TIN (Chạy Firms_news.py mỗi 1 tiếng) ---
-  news-worker:
-    build: .
-    container_name: my_news_worker
-    restart: always
-    env_file: .env
-    # Ánh xạ chung thư mục source với con Bot ở trên
-    volumes:
-      - ./source:/app/source
-    # Vòng lặp: Chạy file -> Ngủ 3600 giây (1 tiếng) -> Lặp lại
-    command: sh -c "while true; do python -u Firms_news.py; echo 'Đã lấy tin xong, đang ngủ 1 tiếng...'; sleep 3600; done"
-
-# --- SERVICE 3: VISION GUARD (Chạy lúc 14:45 hàng ngày) ---
-  vision-guard-worker:
-    build: .
-    container_name: my_vision_guard
-    restart: always
-    env_file: .env
-    # Logic: Kiểm tra mỗi 60 giây, nếu đúng 14:45 thì thực thi file
-    command: >
-      sh -c "
-      echo 'GhostSnap (VisionGuard) đã khởi động, đang đợi đến 14:45...';
-      while true; do
-        CURRENT_TIME=$(date +%H:%M);
-        if [ \"$CURRENT_TIME\" = \"15:00\" ]; then
-          echo 'Đúng 14:45 rồi! GhostSnap xuất kích...';
-          python -u VisionGuard.py;
-          echo 'Nhiệm vụ hoàn thành, nghỉ ngơi đợi ngày mai...';
-          sleep 70; 
-        fi;
-        sleep 30;
-      done"
+    # Run the orchestrator
+    command: python main.py
