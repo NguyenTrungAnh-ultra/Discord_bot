@@ -8,5 +8,6 @@ services:
     # Mount source for data persistence (news history, snapshots)
     volumes:
       - ./temp:/app/temp
+      - /etc/localtime:/etc/localtime:ro
     # Run the orchestrator
     command: python main.py
