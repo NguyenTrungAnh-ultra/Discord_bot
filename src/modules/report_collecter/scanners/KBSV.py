@@ -10,18 +10,13 @@ import pickle
 class Config:
     toan_canh_thi_truong_url = "https://kbsec.com.vn/vi/bao-cao-chien-luoc-thi-truong"
     bao_cao_cong_ty_url = "https://kbsec.com.vn/vi/bao-cao-cong-ty"
-    bao_cao_nganh_url = "https://kbsec.com.vn/vi/bao-cao-ngan"
+    bao_cao_nganh_url = "https://kbsec.com.vn/vi/bao-cao-nganh"
     bao_cao_vimo_url = "https://kbsec.com.vn/vi/bao-cao-trien-vong-kinh-te-vi-mo"
     bao_cao_chuyen_de_url = "https://kbsec.com.vn/vi/bao-cao-chuyen-de"
 
-
-def run(toan_canh_thi_truong_url=False, 
-                bao_cao_cong_ty_url=False, 
-                bao_cao_nganh_url=False,
-                bao_cao_vimo_url=False,
-                bao_cao_chuyen_de=False):   
+def file_save(dir):
     # Đường dẫn file
-    output_dir = r".\temp\reports"
+    output_dir = fr".\temp\reports\{dir}"
     csv_file = os.path.join(output_dir, "kbsv_reports.csv")
     cookie_file = os.path.join(output_dir, "kbsv_cookies.pkl")
     
@@ -51,6 +46,33 @@ def run(toan_canh_thi_truong_url=False,
         except:
             print("⚠️ Không thể load CSV cũ, sẽ tạo mới")
     
+    return output_dir, csv_file, cookie_file, session, old_df, existing_urls
+
+def run(toan_canh_thi_truong_url=False, 
+                bao_cao_cong_ty_url=False, 
+                bao_cao_nganh_url=False,
+                bao_cao_vimo_url=False,
+                bao_cao_chuyen_de_url=False):   
+    
+    if toan_canh_thi_truong_url:
+        dir = r'KBSV\toan_canh_thi_truong'
+        bao_cao = Config.toan_canh_thi_truong_url
+    elif bao_cao_cong_ty_url:
+        dir = r'KBSV\bao_cao_cong_ty'
+        bao_cao = Config.bao_cao_cong_ty_url
+    elif bao_cao_nganh_url:
+        dir = r'KBSV\bao_cao_nganh'
+        bao_cao = Config.bao_cao_nganh_url
+    elif bao_cao_vimo_url:
+        dir = r'KBSV\bao_cao_vimo'
+        bao_cao = Config.bao_cao_vimo_url
+    elif bao_cao_chuyen_de_url:
+        dir = r'KBSV\bao_cao_chuyen_de'
+        bao_cao = Config.bao_cao_chuyen_de_url
+
+    #load/ceate file 
+    output_dir, csv_file, cookie_file, session, old_df, existing_urls = file_save(dir)
+    
     # Tạo headers từ user agent ngẫu nhiên
     user_agent = get_random_desktop_user_agent()
     headers = {
@@ -67,9 +89,9 @@ def run(toan_canh_thi_truong_url=False,
     
     while page_num <= max_pages:
         if page_num == 1:
-            url = Config.bao_cao_cong_ty_url+".htm"
+            url = f'{bao_cao}'+".htm"
         else:
-            url = f"{Config.bao_cao_cong_ty_url}/p-{page_num}.htm"
+            url = f"{bao_cao}/p-{page_num}.htm"
         
         print(f"📄 Đang cào trang {page_num}: {url}")
         
@@ -111,7 +133,10 @@ def run(toan_canh_thi_truong_url=False,
                     new_in_page += 1
             
             print(f"✅ Tìm thấy {new_in_page} báo cáo MỚI từ trang {page_num}")
-            
+            if new_in_page == 0:
+                print('new_in_page = 0')
+                break
+
             # Nếu đã gặp báo cáo cũ và không có báo cáo mới nào ở trang này, dừng lại
             if found_existing and new_in_page == 0:
                 print("🛑 Đã gặp toàn báo cáo cũ, dừng cào.")
@@ -153,6 +178,168 @@ def run(toan_canh_thi_truong_url=False,
     
     return final_df
 
+def scan_and_download_by_ticker(ticker):
+    """
+    Quét và tải báo cáo theo mã cổ phiếu từ CSV có sẵn
+    
+    Args:
+        ticker: Mã cổ phiếu (ví dụ: 'VNM', 'HPG', 'STB')
+    
+    Returns:
+        dict: {
+            'ticker': mã cổ phiếu,
+            'total_reports': tổng số báo cáo tìm thấy,
+            'new_reports': số báo cáo chưa tải,
+            'downloaded': số báo cáo đã tải thành công,
+            'reports': list các báo cáo
+        }
+    """
+    ticker = ticker.upper()
+    print(f"\n{'='*60}")
+    print(f"🔍 Quét báo cáo cho mã: {ticker}")
+    print(f"{'='*60}\n")
+    
+    # Load/create file
+    dir = r'KBSV\bao_cao_cong_ty'
+    output_dir, csv_file, cookie_file, session, old_df, existing_urls = file_save(dir)
+    
+    # Kiểm tra CSV có dữ liệu không
+    if old_df.empty:
+        print("❌ File CSV trống! Vui lòng chạy hàm run() trước để cào dữ liệu.")
+        return {
+            'ticker': ticker,
+            'total_reports': 0,
+            'new_reports': 0,
+            'downloaded': 0,
+            'reports': []
+        }
+    
+    # Tạo thư mục con cho ticker
+    ticker_dir = os.path.join(output_dir, ticker)
+    os.makedirs(ticker_dir, exist_ok=True)
+    
+    # Lọc báo cáo theo ticker
+    # Cách 1: Tìm trong title
+    # Cách 2: Tìm trong tên file PDF (format: KBSV_{TICKER}_*.pdf)
+    ticker_reports = []
+    
+    for idx, row in old_df.iterrows():
+        title = str(row['title'])
+        pdf_url = str(row['pdf_url'])
+        
+        # Extract tên file từ URL
+        pdf_filename = pdf_url.split('/')[-1]  # Ví dụ: KBSV_STB_FTM.pdf
+        
+        # Kiểm tra ticker trong tên file hoặc title
+        # Format KBSV: KBSV_{TICKER}_*.pdf
+        is_match = False
+        
+        # Check trong tên file (ưu tiên)
+        if pdf_filename.startswith('KBSV_'):
+            parts = pdf_filename.split('_')
+            if len(parts) >= 2 and parts[1].upper() == ticker:
+                is_match = True
+        
+        # Check trong title (backup)
+        if not is_match and ticker in title.upper():
+            is_match = True
+        
+        if is_match:
+            # Tạo tên file an toàn từ title
+            safe_filename = title.replace('/', '-').replace('\\', '-').replace(':', '-')
+            # Hoặc dùng luôn tên file gốc
+            safe_filename = pdf_filename
+            
+            # Check xem file đã tải chưa
+            file_path = os.path.join(ticker_dir, safe_filename)
+            already_downloaded = os.path.exists(file_path)
+            
+            ticker_reports.append({
+                'title': title,
+                'pdf_url': pdf_url,
+                'filename': safe_filename,
+                'file_path': file_path,
+                'downloaded': already_downloaded
+            })
+    
+    # Thống kê
+    total_reports = len(ticker_reports)
+    new_reports = [r for r in ticker_reports if not r['downloaded']]
+    
+    print(f"📊 Kết quả tìm kiếm:")
+    print(f"   • Tổng số báo cáo: {total_reports}")
+    print(f"   • Báo cáo chưa tải: {len(new_reports)}")
+    print(f"   • Báo cáo đã có: {total_reports - len(new_reports)}")
+    print(f"{'='*60}\n")
+    
+    # Hiển thị danh sách báo cáo tìm thấy
+    if ticker_reports:
+        print("📋 Danh sách báo cáo:")
+        for i, report in enumerate(ticker_reports, 1):
+            status = "✅" if report['downloaded'] else "⬇️"
+            print(f"   {i}. {status} {report['title']}")
+        print()
+    
+    # Tải các báo cáo mới
+    downloaded_count = 0
+    if new_reports:
+        # Tạo headers
+        user_agent = get_random_desktop_user_agent()
+        headers = {
+            "User-Agent": user_agent,
+            "Accept": "application/pdf,*/*",
+            "Accept-Language": "vi-VN,vi;q=0.9,en;q=0.8",
+            "Referer": "https://kbsec.com.vn/"
+        }
+        
+        print(f"📥 Bắt đầu tải {len(new_reports)} báo cáo mới...\n")
+        
+        for idx, report in enumerate(new_reports, 1):
+            print(f"[{idx}/{len(new_reports)}] {report['title']}")
+            
+            try:
+                # Tải PDF với session (có cookie)
+                response = session.get(report['pdf_url'], headers=headers, timeout=30)
+                response.raise_for_status()
+                
+                # Lưu file
+                with open(report['file_path'], 'wb') as f:
+                    f.write(response.content)
+                
+                file_size = len(response.content) / 1024  # KB
+                print(f"   ✅ Đã tải: {report['filename']} ({file_size:.1f} KB)")
+                downloaded_count += 1
+                
+                # Delay giữa các lần tải
+                time.sleep(random.uniform(1, 2))
+                
+            except Exception as e:
+                print(f"   ❌ Lỗi tải: {e}")
+    else:
+        print("✨ Không có báo cáo mới cần tải.\n")
+    
+    # Lưu cookies
+    with open(cookie_file, 'wb') as f:
+        pickle.dump(session.cookies, f)
+    print(f"🍪 Đã lưu cookies\n")
+    
+    return {
+        'ticker': ticker,
+        'total_reports': total_reports,
+        'new_reports': len(new_reports),
+        'downloaded': downloaded_count,
+        'reports': ticker_reports
+    }
 
 if __name__ == "__main__":
-    run(bao_cao_cong_ty_url=True)
+    # Test với mã cổ phiếu VNM
+    result = scan_and_download_by_ticker("VNM")
+    
+    print(f"\n{'='*60}")
+    print(f"📊 Tóm tắt kết quả:")
+    print(f"   Mã CP: {result['ticker']}")
+    print(f"   Tổng báo cáo: {result['total_reports']}")
+    print(f"   Báo cáo mới: {result['new_reports']}")
+    print(f"   Đã tải: {result['downloaded']}")
+    print(f"{'='*60}")
+
