@@ -80,8 +80,8 @@ def run_schedulers():
     schedule.every(1).hours.do(job_news)
     # schedule.every(10).seconds.do(job_news) # Debug
 
-    # Vision Guard: Run at 14:45
-    schedule.every().day.at("14:45").do(job_vision)
+    # Vision Guard: Run at 14:50
+    schedule.every().day.at("14:50").do(job_vision)
 
     # Report Sender: Run at 07:00 daily
     schedule.every().day.at("07:00").do(job_daily_report)
