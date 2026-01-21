@@ -105,6 +105,7 @@ def main():
     
     job_news()
     job_vision()
+    job_daily_report() # Run once on startup so we can see logs immediately
     # Start Scheduler in the main thread (or separate, but main needs to stay alive)
     # We can run scheduler in main thread
     try:
