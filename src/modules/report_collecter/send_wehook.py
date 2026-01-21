@@ -1,275 +1,232 @@
 """
-Discord Webhook Sender - Today's Reports with PDF Download
-Quét tất cả sources, tải PDF và gửi báo cáo doanh nghiệp/ngành TRONG NGÀY
+Discord Webhook Sender - Fast & Stable
+Gửi báo cáo mới với link PDF trực tiếp (không tải file).
 """
 
-import asyncio
 import os
 from dotenv import load_dotenv
 import pandas as pd
 import requests
-from datetime import datetime, date, timezone
+from datetime import datetime, date, timedelta
 from typing import List, Dict, Set
 import json
-import re
-from pathlib import Path
+import time
+import urllib.parse
 
 load_dotenv()
 WEBHOOK = os.getenv('BAO_CAO_DOANH_NGHIEP')
 
 # Config
 SENT_FILE = r".\temp\reports\sent_reports.json"
-MAX_REPORTS = 20  # Limit
-PDF_CACHE_DIR = r".\temp\reports\pdf_cache"
+MAX_REPORTS_PER_RUN = 30  # Increased limit since no file upload
+RATE_LIMIT = 1.0  # Seconds between messages
 
-
-class TodayReportSender:
-    """Gửi báo cáo TRONG NGÀY với PDF attachment"""
-    
+class ReportSender:
     def __init__(self):
-        self.sent = self._load_sent()
+        self.sent_ids = self._load_sent()
         self.today = date.today()
-        os.makedirs(PDF_CACHE_DIR, exist_ok=True)
         
-        # Sources (path, color)
+        # Sources configuration
         self.sources = {
-            'VCBS-DN': (r'.\temp\reports\VCBS\bao_cao_doanh_nghiep\vcbs_reports.csv', 0x00aa00),
-            'VCBS-Ngành': (r'.\temp\reports\VCBS\bao_cao_nganh\vcbs_reports.csv', 0x00ff00),
-            'ACBS-DN': (r'.\temp\reports\ACBS\bao_cao_doanh_nghiep\acbs_reports.csv', 0x0099ff),
-            'KBSV-DN': (r'.\temp\reports\KBSV\bao_cao_cong_ty\kbsv_reports.csv', 0xff6600),
-            'KBSV-Ngành': (r'.\temp\reports\KBSV\bao_cao_nganh\kbsv_reports.csv', 0xff9933),
-            'SSI': (r'.\temp\reports\SSI\ban_tin_thi_truong\ssi_reports.csv', 0xff0066),
+            'VCBS-DN': r'.\temp\reports\VCBS\bao_cao_doanh_nghiep\vcbs_reports.csv',
+            'VCBS-Ngành': r'.\temp\reports\VCBS\bao_cao_nganh\vcbs_reports.csv',
+            'ACBS': r'.\temp\reports\ACBS\acbs_reports.csv',
+            'KBSV-DN': r'.\temp\reports\KBSV\bao_cao_cong_ty\kbsv_reports.csv',
+            'KBSV-Ngành': r'.\temp\reports\KBSV\bao_cao_nganh\kbsv_reports.csv',
         }
         
     def _load_sent(self) -> Set[str]:
         if os.path.exists(SENT_FILE):
             try:
-                with open(SENT_FILE, 'r') as f:
-                    return set(json.load(f).get('sent_report_ids', []))
+                with open(SENT_FILE, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    return set(data.get('sent_report_ids', []))
             except:
                 pass
         return set()
     
     def _save_sent(self):
         os.makedirs(os.path.dirname(SENT_FILE), exist_ok=True)
-        with open(SENT_FILE, 'w') as f:
-            json.dump({'sent_report_ids': list(self.sent), 'updated': datetime.now().isoformat()}, f)
-    
-    def _is_today(self, date_str):
-        """Check if date is YESTERDAY (for daily morning reports)"""
         try:
-            if pd.isna(date_str) or not date_str:
-                return False
-            
-            # Parse DD/MM/YYYY format
-            report_date = pd.to_datetime(date_str, format='%d/%m/%Y', errors='coerce')
-            if pd.isna(report_date):
-                return False
-            
-            # Convert self.today (date) to Timestamp for comparison
-            today_ts = pd.Timestamp(self.today)
-            
-            # Check if date is YESTERDAY
-            days_diff = (today_ts - report_date).days
-            return days_diff == 1  # Only yesterday
-            
+            with open(SENT_FILE, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'sent_report_ids': list(self.sent_ids),
+                    'updated': datetime.now().isoformat()
+                }, f, ensure_ascii=False, indent=2)
         except Exception as e:
-            print(f"Date parse error: {e}")
-            return False
-    
-    def get_today_reports(self) -> List[Dict]:
-        """Get reports from YESTERDAY"""
+            print(f"⚠️ Error saving sent cache: {e}")
+
+    def filter_reports(self, lookback_days: int = 1) -> List[Dict]:
+        """
+        Filter reports from the last N days.
+        lookback_days=1 means ONLY yesterday.
+        lookback_days=7 means last 7 days.
+        """
         reports = []
-        yesterday = (self.today - pd.Timedelta(days=1)).strftime('%d/%m/%Y')
-        print(f"🔍 Scanning for YESTERDAY ({yesterday})...")
+        target_dates = set()
         
-        for source, (path, color) in self.sources.items():
-            if not os.path.exists(path):
+        # Calculate target dates
+        for i in range(1, lookback_days + 1):
+            d = self.today - timedelta(days=i)
+            target_dates.add(pd.Timestamp(d).strftime('%d/%m/%Y'))
+            # Support alternative format just in case
+            target_dates.add(pd.Timestamp(d).strftime('%Y-%m-%d'))
+            
+        print(f"🔍 Scanning reports for dates: {sorted(list(target_dates))}")
+        
+        for source_name, csv_path in self.sources.items():
+            if not os.path.exists(csv_path):
+                # print(f"  ⚠️ Missing CSV: {csv_path}")
                 continue
+                
             try:
-                df = pd.read_csv(path, encoding='utf-8-sig')
+                df = pd.read_csv(csv_path, encoding='utf-8-sig')
                 
-                # Safety check for required columns
-                if 'report_id' not in df.columns:
-                    # Generate report_id if missing
-                    df['report_id'] = df.apply(lambda row: f"{source}_{row.name}", axis=1)
+                # Normalize columns
+                if 'pdf_url' not in df.columns and 'link' in df.columns:
+                    df['pdf_url'] = df['link']
                 
-                df = df[~df['report_id'].isin(self.sent)]
-                
-                # IMPORTANT: Skip if no date column (can't filter by date)
-                if 'date' not in df.columns:
-                    print(f"  ⚠️ {source}: No date column, skipping")
+                # Check required columns
+                required = ['title', 'date', 'pdf_url']
+                if not all(col in df.columns for col in required):
                     continue
+                    
+                # Generate stable ID if missing
+                if 'report_id' not in df.columns:
+                    df['report_id'] = df.apply(lambda x: f"{source_name}_{hash(x['title'] + str(x['date']))}", axis=1)
                 
-                df = df[df['date'].apply(self._is_today)]
+                # Filter by date
+                # Normalize date format in CSV to DD/MM/YYYY for comparison
+                # (Simple string match is faster and safer than parsing all formats)
                 
-                for _, row in df.iterrows():
-                    r = row.to_dict()
-                    r['source'] = source
-                    r['color'] = color
-                    reports.append(r)
+                # Helper to normalize date string from CSV
+                def normalize_date(d):
+                    if pd.isna(d): return ''
+                    d = str(d).strip()
+                    # If YYYY-MM-DD
+                    if '-' in d and d.split('-')[0].isdigit() and len(d.split('-')[0]) == 4:
+                        try:
+                            return datetime.strptime(d, '%Y-%m-%d').strftime('%d/%m/%Y')
+                        except: pass
+                    return d
+
+                matched_reports = df[df['date'].apply(normalize_date).isin(target_dates)]
                 
-                if len(df) > 0:
-                    print(f"  ✅ {source}: {len(df)}")
+                # Filter duplicates in the dataframe itself just in case
+                matched_reports = matched_reports.drop_duplicates(subset=['report_id'])
+
+                # Filter already sent
+                new_reports = matched_reports[~matched_reports['report_id'].isin(self.sent_ids)]
+                
+                for _, row in new_reports.iterrows():
+                    reports.append({
+                        'source': source_name,
+                        'title': row['title'],
+                        'ticker': row.get('ticker', ''),
+                        'date': row['date'],
+                        'pdf_url': row['pdf_url'],
+                        'report_id': row['report_id']
+                    })
+                    
+                if not new_reports.empty:
+                    print(f"  ✅ {source_name}: Found {len(new_reports)} new reports")
+                    
             except Exception as e:
-                print(f"  ❌ {source}: {e}")
-        
-        return reports
-    
-    def download_pdf(self, report: Dict) -> str:
-        """Download PDF, return path"""
-        pdf_url = report.get('pdf_url') or report.get('download_url') or report.get('detail_url')
-        
-        print(f"    🔍 Checking PDF: {pdf_url}")
-        
-        if not pdf_url or not isinstance(pdf_url, str) or 'http' not in pdf_url:
-            print(f"    ⚠️ Invalid PDF URL")
-            return None
-        
-        # Generate filename
-        ticker_raw = report.get('ticker', 'report')
-        ticker = str(ticker_raw)[:10] if ticker_raw and not pd.isna(ticker_raw) else 'report'
-        title_safe = re.sub(r'[^\w\s-]', '', report.get('title', ''))[:50]
-        filename = f"{ticker}_{title_safe}_{report['report_id'][:8]}.pdf"
-        filepath = os.path.join(PDF_CACHE_DIR, filename)
-        
-        # Check cache
-        if os.path.exists(filepath):
-            print(f"    ✅ Using cached PDF")
-            return filepath
-        
-        # Download with cookies support
-        try:
-            # Load cookies from KBSV scraper if exists
-            import pickle
-            cookie_file = './temp/kbsv_cookies.pkl'
-            session = requests.Session()
-            
-            if os.path.exists(cookie_file):
-                try:
-                    with open(cookie_file, 'rb') as f:
-                        session.cookies.update(pickle.load(f))
-                    print(f"    🍪 Loaded cookies")
-                except:
-                    pass
-            
-            # Try pdf_url first
-            if pdf_url and '.pdf' in pdf_url.lower():
-                print(f"    📥 Downloading PDF...")
-                resp = session.get(pdf_url, timeout=15, headers={
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-                })
+                print(f"  ❌ Error reading {source_name}: {e}")
                 
-                if resp.status_code == 200 and len(resp.content) > 1000:
-                    with open(filepath, 'wb') as f:
-                        f.write(resp.content)
-                    print(f"    ✅ Downloaded PDF ({len(resp.content)//1024}KB)")
-                    return filepath
-                else:
-                    print(f"    ❌ Download failed: status={resp.status_code}, size={len(resp.content)}")
-        except Exception as e:
-            print(f"    ❌ PDF download error: {e}")
-        
-        return None
-    
-    def send_report(self, report: Dict) -> bool:
-        """Send single report with PDF"""
+        return reports
+
+    def send_to_discord(self, report: Dict) -> bool:
         if not WEBHOOK:
+            print("❌ Discord Webhook URL not set!")
             return False
+            
+        # Customize content
+        source = report['source']
+        title = report['title']
+        date_str = str(report['date'])
+        raw_pdf_url = report['pdf_url']
+        ticker = report.get('ticker', '')
         
-        ticker_raw = report.get('ticker', '')
-        ticker = str(ticker_raw).upper() if ticker_raw and not pd.isna(ticker_raw) else ''
-        title = report.get('title', 'Báo cáo')[:200]
+        if pd.isna(ticker): ticker = ''
+
+        # Encode URL for Discord (handle spaces and unicode)
+        pdf_url = raw_pdf_url
+        if pdf_url and str(pdf_url).startswith('http'):
+            try:
+                # Split into base and path to encode path properly
+                parts = urllib.parse.urlsplit(pdf_url)
+                # Encode path, query, fragment
+                encoded_path = urllib.parse.quote(parts.path)
+                encoded_query = urllib.parse.quote(parts.query, safe="=&")
+                pdf_url = urllib.parse.urlunsplit((parts.scheme, parts.netloc, encoded_path, encoded_query, parts.fragment))
+            except:
+                pass # Keep original if error
         
-        # Format title
-        if ticker and len(ticker) >= 3:
-            display_title = f"**[{ticker}]** {title}"
-        else:
-            display_title = title
-        
-        # Build embed
+        # Embed structure
         embed = {
-            'title': display_title[:256],
-            'color': report.get('color', 0x808080),
-            'fields': [],
-            'timestamp': datetime.now(timezone.utc).isoformat(),  # UTC timezone for Discord
-            'footer': {'text': report['source']}
+            "title": title,
+            "url": pdf_url if pdf_url and str(pdf_url).startswith('http') else None,
+            "description": f"[👉 Xem chi tiết tại đây]({pdf_url})",
+            "color": 5763719,  # Green (0x57F287)
+            "author": {
+                "name": f"Báo cáo mới từ {source}",
+            },
+            "footer": {
+                "text": f"📅 Cập nhật: {date_str}"
+            }
         }
         
-        if ticker:
-            embed['fields'].append({'name': '📊 Mã', 'value': f"**{ticker}**", 'inline': True})
-        if report.get('date'):
-            embed['fields'].append({'name': '📅 Ngày', 'value': report['date'], 'inline': True})
-        
-        # Links
-        links = []
-        if report.get('detail_url'):
-            links.append(f"[📄 Chi tiết]({report['detail_url']})")
-        if links:
-            embed['fields'].append({'name': '🔗 Link', 'value': ' | '.join(links), 'inline': False})
-        
-        # Download PDF
-        pdf_path = self.download_pdf(report)
-        
-        # Prepare payload
+        # Custom title formatting (removed ticker as requested)
+        # if ticker and len(str(ticker)) < 10:
+        #     embed["title"] = f"[{ticker}] {title}"
+            
         payload = {
-            'username': '📊 Report Bot',
-            'embeds': [embed]
+            "username": "Stock Report Bot",
+            "embeds": [embed]
         }
-        
-        files = {}
-        if pdf_path and os.path.exists(pdf_path):
-            files = {'file': open(pdf_path, 'rb')}
-            payload['content'] = f"📄 **PDF attached**"
         
         try:
-            resp = requests.post(WEBHOOK, data={'payload_json': json.dumps(payload)}, files=files, timeout=15)
-            
-            if files:
-                files['file'].close()
-            
+            resp = requests.post(WEBHOOK, json=payload, timeout=10)
             if resp.status_code in [200, 204]:
-                self.sent.add(report['report_id'])
+                self.sent_ids.add(report['report_id'])
                 return True
             else:
-                print(f"    ❌ HTTP {resp.status_code}")
+                print(f"    ❌ Failed to send: {resp.status_code} - {resp.text}")
                 return False
         except Exception as e:
-            print(f"    ❌ Error: {e}")
-            if files:
-                files['file'].close()
+            print(f"    ❌ Network error: {e}")
             return False
-    
-    def run(self):
-        """Main"""
-        yesterday = self.today - pd.Timedelta(days=1)
-        print(f"\n{'='*60}")
-        print(f"📊 Yesterday's Report Sender")
-        print(f"📅 Yesterday: {yesterday.strftime('%d/%m/%Y')}")
-        print(f"{'='*60}\n")
+
+    def run(self, lookback_days=1):
+        print(f"🚀 Starting Report Sender (Lookback: {lookback_days} days)")
         
-        reports = self.get_today_reports()
+        reports = self.filter_reports(lookback_days=lookback_days)
         
         if not reports:
-            print("✨ No new reports from yesterday!\n")
-            return
+            print("✨ No new reports found.")
+            return 0
+
+        print(f"📤 Preparing to send {len(reports)} reports...")
         
-        print(f"\n📤 Sending {len(reports)} reports...\n")
-        
-        sent = 0
-        for i, r in enumerate(reports[:MAX_REPORTS], 1):
-            print(f"[{i}/{min(len(reports), MAX_REPORTS)}] {r.get('title', '')[:60]}")
-            if self.send_report(r):
-                sent += 1
-                import time
-                time.sleep(1.5)  # Rate limit
+        count = 0
+        for i, report in enumerate(reports):
+            if count >= MAX_REPORTS_PER_RUN:
+                print(f"⚠️ Reached limit of {MAX_REPORTS_PER_RUN} reports per run.")
+                break
+                
+            print(f"[{i+1}/{len(reports)}] Sending: {report['title'][:50]}...")
+            if self.send_to_discord(report):
+                count += 1
+                time.sleep(RATE_LIMIT)
+            else:
+                print(f"    Skipping...")
         
         self._save_sent()
-        
-        print(f"\n{'='*60}")
-        print(f"✅ Sent {sent}/{len(reports)} reports")
-        print(f"{'='*60}\n")
-
+        print(f"✅ Completed! Sent {count} reports.")
+        return count
 
 if __name__ == "__main__":
-    TodayReportSender().run()
+    sender = ReportSender()
+    # Default to 1 day for production
+    sender.run(lookback_days=1) 
