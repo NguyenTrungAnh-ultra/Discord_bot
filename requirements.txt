@@ -8,3 +8,4 @@ vnstock
 matplotlib
 lxml
 openpyxl
+google-genai
