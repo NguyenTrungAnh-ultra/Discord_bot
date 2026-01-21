@@ -1,7 +1,0 @@
-discord.py
-python-dotenv
-requests
-playwright==1.57.0
-vnstock
-google-genai
-schedule
