@@ -2,6 +2,11 @@ import discord
 from discord.ext import commands
 import logging
 # from News.config import DATA_FILE # Unused and removed
+import sys
+from pathlib import Path
+root_path = Path(__file__).resolve().parents[3]
+sys.path.append(str(root_path))
+
 from src.modules.news_summarizer.scanners.tin_doanh_nghiep import VCI_news
 from src.utils.tool import update_history, clean_title, get_artical
 from src.core.gg_service import tomtat100
