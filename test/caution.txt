@@ -1,0 +1,127 @@
+import requests
+
+bao_cao_doanh nghiep = "https://www.vietcap.com.vn/api/cms-service/v2/page/analysis"
+
+querystring = {"is-all":"false","page":"0","size":"100","direction":"DESC","sortBy":"date","page-ids":"144","language":"1"}
+
+payload = ""
+headers = {
+    "cookie": "FECW=94818fa9b3004f16b7d0aeb545e4a4c7961e5f4190a6c062fa241f7e8a539697df1447bb97d175381fdb3b6a73c152d76750845c5f0c4b6386583127db1c0b1b1db65333a4242ef26428358e8c6fc0208e; FECWS=94818fa9b3004f16b7d0aeb545e4a4c7961e5f4190a6c062fa241f7e8a539697df1447bb97d175381fdb3b6a73c152d76750845c5f0c4b6386583127db1c0b1b1db65333a4242ef26428358e8c6fc0208e",
+    "Accept": "application/json",
+    "Accept-Language": "en-US,en;q=0.8",
+    "Connection": "keep-alive",
+    "Origin": "https://trading.vietcap.com.vn",
+    "Referer": "https://trading.vietcap.com.vn/",
+    "sec-ch-ua": ""Not(A:Brand";v="8", "Chromium";v="144", "Brave";v="144"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": ""Windows"",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "Sec-GPC": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+}
+
+response = requests.request("GET", url, data=payload, headers=headers, params=querystring)
+
+print(response.text)
+
+
+import requests
+
+url = "https://www.vietcap.com.vn/api/cms-service/v2/page/analysis"
+
+querystring = {"is-all":"false","page":"0","size":"100","direction":"DESC","sortBy":"date","page-ids":"143","language":"1"}
+
+payload = ""
+headers = {
+    "cookie": "FECW=94818fa9b3004f16b7d0aeb545e4a4c7961e5f4190a6c062fa241f7e8a539697df1447bb97d175381fdb3b6a73c152d76750845c5f0c4b6386583127db1c0b1b1db65333a4242ef26428358e8c6fc0208e; FECWS=94818fa9b3004f16b7d0aeb545e4a4c7961e5f4190a6c062fa241f7e8a539697df1447bb97d175381fdb3b6a73c152d76750845c5f0c4b6386583127db1c0b1b1db65333a4242ef26428358e8c6fc0208e",
+    "Accept": "application/json",
+    "Accept-Language": "en-US,en;q=0.8",
+    "Connection": "keep-alive",
+    "Origin": "https://trading.vietcap.com.vn",
+    "Referer": "https://trading.vietcap.com.vn/",
+    "sec-ch-ua": ""Not(A:Brand";v="8", "Chromium";v="144", "Brave";v="144"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": ""Windows"",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "Sec-GPC": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+}
+
+response = requests.request("GET", url, data=payload, headers=headers, params=querystring)
+
+print(response.text)
+
+đó là 2 hàm request cho VietCap, thay đổi là lỗi 500
+thông tin ta cần trong json này có dạng:
+				{
+					"id": 35585,
+					"name": "Báo cáo Ngành Nhiệt điện - Giá công suất thị trường (CAN) năm 2026 thấp hơn kỳ vọng, tuy nhiên vẫn gấp 2,7 lần cùng kỳ",
+					"images": null,
+					"link": "bao-cao-nganh-nhiet-dien-gia-cong-suat-thi-truong-can-nam-2026-thap-hon-ky-vong-tuy-nhien-van-gap-2-7-lan-cung-ky",
+					"file": "https://www.vietcap.com.vn/api/cms-api/uploads/file/202601/BCNganhNhietdien-20260112.pdf",
+					"date": "2026-01-13T00:00:00",
+					"createdDate": "2026-01-13T04:06:57",
+					"makerDate": "2026-01-13T04:07:13",
+					"detail": null,
+					"pageId": 143,
+					"companyId": 0,
+					"industryId": 51,
+					"pageName": "Báo Cáo Ngành",
+					"pageLink": "bao-cao-nganh",
+					"highLightEndDate": null,
+					"searchType": null,
+					"type": null,
+					"ticker": null,
+					"tags": null,
+					"companyInfo": null,
+					"sector": null,
+					"score": null,
+					"phraseScore": null,
+					"source": ""
+				}
++id thì ta tự generate mới
++lưu lại :name, link,date, file
++đặc biệt là link phải gắn thêm 'https://trading.vietcap.com.vn/iq/report-detail/vi/' nó mới hoạt động
+*cấu trúc file ổn định với các scanner khác
+*đặt tên hàm biến nếu cùng chức năng phải giống nhau
+*có thể là api sẽ không hoạt động vào lần tới, phải dùng playright để lấy lại
+*****nó bắt đang nhập mới cho coi
+
++chung
+*dùng playright
+*test tải về được mới thành công
+*thống nhất trong cách đặt hàm với scanner khác
+*thống nhất về cấu trúc dữ liệu
+*đầy đủ chức năng với các sacnner khác
+
+
+kinh nghiệm với VCBS
+Dựa trên quá trình refactor vừa rồi, tôi xin phân tích lớp "bảo mật" (thực chất là rào cản kỹ thuật) của trang VCBS và cách chúng ta đã vượt qua:
+
+1. Các lớp rào cản & Độ khó
+Đánh giá độ khó: 5/10 (Mức trung bình). Trang này không có các lớp bảo mật hạng nặng như Cloudflare Captcha, Akamai, hay chặn IP gắt gao. Tuy nhiên, nó được thiết kế gây khó khăn cho các bot cào dữ liệu truyền thống (như requests, BeautifulSoup).
+
+Rào cản	Mô tả	Tại sao bot thường (requests) chết?
+Dynamic Rendering	Nội dung web được render bằng Javascript (React/Vue/Angular).	requests chỉ tải về HTML rỗng hoặc khung trang, không thấy dữ liệu báo cáo.
+Hidden Interaction	Nút tải (hideButton) bị ẩn và chỉ hiện/kích hoạt khi di chuột vào (Hover).	Bot không biết click vào đâu hoặc click vào phần tử bị che khuất (not interactable).
+Dynamic Links	Link PDF không có sẵn trong HTML (href="..."). Khi click, Javascript mới gọi API hoặc đổi hướng để sinh ra link.	Không thể quét 1 lần để lấy hết link. Phải tương tác từng cái một.
+2. Cách chúng ta đã vượt qua (Bypass Strategy)
+Chúng ta đã chuyển từ phương pháp "Cào tĩnh" sang "Giả lập hành vi người dùng" bằng Playwright.
+
+Vượt qua Dynamic Rendering:
+
+Giải pháp: Dùng Headless Browser (Trình duyệt chạy ngầm). Nó tải và chạy toàn bộ Javascript như một người dùng thật, giúp hiển thị đầy đủ danh sách báo cáo.
+Vượt qua Nút ẩn (Hidden Button):
+
+Giải pháp: Thêm logic btn.hover() (rê chuột) để kích hoạt trạng thái "active" của nút, sau đó dùng btn.click(force=True) (ép buộc click) để bỏ qua các check tính khả dụng của trình duyệt.
+Bắt Link động (Kỹ thuật quan trọng nhất):
+
+Vấn đề: Khi click, trang không đổi URL ngay mà có thể mở Popup, hoặc tải ngầm (Ajax/Fetch).
+Giải pháp (Network Interception): Thay vì đợi giao diện thay đổi (rất chập chờn), chúng ta nghe trộm traffic mạng.
+Logic: "Tôi click nút này, và tôi sẽ bắt bất kỳ request nào có đuôi .pdf được trình duyệt gửi đi ngay sau đó". Đây là cách làm triệt để nhất để lấy link gốc.
+Kết luận
+Trang web này bảo mật theo kiểu "Security by Obscurity" (Bảo mật bằng sự the confusing/phức tạp của giao diện) chứ không phải bảo mật chặn bot chuyên sâu. Việc sử dụng Playwright kết hợp Network Interception là phương án tối ưu để xử lý loại trang này.
