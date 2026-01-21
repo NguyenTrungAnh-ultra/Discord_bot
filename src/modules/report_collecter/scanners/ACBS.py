@@ -120,6 +120,38 @@ def _extract_date_from_element(element):
     return ''
 
 
+def extract_tickers(title: str) -> str:
+    """
+    Trích xuất mã cổ phiếu từ title
+    - Trả về các mã cách nhau bằng dấu phẩy
+    - Trả về None nếu không tìm thấy
+    """
+    # Các từ không phải mã cổ phiếu
+    excluded = {
+        'CTCP', 'TCT', 'TNHH', 'ABB', 'CEO', 'CFO', 'COO', 'MUA', 'BAN', 'GIỮ',
+        'VND', 'USD', 'EUR', 'JPY', 'VNĐ', 'PDF', 'Q1', 'Q2', 'Q3', 'Q4',
+        'FY', 'YTD', 'TTM', 'EPS', 'P/E', 'ROE', 'ROA', 'CAGR', 'EBITDA',
+        'KHẢ', 'QUAN', 'CẬP', 'NHẬT', 'BAO', 'CAO', 'NHANH', 'KHÔNG', 'ĐÁNH',
+        'GIÁ', 'CTCP', 'CÔNG', 'TY', 'CỔ', 'PHẦN', 'NGÂN', 'HÀNG', 'TMCP',
+        'LNST', 'SVCK', 'THU', 'GIAO', 'CHUY', 'HSX', 'HNX', 'UPCOM', 'VNIND',
+        'VNI', 'VN30', 'TRU', 'TANG', 'GIAM', 'LOI', 'NHUAN', 'DOANH', 'THUE',
+        'QUY', 'NAM', 'THANG', 'TUAN', 'NGAY'
+    }
+    
+    # Tìm tất cả mã 3-4 ký tự viết hoa (xử lý cả trường hợp _VCG_)
+    tickers = re.findall(r'(?<![A-Za-z0-9])([A-Z]{3,4})(?![A-Za-z0-9])', title.upper())
+    
+    # Loại bỏ các từ không phải mã
+    tickers = [t for t in tickers if t not in excluded]
+    
+    # Loại bỏ trùng lặp và sắp xếp
+    unique_tickers = sorted(set(tickers))
+    
+    if unique_tickers:
+        return ','.join(unique_tickers)
+    return None
+
+
 def run():
     """
     Main scrape function - scrapes báo cáo doanh nghiệp
@@ -245,16 +277,8 @@ def run():
                         found_existing = True
                         continue
                     
-                    # Extract ticker from title
-                    ticker = ''
-                    ticker_match = re.match(r'^([A-Z]{3,4})[\s_\-:]', title.upper())
-                    if ticker_match:
-                        ticker = ticker_match.group(1)
-                    else:
-                        # Try to find ticker pattern in title
-                        ticker_match = re.search(r'\b([A-Z]{3})\b', title.upper())
-                        if ticker_match:
-                            ticker = ticker_match.group(1)
+                    # Extract ticker(s) from title
+                    ticker = extract_tickers(title)
                     
                     # Get PDF URL from detail page
                     print(f"  📎 Lấy PDF URL: {title[:50]}...")
@@ -271,8 +295,6 @@ def run():
                         'ticker': ticker,
                         'date': date_str,
                         'pdf_url': pdf_url,
-                        'download_url': pdf_url,
-                        'downloaded': False,
                         'download_path': ''
                     })
                     
@@ -320,8 +342,7 @@ def run():
         print(f"\n✨ Không có báo cáo mới. Tổng: {len(final_df)} báo cáo.")
     
     # Ensure columns are in correct order
-    expected_columns = ['report_id', 'title', 'ticker', 'date', 'pdf_url', 
-                       'download_url', 'downloaded', 'download_path']
+    expected_columns = ['report_id', 'title', 'ticker', 'date', 'pdf_url', 'download_path']
     for col in expected_columns:
         if col not in final_df.columns:
             final_df[col] = ''
@@ -447,7 +468,6 @@ def download_by_id(report_id):
         print(f"✅ Đã tải: {filename} ({file_size:.1f} KB)")
         
         # Update CSV
-        df.loc[df['report_id'] == report_id, 'downloaded'] = True
         df.loc[df['report_id'] == report_id, 'download_path'] = file_path
         df.to_csv(csv_file, index=False, encoding='utf-8-sig')
         

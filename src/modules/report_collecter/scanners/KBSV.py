@@ -7,15 +7,13 @@ import random
 import os
 import pickle
 import hashlib
-import json
+import re
 from datetime import datetime
 
 class Config:
-    toan_canh_thi_truong_url = "https://kbsec.com.vn/vi/bao-cao-chien-luoc-thi-truong"
+    # Chỉ giữ lại báo cáo doanh nghiệp và báo cáo ngành
     bao_cao_cong_ty_url = "https://kbsec.com.vn/vi/bao-cao-cong-ty"
     bao_cao_nganh_url = "https://kbsec.com.vn/vi/bao-cao-nganh"
-    bao_cao_vimo_url = "https://kbsec.com.vn/vi/bao-cao-trien-vong-kinh-te-vi-mo"
-    bao_cao_chuyen_de_url = "https://kbsec.com.vn/vi/bao-cao-chuyen-de"
 
 def file_save(dir):
     # Đường dẫn file
@@ -51,27 +49,43 @@ def file_save(dir):
     
     return output_dir, csv_file, cookie_file, session, old_df, existing_urls
 
-def run(toan_canh_thi_truong_url=False, 
-                bao_cao_cong_ty_url=False, 
-                bao_cao_nganh_url=False,
-                bao_cao_vimo_url=False,
-                bao_cao_chuyen_de_url=False):   
+
+def extract_tickers(title: str) -> str:
+    """
+    Trích xuất mã cổ phiếu từ title
+    - Trả về các mã cách nhau bằng dấu phẩy
+    - Trả về None nếu không tìm thấy
+    """
+    excluded = {
+        'CTCP', 'TCT', 'TNHH', 'ABB', 'CEO', 'CFO', 'COO', 'MUA', 'BAN', 'KBSV',
+        'VND', 'USD', 'EUR', 'JPY', 'PDF', 'FY', 'YTD', 'TTM', 'EPS', 'ROE', 'ROA',
+        'CAGR', 'EBITDA', 'CTCP', 'CÔNG', 'TY', 'NGÂN', 'HÀNG', 'TMCP', 'FTM',
+        'LNST', 'SVCK', 'THU', 'GIAO', 'CHUY', 'HSX', 'HNX', 'UPCOM', 'VNIND',
+        'VNI', 'VN30', 'TRU', 'TANG', 'GIAM', 'LOI', 'NHUAN', 'DOANH', 'THUE',
+        'QUY', 'NAM', 'THANG', 'TUAN', 'NGAY'
+    }
     
-    if toan_canh_thi_truong_url:
-        dir = r'KBSV\toan_canh_thi_truong'
-        bao_cao = Config.toan_canh_thi_truong_url
-    elif bao_cao_cong_ty_url:
+    tickers = re.findall(r'(?<![A-Za-z0-9])([A-Z]{3,4})(?![A-Za-z0-9])', title.upper())
+    tickers = [t for t in tickers if t not in excluded]
+    unique_tickers = sorted(set(tickers))
+    
+    if unique_tickers:
+        return ','.join(unique_tickers)
+    return None
+
+def run(bao_cao_cong_ty_url=False, 
+                bao_cao_nganh_url=False):   
+    
+    if bao_cao_cong_ty_url:
         dir = r'KBSV\bao_cao_cong_ty'
         bao_cao = Config.bao_cao_cong_ty_url
     elif bao_cao_nganh_url:
         dir = r'KBSV\bao_cao_nganh'
         bao_cao = Config.bao_cao_nganh_url
-    elif bao_cao_vimo_url:
-        dir = r'KBSV\bao_cao_vimo'
-        bao_cao = Config.bao_cao_vimo_url
-    elif bao_cao_chuyen_de_url:
-        dir = r'KBSV\bao_cao_chuyen_de'
-        bao_cao = Config.bao_cao_chuyen_de_url
+    else:
+        # Default to company reports
+        dir = r'KBSV\bao_cao_cong_ty'
+        bao_cao = Config.bao_cao_cong_ty_url
 
     #load/ceate file 
     output_dir, csv_file, cookie_file, session, old_df, existing_urls = file_save(dir)
@@ -145,13 +159,8 @@ def run(toan_canh_thi_truong_url=False,
                     report_id_content = f"{title}|{pdf_url}"
                     report_id = hashlib.md5(report_id_content.encode()).hexdigest()
                     
-                    # Extract ticker from title if possible
-                    ticker = ''
-                    title_parts = title.split('-')
-                    if len(title_parts) > 0:
-                        potential_ticker = title_parts[0].strip().upper()
-                        if len(potential_ticker) >= 3 and len(potential_ticker) <= 4:
-                            ticker = potential_ticker
+                    # Extract ticker(s) from title
+                    ticker = extract_tickers(title)
                     
                     all_reports.append({
                         'report_id': report_id,
@@ -159,8 +168,6 @@ def run(toan_canh_thi_truong_url=False,
                         'ticker': ticker,
                         'date': date_str,
                         'pdf_url': pdf_url,
-                        'download_url': pdf_url,
-                        'downloaded': False,
                         'download_path': ''
                     })
                     new_in_page += 1
@@ -210,6 +217,133 @@ def run(toan_canh_thi_truong_url=False,
     print(f"💾 Đã lưu vào file: {csv_file}")
     
     return final_df
+
+
+def download_by_id(report_id: str, report_type: str = 'bao_cao_cong_ty'):
+    """
+    Download PDF by report ID
+    
+    Args:
+        report_id: MD5 hash ID of the report
+        report_type: 'bao_cao_cong_ty' or 'bao_cao_nganh'
+        
+    Returns:
+        dict: {'success': bool, 'report_id': str, 'title': str, 'file_path': str, 'error': str}
+    """
+    dir = f'KBSV\\{report_type}'
+    output_dir = fr".\temp\reports\{dir}"
+    csv_file = os.path.join(output_dir, "kbsv_reports.csv")
+    
+    if not os.path.exists(csv_file):
+        return {
+            'success': False,
+            'report_id': report_id,
+            'title': '',
+            'file_path': '',
+            'error': 'CSV file not found. Run run() first.'
+        }
+    
+    try:
+        df = pd.read_csv(csv_file, encoding='utf-8-sig')
+    except Exception as e:
+        return {
+            'success': False,
+            'report_id': report_id,
+            'title': '',
+            'file_path': '',
+            'error': f'Error loading CSV: {e}'
+        }
+    
+    report = df[df['report_id'] == report_id]
+    if report.empty:
+        return {
+            'success': False,
+            'report_id': report_id,
+            'title': '',
+            'file_path': '',
+            'error': f'Report not found with ID: {report_id}'
+        }
+    
+    report_row = report.iloc[0]
+    pdf_url = report_row.get('pdf_url', '')
+    title = report_row.get('title', '')
+    
+    if not pdf_url or pd.isna(pdf_url):
+        return {
+            'success': False,
+            'report_id': report_id,
+            'title': title,
+            'file_path': '',
+            'error': 'No PDF URL for this report'
+        }
+    
+    # Check if already downloaded
+    existing_path = report_row.get('download_path', '')
+    if existing_path and not pd.isna(existing_path) and os.path.exists(existing_path):
+        print(f"✅ File đã tồn tại: {existing_path}")
+        return {
+            'success': True,
+            'report_id': report_id,
+            'title': title,
+            'file_path': existing_path,
+            'error': ''
+        }
+    
+    # Create download directory
+    download_dir = os.path.join(output_dir, "downloads")
+    os.makedirs(download_dir, exist_ok=True)
+    
+    # Generate filename from URL
+    filename = pdf_url.split('/')[-1]
+    if not filename.endswith('.pdf'):
+        filename = f"{report_id[:8]}.pdf"
+    
+    file_path = os.path.join(download_dir, filename)
+    
+    # Download PDF
+    print(f"📥 Đang tải: {title[:50]}...")
+    
+    try:
+        session = requests.Session()
+        user_agent = get_random_desktop_user_agent()
+        session.headers.update({
+            'User-Agent': user_agent,
+            'Accept': 'application/pdf,*/*',
+            'Accept-Language': 'vi-VN,vi;q=0.9,en;q=0.8',
+            'Referer': 'https://kbsec.com.vn/'
+        })
+        
+        response = session.get(pdf_url, timeout=60)
+        response.raise_for_status()
+        
+        with open(file_path, 'wb') as f:
+            f.write(response.content)
+        
+        file_size = len(response.content) / 1024
+        print(f"✅ Đã tải: {filename} ({file_size:.1f} KB)")
+        
+        # Update CSV
+        df.loc[df['report_id'] == report_id, 'download_path'] = file_path
+        df.to_csv(csv_file, index=False, encoding='utf-8-sig')
+        
+        return {
+            'success': True,
+            'report_id': report_id,
+            'title': title,
+            'file_path': file_path,
+            'error': ''
+        }
+        
+    except Exception as e:
+        print(f"❌ Lỗi tải file: {e}")
+        return {
+            'success': False,
+            'report_id': report_id,
+            'title': title,
+            'file_path': '',
+            'error': str(e)
+        }
+
 
 def scan_and_download_by_ticker(ticker):
     """
