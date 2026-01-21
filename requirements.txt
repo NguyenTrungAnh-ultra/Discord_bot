@@ -1,0 +1,10 @@
+playwright==1.57.0
+pandas
+requests
+python-dotenv
+schedule
+discord.py
+vnstock
+matplotlib
+lxml
+openpyxl
