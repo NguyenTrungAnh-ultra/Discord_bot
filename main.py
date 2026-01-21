@@ -14,6 +14,7 @@ PYTHON_EXEC = sys.executable
 BOT_SCRIPT = os.path.join("src", "modules", "bot_main", "Bot.py")
 NEWS_SCRIPT = os.path.join("src", "modules", "news_summarizer", "Firms_news.py")
 VISION_SCRIPT = os.path.join("src", "modules", "vision_guard", "VisionGuard.py")
+REPORT_SENDER_SCRIPT = os.path.join("src", "modules", "report_collecter", "send_wehook.py")
 
 def run_bot():
     """Runs the main Discord Bot. Restarts on failure."""
@@ -49,7 +50,6 @@ def job_news():
 def job_vision():
     """Runs the Vision Guard."""
     print("👁️ [Main] Running Vision Guard...")
-    # Build environment with PYTHONPATH
     env = os.environ.copy()
     env["PYTHONPATH"] = os.getcwd()
 
@@ -59,6 +59,18 @@ def job_vision():
     except Exception as e:
         print(f"❌ [Main] Vision Guard failed: {e}")
 
+def job_send_reports():
+    """Send yesterday's company reports to Discord."""
+    print("📊 [Main] Sending yesterday's reports...")
+    env = os.environ.copy()
+    env["PYTHONPATH"] = os.getcwd()
+
+    try:
+        subprocess.run([PYTHON_EXEC, REPORT_SENDER_SCRIPT], check=True, env=env)
+        print("✅ [Main] Report sender finished.")
+    except Exception as e:
+        print(f"❌ [Main] Report sender failed: {e}")
+
 def run_schedulers():
     """Runs the scheduling loop for News and Vision Guard."""
     # News Worker: Run every 1 hour (3600s)
@@ -67,12 +79,19 @@ def run_schedulers():
 
     # Vision Guard: Run at 14:45
     schedule.every().day.at("14:45").do(job_vision)
+
+    # Report Sender: Run at 08:00 daily (send yesterday's reports)
+    schedule.every().day.at("08:00").do(job_send_reports)
     
-    print("⏳ [Main] Scheduler started. News: every 1h | Vision: 14:45 daily.")
+    print("⏳ [Main] Scheduler started.")
+    print("   📰 News: every 1h")
+    print("   👁️ Vision: 14:45 daily")
+    print("   📊 Reports: 08:00 daily (yesterday's reports)")
 
     while True:
         schedule.run_pending()
         time.sleep(30) # Check every 30s
+    
 
 def main():
     print("🔥 Discord Manager Started")

@@ -9,7 +9,7 @@ load_dotenv()
 # Cấu hình
 BOT_NAME = "VisionGuard"
 DISCORD_WEBHOOK_URL = os.getenv('WEBHOOK_URL_visiongaurd')
-
+print(DISCORD_WEBHOOK_URL)
 def send_to_discord(image_path, message):
     """Hàm gửi tin nhắn và file ảnh lên Discord"""
     try:

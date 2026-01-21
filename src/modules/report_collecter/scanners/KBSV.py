@@ -6,6 +6,9 @@ import time
 import random
 import os
 import pickle
+import hashlib
+import json
+from datetime import datetime
 
 class Config:
     toan_canh_thi_truong_url = "https://kbsec.com.vn/vi/bao-cao-chien-luoc-thi-truong"
@@ -84,7 +87,7 @@ def run(toan_canh_thi_truong_url=False,
     
     all_reports = []
     page_num = 1
-    max_pages = 50  # Tăng lên để cào đủ nếu lần đầu
+    max_pages = 10  # Tăng lên để cào đủ nếu lần đầu
     found_existing = False  # Flag để dừng khi gặp báo cáo cũ
     
     while page_num <= max_pages:
@@ -116,6 +119,19 @@ def run(toan_canh_thi_truong_url=False,
                     pdf_url = link_tag['href']
                     title = link_tag.get('title', 'N/A')
                     
+                    # Extract date from span.date
+                    date_str = ''
+                    date_span = item.find('span', class_='date')
+                    if date_span:
+                        # Date format: "07/01/2026 02:39:51 PM"
+                        # We only need the date part: "07/01/2026"
+                        date_text = date_span.get_text(strip=True)
+                        if date_text:
+                            # Extract DD/MM/YYYY part
+                            date_parts = date_text.split()
+                            if date_parts:
+                                date_str = date_parts[0]  # "07/01/2026"
+                    
                     # Nếu link là relative, thêm domain
                     if not pdf_url.startswith('http'):
                         pdf_url = f"https://kbsec.com.vn{pdf_url}"
@@ -125,10 +141,27 @@ def run(toan_canh_thi_truong_url=False,
                         found_existing = True
                         continue  # Bỏ qua báo cáo đã có
                     
+                    # Generate report_id (giống VCBS/ACBS/SSI)
+                    report_id_content = f"{title}|{pdf_url}"
+                    report_id = hashlib.md5(report_id_content.encode()).hexdigest()
+                    
+                    # Extract ticker from title if possible
+                    ticker = ''
+                    title_parts = title.split('-')
+                    if len(title_parts) > 0:
+                        potential_ticker = title_parts[0].strip().upper()
+                        if len(potential_ticker) >= 3 and len(potential_ticker) <= 4:
+                            ticker = potential_ticker
+                    
                     all_reports.append({
+                        'report_id': report_id,
                         'title': title,
+                        'ticker': ticker,
+                        'date': date_str,
                         'pdf_url': pdf_url,
-                        'page': page_num
+                        'download_url': pdf_url,
+                        'downloaded': False,
+                        'download_path': ''
                     })
                     new_in_page += 1
             
@@ -331,15 +364,11 @@ def scan_and_download_by_ticker(ticker):
         'reports': ticker_reports
     }
 
+
 if __name__ == "__main__":
-    # Test với mã cổ phiếu VNM
-    result = scan_and_download_by_ticker("VNM")
-    
-    print(f"\n{'='*60}")
-    print(f"📊 Tóm tắt kết quả:")
-    print(f"   Mã CP: {result['ticker']}")
-    print(f"   Tổng báo cáo: {result['total_reports']}")
-    print(f"   Báo cáo mới: {result['new_reports']}")
-    print(f"   Đã tải: {result['downloaded']}")
-    print(f"{'='*60}")
+    # Scan all company reports
+    print("🚀 Starting KBSV Company Reports Scan...\n")
+    run(bao_cao_cong_ty_url=True)
+    print("\n✅ KBSV scan completed!")
+
 
