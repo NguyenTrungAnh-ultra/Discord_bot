@@ -20,13 +20,13 @@ def run_bot():
     """Runs the main Discord Bot. Restarts on failure."""
     # Build environment with PYTHONPATH
     env = os.environ.copy()
-    env["PYTHONPATH"] = os.getcwd()
+    env["PYTHONUNBUFFERED"] = "1"
 
     while True:
         print("🚀 [Main] Starting Discord Bot...")
         try:
             # Pass the custom environment
-            subprocess.run([PYTHON_EXEC, BOT_SCRIPT], check=True, env=env)
+            subprocess.run([PYTHON_EXEC, "-u", BOT_SCRIPT], check=True, env=env)
         except subprocess.CalledProcessError as e:
             print(f"⚠️ [Main] Bot crashed with error: {e}. Restarting in 10s...")
             time.sleep(10)
@@ -40,9 +40,10 @@ def job_news():
     # Build environment with PYTHONPATH
     env = os.environ.copy()
     env["PYTHONPATH"] = os.getcwd()
+    env["PYTHONUNBUFFERED"] = "1"
 
     try:
-        subprocess.run([PYTHON_EXEC, NEWS_SCRIPT], check=True, env=env)
+        subprocess.run([PYTHON_EXEC, "-u", NEWS_SCRIPT], check=True, env=env)
         print("✅ [Main] News Worker finished. Sleeping...")
     except Exception as e:
         print(f"❌ [Main] News Worker failed: {e}")
@@ -52,9 +53,10 @@ def job_vision():
     print("👁️ [Main] Running Vision Guard...")
     env = os.environ.copy()
     env["PYTHONPATH"] = os.getcwd()
+    env["PYTHONUNBUFFERED"] = "1"
 
     try:
-        subprocess.run([PYTHON_EXEC, VISION_SCRIPT], check=True, env=env)
+        subprocess.run([PYTHON_EXEC, "-u", VISION_SCRIPT], check=True, env=env)
         print("✅ [Main] Vision Guard finished.")
     except Exception as e:
         print(f"❌ [Main] Vision Guard failed: {e}")
@@ -64,9 +66,10 @@ def job_daily_report():
     print("📊 [Main] Running Daily Report Job...")
     env = os.environ.copy()
     env["PYTHONPATH"] = os.getcwd()
+    env["PYTHONUNBUFFERED"] = "1"
 
     try:
-        subprocess.run([PYTHON_EXEC, DAILY_JOB_SCRIPT], check=True, env=env)
+        subprocess.run([PYTHON_EXEC, "-u", DAILY_JOB_SCRIPT], check=True, env=env)
         print("✅ [Main] Daily Report Job finished.")
     except Exception as e:
         print(f"❌ [Main] Daily Report Job failed: {e}")
