@@ -374,6 +374,7 @@ def download_by_id(report_id: str, report_type='bao_cao_doanh_nghiep'):
 if __name__ == "__main__":
     # Test Run
     print("🧪 Testing VCBS Scanner...")
-    run('bao_cao_doanh_nghiep')
+    # run('bao_cao_doanh_nghiep')
+    run('bao_cao_nganh')
 
 

@@ -91,9 +91,13 @@ class ReportSender:
                 if not all(col in df.columns for col in required):
                     continue
                     
-                # Generate stable ID if missing
+                # Generate stable ID if missing (using MD5 instead of hash for stability)
                 if 'report_id' not in df.columns:
-                    df['report_id'] = df.apply(lambda x: f"{source_name}_{hash(x['title'] + str(x['date']))}", axis=1)
+                    import hashlib
+                    def generate_stable_id(row):
+                        raw_str = str(row['title']) + str(row['date'])
+                        return f"{source_name}_{hashlib.md5(raw_str.encode()).hexdigest()}"
+                    df['report_id'] = df.apply(generate_stable_id, axis=1)
                 
                 # Filter by date
                 # Normalize date format in CSV to DD/MM/YYYY for comparison
