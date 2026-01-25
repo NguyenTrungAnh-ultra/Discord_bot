@@ -17,7 +17,7 @@ load_dotenv()
 WEBHOOK = os.getenv('BAO_CAO_DOANH_NGHIEP')
 
 # Config
-SENT_FILE = r".\temp\reports\sent_reports.json"
+SENT_FILE = os.path.join(os.getcwd(), "temp", "reports", "sent_reports.json")
 MAX_REPORTS_PER_RUN = 30  # Increased limit since no file upload
 RATE_LIMIT = 1.0  # Seconds between messages
 
@@ -27,12 +27,13 @@ class ReportSender:
         self.today = date.today()
         
         # Sources configuration
+        base_path = os.getcwd()
         self.sources = {
-            'VCBS-DN': r'.\temp\reports\VCBS\bao_cao_doanh_nghiep\vcbs_reports.csv',
-            'VCBS-Ngành': r'.\temp\reports\VCBS\bao_cao_nganh\vcbs_reports.csv',
-            'ACBS': r'.\temp\reports\ACBS\acbs_reports.csv',
-            'KBSV-DN': r'.\temp\reports\KBSV\bao_cao_cong_ty\kbsv_reports.csv',
-            'KBSV-Ngành': r'.\temp\reports\KBSV\bao_cao_nganh\kbsv_reports.csv',
+            'VCBS-DN': os.path.join(base_path, 'temp', 'reports', 'VCBS', 'bao_cao_doanh_nghiep', 'vcbs_reports.csv'),
+            'VCBS-Ngành': os.path.join(base_path, 'temp', 'reports', 'VCBS', 'bao_cao_nganh', 'vcbs_reports.csv'),
+            'ACBS': os.path.join(base_path, 'temp', 'reports', 'ACBS', 'acbs_reports.csv'),
+            'KBSV-DN': os.path.join(base_path, 'temp', 'reports', 'KBSV', 'bao_cao_cong_ty', 'kbsv_reports.csv'),
+            'KBSV-Ngành': os.path.join(base_path, 'temp', 'reports', 'KBSV', 'bao_cao_nganh', 'kbsv_reports.csv'),
         }
         
     def _load_sent(self) -> Set[str]:
@@ -59,17 +60,15 @@ class ReportSender:
     def filter_reports(self, lookback_days: int = 1) -> List[Dict]:
         """
         Filter reports from the last N days.
-        lookback_days=1 means ONLY yesterday.
-        lookback_days=7 means last 7 days.
+        lookback_days=1 means today + yesterday (last 24h effectively).
         """
         reports = []
         target_dates = set()
         
-        # Calculate target dates
-        for i in range(1, lookback_days + 1):
+        # Calculate target dates (Including TODAY)
+        for i in range(0, lookback_days + 1):
             d = self.today - timedelta(days=i)
             target_dates.add(pd.Timestamp(d).strftime('%d/%m/%Y'))
-            # Support alternative format just in case
             target_dates.add(pd.Timestamp(d).strftime('%Y-%m-%d'))
             
         print(f"🔍 Scanning reports for dates: {sorted(list(target_dates))}")

@@ -72,7 +72,7 @@ def extract_tickers(title: str) -> Optional[str]:
 class VCBSScanner:
     def __init__(self, headless: bool = True):
         self.headless = headless
-        self.base_dir = r".\temp\reports\VCBS"
+        self.base_dir = os.path.join(os.getcwd(), "temp", "reports", "VCBS")
         
     def _get_paths(self, report_type_code: str) -> Tuple[str, str]:
         """Get output directory and CSV path"""
