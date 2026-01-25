@@ -17,7 +17,7 @@ class Config:
 
 def file_save(dir):
     # Đường dẫn file
-    output_dir = fr".\temp\reports\{dir}"
+    output_dir = os.path.join(os.getcwd(), "temp", "reports", dir)
     csv_file = os.path.join(output_dir, "kbsv_reports.csv")
     cookie_file = os.path.join(output_dir, "kbsv_cookies.pkl")
     
@@ -77,14 +77,14 @@ def run(bao_cao_cong_ty_url=False,
                 bao_cao_nganh_url=False):   
     
     if bao_cao_cong_ty_url:
-        dir = r'KBSV\bao_cao_cong_ty'
+        dir = os.path.join("KBSV", "bao_cao_cong_ty")
         bao_cao = Config.bao_cao_cong_ty_url
     elif bao_cao_nganh_url:
-        dir = r'KBSV\bao_cao_nganh'
+        dir = os.path.join("KBSV", "bao_cao_nganh")
         bao_cao = Config.bao_cao_nganh_url
     else:
         # Default to company reports
-        dir = r'KBSV\bao_cao_cong_ty'
+        dir = os.path.join("KBSV", "bao_cao_cong_ty")
         bao_cao = Config.bao_cao_cong_ty_url
 
     #load/ceate file 
@@ -230,8 +230,8 @@ def download_by_id(report_id: str, report_type: str = 'bao_cao_cong_ty'):
     Returns:
         dict: {'success': bool, 'report_id': str, 'title': str, 'file_path': str, 'error': str}
     """
-    dir = f'KBSV\\{report_type}'
-    output_dir = fr".\temp\reports\{dir}"
+    dir = os.path.join("KBSV", report_type)
+    output_dir = os.path.join(os.getcwd(), "temp", "reports", dir)
     csv_file = os.path.join(output_dir, "kbsv_reports.csv")
     
     if not os.path.exists(csv_file):

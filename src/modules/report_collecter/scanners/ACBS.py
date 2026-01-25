@@ -27,7 +27,7 @@ class Config:
 
 def file_save():
     """Setup directories and load existing data (like KBSV)"""
-    output_dir = r".\temp\reports\ACBS"
+    output_dir = os.path.join(os.getcwd(), "temp", "reports", "ACBS")
     csv_file = os.path.join(output_dir, "acbs_reports.csv")
     
     # Create directory if not exists
@@ -373,7 +373,7 @@ def download_by_id(report_id):
             'error': str (if failed)
         }
     """
-    output_dir = r".\temp\reports\ACBS"
+    output_dir = os.path.join(os.getcwd(), "temp", "reports", "ACBS")
     csv_file = os.path.join(output_dir, "acbs_reports.csv")
     
     # Load CSV
