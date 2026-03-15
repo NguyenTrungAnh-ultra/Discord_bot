@@ -18,39 +18,45 @@ DAILY_JOB_SCRIPT = os.path.join("src", "modules", "report_collecter", "daily_job
 
 def run_bot():
     """Runs the main Discord Bot. Restarts on failure."""
-    # Build environment with PYTHONPATH
+    # Build environment with PYTHONPATH so bot can find internal modules
     env = os.environ.copy()
+    env["PYTHONPATH"] = os.getcwd()
     env["PYTHONUNBUFFERED"] = "1"
 
     while True:
         print("🚀 [Main] Starting Discord Bot...")
+        sys.stdout.flush() # Force print
         try:
             # Pass the custom environment
             subprocess.run([PYTHON_EXEC, "-u", BOT_SCRIPT], check=True, env=env)
         except subprocess.CalledProcessError as e:
             print(f"⚠️ [Main] Bot crashed with error: {e}. Restarting in 10s...")
+            sys.stdout.flush()
             time.sleep(10)
-        except KeyboardInterrupt:
-            print("🛑 [Main] Bot stopped by user.")
-            break
+        except Exception as e:
+            print(f"❌ [Main] Bot manager encountered an error: {e}")
+            sys.stdout.flush()
+            time.sleep(10)
 
 def job_news():
     """Runs the news summarizer."""
     print("📰 [Main] Running News Worker...")
-    # Build environment with PYTHONPATH
+    sys.stdout.flush()
     env = os.environ.copy()
     env["PYTHONPATH"] = os.getcwd()
     env["PYTHONUNBUFFERED"] = "1"
 
     try:
         subprocess.run([PYTHON_EXEC, "-u", NEWS_SCRIPT], check=True, env=env)
-        print("✅ [Main] News Worker finished. Sleeping...")
+        print("✅ [Main] News Worker finished.")
     except Exception as e:
         print(f"❌ [Main] News Worker failed: {e}")
+    sys.stdout.flush()
 
 def job_vision():
     """Runs the Vision Guard."""
     print("👁️ [Main] Running Vision Guard...")
+    sys.stdout.flush()
     env = os.environ.copy()
     env["PYTHONPATH"] = os.getcwd()
     env["PYTHONUNBUFFERED"] = "1"
@@ -60,62 +66,59 @@ def job_vision():
         print("✅ [Main] Vision Guard finished.")
     except Exception as e:
         print(f"❌ [Main] Vision Guard failed: {e}")
+    sys.stdout.flush()
 
 def job_daily_report():
     """Runs the Daily Report Job (Scan + Send)."""
     print("📊 [Main] Running Daily Report Job...")
+    sys.stdout.flush()
     env = os.environ.copy()
     env["PYTHONPATH"] = os.getcwd()
     env["PYTHONUNBUFFERED"] = "1"
 
     try:
+        # We use a slight timeout or ensured exit to prevent hanging
         subprocess.run([PYTHON_EXEC, "-u", DAILY_JOB_SCRIPT], check=True, env=env)
         print("✅ [Main] Daily Report Job finished.")
     except Exception as e:
         print(f"❌ [Main] Daily Report Job failed: {e}")
+    sys.stdout.flush()
 
 def run_schedulers():
     """Runs the scheduling loop for News and Vision Guard."""
-    # News Worker: Run every 1 hour (3600s)
     schedule.every(1).hours.do(job_news)
-    # schedule.every(10).seconds.do(job_news) # Debug
-
-    # Vision Guard: Run at 14:50
     schedule.every().day.at("14:50").do(job_vision)
-
-    # Report Sender: Run at 07:00 daily
     schedule.every().day.at("07:00").do(job_daily_report)
     
     print("⏳ [Main] Scheduler started.")
     print("   📰 News: every 1h")
-    print("   👁️ Vision: 14:45 daily")
-    print("   📊 Reports: 07:00 daily (Scan + Send)")
+    print("   👁️ Vision: 14:50 daily")
+    print("   📊 Reports: 07:00 daily")
+    sys.stdout.flush()
 
     while True:
         schedule.run_pending()
-        time.sleep(30) # Check every 30s
+        time.sleep(30)
     
 
 def main():
     print("🔥 Discord Manager Started")
+    sys.stdout.flush()
     
-    # 2. Run Bot in a separate thread so it's always responsive
+    # 2. Run Bot in a separate thread
     bot_thread = threading.Thread(target=run_bot, daemon=True)
     bot_thread.start()
-    print("🚀 [Main] Starting Discord Bot in background...")
     
-    # 3. Initial startup jobs (Scan + Send once)
-    # We run this after bot starts so logs show up clearly
-    time.sleep(5) # Small delay to let bot connect
+    # 3. Initial startup jobs
+    time.sleep(10) # Give more time for bot to initialize
     job_daily_report() 
     
     # 4. Schedule recurring tasks
-    # Start Scheduler in the main thread (or separate, but main needs to stay alive)
-    # We can run scheduler in main thread
     try:
         run_schedulers()
     except KeyboardInterrupt:
         print("\n👋 Exiting Manager.")
+        sys.stdout.flush()
 
 if __name__ == "__main__":
     main()
