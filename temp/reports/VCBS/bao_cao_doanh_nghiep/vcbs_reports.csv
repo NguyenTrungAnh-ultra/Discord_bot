@@ -1,31 +1,30 @@
-﻿report_id,title,ticker,date,pdf_url,download_path
-76b266ac80d3e072224e9ef7ec644a7d,Báo cáo cập nhật BSR,BSR,24/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260122/p-ptnc-bao-cao-cap-nhat-bsr-01-2026.pdf,
-4bcd364755bd48999c9d23a7c4c6bee2,KDH 15.01.2026 - Kỳ vọng mức tăng trưởng cao trong năm 2026,"CAO,KDH",24/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260115/kdh-15-01-2026-ky-vong-muc-tang-truong-cao-trong-nam-2026.pdf,
-5300e4652674dc76e639da428ff804da,Báo cáo cập nhật TCM 31.12.2025,TCM,24/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251231/tcm-q42025-3.pdf,
-8c015ae396dfbb8214243bca3f2b5e78,Tổng hợp dự báo KQKD Q4.2025 và cả năm 2026,KQKD,24/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251230/tong-hop-du-bao-kqkd-q4-2025-va-ca-nam-2026.pdf,
-e90bd5e5b47a1509bfc87cb6d079b4dc,15.12.2025 - Nắm bắt thời cơ mở rộng thị phần chăn nuôi,,24/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251215/20251215-dbc-4q25.pdf,
-bae855fa79d2a2d7f8f6c30be04a1271,TAL_Cập nhật Hội nghị nhà đầu tư_02.12.2025,"NGH,TAL",24/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251205/tal-04-12-2025-bao-cao-cap-nhat-hoi-nghi-nha-dau-tu.pdf,
-07ba422f364a8515b89bbea6ce478341,"VNM - Tiêu dùng nội địa cải thiện, xuất khẩu tăng trưởng","THI,VNM",24/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251202/bao-cao-cap-nhat-vnm-q4-25.pdf,
-f414c99982ed9783137e4d3b36ebf3f3,BCM 25.11.2025 - Động lực mới từ KCN Bàu Bàng mở rộng,"BCM,KCN",24/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251125/bcm-25-11-2025-dong-luc-moi-tu-kcn-bau-bang-mo-rong.pdf,
-a8c201a56d7ed2e473f5cf8cb4e79ccc,11.11.2025 - Giai đoạn phục hồi chuyển sang tăng trưởng,"GIAI,SANG",24/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251111/20251111-mwg-4q25.pdf,
-0041a522f0889226c2d0c933e72b03d6,Báo cáo cập nhật FPT 11.11.2025,FPT,24/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251111/bao-cao-phan-tich-fpt.pdf,
-1fdc549da633b1412eb0f0188554d623,"PDR 07.11.2025 - Chuyển nhượng dự án, cải thiện dòng tiền","PDR,THI",24/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251117/pdr-07-11-2025.pdf,
-bc82a4f12e456c5a232c7480dbf312d2,PHR - Tái khởi động chu kỳ lợi nhuận,"CHU,NHU,PHR",24/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251105/phr-05-11-2025-tai-khoi-dong-chu-ki-loi-nhuan.pdf,
-35cf3b21a2287069fba70678e616179f,03.11.2025 - Đón kỷ nguyên mới,NGUY,24/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251103/03-11-2025-acv-don-ky-nguyen-moi.pdf,
-a6f1b8656508b54a465c10c8ca2d1e6f,Tổng hợp dự báo KQKD Q3.2025 và cả năm 2025,KQKD,24/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251008/tong-hop-du-bao-kqkd-q3-2025-va-ca-nam-2025.pdf,
-fb51a6a7bddf8db8a78180adbd22493b,Báo cáo cập nhật VJC 16.09.2025,VJC,24/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20250918/bcpt-vjc.pdf,
-5da7f6ed3d635f5b197a40380de72ae2,KDH 15.01.2026 - Kỳ vọng mức tăng trưởng cao trong năm 2026,"CAO,KDH",21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260115/kdh-15-01-2026-ky-vong-muc-tang-truong-cao-trong-nam-2026.pdf,
-868421e810f5c4d76426a139256ce742,Báo cáo cập nhật TCM 31.12.2025,TCM,21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251231/tcm-q42025-3.pdf,
-940ac68af0a0e09a8133cf3bc60a8ea5,Tổng hợp dự báo KQKD Q4.2025 và cả năm 2026,KQKD,21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251230/tong-hop-du-bao-kqkd-q4-2025-va-ca-nam-2026.pdf,
-e1d5cb60d958930b18d219ab047fdfac,15.12.2025 - Nắm bắt thời cơ mở rộng thị phần chăn nuôi,,21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251215/20251215-dbc-4q25.pdf,
-249f24ba9495e37738dd235c7529e45d,TAL_Cập nhật Hội nghị nhà đầu tư_02.12.2025,"NGH,TAL",21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251205/tal-04-12-2025-bao-cao-cap-nhat-hoi-nghi-nha-dau-tu.pdf,
-1aae17e86f8bd6ec4e750ac202f49058,"VNM - Tiêu dùng nội địa cải thiện, xuất khẩu tăng trưởng","THI,VNM",21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251202/bao-cao-cap-nhat-vnm-q4-25.pdf,
-397aa7d9c0148f9107f0c21ff0abe2be,BCM 25.11.2025 - Động lực mới từ KCN Bàu Bàng mở rộng,"BCM,KCN",21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251125/bcm-25-11-2025-dong-luc-moi-tu-kcn-bau-bang-mo-rong.pdf,
-2ab5f19922b8d559d72c59824cfa51b3,11.11.2025 - Giai đoạn phục hồi chuyển sang tăng trưởng,"GIAI,SANG",21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251111/20251111-mwg-4q25.pdf,
-a81be1ccf7d93f00f949203d4a010eba,Báo cáo cập nhật FPT 11.11.2025,FPT,21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251111/bao-cao-phan-tich-fpt.pdf,
-6220ae055379cbc94e16c1ba8cc499bc,"PDR 07.11.2025 - Chuyển nhượng dự án, cải thiện dòng tiền","PDR,THI",21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251117/pdr-07-11-2025.pdf,
-b23b2357c9ab3bbf63cbce55063f4dc7,PHR - Tái khởi động chu kỳ lợi nhuận,"CHU,NHU,PHR",21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251105/phr-05-11-2025-tai-khoi-dong-chu-ki-loi-nhuan.pdf,
-10a6b86b963d5830e63c84a02b0f6982,03.11.2025 - Đón kỷ nguyên mới,NGUY,21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251103/03-11-2025-acv-don-ky-nguyen-moi.pdf,
-c1e461bf2e4b93ff27d2d03711b2219b,Tổng hợp dự báo KQKD Q3.2025 và cả năm 2025,KQKD,21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251008/tong-hop-du-bao-kqkd-q3-2025-va-ca-nam-2025.pdf,
-be6f9df3fa3c436788d80f24ffac200c,Báo cáo cập nhật VJC 16.09.2025,VJC,21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20250918/bcpt-vjc.pdf,
-dd83d0e0ed4c4a3a66624118ffcf3b64,09.09.2025 - Kênh phân phối chính hãng gia tăng thị phần,,21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20250909/20250909-dgw-25q3.pdf,
+﻿report_id,title,date,pdf_url
+45b55126a66acef6c013a786801b0f82,CTD_03.2026_Backlog lớn củng cố đà tăng trưởng,15/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260313/ctd-03-2026-backlog-lon-cung-co-da-tang-truong.pdf
+f894dad9f66ff341387bb3a6090fd3ab,MBB - Tăng tốc đón đầu chu kỳ mới 02.2026,15/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260212/mbb-tang-toc-don-dau-chu-ky-moi-02-2026.pdf
+ef99bafa299f2430ae486ae4c163d9cc,SZC 12.03.2026 - Tiềm năng chờ khai phá,15/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260313/szc-12-03-2026-tiem-nang-cho-khai-pha.pdf
+cbdc51761ea69c13acc7c8d738972198,KDH 15.01.2026 - Kỳ vọng mức tăng trưởng cao trong năm 2026,15/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260115/kdh-15-01-2026-ky-vong-muc-tang-truong-cao-trong-nam-2026.pdf
+aff4567231ac885d8d75153438c7085c,Báo cáo cập nhật BSR,15/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260122/p-ptnc-bao-cao-cap-nhat-bsr-01-2026.pdf
+3246c31e97597d1f83103ab0dd7c175a,Báo cáo phân tích FPT,15/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260127/bao-cao-phan-tich-fpt.pdf
+3d5f0c896b33647b1784e15797680baf,TV2 - Bước vào chu kỳ tăng trưởng - Mua - Upside 21%,15/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260206/tv2-bao-cao-cap-nhat-05022026.pdf
+90fbe2b1349b10b5c6550fd290a53fbb,"DCM - MUA (45.467 đồng/cp, +16,7%) - TRIỂN VỌNG TÍCH CỰC NHỜ CHI PHÍ KHÍ DUY TRÌ Ở MỨC THẤP VÀ MÔI TRƯỜNG GIÁ PHÂN BÓN THUẬN LỢI",15/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260206/p-ptnc-bao-cao-cap-nhat-dcm-02-2026.pdf
+2c3e2592f58708ad35e038f74da60e67,01.02.2026 - Giai đoạn hồi phục chuyển sang tăng tốc,15/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260202/20260130-mwg-1q26-quick-report.pdf
+7d8cfe24b39c08e4e8af2d65d33fb57e,PHR 03.03.2026 - MỞ RỘNG BIÊN LỢI NHUẬN,15/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260303/phr-03-03-2026-mo-rong-bien-loi-nhuan.pdf
+2eda40c1661ea4aeaa456dca3c2e4e41,04.03.2026 - Kênh phân phối chính hãng gia tăng thị phần,15/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260304/20260304-dgw-26q1-1.pdf
+2d1882f9fc33e03632526062e70128a7,"VNM - Tiêu dùng tăng trưởng, lợi nhuận cải thiện",15/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260304/bao-cao-cap-nhat-vnm-q1-26.pdf
+092ed350de51ff8c8751cec186bb8225,IDC 04.03.2026 - Sẵn sàng bứt phá,15/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260309/idc-04-03-2026-san-sang-but-pha.pdf
+6b83f485ce42cae60cb5d0b65c82a9a0,"NLG 03.2026 - Định giá hấp dẫn, triển vọng tích cực",15/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260304/nlg-03-2026-dinh-gia-hap-dan-trien-vong-tich-cuc.pdf
+eb837d525d41e614492f212bc502ca72,SIP 04.03.2026 - Vững vàng chờ đón cơ hội,15/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20260304/sip-04-03-2026-vung-vang-cho-don-co-hoi.pdf
+088b488e4dd533e01beeeb3a7a21a4b0,Tổng hợp dự báo KQKD Q4.2025 và cả năm 2026,13/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251230/tong-hop-du-bao-kqkd-q4-2025-va-ca-nam-2026.pdf
+045b029a12e5760241334de4c1feb017,Báo cáo cập nhật TCM 31.12.2025,13/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251231/tcm-q42025-3.pdf
+ee83757a72ae6873c80d8ef3d5a6bc87,11.11.2025 - Giai đoạn phục hồi chuyển sang tăng trưởng,04/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251111/20251111-mwg-4q25.pdf
+36e65cb5cb3e7653cec786201e61ad51,BCM 25.11.2025 - Động lực mới từ KCN Bàu Bàng mở rộng,04/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251125/bcm-25-11-2025-dong-luc-moi-tu-kcn-bau-bang-mo-rong.pdf
+4f5737ab31a294fb9d0e79ad56d5356f,"VNM - Tiêu dùng nội địa cải thiện, xuất khẩu tăng trưởng",04/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251202/bao-cao-cap-nhat-vnm-q4-25.pdf
+e0cb1ece0fe059001689e8259570a6c3,TAL_Cập nhật Hội nghị nhà đầu tư_02.12.2025,04/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251205/tal-04-12-2025-bao-cao-cap-nhat-hoi-nghi-nha-dau-tu.pdf
+edaaab03be7d93ea6f7206cdbc9efcbe,15.12.2025 - Nắm bắt thời cơ mở rộng thị phần chăn nuôi,04/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251215/20251215-dbc-4q25.pdf
+f5aa24d0d4c057a849ad7ca2319cb018,Báo cáo cập nhật FPT 11.11.2025,03/03/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251111/bao-cao-phan-tich-fpt.pdf
+88625a5239d41ede0a654afab06986db,"PDR 07.11.2025 - Chuyển nhượng dự án, cải thiện dòng tiền",12/02/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251117/pdr-07-11-2025.pdf
+685a573521414a4b29482a328c814cd9,PHR - Tái khởi động chu kỳ lợi nhuận,06/02/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251105/phr-05-11-2025-tai-khoi-dong-chu-ki-loi-nhuan.pdf
+d5501e57c1dfa7a068c25a90424089b2,03.11.2025 - Đón kỷ nguyên mới,06/02/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251103/03-11-2025-acv-don-ky-nguyen-moi.pdf
+760e972cafab42683469d8fda24bce27,Tổng hợp dự báo KQKD Q3.2025 và cả năm 2025,01/02/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20251008/tong-hop-du-bao-kqkd-q3-2025-va-ca-nam-2025.pdf
+cfa10e81b05943be4b78703918a09039,Báo cáo cập nhật VJC 16.09.2025,27/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20250918/bcpt-vjc.pdf
+3dff2e91c0a246a08be7030a5dcad35c,09.09.2025 - Kênh phân phối chính hãng gia tăng thị phần,21/01/2026,https://www.vcbs.com.vn/storage/ttpt_reports/20250909/20250909-dgw-25q3.pdf
