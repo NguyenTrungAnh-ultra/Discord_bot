@@ -241,7 +241,27 @@ async def tomtat(ctx):
         print(e)
         await ctx.send("Có lỗi xảy ra khi lấy link.")
 
+@bot.command()
+async def cleanup(ctx, limit: int = 500):
+    """Quét và xóa các tin nhắn trùng lặp link PDF trong channel"""
+    await ctx.send(f"🧹 Đang bắt đầu dọn dẹp {limit} tin nhắn gần nhất...")
+    
+    seen_urls = set()
+    deleted_count = 0
+    
+    async for message in ctx.channel.history(limit=limit):
+        if (message.author == bot.user or message.webhook_id is not None) and message.embeds:
+            for embed in message.embeds:
+                if embed.url:
+                    if embed.url in seen_urls:
+                        await message.delete()
+                        deleted_count += 1
+                    else:
+                        seen_urls.add(embed.url)
+    
+    await ctx.send(f"✅ Đã dọn dẹp xong! Xóa {deleted_count} tin nhắn trùng lặp.")
 
-# chay bot
+
+# Chạy bot
 bot.run(token=token, log_handler=handler, log_level=logging.DEBUG)
 

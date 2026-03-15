@@ -125,7 +125,7 @@ class ReportSender:
                     reports.append({
                         'source': source_name,
                         'title': row['title'],
-                        'ticker': row.get('ticker', ''),
+                        # 'ticker': row.get('ticker', ''),
                         'date': row['date'],
                         'pdf_url': row['pdf_url'],
                         'report_id': row['report_id']
@@ -149,9 +149,9 @@ class ReportSender:
         title = report['title']
         date_str = str(report['date'])
         raw_pdf_url = report['pdf_url']
-        ticker = report.get('ticker', '')
+        # ticker = report.get('ticker', '')
         
-        if pd.isna(ticker): ticker = ''
+        # if pd.isna(ticker): ticker = ''
 
         # Encode URL for Discord (handle spaces and unicode)
         pdf_url = raw_pdf_url
