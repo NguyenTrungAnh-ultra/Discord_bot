@@ -48,6 +48,7 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
+    print(f"📩 Nhận tin nhắn từ {message.author}: '{message.content}' (Channel: {message.channel.name})")
     if message.author == bot.user:
         return
     if "shit" in message.content.lower():
