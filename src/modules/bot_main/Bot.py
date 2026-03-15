@@ -244,23 +244,39 @@ async def tomtat(ctx):
 
 @bot.command()
 async def cleanup(ctx, limit: int = 500):
-    """Quét và xóa các tin nhắn trùng lặp link PDF trong channel"""
-    await ctx.send(f"🧹 Đang bắt đầu dọn dẹp {limit} tin nhắn gần nhất...")
+    """Quét và xóa các tin nhắn trùng lặp link PDF trong channel (Giữ lại cái mới nhất)"""
+    status_msg = await ctx.send(f"🧹 Đang bắt đầu quét {limit} tin nhắn gần nhất...")
     
     seen_urls = set()
     deleted_count = 0
+    error_count = 0
     
-    async for message in ctx.channel.history(limit=limit):
-        if (message.author == bot.user or message.webhook_id is not None) and message.embeds:
-            for embed in message.embeds:
-                if embed.url:
-                    if embed.url in seen_urls:
-                        await message.delete()
-                        deleted_count += 1
-                    else:
-                        seen_urls.add(embed.url)
-    
-    await ctx.send(f"✅ Đã dọn dẹp xong! Xóa {deleted_count} tin nhắn trùng lặp.")
+    try:
+        async for message in ctx.channel.history(limit=limit):
+            # Chỉ xử lý tin nhắn của Bot hoặc Webhook
+            if (message.author == bot.user or message.webhook_id is not None) and message.embeds:
+                if message.id == status_msg.id: # Không tự xóa tin nhắn trạng thái của mình
+                    continue
+                    
+                for embed in message.embeds:
+                    if embed.url:
+                        if embed.url in seen_urls:
+                            try:
+                                await message.delete()
+                                deleted_count += 1
+                            except Exception as e:
+                                print(f"❌ Không thể xóa tin nhắn: {e}")
+                                error_count += 1
+                        else:
+                            seen_urls.add(embed.url)
+        
+        report = f"✅ Đã dọn dẹp xong! Xóa {deleted_count} tin nhắn trùng lặp."
+        if error_count > 0:
+            report += f"\n⚠️ Không thể xóa {error_count} tin nhắn (có thể do thiếu quyền 'Manage Messages')."
+        await status_msg.edit(content=report)
+        
+    except Exception as e:
+        await ctx.send(f"❌ Có lỗi xảy ra khi dọn dẹp: {e}")
 
 
 # Chạy bot
