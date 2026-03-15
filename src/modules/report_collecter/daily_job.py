@@ -88,4 +88,9 @@ def job_daily_scan():
     print(f"🏁 [Daily Job] Finished at {datetime.now()}")
 
 if __name__ == "__main__":
-    job_daily_scan()
+    try:
+        job_daily_scan()
+        sys.exit(0)
+    except Exception as e:
+        print(f"💥 Fatal Error in Daily Job: {e}")
+        sys.exit(1)

@@ -12,5 +12,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # 5. Copy code của bạn vào
 COPY . .
 
+# Đảm bảo log luôn được in ra ngay lập tức (không bị lưu đệm)
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=/app
+
 # 6. Chạy bot
 CMD ["python", "main.py"]
