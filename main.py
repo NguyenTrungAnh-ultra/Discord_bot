@@ -99,13 +99,17 @@ def run_schedulers():
 def main():
     print("🔥 Discord Manager Started")
     
-    # Start Bot in a separate thread
+    # 2. Run Bot in a separate thread so it's always responsive
     bot_thread = threading.Thread(target=run_bot, daemon=True)
     bot_thread.start()
+    print("🚀 [Main] Starting Discord Bot in background...")
     
-    job_news()
-    job_vision()
-    job_daily_report() # Run once on startup so we can see logs immediately
+    # 3. Initial startup jobs (Scan + Send once)
+    # We run this after bot starts so logs show up clearly
+    time.sleep(5) # Small delay to let bot connect
+    job_daily_report() 
+    
+    # 4. Schedule recurring tasks
     # Start Scheduler in the main thread (or separate, but main needs to stay alive)
     # We can run scheduler in main thread
     try:

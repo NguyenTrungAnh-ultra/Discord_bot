@@ -57,21 +57,12 @@ class ReportSender:
         except Exception as e:
             print(f"⚠️ Error saving sent cache: {e}")
 
-    def filter_reports(self, lookback_days: int = 1) -> List[Dict]:
+    def filter_reports(self) -> List[Dict]:
         """
-        Filter reports from the last N days.
-        lookback_days=1 means today + yesterday (last 24h effectively).
+        Filter all reports from CSV that haven't been sent.
         """
         reports = []
-        target_dates = set()
-        
-        # Calculate target dates (Including TODAY)
-        for i in range(0, lookback_days + 1):
-            d = self.today - timedelta(days=i)
-            target_dates.add(pd.Timestamp(d).strftime('%d/%m/%Y'))
-            target_dates.add(pd.Timestamp(d).strftime('%Y-%m-%d'))
-            
-        print(f"🔍 Scanning reports for dates: {sorted(list(target_dates))}")
+        print(f"🔍 Scanning all reports to find unsent items...")
         
         for source_name, csv_path in self.sources.items():
             if not os.path.exists(csv_path):
@@ -90,13 +81,11 @@ class ReportSender:
                 if not all(col in df.columns for col in required):
                     continue
                     
-                # Generate stable ID if missing (using MD5 instead of hash for stability)
-                if 'report_id' not in df.columns:
-                    import hashlib
-                    def generate_stable_id(row):
-                        raw_str = str(row['title']) + str(row['date'])
-                        return f"{source_name}_{hashlib.md5(raw_str.encode()).hexdigest()}"
-                    df['report_id'] = df.apply(generate_stable_id, axis=1)
+                # ALWAYS generate stable ID from title for consistency, ignoring CSV's report_id
+                import hashlib
+                def generate_stable_id(row):
+                    return hashlib.md5(str(row['title']).strip().encode('utf-8')).hexdigest()
+                df['report_id'] = df.apply(generate_stable_id, axis=1)
                 
                 # Filter by date
                 # Normalize date format in CSV to DD/MM/YYYY for comparison
@@ -113,7 +102,8 @@ class ReportSender:
                         except: pass
                     return d
 
-                matched_reports = df[df['date'].apply(normalize_date).isin(target_dates)]
+                # No date filtering, just take everything from CSV
+                matched_reports = df
                 
                 # Filter duplicates in the dataframe itself just in case
                 matched_reports = matched_reports.drop_duplicates(subset=['report_id'])
@@ -201,14 +191,24 @@ class ReportSender:
             print(f"    ❌ Network error: {e}")
             return False
 
-    def run(self, lookback_days=1):
-        print(f"🚀 Starting Report Sender (Lookback: {lookback_days} days)")
+    def run(self):
+        print(f"🚀 Starting Report Sender (Unsent items only)")
         
-        reports = self.filter_reports(lookback_days=lookback_days)
+        reports = self.filter_reports()
         
         if not reports:
             print("✨ No new reports found.")
             return 0
+
+        # Global Deduplication by report_id (across all sources)
+        unique_reports = []
+        seen_batch_ids = set()
+        for r in reports:
+            if r['report_id'] not in seen_batch_ids:
+                unique_reports.append(r)
+                seen_batch_ids.add(r['report_id'])
+        
+        reports = unique_reports
 
         print(f"📤 Preparing to send {len(reports)} reports...")
         
@@ -231,5 +231,5 @@ class ReportSender:
 
 if __name__ == "__main__":
     sender = ReportSender()
-    # Default to 1 day for production
-    sender.run(lookback_days=1) 
+    # Simply send everything that hasn't been sent yet
+    sender.run() 

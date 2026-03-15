@@ -72,8 +72,8 @@ def job_daily_scan():
     # 2. Send Reports (Yesterday)
     try:
         sender = ReportSender()
-        # lookback_days=3 means "Last 3 days" to ensure we catch any missed reports
-        sent_count = sender.run(lookback_days=3)
+        # Simply send everything that hasn't been sent yet
+        sent_count = sender.run()
         
         # 3. Notify if empty
         if sent_count == 0:
