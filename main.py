@@ -101,23 +101,49 @@ def run_schedulers():
         time.sleep(30)
     
 
+def run_startup_jobs():
+    """Runs all initial jobs in separate threads to avoid blocking the main scheduler."""
+    print("🚀 [Main] Running Initial Startup Jobs...")
+    sys.stdout.flush()
+    
+    # 1. News
+    news_thread = threading.Thread(target=job_news, name="Startup-News")
+    news_thread.start()
+    
+    # 2. Vision
+    vision_thread = threading.Thread(target=job_vision, name="Startup-Vision")
+    vision_thread.start()
+    
+    # 3. Daily Report (This one can be heavy, run it last or also in thread)
+    report_thread = threading.Thread(target=job_daily_report, name="Startup-Reports")
+    report_thread.start()
+
 def main():
     print("🔥 Discord Manager Started")
     sys.stdout.flush()
     
-    # 2. Run Bot in a separate thread
+    # 1. Run Bot in a separate thread
     bot_thread = threading.Thread(target=run_bot, daemon=True)
     bot_thread.start()
     
-    # 3. Initial startup jobs
-    time.sleep(10) # Give more time for bot to initialize
-    job_daily_report() 
+    # 2. Schedule recurring tasks (Set up early)
+    # schedule.every(1).hours.do(job_news)
+    # Move schedule setup inside run_schedulers or keep here
     
-    # 4. Schedule recurring tasks
+    # 3. Initial startup delay
+    time.sleep(15) # Give bot heartbeat some time
+    
+    # 4. Run startup jobs in parallel
+    run_startup_jobs()
+    
+    # 5. Start the scheduler loop
     try:
         run_schedulers()
     except KeyboardInterrupt:
         print("\n👋 Exiting Manager.")
+        sys.stdout.flush()
+    except Exception as e:
+        print(f"❌ [Main] Scheduler loop crashed: {e}")
         sys.stdout.flush()
 
 if __name__ == "__main__":
