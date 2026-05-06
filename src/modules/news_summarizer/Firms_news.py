@@ -1,5 +1,5 @@
 import os
-from src.utils.tool import load_history, update_history
+from src.core.db import Database
 from src.modules.news_summarizer.scanners.tin_doanh_nghiep import VCI_news
 from datetime import datetime
 import discord
@@ -7,10 +7,8 @@ from dotenv import load_dotenv
 from vnstock import Trading
 
 # Config
-HISTORY_FILE = "./temp/requested_news.json" 
 today = str(datetime.today().strftime('%Y-%m-%d'))
 trading = Trading(source='VCI') 
-
 
 # TOOLS
 
@@ -37,10 +35,10 @@ def _status(tickers: list):
 def main():
     load_dotenv()
     webhook_url = os.getenv('WEBHOOK_URL_TIN_TUC')
-    # webhook_url = 'https://discord.com/api/webhooks/1452905466693685299/yCdvoSw8_sYWsRGqq8zdw1iNq3l2Ts4FEK3u7jtrP6Od4D2_DMkIqYlaVQf5jT7ClEZH'
     
     if not webhook_url:
         print("Lỗi: Chưa cài đặt DISCORD_WEBHOOK_URL")
+        return
 
     # Khởi tạo webhook
     webhook = discord.SyncWebhook.from_url(webhook_url)
@@ -55,20 +53,24 @@ def main():
     # Lấy status các mã
     status = _status(current_tickers)
 
-    # Lấy lịch sử id đã gửi
-    histories = load_history(direct=HISTORY_FILE)
-    sent_ids = [x.get('id') for x in histories]
+    # Lấy lịch sử id đã gửi từ Database (2 ngày gần nhất)
+    query_sent = "SELECT id FROM news WHERE update_date >= CURRENT_DATE - INTERVAL '2 days'"
+    try:
+        sent_records = Database.execute_query(query_sent, fetch=True)
+        sent_ids = [r['id'] for r in sent_records]
+    except Exception as e:
+        print(f"Lỗi khi lấy lịch sử từ DB: {e}")
+        sent_ids = []
     
-    print(f"Đã lấy {len(current_news_list)} tin từ API. Lịch sử đang lưu {len(sent_ids)} tin.")
+    print(f"Đã lấy {len(current_news_list)} tin từ API. Lịch sử DB (2 ngày) có {len(sent_ids)} tin.")
 
     count = 0
-    # Tạo danh sách mới sẽ lưu lại (bắt đầu bằng danh sách cũ)
-    updated_history = histories.copy()
     
     # Duyệt ngược (reversed) để tin cũ nhất trong batch gửi trước, tin mới nhất gửi sau
     for item in reversed(current_news_list):
         # KIỂM TRA: Nếu tin chưa có trong danh sách đã gửi
-        if item.get('id') not in sent_ids:
+        item_id = item.get('id')
+        if item_id not in sent_ids:
             try:
                 title = item.get('news_title', 'Không tiêu đề')
                 ticker = item.get('ticker')
@@ -121,25 +123,29 @@ def main():
                 
                 # Gửi Embed
                 webhook.send(embed=embed)
-                ##########################################################################
-                # print(f"🔥 **{title}**\nNguồn: {source} ({time_str})\n{link}")
                 
-                # Đánh dấu là đã gửi bằng cách thêm vào danh sách temp (chèn vào đầu list để giữ tính mới nhất)
-                updated_history.insert(0, item)
+                # Lưu vào Database sau khi gửi thành công
+                insert_query = """
+                    INSERT INTO news (id, news_title, ticker, news_source_link, news_from_name, update_date, sentiment, news_short_content, slug)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    ON CONFLICT (id) DO NOTHING
+                """
+                Database.execute_query(insert_query, (
+                    item_id, title, ticker, link, source, time_str, sentiment, short_content, item.get('slug')
+                ))
+                
                 count += 1
                 
             except Exception as e:
-                print(f"Lỗi khi gửi tin: {e}")
+                print(f"Lỗi khi xử lý tin {item_id}: {e}")
         else:
             # print(f"Tin đã tồn tại, bỏ qua: {item.get('news_title')}")
             pass
 
-    # Lưu lại trạng thái mới vào JSON
     if count > 0:
-        update_history(_list = updated_history, direct=HISTORY_FILE)
-        print(f"Đã gửi và lưu {count} tin mới.")
+        print(f"Đã gửi và lưu {count} tin mới vào Database.")
     else:
-        print("Không có tin mới so với file lưu trữ.")
+        print("Không có tin mới so với Database.")
 
 if __name__ == "__main__":
     main()

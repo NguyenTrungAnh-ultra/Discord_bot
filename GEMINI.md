@@ -17,61 +17,51 @@ The system operates as a modular monolith orchestrated by `main.py`. It uses a c
 - **Report Collector (`src/modules/report_collecter/`)**:
   - `daily_job.py`: Orchestrates daily scraping and delivery.
   - Scanners: ACBS, KBSV, VCBS, SSI, VietCap.
-  - `send_wehook.py`: Filters and sends yesterday's reports to Discord webhooks with PDF attachments (where available).
+  - `send_wehook.py`: Filters and sends yesterday's reports to Discord webhooks with PDF attachments.
 - **Vision Guard (`src/modules/vision_guard/`)**:
   - `VisionGuard.py`: Handles visual monitoring or automated screenshots.
+
+## Database Migration (PostgreSQL)
+
+The project is currently migrating from file-based storage (JSON/CSV) to a PostgreSQL database (`news_aggregator`).
+
+- **Core DB Utilities**: `src/core/db.py` provides synchronous (`psycopg2`) and asynchronous (`asyncpg`) connection helpers.
+- **Migration Plan**: See `Implementation_Plan.md` for detailed steps.
 
 ## Shared Services & Utilities
 
 - **AI Service (`src/core/gg_service.py`)**: Integration with Google Generative AI (`gemini-flash-latest`) for article summarization.
 - **Logging (`src/core/logger.py`)**: Centralized logging system.
 - **Utilities (`src/utils/`)**:
-  - `tool.py`: Common helpers for history management, text cleaning, and web scraping.
+  - `tool.py`: Common helpers (Note: History functions are DEPRECATED in favor of DB).
   - `browser_profiles.py`: Playwright browser configuration.
 
 ## Tech Stack
 
 - **Language**: Python 3.10+
 - **Frameworks**: `discord.py` (Bot), `playwright` (Scraping), `pandas` (Data processing).
+- **Database**: PostgreSQL (`psycopg2-binary`, `asyncpg`).
 - **AI**: `google-genai` (Gemini API).
 - **Data**: `vnstock` for financial data, `requests` for API calls.
 - **Orchestration**: `schedule` and `threading` in `main.py`.
-- **Deployment**: Docker and Docker Compose.
-
-## Key Directories
-
-- `src/modules/`: Main functional components.
-- `src/core/`: Shared core services (AI, Logging).
-- `src/utils/`: Generic utility functions.
-- `temp/`: Persistent storage for CSVs, JSON trackers, PDF caches, and session cookies. (Note: Historically referred to as `temp/`, check for `temp/` or `Database/reports/` for data).
-- `Database/`: Migration plans and structured reports.
 
 ## Building and Running
 
 ### Prerequisites
 - Python 3.10+
 - Playwright browsers: `playwright install`
-- Valid `.env` file with `DISCORD_TOKEN`, `GEMINI_API_KEY`, and Webhook URLs.
+- PostgreSQL server (configured in `.env`).
+- Valid `.env` file with `DISCORD_TOKEN`, `GEMINI_API_KEY`, DB credentials, and Webhook URLs.
 
 ### Local Execution
 1. Install dependencies: `pip install -r requirements.txt`
 2. Run the orchestrator: `python main.py`
 
-### Docker Execution
-```bash
-docker-compose up -d --build
-```
-
 ## Development Conventions
 
 - **Module Resolution**: Always run scripts from the project root. `main.py` and module headers handle `PYTHONPATH` adjustments.
-- **Async/Await**: Used extensively in the Discord Bot and AI services.
-- **Data Persistence**:
-  - News history: `./temp/requested_news.json`
-  - Sent reports: `./temp/reports/sent_reports.json`
-  - Scraped CSVs: `./temp/reports/{SOURCE}/`
-- **Scraping**: Playwright is preferred for sites with heavy JS. Cookie-based authentication (stored in `.pkl` or `.json` in `temp/`) is used for PDF downloads.
-- **Environment Variables**: Managed via `.env`. Key variables: `DISCORD_TOKEN`, `GEMINI_API_KEY`, `WEBHOOK_URL_TIN_TUC`, `BAO_CAO_DOANH_NGHIEP`.
+- **Database Access**: Use `src/core/db.py` for all DB operations. Prefer `AsyncDatabase` for the Discord Bot and `Database` for background jobs.
+- **Environment Variables**: Managed via `.env`.
 
 ## Operational Workflows
 
