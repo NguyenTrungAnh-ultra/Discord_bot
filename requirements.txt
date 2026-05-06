@@ -9,3 +9,5 @@ matplotlib
 lxml
 openpyxl
 google-genai
+asyncpg
+psycopg2-binary
