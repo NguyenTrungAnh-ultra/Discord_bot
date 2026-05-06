@@ -4,10 +4,12 @@ from playwright.async_api import async_playwright
 from src.utils.user_agent import get_random_desktop_user_agent
 import asyncio
 import time
+import warnings
 
 
 def load_history(direct:str)->list:
-    """Đọc file json lấy danh sách tin đã gửi"""
+    """Đọc file json lấy danh sách tin đã gửi (DEPRECATED: Use Database instead)"""
+    warnings.warn("load_history is deprecated, use src.core.db instead", DeprecationWarning, stacklevel=2)
     if not os.path.exists(direct):
         return []
     try:
