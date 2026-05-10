@@ -1,6 +1,7 @@
 import os
 import requests
 from dotenv import load_dotenv
+from src.utils.user_agent import get_random_desktop_user_agent
 
 load_dotenv()
 
@@ -9,14 +10,21 @@ SEARXNG_URL = os.getenv("SEARXNG_URL", "http://localhost:8080")
 def search_searxng(query, num_results=10):
     """Searches using SearxNG API."""
     try:
-        response = requests.get(
+        session = requests.Session()
+        user_agent = get_random_desktop_user_agent()
+        session.headers.update({
+            'User-Agent': user_agent,
+            'Accept': 'application/json, text/plain, */*',
+        })
+        
+        response = session.get(
             f"{SEARXNG_URL}/search",
             params={
                 "q": query,
                 "format": "json",
                 "categories": "general",
             },
-            timeout=10
+            timeout=30
         )
         response.raise_for_status()
         results = response.json().get("results", [])

@@ -10,8 +10,11 @@ def store_node(state: ResearchState):
     insight = state.get("current_insight")
     url = state.get("current_url")
     
+    # Lấy danh sách insights hiện có để trả về nếu có lỗi
+    current_insights = list(state.get("insights", []))
+    
     if not insight or not url:
-        return {}
+        return {"insights": current_insights}
 
     print(f"Storing insight for: {url}")
     
@@ -42,11 +45,10 @@ def store_node(state: ResearchState):
             print(f"Error storing document in DB: {e}")
 
     # Update insights list in state
-    insights = list(state.get("insights", []))
-    insights.append(insight)
-
-    # Clean up
+    current_insights.append(insight)
+    
+    # RAM Garbage Collection
     del embedding
     gc.collect()
 
-    return {"insights": insights}
+    return {"insights": current_insights}

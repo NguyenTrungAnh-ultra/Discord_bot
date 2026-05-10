@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiến trúc Hệ thống Deep Research RAG</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --accent-color: #38bdf8;
+            --text-color: #f1f5f9;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            width: 95%;
+            max-width: 1100px;
+            overflow: auto;
+            animation: fadeInUp 1s ease-out;
+            position: relative;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+        }
+
+        .mermaid {
+            display: flex;
+            justify-content: center;
+            background: transparent !important;
+        }
+
+        /* Customize Mermaid Styles */
+        .node rect, .node circle, .node polygon, .node path {
+            fill: #1e293b !important;
+            stroke: #38bdf8 !important;
+            stroke-width: 2px !important;
+        }
+        .node .label {
+            color: #f1f5f9 !important;
+        }
+        .edgePath .path {
+            stroke: #64748b !important;
+            stroke-width: 1.5px !important;
+        }
+        .edgeLabel {
+            background-color: transparent !important;
+            color: #94a3b8 !important;
+            font-size: 12px;
+        }
+        .cluster rect {
+            fill: rgba(56, 189, 248, 0.05) !important;
+            stroke: rgba(56, 189, 248, 0.2) !important;
+            stroke-dasharray: 5, 5;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            color: #475569;
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #475569;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Deep Research RAG System</h1>
+        <p class="subtitle">Sơ đồ luồng xử lý và kiến trúc module dựa trên LangGraph</p>
+    </div>
+
+    <div class="container">
+        <pre class="mermaid">
+graph LR
+    %% Khởi đầu
+    Start((Bắt đầu)) --> Translator[<b>Translator</b><br/><i>nodes/translator.py</i>]
+    
+    %% Xử lý Input
+    subgraph "Input Processing"
+        Translator -- "Tạo từ khóa VI/EN" --> Searcher[<b>Searcher</b><br/><i>nodes/searcher.py</i>]
+        Searcher -- "Tìm URLs qua SearxNG" --> Dispatcher{<b>Dispatcher</b><br/><i>nodes/dispatcher.py</i>}
+    end
+
+    %% Vòng lặp RAG
+    subgraph "RAG Engine (Loop)"
+        Dispatcher -- "Duyệt từng URL" --> Processor[<b>Processor</b><br/><i>nodes/processor.py</i>]
+        
+        subgraph "Scraping Tools"
+            Processor --> HTML[HTML Scraper]
+            Processor --> PDF[PDF Scraper]
+        end
+        
+        HTML & PDF --> Storer[<b>Storer</b><br/><i>nodes/storer.py</i>]
+        Storer -- "Vectorize & Save" --> DB[(<b>PostgreSQL</b><br/><i>pgvector</i>)]
+        DB -.-> Dispatcher
+    end
+
+    %% Kết thúc
+    subgraph "Output Generation"
+        Dispatcher -- "Đủ thông tin" --> Reporter[<b>Reporter</b><br/><i>nodes/reporter.py</i>]
+        Reporter -- "Dùng RAG tổng hợp" --> FinalReport[/Báo cáo PDF/Text/]
+    end
+    
+    FinalReport --> End((Kết thúc))
+
+    %% Chú thích
+    style DB fill:#0ea5e9,stroke:#0ea5e9,stroke-width:2px,color:#fff
+    style Dispatcher fill:#6366f1,stroke:#6366f1,stroke-width:2px,color:#fff
+    style Start fill:#22c55e,stroke:#22c55e,color:#fff
+    style End fill:#ef4444,stroke:#ef4444,color:#fff
+        </pre>
+    </div>
+
+    <div class="footer">
+        Generated by Antigravity AI Assistant &bull; Discord Bot Manager
+    </div>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'dark',
+            securityLevel: 'loose',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+    </script>
+</body>
+</html>

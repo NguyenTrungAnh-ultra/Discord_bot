@@ -15,8 +15,8 @@ async def main():
     graph = create_research_graph()
     
     initial_state = {
-        "query": "Thị trường xe điện tại Việt Nam năm 2024 và triển vọng 2025",
-        "max_iterations": 3, # Test with 3 URLs to save time/tokens
+        "query": "Thị trường bất động sản Việt Nam quý 1 2026 và triển vọng quý 2 2026",
+        "max_iterations": 5, # Test with 3 URLs to save time/tokens
         "iteration": 0,
         "urls": [],
         "insights": [],
@@ -29,6 +29,12 @@ async def main():
     async for output in graph.astream(initial_state):
         for key, value in output.items():
             print(f"\n>>> Executed Node: {key}")
+            
+            # Phòng thủ: kiểm tra nếu value là None
+            if value is None:
+                print(f"Warning: Node {key} returned None.")
+                continue
+
             if key == "translator":
                 print(f"Search Queries: {value.get('search_queries')}")
             elif key == "searcher":
@@ -39,7 +45,8 @@ async def main():
             elif key == "processor":
                 print(f"Extracted Title: {value.get('current_title')}")
             elif key == "storer":
-                print(f"Total Insights Collected: {len(value.get('insights', []))}")
+                insights_collected = value.get('insights', [])
+                print(f"Total Insights Collected: {len(insights_collected)}")
             elif key == "reporter":
                 print("\n--- FINAL REPORT ---")
                 print(value.get("report"))
