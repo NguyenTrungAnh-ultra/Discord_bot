@@ -11,3 +11,8 @@ openpyxl
 google-genai
 asyncpg
 psycopg2-binary
+pgvector
+langgraph
+trafilatura
+pymupdf
+sentence-transformers
