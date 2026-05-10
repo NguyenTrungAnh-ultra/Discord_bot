@@ -9,7 +9,7 @@ from src.modules.deep_research.nodes.reporter import report_node
 
 def should_continue(state: ResearchState):
     """Determines whether to continue processing URLs or generate the report."""
-    if state.get("current_url") and state.get("iteration", 0) < state.get("max_iterations", 5):
+    if state.get("current_url") and state.get("iteration", 0) <= state.get("max_iterations", 5):
         return "processor"
     return "reporter"
 

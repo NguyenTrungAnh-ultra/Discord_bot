@@ -41,19 +41,21 @@ The project is currently migrating from file-based storage (JSON/CSV) to a Postg
 - **Language**: Python 3.10+
 - **Frameworks**: `discord.py` (Bot), `playwright` (Scraping), `pandas` (Data processing).
 - **Database**: PostgreSQL (`psycopg2-binary`, `asyncpg`).
-- **AI**: `google-genai` (Gemini API).
+- **AI**: `google-genai` (Gemini API). (call model = "gemini-3.1-flash-lite" for testing)
 - **Data**: `vnstock` for financial data, `requests` for API calls.
 - **Orchestration**: `schedule` and `threading` in `main.py`.
 
 ## Building and Running
 
 ### Prerequisites
+
 - Python 3.10+
 - Playwright browsers: `playwright install`
 - PostgreSQL server (configured in `.env`).
 - Valid `.env` file with `DISCORD_TOKEN`, `GEMINI_API_KEY`, DB credentials, and Webhook URLs.
 
 ### Local Execution
+
 1. Install dependencies: `pip install -r requirements.txt`
 2. Run the orchestrator: `python main.py`
 
