@@ -41,7 +41,7 @@ The project is currently migrating from file-based storage (JSON/CSV) to a Postg
 - **Language**: Python 3.10+
 - **Frameworks**: `discord.py` (Bot), `playwright` (Scraping), `pandas` (Data processing).
 - **Database**: PostgreSQL (`psycopg2-binary`, `asyncpg`).
-- **AI**: `google-genai` (Gemini API). (call model = "gemini-3.1-flash-lite" for testing)
+- **AI**: `google-genai` (Gemini API).
 - **Data**: `vnstock` for financial data, `requests` for API calls.
 - **Orchestration**: `schedule` and `threading` in `main.py`.
 

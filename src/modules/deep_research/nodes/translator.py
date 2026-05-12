@@ -6,7 +6,7 @@ from src.modules.deep_research.state import ResearchState
 def translate_query(state: ResearchState):
     """Translates and optimizes the query for searching."""
     client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-    model = "gemini-flash-latest"
+    model = "gemma-4-26b-a4b-it"
     
     prompt = (
         f"Bạn là một hệ thống AI nghiên cứu chuyên sâu (Deep Research API) tương tự Perplexity. "
