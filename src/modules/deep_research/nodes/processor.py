@@ -28,14 +28,20 @@ def process_node(state: ResearchState):
     model = "gemini-flash-latest"
     
     prompt = (
-        f"Bạn là một chuyên gia phân tích dữ liệu. "
-        f"Hãy trích xuất các thông tin quan trọng nhất từ nội dung sau đây liên quan đến chủ đề nghiên cứu: '{state['query']}'.\n\n"
-        f"Yêu cầu tóm tắt theo phong cách: "
-        f"1. Có tổng cộng bao nhiêu ý chính? "
-        f"2. Những ý chính đó là gì? (Liệt kê ngắn gọn) "
-        f"3. Nếu có lưu ý đặc biệt hoặc rủi ro gì thì đó là gì?\n\n"
-        f"Trả về kết quả dưới dạng JSON với cấu trúc: "
-        f"{{\"title\": \"Tiêu đề bài viết\", \"summary\": \"Đoạn tóm tắt tổng quan\", \"key_facts\": [\"Ý chính 1\", \"Ý chính 2\",...], \"notes\": [\"Lưu ý 1\", \"Lưu ý 2\",...], \"sentiment\": \"Tích cực/Tiêu cực/Trung lập\"}}\n"
+        f"Bạn là một chuyên gia phân tích dữ liệu vĩ mô và tài chính (Deep Research AI). "
+        f"Hãy đọc nội dung dưới đây và trích xuất các thông tin định lượng, góc nhìn vĩ mô quan trọng nhất liên quan đến chủ đề: '{state['query']}'.\n\n"
+        f"Yêu cầu:\n"
+        f"- Phân tích sâu: Chú trọng các con số cốt lõi (lãi suất, lạm phát, lợi nhuận), động thái của thị trường, sự gián đoạn chuỗi cung ứng, và rủi ro tiềm ẩn.\n"
+        f"- Suy nghĩ trước (Chain of Thought): Đánh giá nhanh nguồn tin, tính xác thực của số liệu, và mức độ tác động vĩ mô của chúng trước khi tóm tắt.\n\n"
+        f"Trả về MỘT OBJECT JSON DUY NHẤT với cấu trúc:\n"
+        f"{{\n"
+        f"  \"chain_of_thought\": \"Trình bày quá trình tư duy, đánh giá nguồn và ý nghĩa vĩ mô của dữ liệu...\",\n"
+        f"  \"title\": \"Tiêu đề bài viết (hoặc nội dung chính)\",\n"
+        f"  \"summary\": \"Tóm tắt bản chất sự kiện (tập trung vào impact/tác động)\",\n"
+        f"  \"key_facts\": [\"Ý chính 1 (ưu tiên có số liệu/bằng chứng)\", \"Ý chính 2\",...],\n"
+        f"  \"notes\": [\"Rủi ro 1\", \"Góc khuất/Cảnh báo 2\",...],\n"
+        f"  \"sentiment\": \"Tích cực/Tiêu cực/Trung lập\"\n"
+        f"}}\n\n"
         f"Nội dung: {content[:30000]}"
     )
     
@@ -47,6 +53,11 @@ def process_node(state: ResearchState):
             config={"response_mime_type": "application/json"}
         )
         insight = json.loads(response.text)
+        
+        cot = insight.get("chain_of_thought", "")
+        if cot:
+            print(f"\n🧠 [Chain of Thought - Processor ({url})]:\n{cot}\n")
+            
         print(f"✨ Successfully extracted insight: {insight.get('title')}")
     except Exception as e:
         print(f"Error extracting insight from {url}: {e}")

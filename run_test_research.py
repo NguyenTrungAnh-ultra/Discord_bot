@@ -15,8 +15,8 @@ async def main():
     graph = create_research_graph()
     
     initial_state = {
-        "query": "Thị trường bất động sản Việt Nam quý 1 2026 và triển vọng quý 2 2026",
-        "max_iterations": 5, # Test with 3 URLs to save time/tokens
+        "query": "báo cáo thị trường ngày 11/5/2026",
+        "max_iterations": 10,
         "iteration": 0,
         "urls": [],
         "insights": [],
