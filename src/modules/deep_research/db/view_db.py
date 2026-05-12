@@ -7,7 +7,7 @@ sys.path.append(os.getcwd())
 from src.modules.deep_research.db.pgvector_db import VectorDatabase
 
 def export_db():
-    query = "SELECT url, title, content FROM research_documents ORDER BY id DESC LIMIT 10;"
+    query = "SELECT url, title, content, insight FROM research_documents ORDER BY id DESC LIMIT 100;"
     try:
         results = VectorDatabase.execute_query(query, fetch=True)
         if not results:
@@ -21,6 +21,16 @@ def export_db():
                 f.write(f"URL: {row['url']}\n")
                 f.write(f"TIEU DE: {row['title']}\n")
                 f.write(f"TOM TAT: {row['content']}\n")
+                
+                insight = row.get('insight')
+                if insight:
+                    if isinstance(insight, str):
+                        try:
+                            insight = json.loads(insight)
+                        except:
+                            pass
+                    f.write(f"INSIGHT (JSON): {json.dumps(insight, indent=2, ensure_ascii=False)}\n")
+                
                 f.write("-" * 50 + "\n\n")
         
         print(f"Da xuat du lieu ra file '{output_file}'. Ban hay mo file do de xem nhe!")

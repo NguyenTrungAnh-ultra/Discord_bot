@@ -25,7 +25,7 @@ def process_node(state: ResearchState):
         return {"current_content": None, "current_title": "Failed to scrape", "current_insight": None}
 
     client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-    model = "gemini-flash-latest"
+    model = "gemma-4-26b-a4b-it"
     
     prompt = (
         f"Bạn là một chuyên gia phân tích dữ liệu vĩ mô và tài chính (Deep Research AI). "

@@ -1,24 +1,922 @@
 --- KET QUA 1 ---
-URL: https://m.cafef.vn/thi-truong-bat-dong-san-quy-i-2026-phuc-hoi-nguon-cung-buoc-vao-chu-ky-sang-loc-188260421080524436.chn
-TIEU DE: Thị trường bất động sản quý I/2026: Phục hồi nguồn cung, bước vào chu kỳ “sàng lọc”
-TOM TAT: Thị trường bất động sản Việt Nam quý 1/2026 ghi nhận sự phục hồi mạnh mẽ về nguồn cung với 52.000 sản phẩm, gấp 2,5 lần cùng kỳ năm 2025. Tuy nhiên, thị trường đang bước vào giai đoạn sàng lọc khắc nghiệt khi thanh khoản không còn chạy theo giá mà phụ thuộc vào giá trị sử dụng thực và khả năng khai thác dòng tiền. Phân khúc căn hộ chung cư tiếp tục giữ vai trò chủ đạo, chiếm 69% lượng giao dịch toàn thị trường. Dù đối mặt với áp lực chi phí đầu vào và tâm lý thận trọng từ nhà đầu tư, thị trường đang tái cấu trúc theo hướng minh bạch và bền vững hơn. Triển vọng dài hạn vẫn tích cực nhờ sự đầu tư hạ tầng và các mô hình đô thị mới như TOD và công trình xanh.
+URL: https://www.hsfkramer.com/insights/reports/2026/global-ma-report-2026/sector-perspectives
+TIEU DE: No Market Data Available - Security Verification Page
+TOM TAT: The provided content is a bot-protection screen and does not contain any market analysis or information related to May 11, 2026.
+INSIGHT (JSON): {
+  "url": "https://www.hsfkramer.com/insights/reports/2026/global-ma-report-2026/sector-perspectives",
+  "notes": [
+    "The source website is using a security service that prevents automated access to the actual content",
+    "Cannot perform analysis without the actual report text"
+  ],
+  "title": "No Market Data Available - Security Verification Page",
+  "summary": "The provided content is a bot-protection screen and does not contain any market analysis or information related to May 11, 2026.",
+  "key_facts": [
+    "No quantitative data extracted",
+    "No macro-economic indicators found",
+    "Input content is limited to a security verification notice"
+  ],
+  "sentiment": "Trung lập",
+  "chain_of_thought": "I have analyzed the provided content. The input text consists solely of a security verification message ('Performing security verification') from the website www.hsfkramer.com, designed to protect against bots. There is no actual financial data, market report, or quantitative information present in the text. Consequently, it is impossible to extract macro-economic insights, interest rates, or inflation data for May 11, 2026, as the source material is a technical access block rather than a report."
+}
 --------------------------------------------------
 
 --- KET QUA 2 ---
-URL: https://vn.savills.com.vn/research_articles/164027/234979-0
-TIEU DE: Thị trường bất động sản Việt Nam quý 1 2026 và triển vọng quý 2 2026
-TOM TAT: Trong Quý 1/2026, thị trường bất động sản tại TP.HCM và Hà Nội cho thấy sự ổn định và bắt đầu giai đoạn tái cấu trúc mạnh mẽ dựa trên nền tảng kinh tế vĩ mô vững chắc. Tại TP.HCM, nguồn cung hạn chế là yếu tố chi phối chính ở các phân khúc bán lẻ và nhà ở, trong khi phân khúc văn phòng và khách sạn ghi nhận sự phục hồi tích cực với tỷ lệ lấp đầy cao. Tại Hà Nội, thị trường đang dịch chuyển theo mô hình đa cực, chú trọng vào chất lượng và trải nghiệm. Mặc dù phân khúc nhà ở có dấu hiệu chững lại do tâm lý thận trọng của người mua, nhưng dòng vốn FDI ổn định và sự phục hồi của ngành du lịch, hoạt động MICE đang tạo ra triển vọng lạc quan cho các phân khúc thương mại và lưu trú trong Quý 2/2026. Xu hướng dịch chuyển ra các khu vực vệ tinh và ưu tiên dự án có pháp lý minh bạch tiếp tục là động lực chính của thị trường.
+URL: https://www.bain.com/insights/global-m-and-a-deal-trends-interactive/
+TIEU DE: Error
+TOM TAT: Không thể trích xuất thông tin.
+INSIGHT (JSON): {
+  "url": "https://www.bain.com/insights/global-m-and-a-deal-trends-interactive/",
+  "title": "Error",
+  "summary": "Không thể trích xuất thông tin.",
+  "key_facts": [],
+  "sentiment": "N/A"
+}
 --------------------------------------------------
 
 --- KET QUA 3 ---
-URL: https://www.imarcgroup.com/report/vi/vietnam-electric-car-market
-TIEU DE: Thị trường xe điện Việt Nam: Quy mô, Động lực và Triển vọng 2024-2033
-TOM TAT: Thị trường xe điện (EV) tại Việt Nam đang bước vào giai đoạn tăng trưởng bùng nổ, với quy mô định giá 3,02 tỷ USD năm 2024 và dự kiến đạt 12,23 tỷ USD vào năm 2033, tương ứng với tốc độ tăng trưởng kép hàng năm (CAGR) đạt 16,81%. Động lực chính đến từ các chính sách hỗ trợ mạnh mẽ của Chính phủ như miễn phí trước bạ, giảm thuế và đề xuất trợ cấp 1.000 USD cho người mua xe. Sự tham gia tích cực của các doanh nghiệp nội địa như VinFast cùng các hãng xe quốc tế từ châu Á và châu Âu đang làm đa dạng hóa phân khúc từ tầm trung đến cao cấp. Hạ tầng trạm sạc đang được mở rộng nhanh chóng, đặc biệt tại miền Bắc và các đô thị lớn như TP.HCM. Mặc dù còn thách thức về hạ tầng nông thôn, nhưng xu hướng tiêu dùng bền vững và mục tiêu phát thải ròng bằng 0 vào năm 2050 đang tạo nền tảng vững chắc cho hệ sinh thái xe điện tại Việt Nam.
+URL: https://www.bain.com/insights/topics/m-and-a-report/
+TIEU DE: Error
+TOM TAT: Không thể trích xuất thông tin.
+INSIGHT (JSON): {
+  "url": "https://www.bain.com/insights/topics/m-and-a-report/",
+  "title": "Error",
+  "summary": "Không thể trích xuất thông tin.",
+  "key_facts": [],
+  "sentiment": "N/A"
+}
 --------------------------------------------------
 
 --- KET QUA 4 ---
+URL: https://www.pwc.com/gx/en/services/deals/trends.html
+TIEU DE: Triển vọng M&A Toàn cầu 2026: Sự phân cực hình chữ K và Siêu chu kỳ AI
+TOM TAT: Thị trường M&A toàn cầu đang chuyển sang một giai đoạn tái cấu trúc sâu sắc, đặc trưng bởi sự phân cực (K-shaped): giá trị tập trung vào các siêu giao dịch (megadeals) và các đơn vị nắm giữ nhiều vốn, trong khi phân khúc tầm trung vẫn trì trệ. AI đóng vai trò là động lực chính, vừa gây áp lực phân bổ vốn ngắn hạn cho hạ tầng, vừa thúc đẩy tái định hình chiến lược doanh nghiệp dài hạn.
+INSIGHT (JSON): {
+  "url": "https://www.pwc.com/gx/en/services/deals/trends.html",
+  "notes": [
+    "Rủi ro 'Bong bóng AI': Mặc dù được dẫn dắt bởi các công ty có dòng tiền mạnh, rủi ro phân bổ vốn sai lệch và điều chỉnh định giá vẫn hiện hữu.",
+    "Sự gián đoạn vốn ngắn hạn: Chi tiêu Capex khổng lồ cho hạ tầng AI có thể tạm thời hút nguồn vốn, làm chậm tốc độ M&A ở các lĩnh vực không liên quan.",
+    "Áp lực lên phân khúc tầm trung: Các doanh nghiệp nhỏ và vừa đối mặt với khoảng cách định giá và hạn chế về vốn, dễ bị gạt ra khỏi cuộc đua AI.",
+    "Tác động vĩ mô: AI có tiềm năng gây ra tình trạng giảm phát cấu trúc (structurally deflationary), từ đó giảm áp lực lên lãi suất và tạo môi trường tài chính thuận lợi hơn cho M&A trong trung hạn."
+  ],
+  "title": "Triển vọng M&A Toàn cầu 2026: Sự phân cực hình chữ K và Siêu chu kỳ AI",
+  "summary": "Thị trường M&A toàn cầu đang chuyển sang một giai đoạn tái cấu trúc sâu sắc, đặc trưng bởi sự phân cực (K-shaped): giá trị tập trung vào các siêu giao dịch (megadeals) và các đơn vị nắm giữ nhiều vốn, trong khi phân khúc tầm trung vẫn trì trệ. AI đóng vai trò là động lực chính, vừa gây áp lực phân bổ vốn ngắn hạn cho hạ tầng, vừa thúc đẩy tái định hình chiến lược doanh nghiệp dài hạn.",
+  "key_facts": [
+    "Giá trị M&A toàn cầu tăng 36% (2024-2025), nhưng khối lượng giao dịch chỉ tăng 1%, cho thấy sự tăng trưởng không đồng đều.",
+    "Sự trỗi dậy của siêu giao dịch (>$5 tỷ): 111 giao dịch trong năm 2025, tăng 76% so với năm 2024 (63 giao dịch).",
+    "Nhu cầu vốn cho hạ tầng AI (chip, trung tâm dữ liệu, năng lượng) ước tính từ 5.000 đến 8.000 tỷ USD trong 5 năm tới, vượt xa tổng giá trị M&A toàn cầu năm 2025 (~3.500 tỷ USD).",
+    "Phân cực địa lý: Mỹ chiếm chưa đến 25% khối lượng giao dịch nhưng đóng góp hơn 50% giá trị toàn cầu; khu vực Americas tăng 55% về giá trị.",
+    "Động lực AI: Khoảng 1/3 trong số 100 giao dịch M&A lớn nhất năm 2025 lấy AI làm lý do chiến lược; trong ngành công nghệ, gần như tất cả các giao dịch lớn nhất đều đề cập đến AI.",
+    "Ý định thâu tóm của CEO: Trung Đông cao nhất (80%), tiếp theo là Mỹ và Ấn Độ (50%), trong khi Đức và Trung Quốc thấp nhất (20%).",
+    "Các thương vụ tiêu biểu: Google mua Wiz (30 tỷ USD), Palo Alto Networks mua CyberArk (25 tỷ USD), Netflix bid cho Warner Bros. Discovery (82,7 tỷ USD)."
+  ],
+  "sentiment": "Trung lập",
+  "chain_of_thought": "Tôi phân tích dữ liệu từ báo cáo của PwC về xu hướng M&A toàn cầu hướng tới năm 2026. Đầu tiên, tôi xác định một nghịch lý quan trọng: giá trị giao dịch (Value) tăng mạnh nhưng khối lượng giao dịch (Volume) đi ngang, tạo ra cấu trúc 'K-shaped recovery'. Thứ hai, tôi đánh giá tác động của AI không chỉ là một chủ đề đầu tư mà là một 'siêu chu kỳ chi tiêu vốn' (Capex supercycle) với con số khổng lồ (5-8 nghìn tỷ USD), có khả năng hút vốn từ các hoạt động M&A truyền thống trong ngắn hạn nhưng lại là chất xúc tác tăng trưởng trong trung hạn. Thứ ba, tôi đối chiếu dữ liệu địa chính trị, nhận thấy sự thống trị tuyệt đối của Mỹ về giá trị và sự quyết liệt của Trung Đông về ý định thâu tóm. Cuối cùng, tôi tổng hợp các con số định lượng cốt lõi để làm bằng chứng cho nhận định về sự phân cực thị trường."
+}
+--------------------------------------------------
+
+--- KET QUA 5 ---
+URL: https://www.westpaciq.com.au/economics/2026/05/commodities-update-may-2026
+TIEU DE: Error
+TOM TAT: Không thể trích xuất thông tin.
+INSIGHT (JSON): {
+  "url": "https://www.westpaciq.com.au/economics/2026/05/commodities-update-may-2026",
+  "title": "Error",
+  "summary": "Không thể trích xuất thông tin.",
+  "key_facts": [],
+  "sentiment": "N/A"
+}
+--------------------------------------------------
+
+--- KET QUA 6 ---
+URL: https://za.investing.com/analysis/markets-volatile-as-energy-and-geopolitical-risks-persist-200619580
+TIEU DE: Báo cáo Thị trường Toàn cầu ngày 11/05/2026: Căng thẳng Địa chính trị và Áp lực Lạm phát Năng lượng
+TOM TAT: Thị trường tài chính toàn cầu chịu áp lực lớn khi Tổng thống Trump bác bỏ đề xuất hòa bình với Iran, khiến giá dầu và vàng tăng vọt, gây lo ngại về lạm phát và buộc các ngân hàng trung ương (BoJ, SARB) phải duy trì quan điểm thắt chặt. Điểm sáng duy nhất là sự tăng trưởng kỷ lục trong xuất khẩu của Trung Quốc.
+INSIGHT (JSON): {
+  "url": "https://za.investing.com/analysis/markets-volatile-as-energy-and-geopolitical-risks-persist-200619580",
+  "notes": [
+    "Rủi ro địa chính trị: Sự đổ vỡ đàm phán Mỹ-Iran gây đe dọa trực tiếp đến dòng chảy năng lượng toàn cầu.",
+    "Rủi ro y tế: Sự bùng phát của Hantavirus tạo biến động ngắn hạn cho nhóm cổ phiếu dược phẩm (Moderna, Pfizer).",
+    "Cảnh báo định giá: Sự bền vững của đợt tăng giá cổ phiếu AI đang bị nghi ngờ (AI hyperscalers suy yếu).",
+    "Rủi ro chính trị nội bộ: Nam Phi đối mặt với bất ổn sau phán quyết của Tòa án Hiến pháp về bê bối Phala Phala."
+  ],
+  "title": "Báo cáo Thị trường Toàn cầu ngày 11/05/2026: Căng thẳng Địa chính trị và Áp lực Lạm phát Năng lượng",
+  "summary": "Thị trường tài chính toàn cầu chịu áp lực lớn khi Tổng thống Trump bác bỏ đề xuất hòa bình với Iran, khiến giá dầu và vàng tăng vọt, gây lo ngại về lạm phát và buộc các ngân hàng trung ương (BoJ, SARB) phải duy trì quan điểm thắt chặt. Điểm sáng duy nhất là sự tăng trưởng kỷ lục trong xuất khẩu của Trung Quốc.",
+  "key_facts": [
+    "Giá dầu Brent vượt mức 103 USD/thùng do gián đoạn vận tải tại eo biển Hormuz.",
+    "Vàng đạt mức cao kỷ lục khoảng 4.730 USD/ounce; Bạc tăng hơn 6%.",
+    "Trung Quốc: Lạm phát tháng 4 đạt 1,20%, xuất khẩu tăng trưởng kỷ lục 14,10% so với cùng kỳ.",
+    "Lợi suất trái phiếu chính phủ 10 năm: Nhật Bản tăng lên 2,49%, Trung Quốc giảm nhẹ về 1,76%, Nam Phi tăng lên 8,69%.",
+    "Đồng Rand (Nam Phi) tăng giá lên mức 16,3 so với USD nhờ giá kim loại quý.",
+    "Giá đồng đạt mức kỷ lục trên 6,4 USD/pound do nhu cầu cơ sở hạ tầng AI và gián đoạn cung ứng.",
+    "Chỉ số STOXX 50 giảm 0,30% xuống 5895 điểm, nhóm xa xỉ (LVMH giảm >4%) bị ảnh hưởng nặng."
+  ],
+  "sentiment": "Tiêu cực",
+  "chain_of_thought": "Tôi bắt đầu bằng việc phân tích mốc thời gian (11/5/2026) và các thực thể chính xuất hiện trong văn bản (Mỹ, EU, Trung Quốc, Nhật Bản, Nam Phi). Về mặt vĩ mô, tôi nhận thấy một chu kỳ lạm phát do chi phí đẩy (cost-push inflation) đang quay trở lại, được thúc đẩy bởi giá dầu Brent vượt 103 USD do căng thẳng địa chính trị Mỹ-Iran. Tôi đánh giá mức giá Vàng đạt 4730 USD là một dấu hiệu cực kỳ quan trọng cho thấy tâm lý trú ẩn rủi ro (risk-off) ở mức cao kỷ lục. Đối với Trung Quốc, số liệu xuất khẩu tăng 14.1% cho thấy sự phục hồi mạnh mẽ về sản xuất nhưng lạm phát 1.2% cho thấy áp lực giá đang tăng. Sự phân hóa trong nhóm AI (Nvidia tăng nhưng Microsoft giảm) cho thấy thị trường đang chuyển từ kỳ vọng chung sang chọn lọc doanh nghiệp có kết quả thực tế. Rủi ro hệ thống hiện nay nằm ở chuỗi cung ứng vận tải biển qua Vịnh Ba Tư và nguy cơ dịch bệnh Hantavirus."
+}
+--------------------------------------------------
+
+--- KET QUA 7 ---
+URL: https://www.ubs.com/us/en/wealth-management/insights/market-news/article.3378051.html
+TIEU DE: Error
+TOM TAT: Không thể trích xuất thông tin.
+INSIGHT (JSON): {
+  "url": "https://www.ubs.com/us/en/wealth-management/insights/market-news/article.3378051.html",
+  "title": "Error",
+  "summary": "Không thể trích xuất thông tin.",
+  "key_facts": [],
+  "sentiment": "N/A"
+}
+--------------------------------------------------
+
+--- KET QUA 8 ---
+URL: https://blogs.worldbank.org/en/developmenttalk/the-commodity-markets-outlook-in-eight-charts3
+TIEU DE: Báo cáo Triển vọng Hàng hóa Toàn cầu 2026 và Tác động từ Xung đột Trung Đông
+TOM TAT: Thị trường hàng hóa năm 2026 đối mặt với sự gia tăng giá mạnh mẽ do gián đoạn chuỗi cung ứng năng lượng và phân bón tại Trung Đông, tạo áp lực lạm phát lớn và kéo giảm tăng trưởng kinh tế toàn cầu, đặc biệt là nhóm EMDEs.
+INSIGHT (JSON): {
+  "url": "https://blogs.worldbank.org/en/developmenttalk/the-commodity-markets-outlook-in-eight-charts3",
+  "notes": [
+    "Rủi ro hệ thống: Sự gián đoạn kéo dài tại eo biển Hormuz là yếu tố then chốt đẩy giá dầu và phân bón lên cao.",
+    "Cảnh báo nhân đạo: Nếu giá dầu duy trì trên 100 USD/thùng, khoảng 45 triệu người có thể đối mặt với tình trạng mất an ninh lương thực cấp tính.",
+    "Yếu tố đối trọng: Sự chấp nhận xe điện nhanh hơn và tăng trưởng yếu từ Trung Quốc có thể kéo giảm giá kim loại và dầu mỏ trong dài hạn.",
+    "Điểm bất thường: Giá nông sản giảm không có nghĩa là an ninh lương thực cải thiện, vì chi phí vận tải và phân bón cao vẫn đẩy lạm phát thực phẩm nội địa lên."
+  ],
+  "title": "Báo cáo Triển vọng Hàng hóa Toàn cầu 2026 và Tác động từ Xung đột Trung Đông",
+  "summary": "Thị trường hàng hóa năm 2026 đối mặt với sự gia tăng giá mạnh mẽ do gián đoạn chuỗi cung ứng năng lượng và phân bón tại Trung Đông, tạo áp lực lạm phát lớn và kéo giảm tăng trưởng kinh tế toàn cầu, đặc biệt là nhóm EMDEs.",
+  "key_facts": [
+    "Giá hàng hóa toàn cầu dự kiến tăng 16% trong năm 2026, cao hơn 25% so với dự báo tháng 1/2026.",
+    "Giá dầu Brent biến động cực mạnh trong tháng 3/2026, tăng từ 72 USD/thùng (cuối tháng 2) lên 118 USD/thùng (cuối tháng 3), mức tăng tháng kỷ lục (+65%).",
+    "Giá năng lượng dự kiến: Brent trung bình 86 USD/thùng năm 2026; Khí tự nhiên châu Âu tăng 25% năm 2026.",
+    "Kim loại quý tăng vọt 42% năm 2026 do nhu cầu trú ẩn an toàn; Kim loại và khoáng sản chung tăng 17% (đạt mức kỷ lục).",
+    "Giá phân bón dự kiến tăng hơn 30% trong năm 2026 do đóng cửa eo biển Hormuz.",
+    "Giá nông sản dự kiến giảm 6% năm 2026 (do giá đồ uống giảm 30% bù đắp cho giá thực phẩm tăng 2%).",
+    "Điều chỉnh vĩ mô cho EMDEs: Tăng trưởng GDP giảm từ 4% xuống 3.6%; Lạm phát tăng từ 4.1% lên 5.1%."
+  ],
+  "sentiment": "Tiêu cực",
+  "chain_of_thought": "Dữ liệu được trích xuất từ một báo cáo có định dạng tương tự báo cáo của World Bank Group, tập trung vào biến động giá hàng hóa toàn cầu năm 2026. Về mặt vĩ mô, đây là một cú sốc cung (supply shock) điển hình gây ra bởi căng thẳng địa chính trị tại Trung Đông, đặc biệt là điểm nghẽn eo biển Hormuz. Tác động lan tỏa (spillover effect) thể hiện rõ qua việc điều chỉnh giảm dự báo tăng trưởng GDP và tăng dự báo lạm phát cho các nền kinh tế mới nổi và đang phát triển (EMDEs). Tôi đánh giá mức độ tác động là 'Nghiêm trọng' đối với an ninh năng lượng và lạm phát toàn cầu, trong khi phân khúc nông nghiệp có sự phân hóa (giá đồ uống giảm bù đắp cho giá thực phẩm tăng)."
+}
+--------------------------------------------------
+
+--- KET QUA 9 ---
+URL: https://www.atfxcapital.com/en/analysis/trading-strategies/global-economic-outlook-2026
+TIEU DE: Triển vọng Thị trường 2026: Kỷ nguyên Phân hóa Chính sách Tiền tệ
+TOM TAT: Thị trường năm 2026 chuyển từ giai đoạn thắt chặt đồng bộ sang phân hóa sâu sắc giữa các ngân hàng trung ương. Thế giới bước vào giai đoạn 'tái thiết vĩ mô' (macro reset) với tăng trưởng chậm lại nhưng bền bỉ, trong khi rủi ro chính tập trung vào sự thay đổi lãnh đạo tại Fed và áp lực lạm phát dịch vụ.
+INSIGHT (JSON): {
+  "url": "https://www.atfxcapital.com/en/analysis/trading-strategies/global-economic-outlook-2026",
+  "notes": [
+    "Rủi ro hệ thống: Việc kết thúc nhiệm kỳ của Chủ tịch Fed Jerome Powell vào tháng 5/2026 có thể gây sốc cho lợi suất trái phiếu và tỷ giá USD.",
+    "Lạm phát dai dẳng: Lạm phát trong lĩnh vực dịch vụ và tiền lương vẫn là rào cản khiến các ngân hàng trung ương thận trọng trong việc cắt giảm lãi suất.",
+    "Áp lực tài khóa: Thâm hụt ngân sách cao tại các nền kinh tế lớn làm gia tăng phí rủi ro (risk premiums) trên thị trường trái phiếu.",
+    "Thị trường dầu mỏ: Đối mặt với tình trạng dư cung, hạn chế tiềm năng tăng giá bất chấp rủi ro địa chính trị."
+  ],
+  "title": "Triển vọng Thị trường 2026: Kỷ nguyên Phân hóa Chính sách Tiền tệ",
+  "summary": "Thị trường năm 2026 chuyển từ giai đoạn thắt chặt đồng bộ sang phân hóa sâu sắc giữa các ngân hàng trung ương. Thế giới bước vào giai đoạn 'tái thiết vĩ mô' (macro reset) với tăng trưởng chậm lại nhưng bền bỉ, trong khi rủi ro chính tập trung vào sự thay đổi lãnh đạo tại Fed và áp lực lạm phát dịch vụ.",
+  "key_facts": [
+    "Lộ trình lãi suất Fed: Dự kiến giảm từ 3.6% (cuối 2025) xuống 3.4% (cuối 2026), 3.1% (cuối 2027) và tiến về mức 3.0% trong dài hạn.",
+    "Chính sách phân hóa: BoJ tăng lãi suất lên 0.75% (tháng 12/2025), trái ngược với xu hướng nới lỏng của Fed, tạo biến động cho các chiến thuật carry trade.",
+    "Tăng trưởng khu vực: Ấn Độ dẫn đầu với dự báo tăng trưởng GDP đạt 7.3% (theo RBI), trong khi Trung Quốc chuyển dịch sang nhu cầu nội địa.",
+    "Lãi suất các ngân hàng khác: BoE giữ nguyên mức 3.75%; ECB duy trì ổn định khi lạm phát tiệm cận mục tiêu 2.0%.",
+    "Tài sản an toàn: Giá vàng tăng mạnh cuối 2025 nhờ lực mua từ các ngân hàng trung ương và bất ổn địa chính trị."
+  ],
+  "sentiment": "Trung lập",
+  "chain_of_thought": "The provided text is a comprehensive 2026 market outlook from a financial analysis perspective (likely ATFX). The core theme is 'Monetary Divergence,' where central banks are no longer moving in sync. I evaluated the quantitative data: the Fed's projected rate path (3.6% to 3.0% long-term) indicates a controlled easing cycle to avoid inflation spikes. Japan's rate hike to 0.75% creates a significant yield spread shift, impacting carry trades. The most critical macro risk identified is the Fed Chair succession in May 2026, which could cause systemic volatility in the USD and bond markets. India's 7.3% growth forecast signals a shift in the global growth engine toward emerging markets. The overall macro environment is characterized as a 'Macro Reset'—slower growth but not a recession."
+}
+--------------------------------------------------
+
+--- KET QUA 10 ---
+URL: https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook-2026.html
+TIEU DE: Triển vọng Kinh tế Toàn cầu 2026: Sự chuyển dịch địa chính trị và Hệ sinh thái AI
+TOM TAT: Kinh tế toàn cầu năm 2026 đặc trưng bởi sự thích nghi với thực tế địa chính trị mới. Tăng trưởng được dẫn dắt bởi đầu tư công nghệ (AI) và sự hồi phục của các nền kinh tế mới nổi (Argentina, Ấn Độ), nhưng bị kìm hãm bởi rủi ro bong bóng AI, căng thẳng thương mại Mỹ-Trung và kỳ hạn xem xét hiệp định USMCA vào tháng 7/2026.
+INSIGHT (JSON): {
+  "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook-2026.html",
+  "notes": [
+    "Rủi ro bong bóng AI: Cảnh báo về việc chi tiêu cho AI quá nhanh, nếu lợi nhuận không tương xứng có thể dẫn đến điều chỉnh giảm mạnh, gây suy thoái cho kinh tế Mỹ.",
+    "Điểm gãy chuỗi cung ứng: Chính sách thương mại hạn chế của Mỹ đang đẩy các quốc gia phi Mỹ xích lại gần nhau thông qua các hiệp định thương mại mới.",
+    "Rủi ro tài khóa Colombia: Thâm hụt ngân sách năm 2025 có thể vượt 7% GDP, tạo áp lực lên cải cách thuế và tăng chi phí nhiên liệu.",
+    "Bất động sản Trung Quốc: Tiếp tục suy thoái trong 12 tháng tới, chính phủ ưu tiên an sinh xã hội hơn là cứu trợ diện rộng cho thị trường nhà ở."
+  ],
+  "title": "Triển vọng Kinh tế Toàn cầu 2026: Sự chuyển dịch địa chính trị và Hệ sinh thái AI",
+  "summary": "Kinh tế toàn cầu năm 2026 đặc trưng bởi sự thích nghi với thực tế địa chính trị mới. Tăng trưởng được dẫn dắt bởi đầu tư công nghệ (AI) và sự hồi phục của các nền kinh tế mới nổi (Argentina, Ấn Độ), nhưng bị kìm hãm bởi rủi ro bong bóng AI, căng thẳng thương mại Mỹ-Trung và kỳ hạn xem xét hiệp định USMCA vào tháng 7/2026.",
+  "key_facts": [
+    "Argentina: Dự báo GDP 2026 tăng 3.5%, lạm phát giảm mạnh xuống 13.7% (từ mức đỉnh 300% năm 2024), thặng dư thương mại đạt 13 tỷ USD.",
+    "Hoa Kỳ: Dự báo GDP 2026 tăng 1.9%, tăng trưởng phụ thuộc lớn vào AI và chi tiêu tiêu dùng ngắn hạn từ việc chi trả lương bù cho công chức chính phủ.",
+    "Trung Quốc: Mục tiêu tăng trưởng 2026 giảm xuống 4.5% để tái cân bằng, tập trung giảm dư thừa năng suất (thép, xi măng, pin mặt trời) và chuyển dịch từ bất động sản sang chuỗi giá trị cao.",
+    "Ấn Độ: Duy trì vị thế tăng trưởng dẫn đầu với GDP đạt 8% trong nửa đầu năm tài chính 2025-2026, thúc đẩy bởi tiêu dùng tư nhân (7.5%).",
+    "Bắc Mỹ (Canada & Mexico): Đối mặt rủi ro lớn từ đợt rà soát hiệp định USMCA vào tháng 7/2026; GDP Mexico dự báo hồi phục lên 1.6% nhờ nearshoring.",
+    "Chính sách tiền tệ: Fed (Mỹ) còn dư địa cắt giảm lãi suất tới 375 điểm cơ bản; RBA (Úc) có thể giảm thêm 50 điểm cơ bản trong năm 2026 nếu lạm phát về mức 2-3% vào nửa cuối năm."
+  ],
+  "sentiment": "Trung lập",
+  "chain_of_thought": "Tôi đánh giá dữ liệu này là báo cáo triển vọng kinh tế năm 2026 từ các chuyên gia của Deloitte, có độ tin cậy cao với phương pháp phân tích định lượng chi tiết cho từng quốc gia. Về mặt vĩ mô, thế giới đang chuyển dịch từ giai đoạn 'sốc chính sách' (bầu cử, rào cản thương mại năm 2025) sang giai đoạn 'thích nghi và tái cấu trúc' năm 2026. Điểm cốt lõi là sự phụ thuộc rủi ro cao vào AI (tại Mỹ) và sự bất định của hiệp định USMCA (tại Bắc Mỹ). Argentina là điểm sáng về phục hồi vĩ mô, trong khi Trung Quốc chủ động giảm tốc để tái cân bằng nội tại."
+}
+--------------------------------------------------
+
+--- KET QUA 11 ---
+URL: https://argaamplus.s3.amazonaws.com/8ba61fbd-b022-400b-82f5-7a2d93f3c31f.pdf
+TIEU DE: Triển vọng Kinh tế Toàn cầu 2026: Mô hình Thúc đẩy bởi Cung và Đối trọng AI
+TOM TAT: Kinh tế toàn cầu năm 2026 duy trì sự kiên cường nhưng tốc độ tăng trưởng suy giảm do phân mảnh địa kinh tế và cú sốc chuỗi cung ứng từ thuế quan. AI đóng vai trò là đối trọng cung ứng chính, thúc đẩy năng suất để bù đắp cho sự sụt giảm lực lượng lao động và rào cản thương mại.
+INSIGHT (JSON): {
+  "url": "https://argaamplus.s3.amazonaws.com/8ba61fbd-b022-400b-82f5-7a2d93f3c31f.pdf",
+  "notes": [
+    "Rủi ro lạm phát dịch vụ (services inflation) vẫn dai dẳng tại các thị trường phát triển.",
+    "Trung Quốc đối mặt với 'cú sốc kép' từ nhân khẩu học và áp lực giảm phát cấu trúc.",
+    "Áp lực nợ công tăng cao tại các quốc gia NATO do nhu cầu tăng chi tiêu quốc phòng (tương quan thuận với khoảng cách gần Moscow).",
+    "Sự sụt giảm nhập cư ròng tại Mỹ và EU làm trầm trọng thêm tình trạng thiếu hụt lao động, buộc doanh nghiệp phải đẩy nhanh chuyển đổi sang AI."
+  ],
+  "title": "Triển vọng Kinh tế Toàn cầu 2026: Mô hình Thúc đẩy bởi Cung và Đối trọng AI",
+  "summary": "Kinh tế toàn cầu năm 2026 duy trì sự kiên cường nhưng tốc độ tăng trưởng suy giảm do phân mảnh địa kinh tế và cú sốc chuỗi cung ứng từ thuế quan. AI đóng vai trò là đối trọng cung ứng chính, thúc đẩy năng suất để bù đắp cho sự sụt giảm lực lượng lao động và rào cản thương mại.",
+  "key_facts": [
+    "Tăng trưởng GDP thực tế toàn cầu dự kiến giảm từ 3.3% (2025) xuống 3.1% (2026).",
+    "Thị trường phát triển (DM) giảm tốc từ 1.7% (2025) xuống 1.5% (2026); Thị trường mới nổi (EM) giảm từ 4.5% (2025) xuống 4.1% (2026).",
+    "Lạm phát tiêu dùng toàn cầu dự báo trung bình 2.8% năm 2026 (giảm từ 3.3% năm 2025), nhưng có sự phân hóa: Mỹ tái tăng do thuế quan, Trung Quốc tiếp tục giảm phát.",
+    "Thuế quan Mỹ tăng vọt từ mức trung bình 2.4% (cuối 2024) lên gần 17% (cuối 2025), dự kiến làm giảm GDP toàn cầu khoảng 0.7% vào năm 2026.",
+    "AI là động lực tăng trưởng chính, với kịch bản áp dụng rộng rãi có thể nâng GDP toàn cầu thêm 1.5% vào năm 2033 (riêng Mỹ là 3.5%).",
+    "Chính sách tiền tệ phân hóa: Fed và BoE nới lỏng dần trong năm 2026, ECB giữ nguyên, trong khi BoJ tiến hành thắt chặt chậm."
+  ],
+  "sentiment": "Trung lập",
+  "chain_of_thought": "Nguồn dữ liệu đến từ báo cáo 'Global Economic Outlook 2026' của EY (phát hành 15/12/2025), một tổ chức phân tích uy tín toàn cầu. Dữ liệu cung cấp các dự báo định lượng cho năm 2026, cho phép xây dựng góc nhìn cho báo cáo ngày 11/5/2026. Tôi nhận thấy một sự xung đột vĩ mô rõ rệt: một bên là lực cản từ chính sách thuế quan (tariffs) và nhân khẩu học (aging population), một bên là lực đẩy từ cuộc cách mạng AI. Tác động của thuế quan Mỹ là cực kỳ nghiêm trọng (tăng từ 2.4% lên 17%), tạo ra rủi ro lạm phát tái tăng tại Mỹ trong khi Trung Quốc đối mặt với giảm phát. Sự phân hóa chính sách tiền tệ giữa Fed, ECB và BoJ sẽ tạo ra biến động tỷ giá mạnh trong nửa đầu năm 2026."
+}
+--------------------------------------------------
+
+--- KET QUA 12 ---
+URL: https://www.cepremap.fr/depot/2026/05/Macroeconomic-outlook-06-May-2026.pdf
+TIEU DE: Triển vọng Kinh tế Vĩ mô - Tháng 5/2026
+TOM TAT: Thị trường đang đối mặt với sự biến động cao do tác động kép từ chính sách thuế quan của Tổng thống Trump và khủng hoảng năng lượng tại Trung Đông. Mặc dù các ngân hàng trung ương đã nới lỏng tiền tệ, nhưng lạm phát tiêu đề (headline inflation) đang quay trở lại tăng mạnh, buộc các nhà điều hành phải thận trọng trong việc cắt giảm lãi suất tiếp theo.
+INSIGHT (JSON): {
+  "url": "https://www.cepremap.fr/depot/2026/05/Macroeconomic-outlook-06-May-2026.pdf",
+  "notes": [
+    "Rủi ro địa chính trị: Khủng hoảng Trung Đông kéo dài có thể buộc các ngân hàng trung ương phải đảo ngược chính sách, tăng lãi suất trở lại để kiềm chế lạm phát năng lượng.",
+    "Rủi ro chính trị: Chính sách thuế quan của Trump gây bất ổn cho nhu cầu toàn cầu và làm suy yếu đồng USD trong ngắn hạn.",
+    "Cảnh báo khu vực: Lợi suất trái phiếu chính phủ Pháp hiện tăng cao, tiệm cận mức của Ý và Hy Lạp do bất ổn chính trị nội bộ.",
+    "Chuỗi cung ứng: Chi phí vận tải container đã giảm về mức trung bình dài hạn, nhưng giá đồng (copper) vẫn cao do nguồn cung thấp hơn dự kiến."
+  ],
+  "title": "Triển vọng Kinh tế Vĩ mô - Tháng 5/2026",
+  "summary": "Thị trường đang đối mặt với sự biến động cao do tác động kép từ chính sách thuế quan của Tổng thống Trump và khủng hoảng năng lượng tại Trung Đông. Mặc dù các ngân hàng trung ương đã nới lỏng tiền tệ, nhưng lạm phát tiêu đề (headline inflation) đang quay trở lại tăng mạnh, buộc các nhà điều hành phải thận trọng trong việc cắt giảm lãi suất tiếp theo.",
+  "key_facts": [
+    "Dự báo tăng trưởng GDP 2026 của OECD bị điều chỉnh giảm: Mỹ đạt 1.7%, Khu vực Euro Area đạt 1.2% (Đức và Pháp thấp hơn, khoảng 0.8%).",
+    "Chính sách tiền tệ: Fed giữ lãi suất ở mức 3.50%-3.75% (đã cắt giảm tổng cộng 175bp từ 2024); ECB giữ mức 2.00% (đã cắt giảm 8 lần, mỗi lần 25bp từ tháng 6/2024).",
+    "Lạm phát: Tăng mạnh trong tháng 3 và tháng 4/2026 do giá năng lượng vọt tăng sau các cuộc tấn công tại Iran và việc đóng cửa Eo biển Hormuz.",
+    "Thị trường lao động: Tỷ lệ thất nghiệp và tỷ lệ trống việc làm ở mức thấp kỷ lục; lạm phát tiền lương có xu hướng giảm nhưng vẫn cao tại Mỹ.",
+    "Thị trường tài chính: Chỉ số S&P 500 và Nasdaq đạt mức cao nhất mọi thời đại, dù có sụt giảm ngắn hạn do xung đột Trung Đông.",
+    "Nợ công: Mức nợ chính phủ ở nhóm G4 (Pháp, Đức, Mỹ, Anh) duy trì ở mức cao, gây áp lực lên khả năng ổn định tài chính công."
+  ],
+  "sentiment": "Trung lập/Thận trọng",
+  "chain_of_thought": "Nguồn dữ liệu từ CEPREMAP/DBnomics là nguồn uy tín, được tài trợ bởi các tổ chức lớn như Banque de France và OECD, đảm bảo tính xác thực cao. Phân tích vĩ mô cho thấy một trạng thái 'xung đột' giữa chính sách tiền tệ nới lỏng (cắt giảm lãi suất từ 2024) và các cú sốc lạm phát mới từ địa chính trị (xung đột Iran/Eo biển Hormuz) và chính trị (thuế quan của Trump). Tác động lớn nhất hiện nay là sự điều chỉnh giảm dự báo tăng trưởng của OECD cho năm 2026, cho thấy rủi ro suy thoái hoặc tăng trưởng chậm là hiện hữu bất chấp thị trường chứng khoán Mỹ đạt đỉnh. Sự phân hóa giữa Mỹ (tăng trưởng tốt hơn) và Châu Âu (yếu hơn, rủi ro nợ công Pháp) là điểm mấu chốt cần theo dõi."
+}
+--------------------------------------------------
+
+--- KET QUA 13 ---
+URL: https://www.europarl.europa.eu/RegData/etudes/STUD/2026/779874/ECTI_STU(2026)779874_EN.pdf
+TIEU DE: Báo cáo Bất ổn Vĩ mô, Lập trường Chính sách Tiền tệ của ECB và Truyền thông (Tháng 2/2026)
+TOM TAT: Khu vực Eurozone trải qua giai đoạn ổn định bất ngờ trong năm 2025 với tăng trưởng GDP 1.5% và lạm phát tiệm cận mức 2%. ECB hiện đang trong trạng thái tạm dừng chính sách (policy pause) sau chu kỳ cắt giảm lãi suất (giữa 2024 - giữa 2025). Rủi ro chính hiện nay không còn là sụt giảm xuất khẩu sang Mỹ mà là áp lực giảm phát từ việc Trung Quốc tái định hướng xuất khẩu sang châu Âu.
+INSIGHT (JSON): {
+  "url": "https://www.europarl.europa.eu/RegData/etudes/STUD/2026/779874/ECTI_STU(2026)779874_EN.pdf",
+  "notes": [
+    "Rủi ro phân hóa: Lạm phát không đồng nhất giữa các nước thành viên (đặc biệt là tiền lương và dịch vụ), khiến một mức lãi suất chung gây ra điều kiện tiền tệ thực tế khác nhau giữa các quốc gia.",
+    "Lỗ hổng truyền thông: ECB truyền thông rõ ràng khi điều chỉnh lãi suất nhưng trở nên mơ hồ trong giai đoạn tạm dừng (pause), gây khó khăn cho thị trường trong việc dự báo.",
+    "Điểm mù chính sách: Truyền thông của ECB tập trung quá nhiều vào các nền kinh tế lớn, bỏ qua biến động lạm phát tại các nước thành viên nhỏ hơn.",
+    "Cảnh báo về chuỗi cung ứng: Sự dịch chuyển hàng hóa từ Trung Quốc sang EU là một chiến lược tái định hướng để tránh thuế quan Mỹ, có thể gây tổn hại cho các nhà sản xuất nội địa EU về lâu dài."
+  ],
+  "title": "Báo cáo Bất ổn Vĩ mô, Lập trường Chính sách Tiền tệ của ECB và Truyền thông (Tháng 2/2026)",
+  "summary": "Khu vực Eurozone trải qua giai đoạn ổn định bất ngờ trong năm 2025 với tăng trưởng GDP 1.5% và lạm phát tiệm cận mức 2%. ECB hiện đang trong trạng thái tạm dừng chính sách (policy pause) sau chu kỳ cắt giảm lãi suất (giữa 2024 - giữa 2025). Rủi ro chính hiện nay không còn là sụt giảm xuất khẩu sang Mỹ mà là áp lực giảm phát từ việc Trung Quốc tái định hướng xuất khẩu sang châu Âu.",
+  "key_facts": [
+    "Lãi suất điều hành (tính đến 05/02/2026): Lãi suất tiền gửi (DFR) là 2.00%, Lãi suất tái cấp vốn (MRO) là 2.15%, Lãi suất cho vay biên (MLF) là 2.40%.",
+    "Lạm phát HICP năm 2025 trung bình đạt 2.1%, dữ liệu tháng 12/2025 đạt chính xác 2%. Lạm phát dịch vụ dự kiến ở mức cao hơn (3.2%).",
+    "Tăng trưởng GDP năm 2025 đạt mức 1.5%, duy trì sự ổn định bất chấp bất ổn thương mại toàn cầu.",
+    "Tác động từ Trung Quốc: Thặng dư thương mại kỷ lục của Trung Quốc năm 2025 đạt 1.2 nghìn tỷ USD. Xuất khẩu từ Trung Quốc sang châu Âu tăng khoảng 8%, gây áp lực giảm giá hàng hóa nhập khẩu.",
+    "Tỷ giá: Đồng Euro tăng giá khoảng 11% so với Nhân dân tệ (CNY) trong năm 2025, thúc đẩy hiệu ứng giảm phát từ hàng nhập khẩu Trung Quốc.",
+    "Xuất khẩu sang Mỹ: Không xảy ra sự sụt giảm mạnh như dự báo ban đầu dù có các biện pháp thuế quan, do nhu cầu tiêu dùng tại Mỹ vẫn mạnh mẽ."
+  ],
+  "sentiment": "Trung lập",
+  "chain_of_thought": "Tôi phân tích tài liệu nghiên cứu từ Đơn vị Giám sát EMU và Quản trị Kinh tế (EGOV) của Nghị viện Châu Âu (tháng 2/2026). Nguồn tin có độ tin cậy rất cao vì được chuẩn bị cho đối thoại tiền tệ với Chủ tịch ECB. Dữ liệu định lượng tập trung vào giai đoạn 2024-2025 và dự báo 2026. Điểm mấu chốt vĩ mô ở đây là sự chuyển dịch rủi ro: nỗi sợ về cú sốc cầu từ Mỹ không xảy ra, nhưng thay vào đó là một 'cú sốc giảm phát' từ hàng hóa Trung Quốc tràn vào EU. Tôi đánh giá tác động vĩ mô là phức tạp vì dù lạm phát tổng thể đạt mục tiêu 2%, nhưng sự phân hóa (dispersion) giữa các quốc gia thành viên tạo ra rủi ro về truyền dẫn chính sách tiền tệ không đồng nhất."
+}
+--------------------------------------------------
+
+--- KET QUA 14 ---
+URL: https://www.iea.org/reports/oil-market-report-april-2026
+TIEU DE: Error
+TOM TAT: Không thể trích xuất thông tin.
+INSIGHT (JSON): {
+  "url": "https://www.iea.org/reports/oil-market-report-april-2026",
+  "title": "Error",
+  "summary": "Không thể trích xuất thông tin.",
+  "key_facts": [],
+  "sentiment": "N/A"
+}
+--------------------------------------------------
+
+--- KET QUA 15 ---
+URL: https://m.cafef.vn/cpi-tang-56-so-voi-cung-ki-chuyen-gia-noi-ap-luc-lam-phat-khong-con-chi-nam-o-gia-xang-dau-188260507120236691.chn
+TIEU DE: Error
+TOM TAT: Không thể trích xuất thông tin.
+INSIGHT (JSON): {
+  "url": "https://m.cafef.vn/cpi-tang-56-so-voi-cung-ki-chuyen-gia-noi-ap-luc-lam-phat-khong-con-chi-nam-o-gia-xang-dau-188260507120236691.chn",
+  "title": "Error",
+  "summary": "Không thể trích xuất thông tin.",
+  "key_facts": [],
+  "sentiment": "N/A"
+}
+--------------------------------------------------
+
+--- KET QUA 16 ---
+URL: https://vneconomy.vn/hai-kich-ban-lam-phat-cho-ca-nam-2026.htm
+TIEU DE: Error
+TOM TAT: Không thể trích xuất thông tin.
+INSIGHT (JSON): {
+  "url": "https://vneconomy.vn/hai-kich-ban-lam-phat-cho-ca-nam-2026.htm",
+  "title": "Error",
+  "summary": "Không thể trích xuất thông tin.",
+  "key_facts": [],
+  "sentiment": "N/A"
+}
+--------------------------------------------------
+
+--- KET QUA 17 ---
+URL: http://static1.vietstock.vn/edocs/20230/202605_BCCL_Thang_5.pdf
+TIEU DE: Báo cáo Chiến lược Thị trường Tháng 5/2026: VN-Index hướng tới vùng 2100 điểm giữa áp lực lạm phát chi phí đẩy
+TOM TAT: Thị trường chứng khoán Việt Nam duy trì xu hướng tăng trưởng với mục tiêu vượt đỉnh 1920 điểm, được hỗ trợ bởi dòng vốn FDI mạnh mẽ và sự phục hồi sản xuất. Tuy nhiên, nền kinh tế đối mặt với thách thức từ lạm phát (CPI tháng 4 tăng 5,46%) và tình trạng nhập siêu do chi phí năng lượng/vận tải tăng cao từ xung đột Trung Đông.
+INSIGHT (JSON): {
+  "url": "http://static1.vietstock.vn/edocs/20230/202605_BCCL_Thang_5.pdf",
+  "notes": [
+    "Rủi ro địa chính trị: Xung đột tại Trung Đông kéo dài gây đứt gãy chuỗi cung ứng và neo cao giá năng lượng.",
+    "Áp lực tỷ giá: USD/VND liên ngân hàng duy trì mức cao quanh 26.356.",
+    "Rủi ro lạm phát: Xu hướng tích trữ hàng tồn kho và chi phí vận tải tăng có thể bào mòn lợi nhuận doanh nghiệp.",
+    "Thanh khoản: Tăng trưởng tín dụng có dấu hiệu chậm lại (đạt 3,83% so với cuối năm 2025)."
+  ],
+  "title": "Báo cáo Chiến lược Thị trường Tháng 5/2026: VN-Index hướng tới vùng 2100 điểm giữa áp lực lạm phát chi phí đẩy",
+  "summary": "Thị trường chứng khoán Việt Nam duy trì xu hướng tăng trưởng với mục tiêu vượt đỉnh 1920 điểm, được hỗ trợ bởi dòng vốn FDI mạnh mẽ và sự phục hồi sản xuất. Tuy nhiên, nền kinh tế đối mặt với thách thức từ lạm phát (CPI tháng 4 tăng 5,46%) và tình trạng nhập siêu do chi phí năng lượng/vận tải tăng cao từ xung đột Trung Đông.",
+  "key_facts": [
+    "Kịch bản VN-Index: Mục tiêu gần tại 2084 - 2145 điểm; vùng hỗ trợ mạnh tại 1750 - 1800 điểm.",
+    "Lạm phát Việt Nam: CPI tháng 4/2026 tăng 5,46% YoY; lũy kế 4 tháng tăng 3,99%.",
+    "Cán cân thương mại: Nhập siêu 7,11 tỷ USD trong 4 tháng đầu năm 2026 (cùng kỳ năm trước xuất siêu 4,3 tỷ USD).",
+    "Đầu tư nước ngoài: FDI đăng ký đạt 18,24 tỷ USD (+32% svck), vốn thực hiện đạt 7,4 tỷ USD (+9,8%).",
+    "Chính sách tiền tệ: FED giữ lãi suất ở mức 3,75%; Ngân hàng Nhà nước Việt Nam chủ trương giảm lãi suất huy động để hỗ trợ doanh nghiệp.",
+    "Thị trường quốc tế: PMI sản xuất Mỹ đạt 54,5; PPI Trung Quốc thoát khỏi chuỗi giảm 41 tháng liên tiếp, tăng 0,5%."
+  ],
+  "sentiment": "Trung lập",
+  "chain_of_thought": "Nguồn tin từ ABS Research cung cấp bộ dữ liệu dự báo cho tháng 5/2026 với bối cảnh vĩ mô giả định có nhiều biến động lớn: VN-Index đang ở vùng đỉnh lịch sử (quanh 1920 điểm), lạm phát toàn cầu và Việt Nam đều chịu áp lực 'chi phí đẩy' từ xung đột Trung Đông. Dữ liệu có tính nhất quán cao về mặt kỹ thuật (PMI, CPI, tỷ giá, lợi suất trái phiếu). Đáng chú ý là tình trạng nhập siêu lớn tại Việt Nam ($7,11 tỷ trong 4 tháng) và giá vàng ở mức rất cao (163-166 triệu VNĐ/lượng), phản ánh tâm lý phòng vệ và chi phí nguyên liệu tăng vọt. Đây là giai đoạn thị trường tăng trưởng trong nghi ngờ với rủi ro địa chính trị là biến số quyết định."
+}
+--------------------------------------------------
+
+--- KET QUA 18 ---
+URL: https://www.vndirect.com.vn/bao-cao-tien-te-trai-phieu-thang-05-2026-lam-phat-tang-manh-thu-hep-du-dia-ha-nhiet-lai-suat/
+TIEU DE: Báo cáo Tiền tệ & Trái phiếu tháng 05/2026: Áp lực lạm phát thu hẹp dư địa hạ nhiệt lãi suất
+TOM TAT: Thị trường tài chính tháng 5/2026 ghi nhận sự mâu thuẫn giữa mục tiêu duy trì lãi suất thấp của Chính phủ và áp lực lạm phát thực tế đang tiệm cận mức 4%. Chi phí vốn gia tăng trên tất cả các kênh (liên ngân hàng, huy động, trái phiếu) cùng với thâm hụt thương mại đang tạo ra áp lực kép lên tỷ giá và thanh khoản hệ thống.
+INSIGHT (JSON): {
+  "url": "https://www.vndirect.com.vn/bao-cao-tien-te-trai-phieu-thang-05-2026-lam-phat-tang-manh-thu-hep-du-dia-ha-nhiet-lai-suat/",
+  "notes": [
+    "Rủi ro lạm phát vượt mục tiêu 4-5% làm tê liệt công cụ lãi suất của NHNN.",
+    "Áp lực tỷ giá gia tăng do thâm hụt thương mại và nhu cầu nhập khẩu nguyên liệu sản xuất.",
+    "Rủi ro thanh khoản tại khu vực Bất động sản khi chi phí vốn trái phiếu duy trì ở mức hai chữ số.",
+    "Đầu tư công chưa thực sự trở thành động lực dẫn dắt khi tốc độ giải ngân thấp hơn kỳ vọng."
+  ],
+  "title": "Báo cáo Tiền tệ & Trái phiếu tháng 05/2026: Áp lực lạm phát thu hẹp dư địa hạ nhiệt lãi suất",
+  "summary": "Thị trường tài chính tháng 5/2026 ghi nhận sự mâu thuẫn giữa mục tiêu duy trì lãi suất thấp của Chính phủ và áp lực lạm phát thực tế đang tiệm cận mức 4%. Chi phí vốn gia tăng trên tất cả các kênh (liên ngân hàng, huy động, trái phiếu) cùng với thâm hụt thương mại đang tạo ra áp lực kép lên tỷ giá và thanh khoản hệ thống.",
+  "key_facts": [
+    "CPI bình quân tháng 4 sát ngưỡng 4%, dự báo vượt 4% trong tháng 5; lạm phát có rủi ro chạm 5% nếu giá dầu giữ mức trên 100 USD/thùng.",
+    "Lãi suất huy động niêm yết tăng 0.7 điểm % so với đầu năm, nhưng lãi suất ưu đãi thực tế tại một số ngân hàng tư nhân vọt lên 7.5% - 8.9%.",
+    "Tăng trưởng tín dụng đạt 3.83% YTD và 18.55% so với cùng kỳ năm trước.",
+    "Cán cân thương mại đảo chiều sang thâm hụt lớn do nhập khẩu xăng dầu và điện tử tăng vọt.",
+    "Lãi suất phát hành trái phiếu doanh nghiệp bất động sản bình quân ở mức cao 11.5% (+2.3 điểm % svck).",
+    "Giải ngân đầu tư công vẫn chậm, chỉ đạt 13.8% kế hoạch Thủ tướng giao tính đến cuối tháng 4."
+  ],
+  "sentiment": "Tiêu cực",
+  "chain_of_thought": "Dữ liệu được trích xuất từ báo cáo thị trường định kỳ tháng 5/2026. Đánh giá sơ bộ cho thấy một kịch bản vĩ mô đầy thách thức khi 'lạm phát đình trệ' (stagflation) nhẹ đang nhen nhóm: lạm phát tăng chạm trần mục tiêu (4%), trong khi tiêu dùng thực giảm tốc. Các số liệu về lãi suất huy động thực tế (đặc biệt là các gói ưu đãi lên tới 8.9%) và lãi suất trái phiếu doanh nghiệp bất động sản (11.5%) cho thấy rủi ro thanh khoản và chi phí vốn đang tăng cao hơn nhiều so với các con số niêm yết chính thức. Sự đảo chiều của cán cân thương mại sang thâm hụt lớn là một tín hiệu cảnh báo quan trọng về áp lực tỷ giá, có khả năng buộc NHNN phải thắt chặt tiền tệ dù Chính phủ ưu tiên hỗ trợ tăng trưởng."
+}
+--------------------------------------------------
+
+--- KET QUA 19 ---
+URL: https://www.cnbc.com/2026/04/29/fed-interest-rate-decision-april-2026.html
+TIEU DE: Báo cáo Fed tháng 5/2026: Giữ nguyên lãi suất và sự chia rẽ kỷ lục trong nội bộ
+TOM TAT: Fed duy trì lãi suất ở mức 3.5%-3.75% trong một cuộc họp đầy biến động với tỷ lệ bất đồng cao nhất hơn 3 thập kỷ. Thông điệp 'easing bias' (xu hướng nới lỏng) bị phản đối mạnh mẽ bởi các thành viên diều hâu trong bối cảnh lạm phát dai dẳng trên 3% và áp lực chính trị từ việc thay đổi nhân sự cấp cao.
+INSIGHT (JSON): {
+  "url": "https://www.cnbc.com/2026/04/29/fed-interest-rate-decision-april-2026.html",
+  "notes": [
+    "Rủi ro mất tính độc lập của Fed dưới áp lực từ Nhà Trắng trong việc hỗ trợ thị trường nhà ở và nợ công.",
+    "Xung đột quản trị: Việc Jerome Powell ở lại Board of Governors sau khi Kevin Warsh nhậm chức có thể gây nhiễu loạn thông điệp điều hành.",
+    "Thị trường đang định giá kịch bản không có đợt cắt giảm nào cho đến hết năm 2026.",
+    "Sự gián đoạn chuỗi cung ứng do thuế quan là rủi ro lạm phát tiềm ẩn chưa thể kiểm soát bằng công cụ lãi suất."
+  ],
+  "title": "Báo cáo Fed tháng 5/2026: Giữ nguyên lãi suất và sự chia rẽ kỷ lục trong nội bộ",
+  "summary": "Fed duy trì lãi suất ở mức 3.5%-3.75% trong một cuộc họp đầy biến động với tỷ lệ bất đồng cao nhất hơn 3 thập kỷ. Thông điệp 'easing bias' (xu hướng nới lỏng) bị phản đối mạnh mẽ bởi các thành viên diều hâu trong bối cảnh lạm phát dai dẳng trên 3% và áp lực chính trị từ việc thay đổi nhân sự cấp cao.",
+  "key_facts": [
+    "Lãi suất liên bang giữ nguyên ở phạm vi 3.5% - 3.75%, đúng như dự báo của thị trường.",
+    "Tỷ lệ bỏ phiếu chia rẽ 8-4, mức bất đồng lớn nhất kể từ tháng 10/1992.",
+    "Lạm phát mục tiêu vẫn kẹt ở mức trên 3% kể từ cuối năm 2023, cao hơn mục tiêu 2%.",
+    "Thị trường lao động có dấu hiệu hạ nhiệt nhẹ: 178.000 việc làm mới trong tháng 3, tỷ lệ thất nghiệp ở mức 4.3%.",
+    "Nợ công Mỹ đạt mức kỷ lục gần 39 nghìn tỷ USD, tạo áp lực giảm lãi suất để tiết kiệm chi phí vay vốn.",
+    "Giá dầu tăng vọt và tác động từ thuế quan của chính quyền mới đang làm trầm trọng thêm áp lực chi phí đẩy."
+  ],
+  "sentiment": "Tiêu cực",
+  "chain_of_thought": "Bản báo cáo phản ánh một kịch bản giả định vào tháng 5/2026, cho thấy sự căng thẳng cực độ trong nội bộ Fed. Dữ liệu cho thấy lãi suất đang ở mức cao (3.5%-3.75%) so với giai đoạn trước 2024 nhưng lạm phát vẫn kẹt ở mức >3%. Điểm cốt yếu là sự chia rẽ 8-4 (lần đầu từ 1992) và động thái chính trị hóa Fed khi ông Powell quyết định ở lại Hội đồng quản trị để đối trọng với người kế nhiệm Kevin Warsh. Về mặt vĩ mô, việc lạm phát không hạ nhiệt mặc dù đã duy trì lãi suất cao, cộng thêm áp lực thuế quan và giá năng lượng, đang đẩy kinh tế Mỹ vào thế khó: Stagflation (lạm phát đình trệ). Thị trường chứng khoán phản ứng tiêu cực do sự bất định về lộ trình cắt giảm và áp lực từ nợ công 39 nghìn tỷ USD."
+}
+--------------------------------------------------
+
+--- KET QUA 20 ---
+URL: https://equalsmoney.com/economic-calendar/events/fed-interest-rate-decision
+TIEU DE: Báo cáo Thị trường và Tình hình Vĩ mô Fed - Tháng 5/2026
+TOM TAT: Thị trường đang trong giai đoạn quan sát sau khi Fed giữ nguyên lãi suất tại mức 3.50% – 3.75% vào tháng 3/2026. Trọng tâm hiện tại đổ dồn vào kết quả cuộc họp ngày 29/4/2026 để xác định liệu lộ trình nới lỏng tiền tệ từ cuối năm 2025 có tiếp tục hay không.
+INSIGHT (JSON): {
+  "url": "https://equalsmoney.com/economic-calendar/events/fed-interest-rate-decision",
+  "notes": [
+    "Rủi ro lạm phát quay trở lại có thể khiến Fed trì hoãn các đợt cắt giảm lãi suất tiếp theo trong năm 2026.",
+    "Áp lực lên USD và xuất khẩu khi Fed duy trì chính sách trung lập sau giai đoạn cắt giảm.",
+    "Tính chất 'tạm thời' của lịch trình: Các ngày họp có thể thay đổi tùy thuộc vào biến động kinh tế bất ngờ."
+  ],
+  "title": "Báo cáo Thị trường và Tình hình Vĩ mô Fed - Tháng 5/2026",
+  "summary": "Thị trường đang trong giai đoạn quan sát sau khi Fed giữ nguyên lãi suất tại mức 3.50% – 3.75% vào tháng 3/2026. Trọng tâm hiện tại đổ dồn vào kết quả cuộc họp ngày 29/4/2026 để xác định liệu lộ trình nới lỏng tiền tệ từ cuối năm 2025 có tiếp tục hay không.",
+  "key_facts": [
+    "Lãi suất quỹ liên bang mục tiêu hiện tại: 3.50% – 3.75% (giữ nguyên từ tháng 3/2026).",
+    "Lãi suất hiệu dụng (EFFR) thực tế trên thị trường liên ngân hàng ở mức 3.64%.",
+    "Fed đã thực hiện một loạt các đợt cắt giảm lãi suất vào cuối năm 2025 trước khi tạm dừng.",
+    "Lịch trình họp FOMC tiếp theo dự kiến công bố kết quả vào 18:00 GMT ngày 29/4/2026.",
+    "Bốn cuộc họp quan trọng có kèm theo Báo cáo Dự báo Kinh tế (SEP) trong năm 2026 là vào tháng 3, 6, 9 và 12."
+  ],
+  "sentiment": "Trung lập",
+  "chain_of_thought": "Tôi đã tiến hành đánh giá dữ liệu lịch trình FOMC và các chỉ số lãi suất mục tiêu hiện tại (3.50% - 3.75%). Dữ liệu cho thấy sự chuyển dịch từ thắt chặt sang trung lập sau các đợt cắt giảm cuối năm 2025. Tôi tập trung phân tích tác động của việc giữ nguyên lãi suất trong cuộc họp tháng 3/2026 đối với kỳ vọng thị trường vào tháng 5/2026."
+}
+--------------------------------------------------
+
+--- KET QUA 21 ---
+URL: https://www.bis.org/speeches/sp260512.htm
+TIEU DE: Báo cáo Triển vọng Kinh tế và Rủi ro Hệ thống Toàn cầu 2026 - Tổng hợp từ BIS
+TOM TAT: Nền kinh tế toàn cầu chuyển dịch từ trạng thái ổn định sang rủi ro lạm phát đình trệ (stagflation) do xung đột địa chính trị. Áp lực nợ công kỷ lục kết hợp với sự bùng nổ thiếu kiểm soát của tín dụng tư nhân (private credit) và lĩnh vực AI đang tạo ra những điểm đứt gãy tiềm tàng trong hệ thống tài chính.
+INSIGHT (JSON): {
+  "url": "https://www.bis.org/speeches/sp260512.htm",
+  "notes": [
+    "Rủi ro 'hiệu ứng vòng thứ hai': Kỳ vọng lạm phát của hộ gia đình và doanh nghiệp có thể trở nên nhạy cảm hơn sau cú sốc đại dịch.",
+    "Rủi ro hiệu chỉnh thị trường: Tâm lý lạc quan về AI và hòa bình Trung Đông nếu bị phản bác sẽ dẫn đến sự sụp đổ giá tài sản đột ngột.",
+    "Cảnh báo về tính độc lập của Ngân hàng Trung ương: Áp lực từ chính sách tài khóa mở rộng (như tại Nhật Bản) có thể làm xói mòn khả năng kiểm soát lạm phát."
+  ],
+  "title": "Báo cáo Triển vọng Kinh tế và Rủi ro Hệ thống Toàn cầu 2026 - Tổng hợp từ BIS",
+  "summary": "Nền kinh tế toàn cầu chuyển dịch từ trạng thái ổn định sang rủi ro lạm phát đình trệ (stagflation) do xung đột địa chính trị. Áp lực nợ công kỷ lục kết hợp với sự bùng nổ thiếu kiểm soát của tín dụng tư nhân (private credit) và lĩnh vực AI đang tạo ra những điểm đứt gãy tiềm tàng trong hệ thống tài chính.",
+  "key_facts": [
+    "Xung đột Trung Đông làm gián đoạn nguồn cung dầu thô và khí đốt, đẩy lạm phát tăng và hạ dự báo tăng trưởng.",
+    "Nợ công toàn cầu đạt mức cao kỷ lục sau 15 năm tăng liên tục, chủ yếu được nắm giữ bởi các tổ chức phi ngân hàng (NBFI) và quỹ đầu cơ đòn bẩy cao.",
+    "Tín dụng tư nhân (Private Credit) tăng trưởng nóng tại Mỹ và Châu Âu nhưng có tính minh bạch thấp, khó định giá tài sản chính xác.",
+    "Lĩnh vực AI chuyển từ tự tài trợ bằng vốn chủ sở hữu sang phụ thuộc nặng nề vào nợ bên ngoài (tín dụng tư nhân), tạo rủi ro liên đới chuỗi cung ứng.",
+    "Sự phân cực pháp lý: Mỹ ủng hộ Stablecoin tư nhân và cấm CBDC, trong khi Eurozone đẩy mạnh phát hành CBDC, đe dọa tính thống nhất của hệ thống thanh toán toàn cầu."
+  ],
+  "sentiment": "Tiêu cực",
+  "chain_of_thought": "Dữ liệu được trích xuất từ cuộc phỏng vấn Tổng Giám đốc BIS (Pablo Hernández de Cos) vào tháng 4-5/2026. Đây là nguồn tin có độ tin cậy cao nhất trong hệ thống ngân hàng trung ương toàn cầu. Đánh giá vĩ mô cho thấy thế giới đang đối mặt với cú sốc cung (supply shock) tương tự thập niên 1970 nhưng với bối cảnh phức tạp hơn do nợ công kỷ lục và sự trỗi dậy của các tổ chức tài chính phi ngân hàng (NBFI). Tác động kép từ xung đột Trung Đông và bong bóng kỳ vọng AI tạo ra rủi ro hiệu chỉnh thị trường đột ngột. Sự phân cực giữa Mỹ và EU về CBDC/Stablecoin là điểm yếu lớn trong quản trị tài chính toàn cầu."
+}
+--------------------------------------------------
+
+--- KET QUA 22 ---
+URL: https://www.jpmorgan.com/insights/global-research/economy/fed-rate-cuts
+TIEU DE: Báo cáo Thị trường và Chính sách Tiền tệ tháng 5/2026: Fed kiên định chiến lược 'Chờ đợi và Quan sát'
+TOM TAT: Cục Dự trữ Liên bang Mỹ (Fed) duy trì lãi suất ở mức 3,5–3,75% bất chấp áp lực từ giá năng lượng tăng cao do xung đột Trung Đông. Với thị trường lao động phục hồi và CPI lõi ổn định, Fed ưu tiên sự kiên nhẫn, dự kiến giữ nguyên lãi suất trong suốt năm 2026 thay vì cắt giảm, nhằm đối phó với rủi ro lạm phát đình trệ.
+INSIGHT (JSON): {
+  "url": "https://www.jpmorgan.com/insights/global-research/economy/fed-rate-cuts",
+  "notes": [
+    "Rủi ro lạm phát kỳ vọng bị mất neo (unanchored) nếu giá năng lượng tiếp tục duy trì ở mức cao.",
+    "Sự gián đoạn chuỗi cung ứng từ nông nghiệp đến hàng không do xung đột quân sự kéo dài.",
+    "Áp lực kép: Vừa có rủi ro lạm phát tăng (upside risks), vừa có rủi ro suy giảm việc làm (downside risks).",
+    "Thị trường đang định giá lại kỳ vọng: Từ 'cắt giảm lãi suất' sang 'giữ nguyên lâu hơn'."
+  ],
+  "title": "Báo cáo Thị trường và Chính sách Tiền tệ tháng 5/2026: Fed kiên định chiến lược 'Chờ đợi và Quan sát'",
+  "summary": "Cục Dự trữ Liên bang Mỹ (Fed) duy trì lãi suất ở mức 3,5–3,75% bất chấp áp lực từ giá năng lượng tăng cao do xung đột Trung Đông. Với thị trường lao động phục hồi và CPI lõi ổn định, Fed ưu tiên sự kiên nhẫn, dự kiến giữ nguyên lãi suất trong suốt năm 2026 thay vì cắt giảm, nhằm đối phó với rủi ro lạm phát đình trệ.",
+  "key_facts": [
+    "Lãi suất điều hành: Fed giữ nguyên ở mức 3,5% – 3,75% trong cuộc họp tháng 3 và dự kiến duy trì hết năm 2026.",
+    "Chỉ số lạm phát: Headline CPI tháng 3 tăng 0,9% theo tháng (mức tăng cao nhất kể từ 2022), nhưng Core CPI chỉ tăng 0,2%.",
+    "Thị trường lao động: Non-farm payrolls tháng 3 tăng 178.000 (phục hồi từ mức giảm 133.000 trong tháng 2); tỷ lệ thất nghiệp giảm xuống 4,3%.",
+    "Dự báo dài hạn: J.P. Morgan dự báo đợt điều chỉnh lãi suất tiếp theo có thể là tăng 25 điểm cơ bản vào Quý 3/2027.",
+    "Yếu tố tác động biên: Xung đột tại Iran, đề xuất thuế quan của Tổng thống Trump và sự ứng dụng AI vào thị trường lao động."
+  ],
+  "sentiment": "Trung lập",
+  "chain_of_thought": "Báo cáo dựa trên dữ liệu từ J.P. Morgan Global Research trong bối cảnh giả định/dự báo cho năm 2026. Dữ liệu cho thấy một nền kinh tế đang chịu áp lực kép: cú sốc cung (năng lượng do xung đột Trung Đông) và sự thay đổi cấu trúc (AI, thuế quan). Fed đang ở trạng thái 'thắt chặt thận trọng'. Mặc dù Headline CPI tăng mạnh do giá xăng, Core CPI ổn định cho thấy lạm phát cơ bản chưa mất kiểm soát. Việc làm phục hồi là 'chốt chặn' quan trọng giúp Fed trì hoãn việc cắt giảm lãi suất. Rủi ro lớn nhất là lạm phát kỳ vọng mất neo và tác động lan tỏa từ xung đột Iran."
+}
+--------------------------------------------------
+
+--- KET QUA 23 ---
+URL: https://www.reuters.com/business/goldman-sachs-delays-fed-cut-outlook-december-2026-iran-war-drives-us-inflation-2026-05-11/
+TIEU DE: BofA và Goldman Sachs trì hoãn dự báo cắt giảm lãi suất Fed đến cuối năm 2026 và 2027
+TOM TAT: Các tổ chức tài chính hàng đầu thế giới đã điều chỉnh lộ trình lãi suất của Hoa Kỳ sang hướng thắt chặt hơn do lạm phát năng lượng leo thang và thị trường lao động quá nóng. Kịch bản 'Higher for Longer' (Cao hơn trong thời gian dài hơn) đang trở thành xu thế chủ đạo khi rủi ro địa chính trị từ Trung Đông làm chệch hướng các nỗ lực hạ nhiệt giá cả của Fed.
+INSIGHT (JSON): {
+  "url": "https://www.reuters.com/business/goldman-sachs-delays-fed-cut-outlook-december-2026-iran-war-drives-us-inflation-2026-05-11/",
+  "notes": [
+    "Rủi ro địa chính trị: Chiến tranh Trung Đông là 'thiên nga đen' gây gián đoạn chuỗi cung ứng năng lượng.",
+    "Bất ổn nội bộ Fed: Sự chia rẽ trong biểu quyết cho thấy sự thiếu đồng thuận về lộ trình chính sách tiền tệ trong tương lai.",
+    "Áp lực từ Tân Chủ tịch Fed: Kevin Warsh có thể thúc đẩy giảm lãi suất nhưng bị ràng buộc bởi dữ liệu lạm phát thực tế vượt mục tiêu 2%.",
+    "Cảnh báo thị trường: Trader đang phải điều chỉnh lại kỳ vọng, việc trì hoãn cắt giảm có thể gây áp lực lên định giá tài sản rủi ro."
+  ],
+  "title": "BofA và Goldman Sachs trì hoãn dự báo cắt giảm lãi suất Fed đến cuối năm 2026 và 2027",
+  "summary": "Các tổ chức tài chính hàng đầu thế giới đã điều chỉnh lộ trình lãi suất của Hoa Kỳ sang hướng thắt chặt hơn do lạm phát năng lượng leo thang và thị trường lao động quá nóng. Kịch bản 'Higher for Longer' (Cao hơn trong thời gian dài hơn) đang trở thành xu thế chủ đạo khi rủi ro địa chính trị từ Trung Đông làm chệch hướng các nỗ lực hạ nhiệt giá cả của Fed.",
+  "key_facts": [
+    "BofA Global Research dự báo Fed sẽ giữ nguyên lãi suất trong cả năm 2026, chỉ cắt giảm 25bp vào tháng 7 và tháng 9 năm 2027.",
+    "Goldman Sachs dời dự báo cắt giảm lần đầu từ tháng 9/2026 sang tháng 12/2026.",
+    "Tỷ lệ thất nghiệp tại Mỹ duy trì ở mức 4.3% trong tháng 4/2026, cho thấy thị trường lao động chưa hạ nhiệt đủ để Fed hành động.",
+    "Lãi suất hiện tại của Fed đang neo ở biên độ 3.50% - 3.75%.",
+    "Cuộc họp FOMC ngày 29/4 ghi nhận sự chia rẽ lớn nhất kể từ năm 1992 với tỷ lệ bỏ phiếu 8–4.",
+    "Xung đột tại Trung Đông kéo dài 10 tuần là nguyên nhân trực tiếp đẩy giá năng lượng và rủi ro lạm phát lên cao."
+  ],
+  "sentiment": "Tiêu cực",
+  "chain_of_thought": "Dữ liệu được trích xuất từ Reuters (nguồn uy tín cao). Bối cảnh giả định vào tháng 5/2026 cho thấy một kịch bản vĩ mô phức tạp: lạm phát do cung (năng lượng từ chiến tranh Trung Đông) kết hợp với cầu (thị trường lao động mạnh). Việc các định chế tài chính lớn như BofA và Goldman Sachs đồng loạt dời lịch cắt giảm lãi suất cho thấy kỳ vọng về lãi suất thực dương kéo dài. Điểm đáng chú ý nhất là sự chia rẽ trong nội bộ Fed (phiếu bầu 8-4) và sự xuất hiện của Kevin Warsh, gợi báo hiệu một giai đoạn chuyển giao chính sách đầy biến động. Các số liệu về thất nghiệp (4.3%) và lãi suất hiện tại (3.50-3.75%) là các mốc định lượng quan trọng để xác định 'đáy' của chu kỳ thắt chặt."
+}
+--------------------------------------------------
+
+--- KET QUA 24 ---
+URL: https://vir.com.vn/higher-rates-and-stricter-credit-caps-reshape-lending-landscape-147605.html
+TIEU DE: Thị trường Bất động sản Việt Nam 2026: Áp lực từ chính sách tiền tệ thắt chặt và định hướng ưu tiên sản xuất
+TOM TAT: Thị trường bất động sản quý 1/2026 đang đối mặt với thử thách lớn khi lãi suất cho vay tăng cao và sự kiểm soát gắt gao từ Ngân hàng Nhà nước (SBV). Tín dụng cho bất động sản bị giới hạn không vượt quá tốc độ tăng trưởng tín dụng chung, báo hiệu một giai đoạn sàng lọc mạnh mẽ về thanh khoản và khả năng chịu đựng chi phí vốn của các doanh nghiệp trong quý 2/2026.
+INSIGHT (JSON): {
+  "url": "https://vir.com.vn/higher-rates-and-stricter-credit-caps-reshape-lending-landscape-147605.html",
+  "notes": [
+    "Rủi ro thanh khoản: Các ngân hàng đang chạm trần tỷ lệ vốn ngắn hạn cho vay trung và dài hạn, hạn chế khả năng giải ngân mới.",
+    "Áp lực từ bên ngoài: Chính sách lãi suất của Fed sẽ là biến số quyết định mức độ tăng lãi suất trong nước vào quý 2/2026.",
+    "Định hướng dòng vốn: Chính phủ ưu tiên vốn cho đầu tư công và hạ tầng, khiến bất động sản trở thành lĩnh vực 'nhạy cảm' và bị kiểm soát chặt chẽ để tránh đầu cơ."
+  ],
+  "title": "Thị trường Bất động sản Việt Nam 2026: Áp lực từ chính sách tiền tệ thắt chặt và định hướng ưu tiên sản xuất",
+  "summary": "Thị trường bất động sản quý 1/2026 đang đối mặt với thử thách lớn khi lãi suất cho vay tăng cao và sự kiểm soát gắt gao từ Ngân hàng Nhà nước (SBV). Tín dụng cho bất động sản bị giới hạn không vượt quá tốc độ tăng trưởng tín dụng chung, báo hiệu một giai đoạn sàng lọc mạnh mẽ về thanh khoản và khả năng chịu đựng chi phí vốn của các doanh nghiệp trong quý 2/2026.",
+  "key_facts": [
+    "Lãi suất huy động tăng mạnh: Vikki Bank lên tới 8.2-8.4%, các ngân hàng tư nhân khác phổ biến 7-7.5%, ngân hàng quốc doanh quanh mức 5.5-6%.",
+    "Chi phí vốn vay bất động sản leo thang: Phổ biến ở mức 8-10% trong 3-6 tháng đầu, sau đó tăng lên 10-12%, thậm chí lãi suất thả nổi vượt ngưỡng 13%/năm.",
+    "Rào cản kỹ thuật: Tín dụng bất động sản tại mỗi ngân hàng không được phép tăng trưởng nhanh hơn tốc độ tăng trưởng tín dụng tổng thể của chính tổ chức đó.",
+    "Động thái thực tế: BIDV tạm dừng phê duyệt các dự án và phương án kinh doanh bất động sản mới của khách hàng doanh nghiệp từ trước Tết Nguyên đán để tuân thủ chỉ đạo của SBV.",
+    "Lãi suất huy động năm 2025 đã tăng 100-150 điểm cơ bản, tạo áp lực duy trì lãi suất cao trong năm 2026."
+  ],
+  "sentiment": "Tiêu cực",
+  "chain_of_thought": "Quá trình đánh giá dựa trên dữ liệu từ báo cáo vĩ mô của MB Securities, ý kiến chuyên gia (Cấn Văn Lực, Châu Đình Linh) và chỉ thị từ Chính phủ/Ngân hàng Nhà nước. Dữ liệu cho thấy một xu hướng thắt chặt có hệ thống thông qua công cụ lãi suất và hạn mức tín dụng nhằm định hướng dòng vốn vào sản xuất, đặt thị trường bất động sản vào trạng thái 'kiểm tra sức chịu đựng' trong năm 2026."
+}
+--------------------------------------------------
+
+--- KET QUA 25 ---
+URL: https://www.psi.vn/uploads/bao-cao/PSI_Bao%20cao%20chien%20luoc%202026_EN_Dec2025.pdf
+TIEU DE: Triển vọng Thị trường Bất động sản Việt Nam Q1-Q2/2026: Sức ép tài chính và động lực hạ tầng
+TOM TAT: Thị trường bước vào Q1/2026 với nền tảng tăng trưởng GDP cao (8.0-8.2%) nhưng đối mặt với 'điểm đảo chiều' về chi phí vốn. Trong khi dòng vốn FDI và đầu tư công kỷ lục tiếp tục là bệ đỡ cho BĐS công nghiệp và hạ tầng, thì BĐS dân dụng chịu áp lực từ việc lãi suất huy động và cho vay bắt đầu tăng từ cuối Q4/2025.
+INSIGHT (JSON): {
+  "url": "https://www.psi.vn/uploads/bao-cao/PSI_Bao%20cao%20chien%20luoc%202026_EN_Dec2025.pdf",
+  "notes": [
+    "Rủi ro lãi suất: Các ngân hàng tư nhân bắt đầu tăng lãi suất từ cuối 2025, có thể làm giảm lực cầu mua nhà trong Q2/2026.",
+    "Áp lực tỷ giá: VND mất giá 3.1% làm giảm sức hấp dẫn của tài sản nội đối với nhà đầu tư ngoại nếu không có cam kết lợi nhuận cao.",
+    "Đứt gãy chuỗi cung ứng: Thuế quan 46% từ Mỹ có thể làm chậm dòng vốn FDI mới vào các khu công nghiệp trong ngắn hạn."
+  ],
+  "title": "Triển vọng Thị trường Bất động sản Việt Nam Q1-Q2/2026: Sức ép tài chính và động lực hạ tầng",
+  "summary": "Thị trường bước vào Q1/2026 với nền tảng tăng trưởng GDP cao (8.0-8.2%) nhưng đối mặt với 'điểm đảo chiều' về chi phí vốn. Trong khi dòng vốn FDI và đầu tư công kỷ lục tiếp tục là bệ đỡ cho BĐS công nghiệp và hạ tầng, thì BĐS dân dụng chịu áp lực từ việc lãi suất huy động và cho vay bắt đầu tăng từ cuối Q4/2025.",
+  "key_facts": [
+    "FDI thực hiện vào lĩnh vực Bất động sản đạt 1.5 tỷ USD (chiếm 7% tổng vốn), đứng thứ 2 toàn thị trường.",
+    "Lãi suất cho vay trung và dài hạn trong Q1/2026 neo ở mức 6.5% - 8.8%/năm, nhưng đang có xu hướng tăng do SBV nâng lãi suất OMO lên 4.5%.",
+    "Tăng trưởng tín dụng toàn hệ thống đạt mức cao 17-18%, bơm khoảng 2.5 triệu tỷ đồng ra nền kinh tế.",
+    "Gói đầu tư công năm 2025 lên tới 1,025 nghìn tỷ VNĐ (+36.2% so với 2024), tạo động lực trực tiếp cho giá đất hạ tầng trong Q1 và Q2/2026.",
+    "Tỷ giá thị trường tự do tiệm cận 28,000 VND/USD gây áp lực lên chi phí nhập khẩu vật liệu xây dựng và vốn vay nước ngoài."
+  ],
+  "sentiment": "Trung lập",
+  "chain_of_thought": "Dữ liệu được trích xuất từ báo cáo chiến lược cuối năm 2025, dự báo cho năm 2026. Nguồn tin (PSI Research) sử dụng các kịch bản thực tế về địa chính trị (Trade War 2.0) và chính sách tiền tệ của Fed/SBV. Đánh giá: Số liệu về FDI bất động sản (1.5 tỷ USD) và tăng trưởng tín dụng (17-18%) cho thấy thanh khoản dồi dào nhưng áp lực chi phí vốn đang quay trở lại vào Q1/2026 do SBV bắt đầu tăng lãi suất OMO và tỷ giá tự do chạm mốc 28.000. Tác động vĩ mô: Bất động sản sẽ phân hóa mạnh, phụ thuộc vào tốc độ giải ngân đầu tư công và khả năng hấp thụ vốn FDI."
+}
+--------------------------------------------------
+
+--- KET QUA 26 ---
+URL: https://theinvestor.vn/double-digit-interest-rates-push-vietnams-real-estate-market-to-restructuring-cycle-d18503.html
+TIEU DE: Thị trường Bất động sản Việt Nam Q1/2026: Tái cấu trúc kỷ luật dưới áp lực lãi suất hai con số
+TOM TAT: Thị trường đang trải qua giai đoạn 'thanh lọc' mạnh mẽ khi lãi suất vay vượt ngưỡng 10%, đẩy dòng tiền từ đầu cơ sang các phân khúc tạo giá trị thực và dòng tiền. Sự ổn định từ bộ máy lãnh đạo mới và kỷ lục giải ngân FDI đóng vai trò là 'neo' tâm lý giúp thị trường không rơi vào trạng thái đóng băng mà chuyển sang chu kỳ phát triển bền vững hơn.
+INSIGHT (JSON): {
+  "url": "https://theinvestor.vn/double-digit-interest-rates-push-vietnams-real-estate-market-to-restructuring-cycle-d18503.html",
+  "notes": [
+    "Rủi ro đòn bẩy: Các nhà đầu tư dùng vốn vay lớn đang đối mặt với nguy cơ tháo chạy khi lãi suất thả nổi tăng cao sau thời gian ưu đãi.",
+    "Áp lực chi phí vốn: Chi phí đầu tư hạ tầng và phát triển dự án tăng mạnh do lãi suất và biến động tỷ giá.",
+    "Sự phân hóa: Các dự án pháp lý chưa hoàn thiện hoặc đất nền vùng xa gần như mất tính thanh khoản.",
+    "Rủi ro pháp lý doanh nghiệp: Vụ việc liên quan đến lãnh đạo Bảo Tín Minh Châu có thể tác động lan tỏa đến tâm lý thị trường tài sản nói chung."
+  ],
+  "title": "Thị trường Bất động sản Việt Nam Q1/2026: Tái cấu trúc kỷ luật dưới áp lực lãi suất hai con số",
+  "summary": "Thị trường đang trải qua giai đoạn 'thanh lọc' mạnh mẽ khi lãi suất vay vượt ngưỡng 10%, đẩy dòng tiền từ đầu cơ sang các phân khúc tạo giá trị thực và dòng tiền. Sự ổn định từ bộ máy lãnh đạo mới và kỷ lục giải ngân FDI đóng vai trò là 'neo' tâm lý giúp thị trường không rơi vào trạng thái đóng băng mà chuyển sang chu kỳ phát triển bền vững hơn.",
+  "key_facts": [
+    "Lãi suất vay mua nhà tăng lên mức hai con số (double-digit), gây áp lực trực tiếp lên thanh khoản và buộc thị trường phải tái định giá (repricing).",
+    "FDI thực hiện trong Q1/2026 đạt 5,41 tỷ USD, tăng 9,1% so với cùng kỳ, là mức cao nhất trong 5 năm qua.",
+    "Xuất hiện các đề xuất hạ tầng và kiến trúc quy mô lớn: Metro 4,71 tỷ USD (Becamex-Thaco) và Tháp tài chính 1,84 tỷ USD (Sovico-HDBank).",
+    "Dòng tiền tập trung vào phân khúc 'phòng thủ': BĐS công nghiệp, căn hộ đáp ứng nhu cầu thực và tài sản có khả năng khai thác dòng tiền ngay.",
+    "Tỷ giá USD/VND chịu áp lực tăng do lạm phát nhập khẩu, gây khó khăn cho quản lý chính sách tiền tệ.",
+    "Bầu cử nhân sự cấp cao (Chủ tịch nước, Thủ tướng, Chủ tịch Quốc hội) hoàn tất cho nhiệm kỳ 2026-2031, tạo khung pháp lý và chính trị ổn định."
+  ],
+  "sentiment": "Trung lập",
+  "chain_of_thought": "Dữ liệu cho thấy một bức tranh đa sắc thái của kinh tế Việt Nam Q1/2026. Một mặt, áp lực vĩ mô từ lãi suất (vọt ngưỡng 10%) và tỷ giá đang tạo ra 'bộ lọc' tự nhiên, buộc thị trường bất động sản (BĐS) phải tái cấu trúc, loại bỏ đầu cơ. Mặt khác, các chỉ số nền tảng như FDI ($5,41 tỷ - cao nhất 5 năm) và sự ổn định chính trị (bầu cử bộ máy lãnh đạo mới nhiệm kỳ 2026-2031) là những động lực hỗ trợ mạnh mẽ. Việc các tập đoàn lớn (Becamex, Thaco, Sovico) đề xuất các dự án hạ tầng tỷ đô cho thấy niềm tin dài hạn vẫn rất lớn bất chấp khó khăn ngắn hạn về chi phí vốn."
+}
+--------------------------------------------------
+
+--- KET QUA 27 ---
+URL: https://vietnamnews.vn/economy/1779630/property-market-sees-investor-screening-as-high-interest-rates-add-pressure.html
+TIEU DE: Thị trường Bất động sản Việt Nam Q1/2026: Sàng lọc khắc nghiệt dưới áp lực lãi suất cao
+TOM TAT: Thị trường BĐS Quý 1/2026 ghi nhận sự sụt giảm mạnh về thanh khoản và nguồn cung do lãi suất vay vọt lên mức 15-16%. Áp lực tài chính buộc thị trường phải tái cấu trúc toàn diện, chuyển dịch sang các phân khúc có giá trị thực và ưu tiên các chủ đầu tư có năng lực tài chính bền vững.
+INSIGHT (JSON): {
+  "url": "https://vietnamnews.vn/economy/1779630/property-market-sees-investor-screening-as-high-interest-rates-add-pressure.html",
+  "notes": [
+    "Rủi ro 'cắt lỗ' diện rộng từ các nhà đầu tư cá nhân sử dụng đòn bẩy tài chính ngắn hạn.",
+    "Nguy cơ đình trệ dự án đối với các chủ đầu tư có cấu trúc vốn thiếu ổn định hoặc dự án có tính khả thi thấp.",
+    "Sự phân hóa cực độ giữa nhóm doanh nghiệp có vốn tự có mạnh và nhóm phụ thuộc vào tín dụng ngân hàng.",
+    "Cảnh báo về áp lực dòng tiền (cash flow pressure) gia tăng vào Q2/2026 nếu lãi suất không hạ nhiệt."
+  ],
+  "title": "Thị trường Bất động sản Việt Nam Q1/2026: Sàng lọc khắc nghiệt dưới áp lực lãi suất cao",
+  "summary": "Thị trường BĐS Quý 1/2026 ghi nhận sự sụt giảm mạnh về thanh khoản và nguồn cung do lãi suất vay vọt lên mức 15-16%. Áp lực tài chính buộc thị trường phải tái cấu trúc toàn diện, chuyển dịch sang các phân khúc có giá trị thực và ưu tiên các chủ đầu tư có năng lực tài chính bền vững.",
+  "key_facts": [
+    "Lãi suất vay mua nhà tại một số ngân hàng chạm ngưỡng cao kỷ lục 15-16%/năm.",
+    "Nguồn cung căn hộ mới trong Q1/2026 đạt khoảng 6.108 căn, giảm mạnh cả theo quý và theo năm.",
+    "Phân khúc căn hộ hạng B (tầm trung) chiếm tỷ trọng áp đảo với 79% tổng lượng giao dịch.",
+    "Thanh khoản thị trường suy giảm do tâm lý thận trọng và thời gian ra quyết định của nhà đầu tư kéo dài.",
+    "Xu hướng M&A gia tăng khi các chủ đầu tư mạnh thâu tóm dự án từ các đơn vị thiếu hụt dòng tiền."
+  ],
+  "sentiment": "Tiêu cực",
+  "chain_of_thought": "Dữ liệu được trích xuất từ báo cáo của Savills Việt Nam trong bối cảnh giả định Quý 1/2026. Nguồn tin có độ tin cậy cao về mặt chuyên môn bất động sản. Đánh giá vĩ mô cho thấy thị trường đang chịu 'cú sốc' lãi suất (15-16%), dẫn đến chi phí vốn (WACC) tăng vọt, bóp nghẹt thanh khoản và khả năng trả nợ của cả chủ đầu tư lẫn người mua. Sự sụt giảm nguồn cung xuống mức 6.108 căn và sự thống trị của phân khúc hạng B (79%) phản ánh xu hướng phòng thủ và nhu cầu thực. Đây là giai đoạn 'thanh lọc tự nhiên' (market consolidation) khắc nghiệt nhưng cần thiết để loại bỏ các thực thể yếu kém, thâm dụng đòn bẩy quá mức."
+}
+--------------------------------------------------
+
+--- KET QUA 28 ---
+URL: https://www.savills.com.vn/blog/article/235340/vietnam-eng/hcmc-real-estate-market-q1-2026-macro-resilience-and-liquidity-shakeout-amidst-real-demand.aspx
+TIEU DE: Báo cáo Thị trường Bất động sản Việt Nam Q1/2026: Phép thử từ áp lực lãi suất và sự phân hóa dòng tiền
+TOM TAT: Thị trường bất động sản quý 1/2026 bước vào giai đoạn thanh lọc mạnh mẽ (stress test). Dù các chỉ số vĩ mô như GDP và FDI đạt mức ấn tượng, áp lực từ lãi suất vay thả nổi lên đến 12% đã chấm dứt kỷ nguyên tiền rẻ, đẩy phân khúc nhà ở vào thế khó trong khi bất động sản thương mại và văn phòng vẫn giữ được sự ổn định nhờ nhu cầu thực từ khối ngoại.
+INSIGHT (JSON): {
+  "url": "https://www.savills.com.vn/blog/article/235340/vietnam-eng/hcmc-real-estate-market-q1-2026-macro-resilience-and-liquidity-shakeout-amidst-real-demand.aspx",
+  "notes": [
+    "Rủi ro thanh khoản: Người mua nhà đối mặt với áp lực trả nợ khi các gói ưu đãi lãi suất hết hạn.",
+    "Sự dịch chuyển chính sách: Các chủ đầu tư bỏ hỗ trợ lãi suất 0%, chuyển sang các gói lãi suất cố định 9-10%.",
+    "Cảnh báo: Thị trường đang thực hiện 'tự thanh lọc' (natural selection), chỉ những sản phẩm có giá trị vận hành thực mới tồn tại.",
+    "Mất cân đối: Có sự lệch pha giữa sức nóng của FDI và sự đóng băng cục bộ của dòng vốn tín dụng trong nước."
+  ],
+  "title": "Báo cáo Thị trường Bất động sản Việt Nam Q1/2026: Phép thử từ áp lực lãi suất và sự phân hóa dòng tiền",
+  "summary": "Thị trường bất động sản quý 1/2026 bước vào giai đoạn thanh lọc mạnh mẽ (stress test). Dù các chỉ số vĩ mô như GDP và FDI đạt mức ấn tượng, áp lực từ lãi suất vay thả nổi lên đến 12% đã chấm dứt kỷ nguyên tiền rẻ, đẩy phân khúc nhà ở vào thế khó trong khi bất động sản thương mại và văn phòng vẫn giữ được sự ổn định nhờ nhu cầu thực từ khối ngoại.",
+  "key_facts": [
+    "Tăng trưởng GDP đạt mức ấn tượng 7.8% trong Q1/2026.",
+    "Vốn FDI giải ngân đạt 5.4 tỷ USD, mức cao nhất trong vòng 5 năm qua.",
+    "Lãi suất thả nổi trên thị trường chạm ngưỡng 12%/năm, gây áp lực dòng tiền cực lớn.",
+    "Tỷ lệ hấp thụ phân khúc căn hộ giảm xuống còn 40% với nguồn cung mới hạn chế (1,900 căn).",
+    "Thị trường văn phòng giữ mức lấp đầy 88%, tập trung dịch chuyển về phía Thủ Thiêm.",
+    "Doanh thu bán lẻ hàng hóa và dịch vụ tại TP.HCM tăng 13% đạt 475 nghìn tỷ VNĐ."
+  ],
+  "sentiment": "Trung lập",
+  "chain_of_thought": "Dữ liệu được trích xuất từ báo cáo của Savills (đơn vị tư vấn uy tín), phản ánh bối cảnh vĩ mô quý 1/2026 với sự phân hóa rõ rệt. GDP tăng trưởng mạnh (7.8%) và FDI kỷ lục ($5.4 tỷ) cho thấy nền tảng sản xuất và niềm tin ngoại khối rất tốt. Tuy nhiên, rủi ro lớn nhất nằm ở khu vực tài chính khi kỷ nguyên lãi suất thấp kết thúc, lãi suất thả nổi chạm mức 12%, tạo ra một 'phép thử' (stress test) về khả năng chịu đựng của người mua nhà và tính thanh khoản của thị trường dân cư. Tôi đánh giá đây là giai đoạn thanh lọc cần thiết để đưa thị trường về giá trị thực, dù sẽ gây đau đớn cho các nhà đầu tư sử dụng đòn bẩy cao."
+}
+--------------------------------------------------
+
+--- KET QUA 29 ---
+URL: https://vn.savills.com.vn/research_articles/164027/234917-0
+TIEU DE: Thị trường Bất động sản Việt Nam Q1/2026: Phục hồi chọn lọc và Dịch chuyển cấu trúc
+TOM TAT: Thị trường bất động sản quý 1/2026 thể hiện sự bền bỉ trong bối cảnh vĩ mô ổn định và dòng vốn FDI duy trì. Điểm cốt lõi là tình trạng khan hiếm nguồn cung mới kéo dài tại các đô thị lớn, dẫn đến sự dịch chuyển nhu cầu sang các khu vực vệ tinh và các dự án có pháp lý minh bạch.
+INSIGHT (JSON): {
+  "url": "https://vn.savills.com.vn/research_articles/164027/234917-0",
+  "notes": [
+    "Áp lực giá tại khu vực trung tâm có thể đẩy mặt bằng giá vượt khả năng chi trả của phần lớn người dân.",
+    "Tâm lý người mua thận trọng hơn, đặt pháp lý và tiến độ xây dựng lên hàng đầu.",
+    "Rủi ro từ biến động kinh tế ngoại biên vẫn là yếu tố cần theo dõi sát sao đối với dòng vốn đầu tư."
+  ],
+  "title": "Thị trường Bất động sản Việt Nam Q1/2026: Phục hồi chọn lọc và Dịch chuyển cấu trúc",
+  "summary": "Thị trường bất động sản quý 1/2026 thể hiện sự bền bỉ trong bối cảnh vĩ mô ổn định và dòng vốn FDI duy trì. Điểm cốt lõi là tình trạng khan hiếm nguồn cung mới kéo dài tại các đô thị lớn, dẫn đến sự dịch chuyển nhu cầu sang các khu vực vệ tinh và các dự án có pháp lý minh bạch.",
+  "key_facts": [
+    "Công suất thuê văn phòng tại TP.HCM ổn định ở mức 88%, trong khi mảng bán lẻ duy trì trên 90% dù không có nguồn cung mới.",
+    "Ngành khách sạn phục hồi ấn tượng với công suất phòng đạt 80% nhờ sự quay lại của khách du lịch và hoạt động MICE.",
+    "Nhu cầu văn phòng tại Hà Nội tập trung mạnh vào khu vực phía Tây, phản ánh xu hướng phi tập trung hóa.",
+    "Giá bất động sản nhà ở chịu áp lực tăng do nguồn cung hạn chế và người mua ưu tiên các dự án có pháp lý rõ ràng.",
+    "Dòng vốn FDI và quy hoạch đô thị dài hạn là động lực chính thúc đẩy sự phát triển của các hành lang đô thị phía Bắc, Đông và Tây Hà Nội."
+  ],
+  "sentiment": "Tích cực",
+  "chain_of_thought": "Phân tích dựa trên báo cáo thị trường Q1/2026 từ Savills, đánh giá độ tin cậy cao của dữ liệu thông qua các chỉ số công suất thuê (80-90%) và xu hướng dịch chuyển dòng vốn FDI. Quá trình tư duy tập trung vào việc đối soát sự tương quan giữa ổn định vĩ mô và sự khan hiếm nguồn cung để dự báo áp lực giá trong Q2/2026."
+}
+--------------------------------------------------
+
+--- KET QUA 30 ---
+URL: https://www.globalpropertyguide.com/asia/vietnam/price-history
+TIEU DE: Báo cáo Thị trường Bất động sản Việt Nam: Điểm nóng 2026 và Áp lực chi phí vốn
+TOM TAT: Thị trường Bất động sản bước vào Q1 2026 với mức giá lập đỉnh mới nhưng đối mặt với sự chậm lại do chi phí vay tăng cao và siết chặt pháp lý. Sự lệch pha cung - cầu nghiêm trọng khi phân khúc bình dân biến mất, thay thế bởi các dự án hạng sang và đại đô thị.
+INSIGHT (JSON): {
+  "url": "https://www.globalpropertyguide.com/asia/vietnam/price-history",
+  "notes": [
+    "Rủi ro thanh khoản: Lãi suất thả nổi cao (12-14%) có thể gây ra làn sóng bán tháo hoặc nợ xấu từ các nhà đầu tư sử dụng đòn bẩy lớn.",
+    "Mất cân đối cung cầu: Phân khúc nhà ở giá rẻ gần như mất tích, 65% nguồn cung là căn hộ nhưng tập trung vào trung-cao cấp.",
+    "Rào cản pháp lý: Mặc dù có các luật mới, sự thiếu nhất quán trong thực thi vẫn khiến nhà đầu tư nước ngoài e dè.",
+    "Áp lực từ trần tín dụng: SBV kiểm soát chặt chẽ, tăng trưởng tín dụng BĐS không được vượt quá mức tăng trưởng chung của từng ngân hàng."
+  ],
+  "title": "Báo cáo Thị trường Bất động sản Việt Nam: Điểm nóng 2026 và Áp lực chi phí vốn",
+  "summary": "Thị trường Bất động sản bước vào Q1 2026 với mức giá lập đỉnh mới nhưng đối mặt với sự chậm lại do chi phí vay tăng cao và siết chặt pháp lý. Sự lệch pha cung - cầu nghiêm trọng khi phân khúc bình dân biến mất, thay thế bởi các dự án hạng sang và đại đô thị.",
+  "key_facts": [
+    "Giá căn hộ tại TP.HCM đạt trung bình 4.057 USD/m2 (tăng 24.3% YoY); tại Hà Nội tăng mạnh khoảng 40% trong năm 2025.",
+    "Tín dụng BĐS đạt 4.740 nghìn tỷ đồng tính đến cuối 2025, chiếm 25.5% tổng dư nợ toàn nền kinh tế (tăng từ mức 21.3% đầu năm).",
+    "Lãi suất cho vay thả nổi tại các ngân hàng thương mại vọt lên mức 12% - 14%/năm sau khi hết thời gian ưu đãi vào đầu năm 2026.",
+    "Nguồn cung mới tại Hà Nội năm 2026 dự kiến đạt 18.454 căn, chủ yếu là phân khúc hạng A và B.",
+    "Tăng trưởng GDP năm 2025 đạt 8.02%, nhưng dự báo quốc tế cho 2026 chỉ ở mức 5.6% - 6.3%.",
+    "Phân khúc nhà ở xã hội nhận được gói hỗ trợ 120 nghìn tỷ đồng với lãi suất ưu đãi 5.9% cho người mua trẻ trong năm 2025-2026."
+  ],
+  "sentiment": "Trung lập",
+  "chain_of_thought": "Dữ liệu được trích xuất từ Global Property Guide, tổng hợp từ các nguồn uy tín (JLL, Savills, CBRE, GSO). Số liệu cho thấy sự phục hồi mạnh mẽ về giá và giao dịch trong năm 2025, tạo tiền đề cho Q1 2026. Tuy nhiên, có sự mâu thuẫn giữa mục tiêu GDP của Chính phủ (10%+) và dự báo của IMF/World Bank (5.6-6.3%), cho thấy rủi ro tăng trưởng không đạt kỳ vọng. Đáng chú ý, lãi suất cho vay thực tế (12-14%) đang cao hơn nhiều so với lãi suất điều hành, tạo áp lực lớn lên khả năng chi trả trong Q2 2026. Tỷ trọng tín dụng BĐS chiếm 25.5% tổng dư nợ là mức cao, cần giám sát chặt chẽ rủi ro hệ thống."
+}
+--------------------------------------------------
+
+--- KET QUA 31 ---
+URL: https://www.savills.com.vn/research_articles/163944/234917-0
+TIEU DE: Báo cáo Thị trường Bất động sản Việt Nam Q1/2026 và Triển vọng Q2/2026
+TOM TAT: Thị trường bất động sản Việt Nam Q1/2026 duy trì sự ổn định nhờ nền tảng vĩ mô vững chắc và dòng vốn FDI liên tục, dù phải đối mặt với tình trạng nguồn cung hạn chế tại các đô thị lớn. Sự phục hồi diễn ra không đồng đều, ưu tiên các dự án có pháp lý minh bạch và các phân khúc dịch vụ như khách sạn, văn phòng hạng A.
+INSIGHT (JSON): {
+  "url": "https://www.savills.com.vn/research_articles/163944/234917-0",
+  "notes": [
+    "Rủi ro pháp lý: Người mua ngày càng thận trọng, ưu tiên tuyệt đối các dự án có tình trạng pháp lý rõ ràng.",
+    "Điểm nghẽn nguồn cung: Tình trạng thiếu hụt nguồn cung mới tại khu vực trung tâm có thể kìm hãm thanh khoản thị trường trong ngắn hạn.",
+    "Biến động ngoại biên: Áp lực từ lạm phát và chi phí chuỗi cung ứng vẫn là những yếu tố cần theo dõi chặt chẽ trong Q2/2026."
+  ],
+  "title": "Báo cáo Thị trường Bất động sản Việt Nam Q1/2026 và Triển vọng Q2/2026",
+  "summary": "Thị trường bất động sản Việt Nam Q1/2026 duy trì sự ổn định nhờ nền tảng vĩ mô vững chắc và dòng vốn FDI liên tục, dù phải đối mặt với tình trạng nguồn cung hạn chế tại các đô thị lớn. Sự phục hồi diễn ra không đồng đều, ưu tiên các dự án có pháp lý minh bạch và các phân khúc dịch vụ như khách sạn, văn phòng hạng A.",
+  "key_facts": [
+    "Tại TP.HCM, tỷ lệ lấp đầy phân khúc bán lẻ duy trì mức cao trên 90%, văn phòng đạt 88% dù nguồn cung mới hạn chế.",
+    "Ngành khách sạn phục hồi mạnh mẽ với công suất phòng đạt 80% tại TP.HCM nhờ sự trở lại của du lịch và hoạt động MICE.",
+    "Thị trường Hà Nội chuyển dịch sang mô hình đa trung tâm, tập trung phát triển tại các hành lang phía Bắc, Đông và Tây.",
+    "Giá bất động sản nhà ở chịu áp lực tăng do nguồn cung sơ cấp khan hiếm, thúc đẩy xu hướng dịch chuyển sang các khu đô thị vệ tinh.",
+    "Dòng vốn FDI và quy hoạch đô thị dài hạn là động lực chính thúc đẩy sự ổn định tại thị trường Hà Nội."
+  ],
+  "sentiment": "Trung lập",
+  "chain_of_thought": "Quá trình phân tích dựa trên dữ liệu báo cáo thị trường từ Savills Q1/2026, một nguồn tin uy tín trong lĩnh vực bất động sản. Tư duy tập trung vào việc đối chiếu giữa sự khan hiếm nguồn cung thực tế và sự phục hồi có chọn lọc của cầu, từ đó đánh giá tác động của dòng vốn FDI và xu hướng dịch chuyển địa lý (decentralization) đến triển vọng vĩ mô trong quý tiếp theo."
+}
+--------------------------------------------------
+
+--- KET QUA 32 ---
+URL: https://www.savills.co.uk/research_articles/229130/234917-1
+TIEU DE: Báo cáo Thị trường Bất động sản Việt Nam Q1/2026 và Triển vọng Quý tới
+TOM TAT: Thị trường bất động sản Q1/2026 thể hiện sự kiên cường trong bối cảnh vĩ mô ổn định nhưng nguồn cung vẫn bị thắt chặt. Điểm nhấn chính là sự dịch chuyển nhu cầu sang các khu vực vệ tinh và sự hồi phục mạnh mẽ của phân khúc khách sạn, trong khi tâm lý người mua nhà ở trở nên thận trọng hơn đối với các rào cản pháp lý và giá cả.
+INSIGHT (JSON): {
+  "url": "https://www.savills.co.uk/research_articles/229130/234917-1",
+  "notes": [
+    "Rủi ro thanh khoản ở phân khúc nhà ở do giá quá cao và tâm lý người mua thận trọng.",
+    "Sự gián đoạn cung ứng nguồn cung mới do rào cản pháp lý chưa được tháo gỡ hoàn toàn.",
+    "Áp lực biến động kinh tế thế giới có thể ảnh hưởng đến dòng vốn FDI và nhu cầu thuê văn phòng trong dài hạn."
+  ],
+  "title": "Báo cáo Thị trường Bất động sản Việt Nam Q1/2026 và Triển vọng Quý tới",
+  "summary": "Thị trường bất động sản Q1/2026 thể hiện sự kiên cường trong bối cảnh vĩ mô ổn định nhưng nguồn cung vẫn bị thắt chặt. Điểm nhấn chính là sự dịch chuyển nhu cầu sang các khu vực vệ tinh và sự hồi phục mạnh mẽ của phân khúc khách sạn, trong khi tâm lý người mua nhà ở trở nên thận trọng hơn đối với các rào cản pháp lý và giá cả.",
+  "key_facts": [
+    "Tại TP.HCM, tỷ lệ lấp đầy phân khúc bán lẻ duy trì trên mức 90% và văn phòng đạt 88%.",
+    "Phân khúc khách sạn TP.HCM đạt tỷ lệ lấp đầy 80% nhờ sự phục hồi của du lịch và nguồn cung mới hạn chế.",
+    "Hà Nội ghi nhận dòng vốn FDI ổn định và xu hướng dịch chuyển đa trung tâm sang phía Bắc, Đông và Tây.",
+    "Nguồn cung nhà ở tại cả hai thành phố lớn tiếp tục khan hiếm, gây áp lực tăng giá bất chấp khối lượng giao dịch giảm.",
+    "Lực cầu văn phòng tại Hà Nội tập trung mạnh vào khu vực phía Tây; tại TP.HCM là khu vực CBD và Thủ Thiêm (nhóm Tài chính, Công nghệ)."
+  ],
+  "sentiment": "Trung lập",
+  "chain_of_thought": "Quá trình phân tích dựa trên dữ liệu báo cáo thị trường từ Savills Q1/2026, một nguồn tin uy tín trong ngành bất động sản. Tư duy tập trung vào việc đối chiếu giữa các chỉ số vận hành (tỷ lệ lấp đầy, giá thuê) và bối cảnh vĩ mô ổn định để dự báo xu hướng dịch chuyển từ vùng lõi sang các khu vực vệ tinh. Đánh giá này nhấn mạnh tính xác thực của việc thiếu hụt nguồn cung sơ cấp và sự lên ngôi của các phân khúc tạo ra dòng tiền như văn phòng và khách sạn."
+}
+--------------------------------------------------
+
+--- KET QUA 33 ---
+URL: https://www.cbrevietnam.com/vi-vn/insights
+TIEU DE: Báo cáo Triển vọng Thị trường Bất động sản Việt Nam và Dữ liệu Chuyên sâu CBRE
+TOM TAT: Nội dung cung cấp cái nhìn tổng quan về thị trường bất động sản Việt Nam năm 2025 dựa trên phân tích dữ liệu chuyên sâu của CBRE, tập trung vào mảng văn phòng và trung tâm dữ liệu, đồng thời giới thiệu các công cụ dự báo và đội ngũ chuyên gia tư vấn.
+INSIGHT (JSON): {
+  "url": "https://www.cbrevietnam.com/vi-vn/insights",
+  "notes": [
+    "Dữ liệu trong văn bản hiện chỉ đề cập đến mốc thời gian năm 2025, chưa có số liệu chi tiết cụ thể cho Quý 1 và Quý 2 năm 2026 như yêu cầu.",
+    "Rủi ro: Phân khúc văn phòng Hạng B đang chịu áp lực cạnh tranh lớn từ nguồn cung mới."
+  ],
+  "title": "Báo cáo Triển vọng Thị trường Bất động sản Việt Nam và Dữ liệu Chuyên sâu CBRE",
+  "summary": "Nội dung cung cấp cái nhìn tổng quan về thị trường bất động sản Việt Nam năm 2025 dựa trên phân tích dữ liệu chuyên sâu của CBRE, tập trung vào mảng văn phòng và trung tâm dữ liệu, đồng thời giới thiệu các công cụ dự báo và đội ngũ chuyên gia tư vấn.",
+  "key_facts": [
+    "Số lượng ý chính: 4 ý chính.",
+    "Thị trường Trung tâm dữ liệu (Data Center) tại Việt Nam năm 2025 là phân khúc nghiên cứu trọng tâm mới.",
+    "Phân khúc văn phòng ghi nhận xu hướng mở rộng chiếm 49% tổng diện tích giao dịch cho thuê lớn.",
+    "Thị trường văn phòng Hà Nội ổn định, văn phòng Hạng A có hiệu suất tốt hơn so với Hạng B.",
+    "Hệ thống dữ liệu CBRE tích hợp sức mạnh dự báo từ hơn 500 chuyên gia nghiên cứu và các cố vấn kinh tế lượng toàn cầu."
+  ],
+  "sentiment": "Tích cực"
+}
+--------------------------------------------------
+
+--- KET QUA 34 ---
+URL: https://www.avisonyoung.vn/vi/news-release/-/article/2026/04/10/quarterly-report-of-vietnam-real-estate-quarter-i-2026
+TIEU DE: Báo cáo Thị trường Bất động sản Việt Nam Quý 1/2026: Giai đoạn sàng lọc và chuyển dịch chiến lược
+TOM TAT: Thị trường BĐS Việt Nam trong Q1/2026 chứng kiến sự chuyển mình mạnh mẽ từ trạng thái 'thăm dò' sang 'đầu tư chiến lược'. Mặc dù phân khúc nhà ở gặp thách thức về thanh khoản do lãi suất cao, các phân khúc BĐS công nghiệp, văn phòng và nghỉ dưỡng vẫn duy trì đà tăng trưởng tích cực nhờ nền tảng hạ tầng và phục hồi du lịch.
+INSIGHT (JSON): {
+  "url": "https://www.avisonyoung.vn/vi/news-release/-/article/2026/04/10/quarterly-report-of-vietnam-real-estate-quarter-i-2026",
+  "notes": [
+    "Lãi suất vay tăng mạnh và biến động kinh tế vĩ mô gây áp lực lớn lên thanh khoản thị trường nhà ở.",
+    "Thị trường bước vào chu kỳ sàng lọc khắt khe, ưu tiên pháp lý minh bạch và nhu cầu thực thay vì đầu cơ.",
+    "Nguồn cung nhà ở trong tương lai có xu hướng dịch chuyển mạnh ra các khu vực vệ tinh và đô thị ngoài trung tâm.",
+    "Rủi ro về tiến độ giải phóng mặt bằng có thể ảnh hưởng đến nguồn cung bất động sản công nghiệp trong tương lai."
+  ],
+  "title": "Báo cáo Thị trường Bất động sản Việt Nam Quý 1/2026: Giai đoạn sàng lọc và chuyển dịch chiến lược",
+  "summary": "Thị trường BĐS Việt Nam trong Q1/2026 chứng kiến sự chuyển mình mạnh mẽ từ trạng thái 'thăm dò' sang 'đầu tư chiến lược'. Mặc dù phân khúc nhà ở gặp thách thức về thanh khoản do lãi suất cao, các phân khúc BĐS công nghiệp, văn phòng và nghỉ dưỡng vẫn duy trì đà tăng trưởng tích cực nhờ nền tảng hạ tầng và phục hồi du lịch.",
+  "key_facts": [
+    "Vốn FDI giải ngân vào bất động sản đạt 389,5 triệu USD, chiếm 7,2% tổng vốn FDI.",
+    "Giá căn hộ sơ cấp tại Hà Nội và TP.HCM lập đỉnh mới (trung bình khoảng 3.900 - 3.950 USD/m2) nhưng thanh khoản chậm lại.",
+    "Bất động sản công nghiệp tại TP.HCM đạt tỷ lệ lấp đầy 93% nhờ đẩy mạnh đầu tư hạ tầng giao thông trọng điểm.",
+    "Phân khúc khách sạn và nghỉ dưỡng 'bội thu' với công suất phòng tại Đà Nẵng đạt mức 85-88%.",
+    "Bất động sản bán lẻ tăng trưởng 10,9% nhờ sức mua nội địa và sự gia nhập của các thương hiệu quốc tế như Bershka, Hermès.",
+    "Thị trường văn phòng hạng A duy trì tỷ lệ lấp đầy trên 90%, ưu tiên các tiêu chuẩn xanh và vận hành chất lượng cao."
+  ],
+  "sentiment": "Trung lập"
+}
+--------------------------------------------------
+
+--- KET QUA 35 ---
+URL: https://www.lpbs.com.vn/upload/files/Investment%20Daily_20260504(1).pdf
+TIEU DE: Thị trường bất động sản Việt Nam quý 1/2026 và triển vọng quý 2/2026
+TOM TAT: Thị trường bất động sản Q1/2026 bước vào giai đoạn phục hồi với sự phân hóa rõ nét, được hỗ trợ mạnh mẽ bởi các cải cách pháp lý như Nghị quyết 16/2026/NQ-CP. Các doanh nghiệp đầu ngành ghi nhận sự tăng trưởng đột biến về doanh thu và lợi nhuận, đặc biệt trong mảng môi giới và hạ tầng (BOT), mở ra triển vọng khả quan cho quý 2/2026 dù vẫn còn áp lực về nợ vay.
+INSIGHT (JSON): {
+  "url": "https://www.lpbs.com.vn/upload/files/Investment%20Daily_20260504(1).pdf",
+  "notes": [
+    "Rủi ro pháp lý trong việc xác định giá đất tại các khu vực trọng điểm (như Thủ Thiêm) có thể kéo dài tiến độ dự án.",
+    "Áp lực tài chính lớn với hệ số nợ/vốn chủ sở hữu cao ở một số doanh nghiệp (ví dụ CII ở mức 2,13 lần).",
+    "Tâm lý thị trường chứng khoán còn thận trọng do áp lực chốt lời ngắn hạn và khối ngoại duy trì bán ròng."
+  ],
+  "title": "Thị trường bất động sản Việt Nam quý 1/2026 và triển vọng quý 2/2026",
+  "summary": "Thị trường bất động sản Q1/2026 bước vào giai đoạn phục hồi với sự phân hóa rõ nét, được hỗ trợ mạnh mẽ bởi các cải cách pháp lý như Nghị quyết 16/2026/NQ-CP. Các doanh nghiệp đầu ngành ghi nhận sự tăng trưởng đột biến về doanh thu và lợi nhuận, đặc biệt trong mảng môi giới và hạ tầng (BOT), mở ra triển vọng khả quan cho quý 2/2026 dù vẫn còn áp lực về nợ vay.",
+  "key_facts": [
+    "Q1/2026 ghi nhận sự phục hồi đi kèm phân hóa rõ rệt giữa các phân khúc và khu vực địa lý.",
+    "Nghị quyết 16/2026/NQ-CP là bước ngoặt pháp lý giúp khơi thông mô hình BT và tái định hình chu kỳ đầu tư hạ tầng.",
+    "Nguồn cung nhà ở được mở rộng nhờ việc tháo gỡ các dự án tồn đọng, tập trung vào phân khúc đáp ứng nhu cầu thực.",
+    "Mảng môi giới bất động sản (điển hình là DXS) tăng trưởng mạnh với lợi nhuận sau thuế tăng gần 7 lần so với cùng kỳ.",
+    "Mảng BOT và đầu tư công (điển hình là CII) tiếp tục là động lực tăng trưởng cốt lõi nhờ lưu lượng xe tăng và điều chỉnh phí."
+  ],
+  "sentiment": "Tích cực"
+}
+--------------------------------------------------
+
+--- KET QUA 36 ---
+URL: https://www.facebook.com/avisonyoungvietnam/posts/-b%C3%A1o-c%C3%A1o-nghi%C3%AAn-c%E1%BB%A9u-th%E1%BB%8B-tr%C6%B0%E1%BB%9Dng-b%E1%BA%A5t-%C4%91%E1%BB%99ng-s%E1%BA%A3n-vi%E1%BB%87t-nam-qu%C3%BD-12026-ch%C3%ADnh-th%E1%BB%A9c-ra-m%E1%BA%AFt/810271732155182/
+TIEU DE: Báo cáo Thị trường Bất động sản Việt Nam Quý 1/2026 và Triển vọng Quý 2/2026
+TOM TAT: Tóm tắt báo cáo nghiên cứu thị trường về diễn biến các phân khúc bất động sản chủ chốt trong 3 tháng đầu năm 2026, tập trung vào các chỉ số vận hành và nhận định xu hướng đầu tư trong tương lai.
+INSIGHT (JSON): {
+  "url": "https://www.facebook.com/avisonyoungvietnam/posts/-b%C3%A1o-c%C3%A1o-nghi%C3%AAn-c%E1%BB%A9u-th%E1%BB%8B-tr%C6%B0%E1%BB%9Dng-b%E1%BA%A5t-%C4%91%E1%BB%99ng-s%E1%BA%A3n-vi%E1%BB%87t-nam-qu%C3%BD-12026-ch%C3%ADnh-th%E1%BB%A9c-ra-m%E1%BA%AFt/810271732155182/",
+  "notes": [
+    "Thị trường đang trong bối cảnh thay đổi nhanh chóng, đòi hỏi việc cập nhật dữ liệu liên tục",
+    "Cần lưu ý các yếu tố chi phối triển vọng riêng biệt của từng phân khúc để tối ưu hóa quyết định đầu tư"
+  ],
+  "title": "Báo cáo Thị trường Bất động sản Việt Nam Quý 1/2026 và Triển vọng Quý 2/2026",
+  "summary": "Tóm tắt báo cáo nghiên cứu thị trường về diễn biến các phân khúc bất động sản chủ chốt trong 3 tháng đầu năm 2026, tập trung vào các chỉ số vận hành và nhận định xu hướng đầu tư trong tương lai.",
+  "key_facts": [
+    "Công bố chính thức báo cáo Nghiên cứu Thị trường BĐS Việt Nam Quý 1/2026",
+    "Phân tích toàn diện các phân khúc chủ đạo thông qua các chỉ số: cung - cầu, mặt bằng giá và tính thanh khoản",
+    "Đánh giá các yếu tố chi phối triển vọng của từng phân khúc thị trường trong giai đoạn tới",
+    "Cung cấp thông tin giúp nhà đầu tư nắm bắt cơ hội trong bối cảnh thị trường có nhiều biến động"
+  ],
+  "sentiment": "Tích cực"
+}
+--------------------------------------------------
+
+--- KET QUA 37 ---
+URL: https://m.cafef.vn/thi-truong-bat-dong-san-quy-i-2026-phuc-hoi-nguon-cung-buoc-vao-chu-ky-sang-loc-188260421080524436.chn
+TIEU DE: Thị trường bất động sản quý I/2026: Phục hồi nguồn cung, bước vào chu kỳ “sàng lọc”
+TOM TAT: Thị trường bất động sản Việt Nam quý 1/2026 ghi nhận sự phục hồi mạnh mẽ về nguồn cung với 52.000 sản phẩm, gấp 2,5 lần cùng kỳ năm 2025. Tuy nhiên, thị trường đang bước vào giai đoạn sàng lọc khắc nghiệt khi thanh khoản không còn chạy theo giá mà phụ thuộc vào giá trị sử dụng thực và khả năng khai thác dòng tiền. Phân khúc căn hộ chung cư tiếp tục giữ vai trò chủ đạo, chiếm 69% lượng giao dịch toàn thị trường. Dù đối mặt với áp lực chi phí đầu vào và tâm lý thận trọng từ nhà đầu tư, thị trường đang tái cấu trúc theo hướng minh bạch và bền vững hơn. Triển vọng dài hạn vẫn tích cực nhờ sự đầu tư hạ tầng và các mô hình đô thị mới như TOD và công trình xanh.
+INSIGHT (JSON): {
+  "url": "https://m.cafef.vn/thi-truong-bat-dong-san-quy-i-2026-phuc-hoi-nguon-cung-buoc-vao-chu-ky-sang-loc-188260421080524436.chn",
+  "title": "Thị trường bất động sản quý I/2026: Phục hồi nguồn cung, bước vào chu kỳ “sàng lọc”",
+  "summary": "Thị trường bất động sản Việt Nam quý 1/2026 ghi nhận sự phục hồi mạnh mẽ về nguồn cung với 52.000 sản phẩm, gấp 2,5 lần cùng kỳ năm 2025. Tuy nhiên, thị trường đang bước vào giai đoạn sàng lọc khắc nghiệt khi thanh khoản không còn chạy theo giá mà phụ thuộc vào giá trị sử dụng thực và khả năng khai thác dòng tiền. Phân khúc căn hộ chung cư tiếp tục giữ vai trò chủ đạo, chiếm 69% lượng giao dịch toàn thị trường. Dù đối mặt với áp lực chi phí đầu vào và tâm lý thận trọng từ nhà đầu tư, thị trường đang tái cấu trúc theo hướng minh bạch và bền vững hơn. Triển vọng dài hạn vẫn tích cực nhờ sự đầu tư hạ tầng và các mô hình đô thị mới như TOD và công trình xanh.",
+  "key_facts": [
+    "Nguồn cung mới đạt khoảng 38.000 sản phẩm, gấp 2,5 lần so với cùng kỳ năm 2025.",
+    "Toàn thị trường ghi nhận 24.000 giao dịch thành công, tỷ lệ hấp thụ nguồn cung sơ cấp đạt 47%.",
+    "Căn hộ chung cư là phân khúc dẫn dắt thị trường, đóng góp 69% tổng lượng giao dịch.",
+    "Giá bán vẫn neo ở mức cao do áp lực chi phí đất đai, tài chính và nguyên vật liệu gia tăng.",
+    "Người mua chuyển dịch ưu tiên sang các sản phẩm có pháp lý minh bạch và đáp ứng nhu cầu ở thực.",
+    "Thị trường đang tái cấu trúc theo 6 xu hướng chủ đạo bao gồm: nguồn cung, không gian phát triển, kênh vốn, hành vi người mua, lực cầu và cơ chế vận hành."
+  ],
+  "sentiment": "Trung lập"
+}
+--------------------------------------------------
+
+--- KET QUA 38 ---
+URL: https://vn.savills.com.vn/research_articles/164027/234979-0
+TIEU DE: Thị trường bất động sản Việt Nam quý 1 2026 và triển vọng quý 2 2026
+TOM TAT: Thị trường bất động sản Việt Nam trong Q1/2026 duy trì sự ổn định và đang bước vào giai đoạn tái cấu trúc mạnh mẽ. Tại TP.HCM, nguồn cung hạn chế là yếu tố chi phối chính, trong khi Hà Nội đang dịch chuyển theo hướng đa cực và chú trọng chất lượng. Các phân khúc văn phòng, bán lẻ và khách sạn ghi nhận những tín hiệu phục hồi tích cực nhờ nền tảng vĩ mô và dòng vốn FDI ổn định.
+INSIGHT (JSON): {
+  "url": "https://vn.savills.com.vn/research_articles/164027/234979-0",
+  "notes": [
+    "Nguồn cung nhà ở mới tiếp tục hạn chế tạo áp lực tăng giá trong ngắn và trung hạn.",
+    "Tâm lý người mua trở nên thận trọng hơn, đặt ưu tiên hàng đầu vào pháp lý và tiến độ dự án.",
+    "Sự rút lui của một số khách thuê lớn tại mảng bán lẻ TP.HCM là một dấu hiệu cần theo dõi."
+  ],
+  "title": "Thị trường bất động sản Việt Nam quý 1 2026 và triển vọng quý 2 2026",
+  "summary": "Thị trường bất động sản Việt Nam trong Q1/2026 duy trì sự ổn định và đang bước vào giai đoạn tái cấu trúc mạnh mẽ. Tại TP.HCM, nguồn cung hạn chế là yếu tố chi phối chính, trong khi Hà Nội đang dịch chuyển theo hướng đa cực và chú trọng chất lượng. Các phân khúc văn phòng, bán lẻ và khách sạn ghi nhận những tín hiệu phục hồi tích cực nhờ nền tảng vĩ mô và dòng vốn FDI ổn định.",
+  "key_facts": [
+    "Nền kinh tế Việt Nam thể hiện khả năng chống chịu tốt, tạo bệ đỡ cho thị trường bất động sản.",
+    "Tại TP.HCM, tỷ lệ lấp đầy văn phòng và bán lẻ duy trì mức cao trên 90% dù nguồn cung mới khan hiếm.",
+    "Phân khúc khách sạn phục hồi mạnh mẽ với công suất đạt khoảng 80% nhờ sự tăng trưởng của du lịch và MICE.",
+    "Thị trường nhà ở tại cả hai thành phố lớn đều ghi nhận xu hướng dịch chuyển ra vùng vệ tinh và các hành lang phát triển mới.",
+    "Thị trường Hà Nội đang tái cấu trúc diện rộng, tập trung vào xu hướng phi tập trung hóa và nâng cao trải nghiệm khách hàng."
+  ],
+  "sentiment": "Tích cực"
+}
+--------------------------------------------------
+
+--- KET QUA 39 ---
+URL: https://www.imarcgroup.com/report/vi/vietnam-electric-car-market
+TIEU DE: Thị trường xe điện Việt Nam: Quy mô, Động lực và Triển vọng 2024-2033
+TOM TAT: Thị trường xe điện (EV) tại Việt Nam đang bước vào giai đoạn tăng trưởng bùng nổ, với quy mô định giá 3,02 tỷ USD năm 2024 và dự kiến đạt 12,23 tỷ USD vào năm 2033, tương ứng với tốc độ tăng trưởng kép hàng năm (CAGR) đạt 16,81%. Động lực chính đến từ các chính sách hỗ trợ mạnh mẽ của Chính phủ như miễn phí trước bạ, giảm thuế và đề xuất trợ cấp 1.000 USD cho người mua xe. Sự tham gia tích cực của các doanh nghiệp nội địa như VinFast cùng các hãng xe quốc tế từ châu Á và châu Âu đang làm đa dạng hóa phân khúc từ tầm trung đến cao cấp. Hạ tầng trạm sạc đang được mở rộng nhanh chóng, đặc biệt tại miền Bắc và các đô thị lớn như TP.HCM. Mặc dù còn thách thức về hạ tầng nông thôn, nhưng xu hướng tiêu dùng bền vững và mục tiêu phát thải ròng bằng 0 vào năm 2050 đang tạo nền tảng vững chắc cho hệ sinh thái xe điện tại Việt Nam.
+INSIGHT (JSON): {
+  "title": "Thị trường xe điện Việt Nam: Quy mô, Động lực và Triển vọng 2024-2033",
+  "summary": "Thị trường xe điện (EV) tại Việt Nam đang bước vào giai đoạn tăng trưởng bùng nổ, với quy mô định giá 3,02 tỷ USD năm 2024 và dự kiến đạt 12,23 tỷ USD vào năm 2033, tương ứng với tốc độ tăng trưởng kép hàng năm (CAGR) đạt 16,81%. Động lực chính đến từ các chính sách hỗ trợ mạnh mẽ của Chính phủ như miễn phí trước bạ, giảm thuế và đề xuất trợ cấp 1.000 USD cho người mua xe. Sự tham gia tích cực của các doanh nghiệp nội địa như VinFast cùng các hãng xe quốc tế từ châu Á và châu Âu đang làm đa dạng hóa phân khúc từ tầm trung đến cao cấp. Hạ tầng trạm sạc đang được mở rộng nhanh chóng, đặc biệt tại miền Bắc và các đô thị lớn như TP.HCM. Mặc dù còn thách thức về hạ tầng nông thôn, nhưng xu hướng tiêu dùng bền vững và mục tiêu phát thải ròng bằng 0 vào năm 2050 đang tạo nền tảng vững chắc cho hệ sinh thái xe điện tại Việt Nam.",
+  "key_facts": [
+    "Quy mô thị trường năm 2024 đạt 3,02 tỷ USD và dự báo đạt 12,23 tỷ USD vào năm 2033.",
+    "Tốc độ tăng trưởng kép hàng năm (CAGR) giai đoạn 2025-2033 đạt mức 16,81%.",
+    "Việt Nam cần đầu tư khoảng 9 tỷ USD vào ngành điện đến năm 2030 và 14 tỷ USD mỗi năm giai đoạn 2031-2050 để hỗ trợ xe điện.",
+    "Xe điện chạy pin (BEV) và phân khúc xe tầm trung hiện đang dẫn dắt sự chuyển đổi của thị trường nhờ chi phí vận hành thấp.",
+    "Miền Bắc hiện dẫn đầu cả nước về tỷ lệ áp dụng xe điện nhờ mật độ dân số và hạ tầng trạm sạc phát triển sớm.",
+    "Chính sách chính phủ đóng vai trò then chốt với các ưu đãi thuế, phí đăng ký và kế hoạch chiến lược dài hạn."
+  ],
+  "sentiment": "Tích cực"
+}
+--------------------------------------------------
+
+--- KET QUA 40 ---
 URL: https://medialabs.asia/marketplace/kpmg-the-ev-2024-report-of-vietnams-market-bao-cao-ve-thi-truong-xe-dien-tai-viet-nam-nam-2024-887
 TIEU DE: Báo cáo Thị trường Xe điện Việt Nam 2024 (KPMG & Chợ Tốt Xe)
 TOM TAT: Báo cáo 'The EV 2024 Report: Vietnam's Market' do KPMG Việt Nam và Chợ Tốt Xe phối hợp thực hiện dựa trên khảo sát hơn 1.000 người tiêu dùng và các đại lý xe. Nội dung chính tập trung vào sự tăng trưởng nhanh chóng của thị trường xe điện tại Việt Nam, đặc biệt là sự chuyển dịch trong tư duy mua sắm của thế hệ trẻ như Gen Z và Millennials. Báo cáo phân tích các yếu tố then chốt ảnh hưởng đến quyết định mua hàng như độ bền, hiệu suất và hạ tầng trạm sạc. Ngoài ra, nghiên cứu còn chỉ ra triển vọng lạc quan về việc Việt Nam có thể trở thành trung tâm sản xuất xe điện của khu vực trong tương lai gần nhờ vào các hiệp định thương mại và năng lực sản xuất đang được mở rộng.
+INSIGHT (JSON): {
+  "title": "Báo cáo Thị trường Xe điện Việt Nam 2024 (KPMG & Chợ Tốt Xe)",
+  "summary": "Báo cáo 'The EV 2024 Report: Vietnam's Market' do KPMG Việt Nam và Chợ Tốt Xe phối hợp thực hiện dựa trên khảo sát hơn 1.000 người tiêu dùng và các đại lý xe. Nội dung chính tập trung vào sự tăng trưởng nhanh chóng của thị trường xe điện tại Việt Nam, đặc biệt là sự chuyển dịch trong tư duy mua sắm của thế hệ trẻ như Gen Z và Millennials. Báo cáo phân tích các yếu tố then chốt ảnh hưởng đến quyết định mua hàng như độ bền, hiệu suất và hạ tầng trạm sạc. Ngoài ra, nghiên cứu còn chỉ ra triển vọng lạc quan về việc Việt Nam có thể trở thành trung tâm sản xuất xe điện của khu vực trong tương lai gần nhờ vào các hiệp định thương mại và năng lực sản xuất đang được mở rộng.",
+  "key_facts": [
+    "Nhóm khách hàng Gen Z và Millennials là đối tượng chính sẵn sàng chi trả cho xe điện hoàn toàn hoặc xe hybrid.",
+    "Hệ thống trạm sạc rộng rãi và dễ tiếp cận là yếu tố quan trọng nhất quyết định việc mua xe điện.",
+    "Độ bền, hiệu suất, sự thoải mái và không gian nội thất là những tiêu chí hàng đầu khi người tiêu dùng lựa chọn xe.",
+    "Việt Nam có tiềm năng lớn để trở thành trung tâm sản xuất xe điện khu vực nhờ năng lực sản xuất và các hiệp định thương mại hiện có."
+  ],
+  "sentiment": "Tích cực"
+}
 --------------------------------------------------
 

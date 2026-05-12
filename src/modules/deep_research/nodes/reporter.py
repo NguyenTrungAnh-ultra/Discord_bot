@@ -7,7 +7,7 @@ def report_node(state: ResearchState):
     """Generates the final research report based on collected insights."""
     client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
     # Switched to gemini-flash-latest to avoid quota issues
-    model = "gemini-flash-latest"
+    model = "gemma-4-26b-a4b-it"
     
     insights = state.get("insights", [])
     if not insights:
