@@ -14,17 +14,19 @@ async def test_company_research():
     app = create_company_graph()
     
     # Cấu hình State ban đầu
-    # is_mock=True giúp chạy test luồng code mà KHÔNG GỌI API LLM (Tiết kiệm token)
     initial_state = {
-        "ticker": "FPT",
-        "is_mock": True,
+        "ticker": "TCB",
         "business_profile": None,
         "financial_data": None,
         "financial_insight": None,
-        "final_memo": None
+        "final_memo": None,
+        "total_input_tokens": 0,
+        "total_output_tokens": 0,
+        "total_requests": 0,
+        "node_tokens": {}
     }
     
-    print(f"Bắt đầu chạy kịch bản Mock cho mã: {initial_state['ticker']}...")
+    print(f"Bắt đầu chạy kịch bản Real cho mã: {initial_state['ticker']}...")
     
     # Chạy Graph
     final_state = await app.ainvoke(initial_state)
@@ -33,6 +35,23 @@ async def test_company_research():
     print("KẾT QUẢ BÁO CÁO CUỐI CÙNG (FINAL MEMO):")
     print(final_state.get("final_memo"))
     print("="*50)
+    
+    print("\n" + "-"*50)
+    print("THỐNG KÊ TÀI NGUYÊN SỬ DỤNG:")
+    print(f"- Tổng số Input Token  (ước tính): {final_state.get('total_input_tokens')}")
+    print(f"- Tổng số Output Token (ước tính): {final_state.get('total_output_tokens')}")
+    print(f"- Tổng số Request gửi đi         : {final_state.get('total_requests')}")
+    
+    node_tokens = final_state.get('node_tokens', {})
+    if node_tokens:
+        print("\nCHI TIẾT TOKEN TỪNG NODE:")
+        for node_name, data in node_tokens.items():
+            print(f"  + {node_name}:")
+            print(f"      - Input : {data.get('input', 0)}")
+            print(f"      - Output: {data.get('output', 0)}")
+            
+    print("-" * 50)
+    
     print("\nTest hoàn tất! Luồng LangGraph chạy chính xác.")
 
 if __name__ == "__main__":

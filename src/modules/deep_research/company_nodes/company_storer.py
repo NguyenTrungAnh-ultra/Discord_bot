@@ -3,6 +3,7 @@ import json
 from google import genai
 from src.modules.deep_research.company_state import CompanyState
 from src.modules.deep_research.db.pgvector_db import VectorDatabase
+from src.utils.llm_utils import estimate_tokens
 
 async def store_company_data(state: CompanyState):
     """
@@ -10,6 +11,18 @@ async def store_company_data(state: CompanyState):
     """
     ticker = state["ticker"]
     print(f"\n--- Node 3: Storing Data for {ticker} ---")
+    
+    if state.get("_profile_from_cache"):
+        print(f"-> Data for {ticker} was retrieved from Cache. Skipping storage Node.")
+        return state
+
+    # Khởi tạo counters
+    current_input_tokens = state.get("total_input_tokens", 0)
+    current_output_tokens = state.get("total_output_tokens", 0)
+    current_requests = state.get("total_requests", 0)
+    node_tokens = state.get("node_tokens", {})
+    node_3_input = 0
+    node_3_output = 0
 
     client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
@@ -20,6 +33,11 @@ async def store_company_data(state: CompanyState):
         
         print(f"Generating embedding for {ticker} business profile...")
         try:
+            current_requests += 1
+            input_tokens = estimate_tokens(content_to_embed)
+            current_input_tokens += input_tokens
+            node_3_input += input_tokens
+
             response = client.models.embed_content(
                 model="gemini-embedding-2",
                 contents=content_to_embed,
@@ -46,6 +64,11 @@ async def store_company_data(state: CompanyState):
         
         print(f"Generating embedding for {ticker} financial insight...")
         try:
+            current_requests += 1
+            input_tokens = estimate_tokens(content_to_embed)
+            current_input_tokens += input_tokens
+            node_3_input += input_tokens
+
             response = client.models.embed_content(
                 model="gemini-embedding-2",
                 contents=content_to_embed,
@@ -66,4 +89,15 @@ async def store_company_data(state: CompanyState):
         except Exception as e:
             print(f"Error storing financial insight: {e}")
 
-    return state
+    node_entry = node_tokens.get("Node_3_Storer", {"input": 0, "output": 0})
+    node_tokens["Node_3_Storer"] = {
+        "input": node_entry["input"] + node_3_input,
+        "output": node_entry["output"] + node_3_output
+    }
+
+    return {
+        "total_input_tokens": current_input_tokens,
+        "total_output_tokens": current_output_tokens,
+        "total_requests": current_requests,
+        "node_tokens": node_tokens
+    }

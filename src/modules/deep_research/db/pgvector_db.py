@@ -72,6 +72,13 @@ class VectorDatabase(Database):
             print(f"Failed to insert document: {e}")
 
     @staticmethod
+    def get_document_by_url(url: str):
+        """Retrieves a document by its URL."""
+        query = "SELECT insight FROM research_documents WHERE url = %s"
+        results = VectorDatabase.execute_query(query, (url,), fetch=True)
+        return results[0] if results else None
+
+    @staticmethod
     def search_similar(query_embedding, limit=5):
         """Searches for similar documents using cosine similarity."""
         if not HAS_PGVECTOR:

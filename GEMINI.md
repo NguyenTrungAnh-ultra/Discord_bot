@@ -38,7 +38,7 @@ The project is currently migrating from file-based storage (JSON/CSV) to a Postg
 
 ## Tech Stack
 
-- **Language**: Python 3.10+
+- **Language**: Python 3.14+
 - **Frameworks**: `discord.py` (Bot), `playwright` (Scraping), `pandas` (Data processing).
 - **Database**: PostgreSQL (`psycopg2-binary`, `asyncpg`).
 - **AI**: `google-genai` (Gemini API).

@@ -16,5 +16,9 @@ class CompanyState(TypedDict):
     # Kết quả cuối cùng
     final_memo: Optional[str]                 # Báo cáo Investment Memo
     
-    # Kiểm soát luồng (Tùy chọn cho việc Mock hoặc Test)
-    is_mock: bool                             # Nếu True, không gọi API LLM thực tế
+    # Theo dõi tài nguyên
+    total_input_tokens: int                   # Tổng số token đầu vào
+    total_output_tokens: int                  # Tổng số token đầu ra
+    total_requests: int                       # Tổng số request đã gửi (LLM + Embedding)
+    node_tokens: dict                         # Đếm token chi tiết cho từng node
+    _profile_from_cache: Optional[bool]       # Cờ đánh dấu dữ liệu lấy từ cache
