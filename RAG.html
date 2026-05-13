@@ -144,40 +144,40 @@
 
     <div class="container">
         <pre class="mermaid">
-graph LR
+graph TD
     %% Khởi đầu
-    Start((Bắt đầu)) --> Translator[<b>Translator</b><br/><i>nodes/translator.py</i>]
+    Start(("Bắt đầu Yêu cầu")) --> Router{"<b>Query Router</b><br/><i>(Phân luồng)</i>"}
     
-    %% Xử lý Input
-    subgraph "Input Processing"
-        Translator -- "Tạo từ khóa VI/EN" --> Searcher[<b>Searcher</b><br/><i>nodes/searcher.py</i>]
-        Searcher -- "Tìm URLs qua SearxNG" --> Dispatcher{<b>Dispatcher</b><br/><i>nodes/dispatcher.py</i>}
+    %% Nhánh 1: Vĩ mô & Ngành (Hệ thống hiện tại - Động)
+    subgraph "Macro & Sector Engine (Tin tức Động)"
+        Router -- "Vĩ mô / Ngành" --> Translator["<b>Translator</b>"]
+        Translator --> Searcher["<b>Searcher</b><br/><i>(SearxNG)</i>"]
+        Searcher --> Dispatcher{"<b>Dispatcher</b>"}
+        Dispatcher --> Processor["<b>Processor</b><br/><i>(Scraper & JSON)</i>"]
+        Processor --> Storer["<b>Storer</b>"]
     end
 
-    %% Vòng lặp RAG
-    subgraph "RAG Engine (Loop)"
-        Dispatcher -- "Duyệt từng URL" --> Processor[<b>Processor</b><br/><i>nodes/processor.py</i>]
-        
-        subgraph "Scraping Tools"
-            Processor --> HTML[HTML Scraper]
-            Processor --> PDF[PDF Scraper]
-        end
-        
-        HTML & PDF --> Storer[<b>Storer</b><br/><i>nodes/storer.py</i>]
-        Storer -- "Vectorize & Save" --> DB[(<b>PostgreSQL</b><br/><i>pgvector</i>)]
-        DB -.-> Dispatcher
+    %% Nhánh 2: Công ty (Hệ thống mới - Tĩnh & Chu kỳ)
+    subgraph "Company Engine (Phân tích Vi mô)"
+        Router -- "Phân tích Cổ phiếu" --> Profiler["<b>Business Profiler</b><br/><i>(Mô hình KD & Hào quang)</i>"]
+        Router -- "Kéo BCTC" --> Auditor["<b>Financial Auditor</b><br/><i>(API vnstock)</i>"]
+        Profiler --> MicroStorer["<b>Micro Storer</b>"]
+        Auditor --> MicroStorer
     end
 
-    %% Kết thúc
-    subgraph "Output Generation"
-        Dispatcher -- "Đủ thông tin" --> Reporter[<b>Reporter</b><br/><i>nodes/reporter.py</i>]
-        Reporter -- "Dùng RAG tổng hợp" --> FinalReport[/Báo cáo PDF/Text/]
-    end
+    %% RAG Database Chung
+    Storer -- "Lưu MACRO/SECTOR" --> DB[("<b>PostgreSQL pgvector</b><br/><i>(Phân tầng dữ liệu)</i>")]
+    MicroStorer -- "Lưu MICRO" --> DB
     
-    FinalReport --> End((Kết thúc))
+    %% Tổng hợp Báo cáo (The Filter)
+    DB -. "Trích xuất thô" .-> Reporter["<b>Reporter Node</b><br/><i>(Chain of Thought & Filter)</i>"]
+    Reporter -- "Chỉ lấy Tinh hoa" --> FinalReport[/"<b>Investment Memo / Báo cáo</b>"/]
+    
+    FinalReport --> End(("Kết thúc"))
 
-    %% Chú thích
+    %% Chú thích màu sắc
     style DB fill:#0ea5e9,stroke:#0ea5e9,stroke-width:2px,color:#fff
+    style Router fill:#f59e0b,stroke:#f59e0b,stroke-width:2px,color:#fff
     style Dispatcher fill:#6366f1,stroke:#6366f1,stroke-width:2px,color:#fff
     style Start fill:#22c55e,stroke:#22c55e,color:#fff
     style End fill:#ef4444,stroke:#ef4444,color:#fff
