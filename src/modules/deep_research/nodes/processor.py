@@ -36,6 +36,8 @@ def process_node(state: ResearchState):
         f"Trả về MỘT OBJECT JSON DUY NHẤT với cấu trúc:\n"
         f"{{\n"
         f"  \"chain_of_thought\": \"Trình bày quá trình tư duy, đánh giá nguồn và ý nghĩa vĩ mô của dữ liệu...\",\n"
+        f"  \"layer\": \"Phân loại: MACRO (Vĩ mô/Lãi suất/Chính sách) hoặc SECTOR (Ngành nghề) hoặc MICRO (Doanh nghiệp/Cổ phiếu)\",\n"
+        f"  \"entities\": {{\"tickers\": [\"Mã CK/Tên cty\"], \"macro_factors\": [\"Chỉ số vĩ mô\"]}},\n"
         f"  \"title\": \"Tiêu đề bài viết (hoặc nội dung chính)\",\n"
         f"  \"summary\": \"Tóm tắt bản chất sự kiện (tập trung vào impact/tác động)\",\n"
         f"  \"key_facts\": [\"Ý chính 1 (ưu tiên có số liệu/bằng chứng)\", \"Ý chính 2\",...],\n"

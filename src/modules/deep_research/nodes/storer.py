@@ -39,7 +39,9 @@ def store_node(state: ResearchState):
                 title=insight.get("title", ""),
                 content=insight.get("summary", ""),
                 embedding=embedding,
-                insight=insight 
+                insight=insight,
+                layer=insight.get("layer"),
+                entities=insight.get("entities")
             )
         except Exception as e:
             print(f"Error storing document in DB: {e}")

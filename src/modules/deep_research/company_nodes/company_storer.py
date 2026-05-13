@@ -1,0 +1,69 @@
+import os
+import json
+from google import genai
+from src.modules.deep_research.company_state import CompanyState
+from src.modules.deep_research.db.pgvector_db import VectorDatabase
+
+async def store_company_data(state: CompanyState):
+    """
+    Node 3: Lưu trữ dữ liệu phân tích doanh nghiệp vào PostgreSQL (pgvector).
+    """
+    ticker = state["ticker"]
+    print(f"\n--- Node 3: Storing Data for {ticker} ---")
+
+    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+
+    # 1. Lưu Profile (Dữ liệu Tĩnh)
+    if state.get("business_profile"):
+        profile = state["business_profile"]
+        content_to_embed = json.dumps(profile.get("business_model", {})) + " " + json.dumps(profile.get("economic_moat", {}))
+        
+        print(f"Generating embedding for {ticker} business profile...")
+        try:
+            response = client.models.embed_content(
+                model="gemini-embedding-2",
+                contents=content_to_embed,
+            )
+            embedding = response.embeddings[0].values
+            
+            VectorDatabase.insert_document(
+                url=f"internal://company_profile/{ticker}",
+                title=f"Business Profile: {ticker}",
+                content=content_to_embed,
+                embedding=embedding,
+                insight=profile,
+                layer="MICRO",
+                entities={"tickers": [ticker], "type": "core_profile"}
+            )
+            print(f"Successfully stored business profile for {ticker}.")
+        except Exception as e:
+            print(f"Error storing business profile: {e}")
+
+    # 2. Lưu Tài chính (Dữ liệu Động)
+    if state.get("financial_insight"):
+        insight = state["financial_insight"]
+        content_to_embed = insight.get("chain_of_thought", "") + " " + json.dumps(insight.get("key_metrics", {}))
+        
+        print(f"Generating embedding for {ticker} financial insight...")
+        try:
+            response = client.models.embed_content(
+                model="gemini-embedding-2",
+                contents=content_to_embed,
+            )
+            embedding = response.embeddings[0].values
+            
+            # Giả định lưu theo Quý/Năm hiện tại (Mock: 2026)
+            VectorDatabase.insert_document(
+                url=f"internal://financial_report/{ticker}/2026",
+                title=f"Financial Analysis 2026: {ticker}",
+                content=content_to_embed,
+                embedding=embedding,
+                insight=insight,
+                layer="MICRO",
+                entities={"tickers": [ticker], "type": "financial_data"}
+            )
+            print(f"Successfully stored financial insight for {ticker}.")
+        except Exception as e:
+            print(f"Error storing financial insight: {e}")
+
+    return state

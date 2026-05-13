@@ -45,27 +45,29 @@ class VectorDatabase(Database):
             conn.close()
 
     @staticmethod
-    def insert_document(url, title, content, embedding, insight=None):
-        """Inserts a document with its embedding into the database."""
+    def insert_document(url, title, content, embedding, insight=None, layer=None, entities=None):
+        """Inserts a document with its embedding and metadata into the database."""
         import json
         insight_json = json.dumps(insight) if insight else None
+        entities_json = json.dumps(entities) if entities else None
         
-        # If pgvector is not available, we skip the embedding column or handle it gracefully
         if not HAS_PGVECTOR:
             print("Skipping DB insertion as pgvector is not available.")
             return
 
         query = """
-        INSERT INTO research_documents (url, title, content, embedding, insight)
-        VALUES (%s, %s, %s, %s, %s)
+        INSERT INTO research_documents (url, title, content, embedding, insight, layer, entities)
+        VALUES (%s, %s, %s, %s, %s, %s, %s)
         ON CONFLICT (url) DO UPDATE SET
             title = EXCLUDED.title,
             content = EXCLUDED.content,
             embedding = EXCLUDED.embedding,
-            insight = EXCLUDED.insight;
+            insight = EXCLUDED.insight,
+            layer = EXCLUDED.layer,
+            entities = EXCLUDED.entities;
         """
         try:
-            VectorDatabase.execute_query(query, (url, title, content, embedding, insight_json))
+            VectorDatabase.execute_query(query, (url, title, content, embedding, insight_json, layer, entities_json))
         except Exception as e:
             print(f"Failed to insert document: {e}")
 
