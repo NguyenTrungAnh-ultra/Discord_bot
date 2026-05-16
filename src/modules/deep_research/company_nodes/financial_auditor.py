@@ -12,28 +12,7 @@ def audit_finances(state: CompanyState):
     """
     ticker = state["ticker"]
     print(f"\n--- Node 2: Auditing Finances for {ticker} ---")
-    
-    if state.get("financial_insight"):
-        print(f"-> Financial Insight for {ticker} already exists in State. Skipping data fetch and analysis.")
-        return state
 
-    # KỊCH BẢN TEST (MOCK)
-    if state.get("is_mock"):
-        print(f"[MOCK MODE] Đang giả lập dữ liệu tài chính cho {ticker}...")
-        mock_fin_insight = {
-            "chain_of_thought": "Dựa trên bảng cân đối giả lập, nợ đang giảm dần.",
-            "health_score": "8/10",
-            "key_metrics": {
-                "gross_margin": "25%",
-                "cfo": "Positive"
-            }
-        }
-        return {
-            "financial_data": {"status": "mock_data_loaded"}, 
-            "financial_insight": mock_fin_insight
-        }
-
-    # LOGIC THỰC TẾ
     try:
         print(f"Fetching real financial data for {ticker} from VCI...")
         fin_data = get_financial_statement(ticker)
