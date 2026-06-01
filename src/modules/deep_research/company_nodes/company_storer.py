@@ -51,7 +51,10 @@ async def store_company_data(state: CompanyState):
                 embedding=embedding,
                 insight=profile,
                 layer="MICRO",
-                entities={"tickers": [ticker], "type": "core_profile"}
+                entities={"tickers": [ticker], "type": "core_profile"},
+                doc_type="company_profile",
+                ticker=ticker,
+                publish_date=profile.get("report_date")
             )
             print(f"Successfully stored business profile for {ticker}.")
         except Exception as e:
@@ -74,16 +77,20 @@ async def store_company_data(state: CompanyState):
                 contents=content_to_embed,
             )
             embedding = response.embeddings[0].values
-            
-            # Giả định lưu theo Quý/Năm hiện tại (Mock: 2026)
+            # Determine report date from insight, falling back to 2026 if not found
+            report_date = insight.get("report_date") or "2026"
+            url_friendly_date = str(report_date).replace("/", "_").replace(" ", "_")
             VectorDatabase.insert_document(
-                url=f"internal://financial_report/{ticker}/2026",
-                title=f"Financial Analysis 2026: {ticker}",
+                url=f"internal://financial_report/{ticker}/{url_friendly_date}",
+                title=f"Financial Analysis {report_date}: {ticker}",
                 content=content_to_embed,
                 embedding=embedding,
                 insight=insight,
                 layer="MICRO",
-                entities={"tickers": [ticker], "type": "financial_data"}
+                entities={"tickers": [ticker], "type": "financial_data"},
+                doc_type="financial_report",
+                ticker=ticker,
+                publish_date=report_date
             )
             print(f"Successfully stored financial insight for {ticker}.")
         except Exception as e:

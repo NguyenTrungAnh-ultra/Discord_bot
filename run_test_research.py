@@ -3,6 +3,10 @@ import os
 from dotenv import load_dotenv
 from src.modules.deep_research.main_graph import create_research_graph
 
+import sys
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+
 # Load environment variables
 load_dotenv()
 
@@ -15,8 +19,8 @@ async def main():
     graph = create_research_graph()
     
     initial_state = {
-        "query": "báo cáo thị trường ngày 11/5/2026",
-        "max_iterations": 10,
+        "query": "đánh giá triển vọng vĩ mô và của tập đoàn Vingroup VIC",
+        "max_iterations": 3, # Keep iterations small for rapid testing
         "iteration": 0,
         "urls": [],
         "insights": [],

@@ -20,6 +20,12 @@ def check_cache(state: CompanyState):
     
     # 1. Check Profile
     profile_doc = VectorDatabase.get_document_by_url(profile_url)
+    if not (profile_doc and profile_doc.get("insight")):
+        print("-> Profile not found by exact URL. Trying metadata fallback...")
+        results = VectorDatabase.search_by_metadata(ticker=ticker, doc_type="company_profile", limit=1)
+        if results:
+            profile_doc = results[0]
+            
     if profile_doc and profile_doc.get("insight"):
         print(f"-> Found cached Business Profile for {ticker}")
         new_data["business_profile"] = profile_doc["insight"]
@@ -27,6 +33,12 @@ def check_cache(state: CompanyState):
         
     # 2. Check Financial Insight
     finance_doc = VectorDatabase.get_document_by_url(finance_url)
+    if not (finance_doc and finance_doc.get("insight")):
+        print("-> Financial Insight not found by exact URL. Trying metadata fallback for latest...")
+        results = VectorDatabase.search_by_metadata(ticker=ticker, doc_type="financial_report", limit=1)
+        if results:
+            finance_doc = results[0]
+            
     if finance_doc and finance_doc.get("insight"):
         print(f"-> Found cached Financial Insight for {ticker}")
         new_data["financial_insight"] = finance_doc["insight"]

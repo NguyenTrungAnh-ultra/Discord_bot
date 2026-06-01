@@ -9,6 +9,7 @@ class ResearchState(TypedDict):
     current_content: Optional[str]
     current_insight: Optional[dict]
     insights: List[dict]
+    db_insights: Optional[List[dict]] # Past insights from pgvector DB
     report: str
     iteration: int
     max_iterations: int

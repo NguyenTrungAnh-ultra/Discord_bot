@@ -34,6 +34,19 @@ def store_node(state: ResearchState):
 
     if embedding:
         try:
+            entities = insight.get("entities") or {}
+            ticker = None
+            publish_date = None
+            if isinstance(entities, dict):
+                tickers = entities.get("tickers") or entities.get("ticker")
+                if isinstance(tickers, list) and tickers:
+                    ticker = tickers[0]
+                elif isinstance(tickers, str):
+                    ticker = tickers
+                publish_date = entities.get("publish_date")
+
+            doc_type = insight.get("layer")
+
             VectorDatabase.insert_document(
                 url=url,
                 title=insight.get("title", ""),
@@ -41,7 +54,10 @@ def store_node(state: ResearchState):
                 embedding=embedding,
                 insight=insight,
                 layer=insight.get("layer"),
-                entities=insight.get("entities")
+                entities=insight.get("entities"),
+                doc_type=doc_type,
+                ticker=ticker,
+                publish_date=publish_date
             )
         except Exception as e:
             print(f"Error storing document in DB: {e}")

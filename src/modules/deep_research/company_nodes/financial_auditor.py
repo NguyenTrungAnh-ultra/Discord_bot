@@ -13,6 +13,10 @@ def audit_finances(state: CompanyState):
     ticker = state["ticker"]
     print(f"\n--- Node 2: Auditing Finances for {ticker} ---")
 
+    if state.get("financial_insight"):
+        print(f"-> Financial Insight for {ticker} already exists in State. Skipping fetch and analysis.")
+        return state
+
     try:
         print(f"Fetching real financial data for {ticker} from VCI...")
         fin_data = get_financial_statement(ticker)
@@ -36,6 +40,7 @@ def audit_finances(state: CompanyState):
         Yêu cầu JSON format:
         {{
           "chain_of_thought": "Suy luận chi tiết về xu hướng doanh thu, lợi nhuận, nợ, dòng tiền...",
+          "report_date": "Ngày của kỳ báo cáo gần nhất trong dữ liệu (định dạng dd/mm/yyyy, Q1/2024, hoặc năm 2024)",
           "health_score": "Điểm số từ 1-10",
           "key_metrics": {{
              "gross_margin": "Giá trị biên lợi nhuận gộp gần nhất",
