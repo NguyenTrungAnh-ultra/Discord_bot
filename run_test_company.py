@@ -2,6 +2,9 @@ import asyncio
 import sys
 import os
 
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+
 # Đảm bảo nhận diện được thư mục src
 sys.path.append(os.getcwd())
 
@@ -15,7 +18,7 @@ async def test_company_research():
     
     # Cấu hình State ban đầu
     initial_state = {
-        "ticker": "TCB",
+        "ticker": "VIC",
         "business_profile": None,
         "financial_data": None,
         "financial_insight": None,

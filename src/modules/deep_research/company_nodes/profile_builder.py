@@ -54,6 +54,7 @@ def build_profile(state: CompanyState):
     Yêu cầu JSON format:
     {{
       "chain_of_thought": "Suy luận chi tiết về các điểm quan trọng",
+      "report_date": "Ngày phát hành báo cáo được trích xuất từ tài liệu (định dạng dd/mm/yyyy, Q1/2024, hoặc năm 2024)",
       "business_model": {{
          "what_they_sell": "Mô tả sản phẩm/dịch vụ",
          "target_customers": "Đối tượng khách hàng chính",

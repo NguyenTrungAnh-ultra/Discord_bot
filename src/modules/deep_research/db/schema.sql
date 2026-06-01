@@ -9,9 +9,16 @@ CREATE TABLE IF NOT EXISTS research_documents (
     content TEXT,
     insight JSONB,
     embedding VECTOR(3072), -- Increased to 3072 for gemini-embedding-2
+    layer VARCHAR(50),
+    entities JSONB,
+    doc_type VARCHAR(50),
+    ticker VARCHAR(20),
+    publish_date DATE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Note: HNSW index is disabled for dimensions > 2000 in some PG versions/configs.
--- For a small research dataset, sequential scan or a different index type is sufficient.
--- CREATE INDEX ON research_documents USING hnsw (embedding vector_cosine_ops);
+-- Indexes for Metadata Filtering
+CREATE INDEX IF NOT EXISTS idx_research_docs_ticker ON research_documents(ticker);
+CREATE INDEX IF NOT EXISTS idx_research_docs_doc_type ON research_documents(doc_type);
+CREATE INDEX IF NOT EXISTS idx_research_docs_publish_date ON research_documents(publish_date);
+

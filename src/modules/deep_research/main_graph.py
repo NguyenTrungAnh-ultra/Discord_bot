@@ -1,6 +1,7 @@
 from langgraph.graph import StateGraph, END
 from src.modules.deep_research.state import ResearchState
 from src.modules.deep_research.nodes.translator import translate_query
+from src.modules.deep_research.nodes.memory_retriever import retrieve_memory_node
 from src.modules.deep_research.nodes.searcher import search_node
 from src.modules.deep_research.nodes.dispatcher import dispatch_node
 from src.modules.deep_research.nodes.processor import process_node
@@ -19,6 +20,7 @@ def create_research_graph():
     
     # Add Nodes
     workflow.add_node("translator", translate_query)
+    workflow.add_node("memory_retriever", retrieve_memory_node)
     workflow.add_node("searcher", search_node)
     workflow.add_node("dispatcher", dispatch_node)
     workflow.add_node("processor", process_node)
@@ -27,7 +29,8 @@ def create_research_graph():
     
     # Define Edges
     workflow.set_entry_point("translator")
-    workflow.add_edge("translator", "searcher")
+    workflow.add_edge("translator", "memory_retriever")
+    workflow.add_edge("memory_retriever", "searcher")
     workflow.add_edge("searcher", "dispatcher")
     
     workflow.add_conditional_edges(
