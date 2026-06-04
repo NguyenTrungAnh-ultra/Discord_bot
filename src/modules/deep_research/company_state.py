@@ -21,4 +21,5 @@ class CompanyState(TypedDict):
     total_output_tokens: int                  # Tổng số token đầu ra
     total_requests: int                       # Tổng số request đã gửi (LLM + Embedding)
     node_tokens: dict                         # Đếm token chi tiết cho từng node
-    _profile_from_cache: Optional[bool]       # Cờ đánh dấu dữ liệu lấy từ cache
+    profile_from_cache: Optional[bool]        # Cờ đánh dấu profile lấy từ cache
+    finance_from_cache: Optional[bool]        # Cờ đánh dấu tài chính lấy từ cache

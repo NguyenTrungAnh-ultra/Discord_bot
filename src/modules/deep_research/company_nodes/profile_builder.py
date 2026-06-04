@@ -1,11 +1,8 @@
-import os
 import json
-from google import genai
-from google.genai import types
 from src.modules.deep_research.company_state import CompanyState
 from src.modules.deep_research.tools.searxng_api import search_searxng
 from src.modules.deep_research.tools.pdf_scraper import scrape_pdf
-from src.utils.llm_utils import estimate_tokens, count_response_tokens
+from src.utils.llm_utils import call_llm_with_tracking
 
 def build_profile(state: CompanyState):
     """
@@ -42,7 +39,6 @@ def build_profile(state: CompanyState):
         return {"business_profile": {"error": "No content found"}}
 
     print("Analyzing business profile with Google AI (Gemma 4)...")
-    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
     
     prompt = f"""
     Dựa trên nội dung báo cáo sau đây của công ty {ticker}, hãy phân tích mô hình kinh doanh và lợi thế cạnh tranh.
@@ -68,59 +64,27 @@ def build_profile(state: CompanyState):
     }}
     """
     
-    # Khởi tạo counters nếu chưa có
-    current_input_tokens = state.get("total_input_tokens", 0)
-    current_output_tokens = state.get("total_output_tokens", 0)
-    current_requests = state.get("total_requests", 0)
-    node_tokens = state.get("node_tokens", {})
-    node_1_input = 0
-    node_1_output = 0
-
     try:
-        current_requests += 1
-        input_tokens = estimate_tokens(prompt)
-        current_input_tokens += input_tokens
-        node_1_input += input_tokens
-        
-        response = client.models.generate_content(
-            model="gemma-4-31b-it",
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                response_mime_type="application/json"
-            )
+        response_text, updated_state = call_llm_with_tracking(
+            state=state,
+            node_name="Node_1_Profile",
+            prompt=prompt,
+            model_name="gemma-4-31b-it",
+            json_mode=True
         )
         
-        output_tokens = count_response_tokens(response)
-        current_output_tokens += output_tokens
-        node_1_output += output_tokens
-        
-        profile_json = json.loads(response.text)
+        profile_json = json.loads(response_text)
         profile_json["source_url"] = source_url
-        
-        node_entry = node_tokens.get("Node_1_Profile", {"input": 0, "output": 0})
-        node_tokens["Node_1_Profile"] = {
-            "input": node_entry["input"] + node_1_input,
-            "output": node_entry["output"] + node_1_output
-        }
         
         return {
             "business_profile": profile_json,
-            "total_input_tokens": current_input_tokens,
-            "total_output_tokens": current_output_tokens,
-            "total_requests": current_requests,
-            "node_tokens": node_tokens
+            **updated_state
         }
     except Exception as e:
         print(f"Error calling Google AI in Node 1: {e}")
-        node_entry = node_tokens.get("Node_1_Profile", {"input": 0, "output": 0})
-        node_tokens["Node_1_Profile"] = {
-            "input": node_entry["input"] + node_1_input,
-            "output": node_entry["output"] + node_1_output
-        }
+        error_msg = e.args[0] if len(e.args) > 0 else str(e)
+        updated_state = e.args[1] if len(e.args) > 1 else state
         return {
-            "business_profile": {"error": f"LLM Error: {str(e)}"},
-            "total_input_tokens": current_input_tokens,
-            "total_output_tokens": current_output_tokens,
-            "total_requests": current_requests,
-            "node_tokens": node_tokens
+            "business_profile": {"error": error_msg},
+            **updated_state
         }

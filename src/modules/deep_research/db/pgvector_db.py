@@ -46,7 +46,7 @@ class VectorDatabase(Database):
             conn.close()
 
     @staticmethod
-    def insert_document(url, title, content, embedding, insight=None, layer=None, entities=None, doc_type=None, ticker=None, publish_date=None):
+    def insert_document(url, title, content, embedding, insight=None, layer=None, entities=None, doc_type=None, ticker=None, publish_date=None, embedded_by='gemini-embedding-2'):
         """
         Inserts a document with its embedding and metadata into the database.
         Includes backward-compatible fallback auto-extraction.
@@ -89,8 +89,8 @@ class VectorDatabase(Database):
             return
 
         query = """
-        INSERT INTO research_documents (url, title, content, embedding, insight, layer, entities, doc_type, ticker, publish_date)
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        INSERT INTO research_documents (url, title, content, embedding, insight, layer, entities, doc_type, ticker, publish_date, embedded_by)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         ON CONFLICT (url) DO UPDATE SET
             title = EXCLUDED.title,
             content = EXCLUDED.content,
@@ -100,12 +100,13 @@ class VectorDatabase(Database):
             entities = EXCLUDED.entities,
             doc_type = EXCLUDED.doc_type,
             ticker = EXCLUDED.ticker,
-            publish_date = EXCLUDED.publish_date;
+            publish_date = EXCLUDED.publish_date,
+            embedded_by = EXCLUDED.embedded_by;
         """
         try:
             VectorDatabase.execute_query(query, (
                 url, title, content, embedding, insight_json, 
-                layer, entities_json, doc_type, ticker, publish_date
+                layer, entities_json, doc_type, ticker, publish_date, embedded_by
             ))
         except Exception as e:
             print(f"Failed to insert document: {e}")
@@ -113,7 +114,7 @@ class VectorDatabase(Database):
     @staticmethod
     def get_document_by_url(url: str):
         """Retrieves a document by its URL."""
-        query = "SELECT insight, layer, entities, doc_type, ticker, publish_date FROM research_documents WHERE url = %s"
+        query = "SELECT insight, layer, entities, doc_type, ticker, publish_date, embedded_by FROM research_documents WHERE url = %s"
         results = VectorDatabase.execute_query(query, (url,), fetch=True)
         return results[0] if results else None
 

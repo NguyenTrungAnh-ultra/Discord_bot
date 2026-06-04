@@ -279,62 +279,22 @@ def run(report_type: str = 'bao_cao_doanh_nghiep'):
 
 
 def download_by_id(report_id: str, report_type='bao_cao_doanh_nghiep'):
-    """Downloads PDF for a specific report_id"""
-    import requests
+    """Downloads PDF for a specific report_id using BaseScanner"""
+    from src.utils.base_scanner import BaseScanner
     print(f"📥 Downloading report {report_id}...")
-
-    config = VCBSScanner()
-    found_row = None
-    target_csv = None
-    target_dir = None
-
-    codes = ['BCDN', 'BCN']
-    for c in codes:
-        _, csv_path = config._get_paths(c)
-        if os.path.exists(csv_path):
-            try:
-                df = pd.read_csv(csv_path, encoding='utf-8-sig')
-                row = df[df['report_id'] == report_id]
-                if not row.empty:
-                    found_row = row.iloc[0]
-                    target_csv = csv_path
-                    target_dir = os.path.dirname(csv_path)
-                    break
-            except Exception:
-                continue
-
-    if found_row is None:
-        print(f"❌ Report {report_id} not found in any VCBS CSV.")
-        return
-
-    pdf_url = found_row['pdf_url']
-    if pd.isna(pdf_url) or not pdf_url:
-        print("❌ Valid PDF URL not found.")
-        return
-
-    try:
-        dl_dir = os.path.join(target_dir, "downloads")
-        os.makedirs(dl_dir, exist_ok=True)
-
-        safe_title = re.sub(r'[^\w\s\-]', '', str(found_row['title']))[:50].strip()
-        filename = f"{safe_title}_{report_id[:6]}.pdf"
-        file_path = os.path.join(dl_dir, filename)
-
-        if os.path.exists(file_path):
-            print(f"✅ File already exists: {file_path}")
-            return
-
-        print(f"   Getting: {pdf_url}")
-        resp = requests.get(pdf_url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=30)
-        if resp.status_code == 200:
-            with open(file_path, 'wb') as f:
-                f.write(resp.content)
-            print(f"✅ Downloaded to: {file_path}")
-        else:
-            print(f"❌ Failed to download: HTTP {resp.status_code}")
-
-    except Exception as e:
-        print(f"❌ Download Exception: {e}")
+    
+    code_map = {
+        'bao_cao_doanh_nghiep': 'BCDN',
+        'bao_cao_nganh': 'BCN'
+    }
+    code = code_map.get(report_type, 'BCDN')
+    dir_name = "bao_cao_doanh_nghiep" if code == "BCDN" else "bao_cao_nganh"
+    
+    scanner = BaseScanner(os.path.join("VCBS", dir_name), Config.base_url)
+    result = scanner.download_by_id(report_id)
+    if not result['success']:
+        print(f"❌ {result['error']}")
+    return result
 
 
 if __name__ == "__main__":
