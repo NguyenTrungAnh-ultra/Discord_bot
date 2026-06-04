@@ -16,7 +16,6 @@ def check_cache(state: CompanyState):
     finance_url = f"internal://financial_report/{ticker}/2026"
     
     new_data = {}
-    from_cache = False
     
     # 1. Check Profile
     profile_doc = VectorDatabase.get_document_by_url(profile_url)
@@ -29,7 +28,7 @@ def check_cache(state: CompanyState):
     if profile_doc and profile_doc.get("insight"):
         print(f"-> Found cached Business Profile for {ticker}")
         new_data["business_profile"] = profile_doc["insight"]
-        from_cache = True
+        new_data["profile_from_cache"] = True
         
     # 2. Check Financial Insight
     finance_doc = VectorDatabase.get_document_by_url(finance_url)
@@ -44,9 +43,6 @@ def check_cache(state: CompanyState):
         new_data["financial_insight"] = finance_doc["insight"]
         # Also mark as success if data exists
         new_data["financial_data"] = {"status": "success", "source": "cache"}
-        from_cache = True
-
-    if from_cache:
-        new_data["_profile_from_cache"] = True
+        new_data["finance_from_cache"] = True
         
     return new_data

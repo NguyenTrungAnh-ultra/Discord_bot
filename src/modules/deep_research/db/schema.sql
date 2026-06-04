@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS research_documents (
     doc_type VARCHAR(50),
     ticker VARCHAR(20),
     publish_date DATE,
+    embedded_by VARCHAR(100),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -21,4 +22,5 @@ CREATE TABLE IF NOT EXISTS research_documents (
 CREATE INDEX IF NOT EXISTS idx_research_docs_ticker ON research_documents(ticker);
 CREATE INDEX IF NOT EXISTS idx_research_docs_doc_type ON research_documents(doc_type);
 CREATE INDEX IF NOT EXISTS idx_research_docs_publish_date ON research_documents(publish_date);
+CREATE INDEX IF NOT EXISTS idx_research_docs_embedded_by ON research_documents(embedded_by);
 

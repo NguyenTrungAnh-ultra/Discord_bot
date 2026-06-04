@@ -16,6 +16,20 @@ NEWS_SCRIPT = os.path.join("src", "modules", "news_summarizer", "Firms_news.py")
 VISION_SCRIPT = os.path.join("src", "modules", "vision_guard", "VisionGuard.py")
 DAILY_JOB_SCRIPT = os.path.join("src", "modules", "report_collecter", "daily_job.py")
 
+def _run_script(script_path, label):
+    print(f"{label} Running...")
+    sys.stdout.flush()
+    env = os.environ.copy()
+    env["PYTHONPATH"] = os.getcwd()
+    env["PYTHONUNBUFFERED"] = "1"
+
+    try:
+        subprocess.run([PYTHON_EXEC, "-u", script_path], check=True, env=env)
+        print(f"✅ [Main] {label.split('] ')[-1]} finished.")
+    except Exception as e:
+        print(f"❌ [Main] {label.split('] ')[-1]} failed: {e}")
+    sys.stdout.flush()
+
 def run_bot():
     """Runs the main Discord Bot. Restarts on failure."""
     # Build environment with PYTHONPATH so bot can find internal modules
@@ -40,49 +54,15 @@ def run_bot():
 
 def job_news():
     """Runs the news summarizer."""
-    print("📰 [Main] Running News Worker...")
-    sys.stdout.flush()
-    env = os.environ.copy()
-    env["PYTHONPATH"] = os.getcwd()
-    env["PYTHONUNBUFFERED"] = "1"
-
-    try:
-        subprocess.run([PYTHON_EXEC, "-u", NEWS_SCRIPT], check=True, env=env)
-        print("✅ [Main] News Worker finished.")
-    except Exception as e:
-        print(f"❌ [Main] News Worker failed: {e}")
-    sys.stdout.flush()
+    _run_script(NEWS_SCRIPT, "📰 [Main] News Worker")
 
 def job_vision():
     """Runs the Vision Guard."""
-    print("👁️ [Main] Running Vision Guard...")
-    sys.stdout.flush()
-    env = os.environ.copy()
-    env["PYTHONPATH"] = os.getcwd()
-    env["PYTHONUNBUFFERED"] = "1"
-
-    try:
-        subprocess.run([PYTHON_EXEC, "-u", VISION_SCRIPT], check=True, env=env)
-        print("✅ [Main] Vision Guard finished.")
-    except Exception as e:
-        print(f"❌ [Main] Vision Guard failed: {e}")
-    sys.stdout.flush()
+    _run_script(VISION_SCRIPT, "👁️ [Main] Vision Guard")
 
 def job_daily_report():
     """Runs the Daily Report Job (Scan + Send)."""
-    print("📊 [Main] Running Daily Report Job...")
-    sys.stdout.flush()
-    env = os.environ.copy()
-    env["PYTHONPATH"] = os.getcwd()
-    env["PYTHONUNBUFFERED"] = "1"
-
-    try:
-        # We use a slight timeout or ensured exit to prevent hanging
-        subprocess.run([PYTHON_EXEC, "-u", DAILY_JOB_SCRIPT], check=True, env=env)
-        print("✅ [Main] Daily Report Job finished.")
-    except Exception as e:
-        print(f"❌ [Main] Daily Report Job failed: {e}")
-    sys.stdout.flush()
+    _run_script(DAILY_JOB_SCRIPT, "📊 [Main] Daily Report Job")
 
 def run_schedulers():
     """Runs the scheduling loop for News and Vision Guard."""

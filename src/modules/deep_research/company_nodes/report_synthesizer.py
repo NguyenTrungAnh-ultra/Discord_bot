@@ -1,8 +1,5 @@
-import os
-from google import genai
-from google.genai import types
 from src.modules.deep_research.company_state import CompanyState
-from src.utils.llm_utils import estimate_tokens, count_response_tokens
+from src.utils.llm_utils import call_llm_with_tracking
 
 def synthesize_report(state: CompanyState):
     """
@@ -18,7 +15,6 @@ def synthesize_report(state: CompanyState):
         print("Warning: Profile or Finance has error, memo might be incomplete.")
 
     print("Generating final Investment Memo with Google AI (Gemma 4)...")
-    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
     
     prompt = f"""
     Bạn là một Chuyên gia phân tích đầu tư cấp cao. Hãy tổng hợp thông tin sau đây về công ty {ticker} thành một bản Investment Memo chuyên nghiệp.
@@ -43,53 +39,24 @@ def synthesize_report(state: CompanyState):
         ## 4. Final Verdict (Kết luận & Hành động gợi ý)
     """
     
-    # Khởi tạo counters
-    current_input_tokens = state.get("total_input_tokens", 0)
-    current_output_tokens = state.get("total_output_tokens", 0)
-    current_requests = state.get("total_requests", 0)
-    node_tokens = state.get("node_tokens", {})
-    node_4_input = 0
-    node_4_output = 0
-    
     try:
-        current_requests += 1
-        input_tokens = estimate_tokens(prompt)
-        current_input_tokens += input_tokens
-        node_4_input += input_tokens
-
-        response = client.models.generate_content(
-            model="gemma-4-31b-it",
-            contents=prompt
+        response_text, updated_state = call_llm_with_tracking(
+            state=state,
+            node_name="Node_4_Synthesizer",
+            prompt=prompt,
+            model_name="gemma-4-31b-it",
+            json_mode=False
         )
-        
-        output_tokens = count_response_tokens(response)
-        current_output_tokens += output_tokens
-        node_4_output += output_tokens
-
-        node_entry = node_tokens.get("Node_4_Synthesizer", {"input": 0, "output": 0})
-        node_tokens["Node_4_Synthesizer"] = {
-            "input": node_entry["input"] + node_4_input,
-            "output": node_entry["output"] + node_4_output
-        }
 
         return {
-            "final_memo": response.text,
-            "total_input_tokens": current_input_tokens,
-            "total_output_tokens": current_output_tokens,
-            "total_requests": current_requests,
-            "node_tokens": node_tokens
+            "final_memo": response_text,
+            **updated_state
         }
     except Exception as e:
         print(f"Error in Node 4: {e}")
-        node_entry = node_tokens.get("Node_4_Synthesizer", {"input": 0, "output": 0})
-        node_tokens["Node_4_Synthesizer"] = {
-            "input": node_entry["input"] + node_4_input,
-            "output": node_entry["output"] + node_4_output
-        }
+        error_msg = e.args[0] if len(e.args) > 0 else str(e)
+        updated_state = e.args[1] if len(e.args) > 1 else state
         return {
-            "final_memo": f"Lỗi khi tổng hợp báo cáo: {e}",
-            "total_input_tokens": current_input_tokens,
-            "total_output_tokens": current_output_tokens,
-            "total_requests": current_requests,
-            "node_tokens": node_tokens
+            "final_memo": f"Lỗi khi tổng hợp báo cáo: {error_msg}",
+            **updated_state
         }

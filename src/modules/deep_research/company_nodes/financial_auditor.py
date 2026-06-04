@@ -1,10 +1,7 @@
-import os
 import json
-from google import genai
-from google.genai import types
 from src.modules.deep_research.company_state import CompanyState
 from src.utils.vci_client import get_financial_statement, format_financial_to_markdown
-from src.utils.llm_utils import estimate_tokens, count_response_tokens
+from src.utils.llm_utils import call_llm_with_tracking
 
 def audit_finances(state: CompanyState):
     """
@@ -27,7 +24,6 @@ def audit_finances(state: CompanyState):
         markdown_fin = format_financial_to_markdown(fin_data)
         
         print("Analyzing financial health with Google AI (Gemma 4)...")
-        client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
         
         prompt = f"""
         Dưới đây là dữ liệu báo cáo tài chính của công ty {ticker} trong các kỳ gần nhất.
@@ -51,62 +47,30 @@ def audit_finances(state: CompanyState):
         }}
         """
         
-        # Khởi tạo counters
-        current_input_tokens = state.get("total_input_tokens", 0)
-        current_output_tokens = state.get("total_output_tokens", 0)
-        current_requests = state.get("total_requests", 0)
-        node_tokens = state.get("node_tokens", {})
-        node_2_input = 0
-        node_2_output = 0
-        
         try:
-            current_requests += 1
-            input_tokens = estimate_tokens(prompt)
-            current_input_tokens += input_tokens
-            node_2_input += input_tokens
-
-            response = client.models.generate_content(
-                model="gemma-4-31b-it",
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    response_mime_type="application/json"
-                )
+            response_text, updated_state = call_llm_with_tracking(
+                state=state,
+                node_name="Node_2_Finance",
+                prompt=prompt,
+                model_name="gemma-4-31b-it",
+                json_mode=True
             )
             
-            output_tokens = count_response_tokens(response)
-            current_output_tokens += output_tokens
-            node_2_output += output_tokens
-            
-            fin_insight = json.loads(response.text)
-            
-            node_entry = node_tokens.get("Node_2_Finance", {"input": 0, "output": 0})
-            node_tokens["Node_2_Finance"] = {
-                "input": node_entry["input"] + node_2_input,
-                "output": node_entry["output"] + node_2_output
-            }
+            fin_insight = json.loads(response_text)
             
             return {
                 "financial_data": {"status": "success", "periods_count": len(fin_data)},
                 "financial_insight": fin_insight,
-                "total_input_tokens": current_input_tokens,
-                "total_output_tokens": current_output_tokens,
-                "total_requests": current_requests,
-                "node_tokens": node_tokens
+                **updated_state
             }
         except Exception as e:
             print(f"Error calling Google AI in Node 2: {e}")
-            node_entry = node_tokens.get("Node_2_Finance", {"input": 0, "output": 0})
-            node_tokens["Node_2_Finance"] = {
-                "input": node_entry["input"] + node_2_input,
-                "output": node_entry["output"] + node_2_output
-            }
+            error_msg = e.args[0] if len(e.args) > 0 else str(e)
+            updated_state = e.args[1] if len(e.args) > 1 else state
             return {
                 "financial_data": None, 
-                "financial_insight": {"error": f"LLM Error: {str(e)}"},
-                "total_input_tokens": current_input_tokens,
-                "total_output_tokens": current_output_tokens,
-                "total_requests": current_requests,
-                "node_tokens": node_tokens
+                "financial_insight": {"error": error_msg},
+                **updated_state
             }
     except Exception as e:
         print(f"Error in Node 2: {e}")

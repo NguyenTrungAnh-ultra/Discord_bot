@@ -57,7 +57,8 @@ def store_node(state: ResearchState):
                 entities=insight.get("entities"),
                 doc_type=doc_type,
                 ticker=ticker,
-                publish_date=publish_date
+                publish_date=publish_date,
+                embedded_by='gemini-embedding-2'
             )
         except Exception as e:
             print(f"Error storing document in DB: {e}")

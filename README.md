@@ -33,10 +33,17 @@ The primary interface for users to interact with the system.
 ### 4. Report Collector (`src/modules/report_collecter/`)
 
 - Orchestrates daily scraping and delivery of financial reports.
-- Scanners for multiple sources: ACBS, KBSV, VCBS, SSI, VietCap.
+- **Scanners**: Supports ACBS, KBSV, VCBS, SSI, VietCap.
+- **BaseScanner Architecture**: Uses an object-oriented approach where `BaseScanner` handles generic tasks (session management, CSV loading, PDF downloading, deduplication) to reduce redundant code across scraper modules.
 - Filters and sends yesterday's reports to Discord webhooks with PDF attachments.
 
-### 5. Vision Guard (`src/modules/vision_guard/`)
+### 5. Core Utilities & Configurations (`src/utils/`, `src/config/`)
+
+- **LLM Token Tracking**: `call_llm_with_tracking` in `llm_utils.py` manages API calls, automatically tracking input/output tokens and request counts across all AI nodes.
+- **API Singleton**: `genai_client.py` provides a unified `genai.Client` to optimize connection usage.
+- **Centralized Constants & Utils**: Centralized `const.py` for Discord embed colors and model identifiers. `ticker_utils.py` handles generic stock symbol extraction to prevent duplication across modules.
+
+### 6. Vision Guard (`src/modules/vision_guard/`)
 
 - Handles visual monitoring or automated screenshots of financial charts/dashboards.
 
@@ -198,3 +205,37 @@ The system is powered by a PostgreSQL database (`news_aggregator`) with the `pgv
   ```bash
   python run_test_research.py
   ```
+
+---
+
+## 🔮 Future Improvements & Unresolved Issues
+
+This section outlines technical debt, missing features, and optimization opportunities in the current system:
+
+### 1. Semantic Chunking & Tagging
+Currently, whole documents are embedded as single large vectors. A chunking strategy (splitting by paragraphs or semantic blocks) combined with comma-separated tag structures needs to be implemented to improve context retrieval accuracy.
+
+### ~~2. Conditional Routing in LangGraph~~ [RESOLVED]
+~~The `company_graph.py` runs sequentially. Even if `cache_checker` finds cached data, it does not truly skip the graph's execution path via `add_conditional_edges`, wasting node initialization cycles.~~
+*(Resolved: Implemented `add_conditional_edges` in `company_graph.py` with granular `profile_from_cache` and `finance_from_cache` state flags to bypass unnecessary API nodes.)*
+
+### 3. AI Error Handling & Retry Logic
+If Gemini AI timeouts or hits a rate limit, nodes return an `{"error": ...}` dict and the graph proceeds. There is no retry logic or robust fallback mechanism for API failures.
+
+### 4. Vector Model Migration Scripts
+If the embedding model is upgraded, existing vectors will become obsolete. A `re_embed_database.py` script is needed to recompute embeddings for all legacy data without downtime.
+
+### 5. Data Lifecycle & Cleanup
+The `insert_document` upserts data, but there's no expiration or archival strategy for outdated reports (e.g., decaying vector weights or periodic cleanup jobs).
+
+### 6. Token-based Pagination
+`search_with_filters` returns a fixed number of records (e.g., limit=5). If all 5 documents are huge, it crashes the LLM context window. Results should be limited by total token count.
+
+### 7. Discord Rate Limiting & Queueing
+The `/research` command lacks a task queue. Concurrent requests from multiple users can crash the bot or hit API rate limits.
+
+### 8. SSRF & Web Scraping Timeouts
+The `pdf_scraper` blindly trusts URLs from SearxNG. It lacks blacklist filtering (for internal IP protection) and a hard global timeout to prevent infinite hanging.
+
+### 9. Follow-up Chat (Conversational Memory)
+The Discord bot provides a one-off report. It does not store session context in the database, meaning users cannot ask follow-up questions about the generated research.

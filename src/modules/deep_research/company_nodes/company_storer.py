@@ -12,10 +12,6 @@ async def store_company_data(state: CompanyState):
     ticker = state["ticker"]
     print(f"\n--- Node 3: Storing Data for {ticker} ---")
     
-    if state.get("_profile_from_cache"):
-        print(f"-> Data for {ticker} was retrieved from Cache. Skipping storage Node.")
-        return state
-
     # Khởi tạo counters
     current_input_tokens = state.get("total_input_tokens", 0)
     current_output_tokens = state.get("total_output_tokens", 0)
@@ -27,7 +23,7 @@ async def store_company_data(state: CompanyState):
     client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
     # 1. Lưu Profile (Dữ liệu Tĩnh)
-    if state.get("business_profile"):
+    if state.get("business_profile") and not state.get("profile_from_cache"):
         profile = state["business_profile"]
         content_to_embed = json.dumps(profile.get("business_model", {})) + " " + json.dumps(profile.get("economic_moat", {}))
         
@@ -54,14 +50,15 @@ async def store_company_data(state: CompanyState):
                 entities={"tickers": [ticker], "type": "core_profile"},
                 doc_type="company_profile",
                 ticker=ticker,
-                publish_date=profile.get("report_date")
+                publish_date=profile.get("report_date"),
+                embedded_by='gemini-embedding-2'
             )
             print(f"Successfully stored business profile for {ticker}.")
         except Exception as e:
             print(f"Error storing business profile: {e}")
 
     # 2. Lưu Tài chính (Dữ liệu Động)
-    if state.get("financial_insight"):
+    if state.get("financial_insight") and not state.get("finance_from_cache"):
         insight = state["financial_insight"]
         content_to_embed = insight.get("chain_of_thought", "") + " " + json.dumps(insight.get("key_metrics", {}))
         
@@ -90,7 +87,8 @@ async def store_company_data(state: CompanyState):
                 entities={"tickers": [ticker], "type": "financial_data"},
                 doc_type="financial_report",
                 ticker=ticker,
-                publish_date=report_date
+                publish_date=report_date,
+                embedded_by='gemini-embedding-2'
             )
             print(f"Successfully stored financial insight for {ticker}.")
         except Exception as e:
