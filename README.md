@@ -49,6 +49,34 @@ The primary interface for users to interact with the system.
 
 ---
 
+## 📂 Directory Structure
+
+```text
+├── ./
+│   ├── main.py                # Main orchestrator entry point
+│   ├── run_test_*.py          # Testing scripts for Macro/Micro graphs
+│   ├── sync_reports.py        # Deduplication utility
+│   ├── db_summary_view.txt    # Database summary
+│   ├── src/
+│   │   ├── core/              # DB, GenAI singleton, Logger
+│   │   ├── config/            # Centralized constants and settings
+│   │   ├── utils/             # Helpers (LLM token tracking, web scraping base)
+│   │   ├── modules/           # Feature modules
+│   │   │   ├── bot_main/      # Discord bot commands and events
+│   │   │   ├── deep_research/ # LangGraph nodes (Macro & Micro systems)
+│   │   │   │   ├── company_nodes/ # Micro nodes (Profile, Finance)
+│   │   │   │   ├── nodes/         # Macro nodes (Search, Scrape, Report)
+│   │   │   │   ├── tools/         # Tools (PDF/HTML Scraper, SearxNG API)
+│   │   │   │   ├── db/            # pgvector schema and migrations
+│   │   │   ├── news_summarizer/ # Scrapes and summarizes news
+│   │   │   │   ├── scanners/    # Source-specific news scrapers
+│   │   │   ├── report_collecter/# Daily scraping of financial reports from brokers
+│   │   │   │   ├── scanners/    # Broker-specific PDF scrapers
+│   │   │   ├── vision_guard/  # Visual monitoring tasks
+```
+
+---
+
 ## 📐 System Architecture & Workflow
 
 Here is the complete E2E system workflow depicting both **Macro & Sector System** and **Company Micro System** interacting with the central **pgvector RAG Database** and utilizing the optimized Cache Bypass.
@@ -239,3 +267,9 @@ The `pdf_scraper` blindly trusts URLs from SearxNG. It lacks blacklist filtering
 
 ### 9. Follow-up Chat (Conversational Memory)
 The Discord bot provides a one-off report. It does not store session context in the database, meaning users cannot ask follow-up questions about the generated research.
+
+### 10. Annual Report Smart Extraction
+Implement a noise-filtering pipeline for PDF annual reports:
+- **TOC Detection**: 3-tier fallback (PDF Bookmarks -> Synonym Dictionary -> Regex Structural Match `^.+?(?:\.{3,}|\s+)\d+\s*$`).
+- **Dictionary Filtering**: Keyword mappings to drop "junk" pages (e.g., board of directors, biographies).
+- **LLM Extraction**: RAG-based extraction for core "Business Philosophy" and "Yearly Goals" on the cleaned text subset.
