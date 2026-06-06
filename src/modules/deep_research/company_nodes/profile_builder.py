@@ -2,7 +2,7 @@ import json
 from src.modules.deep_research.company_state import CompanyState
 from src.modules.deep_research.tools.searxng_api import search_searxng
 from src.modules.deep_research.tools.pdf_scraper import scrape_pdf
-from src.utils.llm_utils import call_llm_with_tracking
+from src.core.ai.tracker import call_llm_with_tracking
 
 def build_profile(state: CompanyState):
     """
@@ -16,7 +16,7 @@ def build_profile(state: CompanyState):
         return state
     
     print(f"Searching for annual reports/prospectus for {ticker}...")
-    search_query = f"Báo cáo thường niên {ticker} 2024 filetype:pdf"
+    search_query = f"Báo cáo thường niên {ticker} filetype:pdf"
     search_results = search_searxng(search_query, num_results=3)
     
     if not search_results:
@@ -50,7 +50,7 @@ def build_profile(state: CompanyState):
     Yêu cầu JSON format:
     {{
       "chain_of_thought": "Suy luận chi tiết về các điểm quan trọng",
-      "report_date": "Ngày phát hành báo cáo được trích xuất từ tài liệu (định dạng dd/mm/yyyy, Q1/2024, hoặc năm 2024)",
+      "report_date": "Ngày phát hành báo cáo được trích xuất từ tài liệu (định dạng dd/mm/yyyy, Q1/yyyy, Q2/yyyy, Q3/yyyy, Q4/yyyy, hoặc năm yyyy)",
       "business_model": {{
          "what_they_sell": "Mô tả sản phẩm/dịch vụ",
          "target_customers": "Đối tượng khách hàng chính",

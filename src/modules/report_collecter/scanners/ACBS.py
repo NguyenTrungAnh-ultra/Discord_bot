@@ -11,8 +11,8 @@ import hashlib
 import time
 import random
 import re
-from src.utils.base_scanner import BaseScanner
-from src.utils.ticker_utils import extract_tickers
+from src.core.scraper.base import BaseScanner
+from src.utils.ticker import extract_tickers
 
 class Config:
     """Configuration for ACBS scraper"""
@@ -201,10 +201,6 @@ def run():
     
     scanner.save_csv(final_df)
     return final_df
-
-def download_by_id(report_id):
-    scanner = BaseScanner("ACBS", Config.base_url)
-    return scanner.download_by_id(report_id)
 
 if __name__ == "__main__":
     print("🚀 Starting ACBS Report Scraper...\n")

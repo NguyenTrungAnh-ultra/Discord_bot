@@ -1,7 +1,7 @@
 import os
 import requests
 from dotenv import load_dotenv
-from src.utils.user_agent import get_random_desktop_user_agent
+from src.core.scraper.browser import get_random_desktop_user_agent
 
 load_dotenv()
 

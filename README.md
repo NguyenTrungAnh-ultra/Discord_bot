@@ -6,46 +6,44 @@ A modular Python-based Discord bot system designed for financial market monitori
 
 ## 🌟 Core Modules
 
-### 1. Deep Research & Metadata Filtering RAG Engine (v2.0)
+### 1. AI Market Researcher
 
-An advanced, cost-optimized Retrieval-Augmented Generation (RAG) system for corporate and market analysis built on **LangGraph**:
+An AI system that reads financial documents, searches the web, and answers questions about companies and markets.
 
-- **Hybrid RAG & Metadata Filtering (New)**: Adds PostgreSQL (`pgvector`) metadata columns (`ticker`, `doc_type`, `publish_date`) and fast indexes. Supports vector similarity search restricted by tickers, document types, or specific date ranges (`search_with_filters`).
-- **Chronological Date Extraction**: Uses structured Gemini prompts to extract `publish_date` and `report_date` from web sources and PDF annual reports. Normalizes quarter data (e.g. `Q3/2024` $\rightarrow$ `30/09/2024`) and year data (e.g. `2024` $\rightarrow$ `31/12/2024`) via a robust parser.
-- **Memory Retriever Node**: Intercepts the Macro Research Graph right after query translation. Detects stock symbols (e.g. `VIC`, `TCB`), performs filtered vector database queries, and loads historical insights into the state (`db_insights`) for comparative analysis.
-- **Optimal Resource Caching (Cache Bypass)**: The Company Graph (`company_graph.py`) first checks the DB (`cache_checker`). If a company profile or financial insight exists, it **bypasses and skips all web searches, PDF scraping, and LLM analysis nodes**, saving up to **95% of execution time and API token costs**.
-- **Chained Node-Level Token Tracking**: Estimates and records total input/output tokens and request counts per node.
+- **Smart Search**: Finds information quickly by filtering for specific companies or dates before searching through the text meaning.
+- **Date Finder**: Automatically reads web pages and PDFs to find exactly when the information was published.
+- **Memory Check**: Before searching the web for a company, it remembers past research and uses it to give better answers.
+- **Money & Time Saver (Cache)**: If it has already analyzed a company recently, it reuses the saved answer instead of reading everything again. This makes it 95% faster and saves AI costs.
+- **Cost Tracker**: Counts exactly how much AI is used at each step to manage costs.
 
 ### 2. Discord Bot (`src/modules/bot_main/`)
 
-The primary interface for users to interact with the system.
+The chat interface where you talk to the system.
 
-- Commands:
-  - `!news [YYYY-MM-DD]`: Fetches news for a specific date or range.
-  - `!tomtat`: (Reply to a news embed) Provides an AI-generated summary of the article using Gemini.
-  - `!cleanup`: Removes duplicate news/report embeds from the channel.
+- **Commands**:
+  - `!news`: Get daily financial news.
+  - `!tomtat`: Reply to any news message to get a short AI summary.
+  - `!cleanup`: Delete duplicate messages.
 
 ### 3. News Summarizer (`src/modules/news_summarizer/`)
 
-- Periodically fetches news (via `VCI_news`) and sends alerts to a Discord webhook.
-- Uses `vnstock` for real-time stock status (price, volume, change).
+- Automatically reads the latest market news every hour, writes a quick summary, and sends it to Discord.
+- Tracks real-time stock prices and trading volumes.
 
 ### 4. Report Collector (`src/modules/report_collecter/`)
 
-- Orchestrates daily scraping and delivery of financial reports.
-- **Scanners**: Supports ACBS, KBSV, VCBS, SSI, VietCap.
-- **BaseScanner Architecture**: Uses an object-oriented approach where `BaseScanner` handles generic tasks (session management, CSV loading, PDF downloading, deduplication) to reduce redundant code across scraper modules.
-- Filters and sends yesterday's reports to Discord webhooks with PDF attachments.
+- Runs every morning to download new PDF reports from top securities firms (like ACBS, KBSV, VCBS).
+- Automatically saves the files and sends them straight to your Discord channel.
 
-### 5. Core Utilities & Configurations (`src/utils/`, `src/config/`)
+### 5. System Core (`src/core/`, `src/utils/`)
 
-- **LLM Token Tracking**: `call_llm_with_tracking` in `llm_utils.py` manages API calls, automatically tracking input/output tokens and request counts across all AI nodes.
-- **API Singleton**: `genai_client.py` provides a unified `genai.Client` to optimize connection usage.
-- **Centralized Constants & Utils**: Centralized `const.py` for Discord embed colors and model identifiers. `ticker_utils.py` handles generic stock symbol extraction to prevent duplication across modules.
+- **AI Manager**: Connects to Google Gemini and tracks all API usage to avoid high bills.
+- **Database Helper**: Connects to PostgreSQL to save and search files efficiently.
+- **Web Tools**: Sneaks past website blockers to safely scrape news and reports.
 
 ### 6. Vision Guard (`src/modules/vision_guard/`)
 
-- Handles visual monitoring or automated screenshots of financial charts/dashboards.
+- Takes pictures of stock market dashboards every afternoon and sends them to Discord.
 
 ---
 
@@ -54,25 +52,30 @@ The primary interface for users to interact with the system.
 ```text
 ├── ./
 │   ├── main.py                # Main orchestrator entry point
-│   ├── run_test_*.py          # Testing scripts for Macro/Micro graphs
-│   ├── sync_reports.py        # Deduplication utility
-│   ├── db_summary_view.txt    # Database summary
+│   ├── pytest.ini             # Pytest configuration
+│   ├── DB_ARCHITECHTURE.md    # Database architecture documentation
+│   ├── ARCHITECTURE.md        # Core project architecture documentation
+│   ├── docs/                  # Project documentation
+│   ├── scripts/               # Admin and sync scripts
+│   │   └── migrations/        # Database pgvector schema (schema.sql)
+│   ├── tests/                 # Test scripts (test_all_features.py)
 │   ├── src/
-│   │   ├── core/              # DB, GenAI singleton, Logger
 │   │   ├── config/            # Centralized constants and settings
-│   │   ├── utils/             # Helpers (LLM token tracking, web scraping base)
-│   │   ├── modules/           # Feature modules
-│   │   │   ├── bot_main/      # Discord bot commands and events
-│   │   │   ├── deep_research/ # LangGraph nodes (Macro & Micro systems)
-│   │   │   │   ├── company_nodes/ # Micro nodes (Profile, Finance)
-│   │   │   │   ├── nodes/         # Macro nodes (Search, Scrape, Report)
-│   │   │   │   ├── tools/         # Tools (PDF/HTML Scraper, SearxNG API)
-│   │   │   │   ├── db/            # pgvector schema and migrations
-│   │   │   ├── news_summarizer/ # Scrapes and summarizes news
-│   │   │   │   ├── scanners/    # Source-specific news scrapers
-│   │   │   ├── report_collecter/# Daily scraping of financial reports from brokers
-│   │   │   │   ├── scanners/    # Broker-specific PDF scrapers
-│   │   │   ├── vision_guard/  # Visual monitoring tasks
+│   │   ├── core/              # Core systems
+│   │   │   ├── ai/            # Google GenAI client and token trackers
+│   │   │   ├── db/            # Database connections and Vector DB setup
+│   │   │   ├── scraper/       # Base scanner, browser engine, HTTP client
+│   │   │   └── logger.py      # Core logging module
+│   │   ├── utils/             # Reusable helper functions (date_parser, ticker, text)
+│   │   └── modules/           # Feature modules
+│   │       ├── bot_main/      # Discord bot commands (Bot.py)
+│   │       ├── deep_research/ # LangGraph nodes (Macro & Micro systems)
+│   │       │   ├── company_nodes/ # Micro nodes (Profile, Finance, Storer)
+│   │       │   ├── nodes/         # Macro nodes (Search, Scrape, Report, Storer)
+│   │       │   └── tools/         # Tools (PDF/HTML Scraper, SearxNG API)
+│   │       ├── news_summarizer/ # Scrapes and summarizes news (Firms_news.py)
+│   │       ├── report_collecter/# Daily scraping of financial reports (daily_job.py)
+│   │       └── vision_guard/  # Visual monitoring tasks (VisionGuard.py)
 ```
 
 ---
@@ -177,14 +180,50 @@ graph TD
 
 ## 💾 Database Architecture & Migrations
 
-The system is powered by a PostgreSQL database (`news_aggregator`) with the `pgvector` extension.
+The system is powered by a PostgreSQL database with the `pgvector` extension, acting as both an application cache and a semantic RAG engine.
 
-- **Core DB Utilities**: `src/core/db.py` provides synchronous and asynchronous connection helpers.
-- **Standard Tables**: `news` and `report` store aggregated market news and scraped financial reports. Detailed schema is available in `Database/Schema.md`.
-- **RAG Schema (`src/modules/deep_research/db/schema.sql`)**: Contains the `research_documents` table with advanced columns (`ticker`, `doc_type`, `publish_date`, `layer`, `entities`).
+### Key Database Functions
+
+- **Cross-Domain Semantic Search**: Employs a Single Table Design (`research_documents`) combining macro news and micro profiles to enable unified vector similarity searches.
+- **Upsert & LLM Cache**: Uses `ON CONFLICT (url) DO UPDATE` to handle duplicate scrapes or re-analysis seamlessly, serving as an efficient bypass cache for the expensive LLM execution nodes.
+- **Schema-less Flexibility**: Uses `JSONB` columns (`insight`, `entities`) to store varying LLM analysis outputs without altering the database schema.
+
+### Entity-Relationship Diagram
+
+```mermaid
+erDiagram
+    research_documents {
+        SERIAL id PK
+        TEXT url UK "Internal/External URL (Upsert Key)"
+        TEXT title
+        TEXT content "Raw text context"
+        JSONB insight "Structured AI analysis"
+        VECTOR embedding "3072 dims"
+        VARCHAR layer
+        JSONB entities
+        VARCHAR doc_type
+        VARCHAR ticker "Indexed"
+        DATE publish_date "Indexed"
+        VARCHAR embedded_by "Indexed"
+        TIMESTAMP created_at
+    }
+
+    news {
+        VARCHAR id PK "API ID (Upsert Key)"
+        TEXT news_title
+        VARCHAR ticker
+        TEXT news_source_link
+        VARCHAR news_from_name
+        TIMESTAMP update_date
+        VARCHAR sentiment
+        TEXT news_short_content
+        VARCHAR slug
+    }
+```
+
 - **Migrations**:
   - `migrate_rag_db.py`: Backfilled standard layers.
-  - `migrate_metadata_filter.py`: Configures metadata columns, runs fallback backfills, and sets up high-speed indexes for dynamic filtering.
+  - `migrate_metadata_filter.py`: Configures metadata columns, runs fallback backfills, and sets up high-speed indexes (`idx_ticker`, `idx_doc_type`, `idx_publish_date`) for dynamic filtering.
 
 ---
 
@@ -241,35 +280,46 @@ The system is powered by a PostgreSQL database (`news_aggregator`) with the `pgv
 This section outlines technical debt, missing features, and optimization opportunities in the current system:
 
 ### 1. Semantic Chunking & Tagging
+
 Currently, whole documents are embedded as single large vectors. A chunking strategy (splitting by paragraphs or semantic blocks) combined with comma-separated tag structures needs to be implemented to improve context retrieval accuracy.
 
 ### ~~2. Conditional Routing in LangGraph~~ [RESOLVED]
+
 ~~The `company_graph.py` runs sequentially. Even if `cache_checker` finds cached data, it does not truly skip the graph's execution path via `add_conditional_edges`, wasting node initialization cycles.~~
-*(Resolved: Implemented `add_conditional_edges` in `company_graph.py` with granular `profile_from_cache` and `finance_from_cache` state flags to bypass unnecessary API nodes.)*
+_(Resolved: Implemented `add_conditional_edges` in `company_graph.py` with granular `profile_from_cache` and `finance_from_cache` state flags to bypass unnecessary API nodes.)_
 
 ### 3. AI Error Handling & Retry Logic
+
 If Gemini AI timeouts or hits a rate limit, nodes return an `{"error": ...}` dict and the graph proceeds. There is no retry logic or robust fallback mechanism for API failures.
 
 ### 4. Vector Model Migration Scripts
+
 If the embedding model is upgraded, existing vectors will become obsolete. A `re_embed_database.py` script is needed to recompute embeddings for all legacy data without downtime.
 
 ### 5. Data Lifecycle & Cleanup
+
 The `insert_document` upserts data, but there's no expiration or archival strategy for outdated reports (e.g., decaying vector weights or periodic cleanup jobs).
 
 ### 6. Token-based Pagination
+
 `search_with_filters` returns a fixed number of records (e.g., limit=5). If all 5 documents are huge, it crashes the LLM context window. Results should be limited by total token count.
 
 ### 7. Discord Rate Limiting & Queueing
+
 The `/research` command lacks a task queue. Concurrent requests from multiple users can crash the bot or hit API rate limits.
 
 ### 8. SSRF & Web Scraping Timeouts
+
 The `pdf_scraper` blindly trusts URLs from SearxNG. It lacks blacklist filtering (for internal IP protection) and a hard global timeout to prevent infinite hanging.
 
 ### 9. Follow-up Chat (Conversational Memory)
+
 The Discord bot provides a one-off report. It does not store session context in the database, meaning users cannot ask follow-up questions about the generated research.
 
 ### 10. Annual Report Smart Extraction
+
 Implement a noise-filtering pipeline for PDF annual reports:
+
 - **TOC Detection**: 3-tier fallback (PDF Bookmarks -> Synonym Dictionary -> Regex Structural Match `^.+?(?:\.{3,}|\s+)\d+\s*$`).
 - **Dictionary Filtering**: Keyword mappings to drop "junk" pages (e.g., board of directors, biographies).
 - **LLM Extraction**: RAG-based extraction for core "Business Philosophy" and "Yearly Goals" on the cleaned text subset.

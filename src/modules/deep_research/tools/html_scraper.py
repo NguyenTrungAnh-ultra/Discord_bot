@@ -2,7 +2,7 @@ import trafilatura
 from playwright.sync_api import sync_playwright
 import time
 import requests
-from src.utils.user_agent import get_random_desktop_user_agent, DESKTOP_BROWSERS
+from src.core.scraper.browser import get_random_desktop_user_agent, DESKTOP_BROWSERS
 
 def scrape_html(url):
     """Scrapes HTML content and converts to text using requests+trafilatura with Playwright fallback."""

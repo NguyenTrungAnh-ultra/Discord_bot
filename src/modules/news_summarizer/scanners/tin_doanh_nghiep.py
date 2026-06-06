@@ -1,6 +1,6 @@
 import requests
 from datetime import datetime, timedelta
-from src.utils.user_agent import get_headers
+from src.core.scraper.browser import get_headers
 class VCI_news:
     def __init__(self):
         self.url = "https://ai.vietcap.com.vn/api/v2/news_info"

@@ -1,6 +1,6 @@
 import json
 from src.modules.deep_research.company_state import CompanyState
-from src.modules.deep_research.db.pgvector_db import VectorDatabase
+from src.core.db.vector import VectorDatabase
 
 def check_cache(state: CompanyState):
     """
@@ -11,9 +11,6 @@ def check_cache(state: CompanyState):
     
     # Define keys
     profile_url = f"internal://company_profile/{ticker}"
-    # For financial reports, we use a fixed key for now (2026 as per company_storer.py)
-    # In a real scenario, this would be based on the current year/quarter
-    finance_url = f"internal://financial_report/{ticker}/2026"
     
     new_data = {}
     
@@ -31,12 +28,9 @@ def check_cache(state: CompanyState):
         new_data["profile_from_cache"] = True
         
     # 2. Check Financial Insight
-    finance_doc = VectorDatabase.get_document_by_url(finance_url)
-    if not (finance_doc and finance_doc.get("insight")):
-        print("-> Financial Insight not found by exact URL. Trying metadata fallback for latest...")
-        results = VectorDatabase.search_by_metadata(ticker=ticker, doc_type="financial_report", limit=1)
-        if results:
-            finance_doc = results[0]
+    # Query latest financial report directly via metadata since report date is dynamic
+    results = VectorDatabase.search_by_metadata(ticker=ticker, doc_type="financial_report", limit=1)
+    finance_doc = results[0] if results else None
             
     if finance_doc and finance_doc.get("insight"):
         print(f"-> Found cached Financial Insight for {ticker}")

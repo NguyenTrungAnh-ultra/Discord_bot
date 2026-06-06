@@ -7,23 +7,14 @@ root_path = Path(__file__).resolve().parents[3]
 sys.path.append(str(root_path))
 
 from src.modules.news_summarizer.scanners.tin_doanh_nghiep import VCI_news
-from src.utils.tool import clean_title, get_artical
-from src.core.gg_service import tomtat100
-from src.core.db import AsyncDatabase
-import json
+from src.utils.text import clean_title, get_article
+from src.modules.news_summarizer.ai_helper import tomtat100
+from src.core.db.connection import AsyncDatabase
 from dotenv import load_dotenv
 from datetime import datetime
-import asyncio
 import os
 
-#Config
-MIN_WAIT_SECONDS = 300 
-MAX_WAIT_SECONDS = 600
-CHANNEL_ID = 1445423293841805464
-today = str(datetime.today().strftime('%Y-%m-%d'))
-
 # Khởi tạo Bot
-from pathlib import Path
 env_path = Path(__file__).resolve().parents[3] / '.env'
 load_dotenv(dotenv_path=env_path)
 token = os.getenv('DISCORD_TOKEN')
@@ -189,7 +180,7 @@ async def tomtat(ctx):
         
         if found_slug:
             url = f"https://trading.vietcap.com.vn/ai-news/post-detail/{found_slug}?language=vi"
-            art = await get_artical(link=url)
+            art = await get_article(link=url)
             sumarize = await tomtat100(artical=art)
             await ctx.send(f"{sumarize}")
         else:

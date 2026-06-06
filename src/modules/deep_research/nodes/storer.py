@@ -3,7 +3,7 @@ import gc
 import json
 from google import genai
 from src.modules.deep_research.state import ResearchState
-from src.modules.deep_research.db.pgvector_db import VectorDatabase
+from src.core.db.vector import VectorDatabase
 
 def store_node(state: ResearchState):
     """Generates embedding for the insight and stores it in pgvector."""

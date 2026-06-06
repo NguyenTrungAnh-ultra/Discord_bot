@@ -1,8 +1,8 @@
 import json
 import os
 import pandas as pd
-from src.utils.client import send_request
-from src.utils.user_agent import get_headers
+from src.core.scraper.http_client import send_request
+from src.core.scraper.browser import get_headers
 
 # --- CẤU HÌNH ---
 REPORT_TYPES = ['BALANCE_SHEET', 'INCOME_STATEMENT', 'CASH_FLOW', 'NOTE']
