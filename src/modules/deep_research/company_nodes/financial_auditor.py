@@ -1,7 +1,7 @@
 import json
 from src.modules.deep_research.company_state import CompanyState
 from src.utils.vci_client import get_financial_statement, format_financial_to_markdown
-from src.utils.llm_utils import call_llm_with_tracking
+from src.core.ai.tracker import call_llm_with_tracking
 
 def audit_finances(state: CompanyState):
     """

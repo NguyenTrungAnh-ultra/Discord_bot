@@ -13,7 +13,7 @@ import json
 import time
 import urllib.parse
 import hashlib
-from src.core.db import Database
+from src.core.db.connection import Database
 
 load_dotenv()
 WEBHOOK = os.getenv('BAO_CAO_DOANH_NGHIEP')

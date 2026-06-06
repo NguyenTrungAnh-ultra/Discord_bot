@@ -1,7 +1,7 @@
 import os
 import requests
 import pandas as pd
-from src.utils.user_agent import get_random_desktop_user_agent
+from src.core.scraper.browser import get_random_desktop_user_agent
 
 class BaseScanner:
     def __init__(self, source_name: str, base_url: str):

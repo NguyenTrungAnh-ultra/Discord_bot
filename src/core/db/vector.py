@@ -5,8 +5,8 @@ try:
     HAS_PGVECTOR = True
 except ImportError:
     HAS_PGVECTOR = False
-from src.core.db import Database, DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASS
-from src.modules.deep_research.db.date_utils import parse_publish_date
+from src.core.db.connection import Database, DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASS
+from src.utils.date_parser import parse_publish_date
 
 class VectorDatabase(Database):
     """Database helper with pgvector support."""
@@ -118,20 +118,6 @@ class VectorDatabase(Database):
         results = VectorDatabase.execute_query(query, (url,), fetch=True)
         return results[0] if results else None
 
-    @staticmethod
-    def search_similar(query_embedding, limit=5):
-        """Searches for similar documents using cosine similarity (backward-compatible)."""
-        if not HAS_PGVECTOR:
-            print("pgvector not available, returning empty search results.")
-            return []
-            
-        query = """
-        SELECT url, title, content, insight, layer, entities, doc_type, ticker, publish_date, 1 - (embedding <=> %s::vector) AS similarity
-        FROM research_documents
-        ORDER BY embedding <=> %s::vector
-        LIMIT %s;
-        """
-        return VectorDatabase.execute_query(query, (query_embedding, query_embedding, limit), fetch=True)
 
     @staticmethod
     def search_with_filters(query_embedding, ticker=None, doc_type=None, start_date=None, end_date=None, limit=5, min_similarity=0.3):

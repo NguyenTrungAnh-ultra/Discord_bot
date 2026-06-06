@@ -2,8 +2,8 @@ import os
 import json
 from google import genai
 from src.modules.deep_research.company_state import CompanyState
-from src.modules.deep_research.db.pgvector_db import VectorDatabase
-from src.utils.llm_utils import estimate_tokens
+from src.core.db.vector import VectorDatabase
+from src.core.ai.tracker import estimate_tokens
 
 async def store_company_data(state: CompanyState):
     """

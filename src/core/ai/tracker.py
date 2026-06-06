@@ -31,7 +31,7 @@ def call_llm_with_tracking(state: dict, node_name: str, prompt: str, model_name:
     import os
     from google import genai
     from google.genai import types
-    from src.core.genai_client import get_genai_client
+    from src.core.ai.client import get_genai_client
 
     if client is None:
         client = get_genai_client()

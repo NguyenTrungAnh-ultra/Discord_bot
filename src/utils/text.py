@@ -1,7 +1,7 @@
 import os 
 import json
 from playwright.async_api import async_playwright
-from src.utils.user_agent import get_random_desktop_user_agent
+from src.core.scraper.browser import get_random_desktop_user_agent
 import asyncio
 import warnings
 
@@ -11,7 +11,7 @@ def clean_title(embed_title):
     # Thay thế icon và khoảng trắng thừa
     return embed_title.replace("🔥 ", "").strip()
 
-async def get_artical(link):
+async def get_article(link):
     print(f"--- Đang truy cập: {link} ---")
     tin_moi = "" # Mặc định là chuỗi rỗng để tránh lỗi NoneType
     
@@ -70,7 +70,3 @@ async def get_artical(link):
             await browser.close()
     
     return tin_moi
-
-# if __name__ == '__main__':
-#     art = get_artical('https://trading.vietcap.com.vn/ai-news/post-detail/hnm-bien-tai-hanoimilk-con-gai-chu-tich-lien-tuc-mua-ban-co-phieu?language=vi')
-#     print(art)

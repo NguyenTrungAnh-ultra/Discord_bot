@@ -278,25 +278,6 @@ def run(report_type: str = 'bao_cao_doanh_nghiep'):
     scanner.scan_type(code)
 
 
-def download_by_id(report_id: str, report_type='bao_cao_doanh_nghiep'):
-    """Downloads PDF for a specific report_id using BaseScanner"""
-    from src.utils.base_scanner import BaseScanner
-    print(f"📥 Downloading report {report_id}...")
-    
-    code_map = {
-        'bao_cao_doanh_nghiep': 'BCDN',
-        'bao_cao_nganh': 'BCN'
-    }
-    code = code_map.get(report_type, 'BCDN')
-    dir_name = "bao_cao_doanh_nghiep" if code == "BCDN" else "bao_cao_nganh"
-    
-    scanner = BaseScanner(os.path.join("VCBS", dir_name), Config.base_url)
-    result = scanner.download_by_id(report_id)
-    if not result['success']:
-        print(f"❌ {result['error']}")
-    return result
-
-
 if __name__ == "__main__":
     print("🧪 Testing VCBS Scanner...")
     # run('bao_cao_doanh_nghiep')

@@ -7,8 +7,8 @@ import os
 import pickle
 import hashlib
 import re
-from src.utils.base_scanner import BaseScanner
-from src.utils.ticker_utils import extract_tickers
+from src.core.scraper.base import BaseScanner
+from src.utils.ticker import extract_tickers
 
 class Config:
     bao_cao_cong_ty_url = "https://kbsec.com.vn/vi/bao-cao-cong-ty"
@@ -117,90 +117,6 @@ def run(bao_cao_cong_ty_url=False, bao_cao_nganh_url=False):
     
     scanner.save_csv(final_df)
     return final_df
-
-def download_by_id(report_id: str, report_type: str = 'bao_cao_cong_ty'):
-    dir_name = os.path.join("KBSV", report_type)
-    scanner = BaseScanner(dir_name, Config.base_url)
-    return scanner.download_by_id(report_id)
-
-def scan_and_download_by_ticker(ticker):
-    dir_name = os.path.join("KBSV", "bao_cao_cong_ty")
-    scanner = BaseScanner(dir_name, Config.base_url)
-    
-    ticker = ticker.upper()
-    print(f"\n{'='*60}")
-    print(f"🔍 Quét báo cáo cho mã: {ticker}")
-    print(f"{'='*60}\n")
-    
-    _, old_df, _ = scanner.setup()
-    
-    if old_df.empty:
-        print("❌ File CSV trống!")
-        return {'ticker': ticker, 'total_reports': 0, 'new_reports': 0, 'downloaded': 0, 'reports': []}
-    
-    ticker_dir = os.path.join(scanner.output_dir, ticker)
-    os.makedirs(ticker_dir, exist_ok=True)
-    
-    ticker_reports = []
-    
-    for idx, row in old_df.iterrows():
-        title = str(row['title'])
-        pdf_url = str(row['pdf_url'])
-        pdf_filename = pdf_url.split('/')[-1]
-        
-        is_match = False
-        if pdf_filename.startswith('KBSV_'):
-            parts = pdf_filename.split('_')
-            if len(parts) >= 2 and parts[1].upper() == ticker:
-                is_match = True
-        
-        if not is_match and ticker in title.upper():
-            is_match = True
-        
-        if is_match:
-            safe_filename = pdf_filename
-            file_path = os.path.join(ticker_dir, safe_filename)
-            already_downloaded = os.path.exists(file_path)
-            
-            ticker_reports.append({
-                'title': title,
-                'pdf_url': pdf_url,
-                'filename': safe_filename,
-                'file_path': file_path,
-                'downloaded': already_downloaded
-            })
-    
-    new_reports = [r for r in ticker_reports if not r['downloaded']]
-    print(f"📊 Kết quả: Tổng số: {len(ticker_reports)} | Chưa tải: {len(new_reports)}")
-    
-    downloaded_count = 0
-    if new_reports:
-        print(f"📥 Bắt đầu tải {len(new_reports)} báo cáo mới...\n")
-        session, _, _ = scanner.setup()
-        for idx, report in enumerate(new_reports, 1):
-            print(f"[{idx}/{len(new_reports)}] {report['title']}")
-            try:
-                response = session.get(report['pdf_url'], timeout=30)
-                response.raise_for_status()
-                with open(report['file_path'], 'wb') as f:
-                    f.write(response.content)
-                print(f"   ✅ Đã tải: {report['filename']}")
-                downloaded_count += 1
-                time.sleep(random.uniform(1, 2))
-            except Exception as e:
-                print(f"   ❌ Lỗi tải: {e}")
-                
-        cookie_file = os.path.join(scanner.output_dir, "kbsv_cookies.pkl")
-        with open(cookie_file, 'wb') as f:
-            pickle.dump(session.cookies, f)
-            
-    return {
-        'ticker': ticker,
-        'total_reports': len(ticker_reports),
-        'new_reports': len(new_reports),
-        'downloaded': downloaded_count,
-        'reports': ticker_reports
-    }
 
 if __name__ == "__main__":
     print("🚀 Starting KBSV Company Reports Scan...\n")

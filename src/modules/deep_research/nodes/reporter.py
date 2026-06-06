@@ -9,7 +9,7 @@ def report_node(state: ResearchState):
     # Switched to gemini-flash-latest to avoid quota issues
     model = "gemma-4-26b-a4b-it"
     
-    from src.modules.deep_research.db.date_utils import format_date_display
+    from src.utils.date_parser import format_date_display
 
     insights = state.get("insights", [])
     if not insights:

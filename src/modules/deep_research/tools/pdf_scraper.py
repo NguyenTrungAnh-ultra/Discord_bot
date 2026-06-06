@@ -1,7 +1,7 @@
 import requests
 import fitz  # PyMuPDF
 import io
-from src.utils.user_agent import get_random_desktop_user_agent
+from src.core.scraper.browser import get_random_desktop_user_agent
 
 def scrape_pdf(url):
     """Scrapes PDF content and converts to text using PyMuPDF."""

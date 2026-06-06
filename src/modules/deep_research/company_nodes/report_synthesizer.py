@@ -1,5 +1,5 @@
 from src.modules.deep_research.company_state import CompanyState
-from src.utils.llm_utils import call_llm_with_tracking
+from src.core.ai.tracker import call_llm_with_tracking
 
 def synthesize_report(state: CompanyState):
     """

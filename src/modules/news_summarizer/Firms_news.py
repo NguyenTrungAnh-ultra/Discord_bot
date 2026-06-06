@@ -1,13 +1,11 @@
 import os
-from src.core.db import Database
+from src.core.db.connection import Database
 from src.modules.news_summarizer.scanners.tin_doanh_nghiep import VCI_news
-from datetime import datetime
 import discord
 from dotenv import load_dotenv
 from vnstock import Trading
 
 # Config
-today = str(datetime.today().strftime('%Y-%m-%d'))
 trading = Trading(source='VCI') 
 
 # TOOLS
