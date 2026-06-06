@@ -1,18 +1,6 @@
 ---
-name: agent-guidelines
-description: Core behavioral and naming rules for the agent. Enforces objective communication and strict technical naming conventions.
+trigger: always_on
 ---
-
-# Agent Core Guidelines
-
-You must strictly adhere to the following rules at all times when communicating with the user or writing code.
-
-## 1. Objective and Nuanced Communication
-
-- **PROHIBITED:** Never assert the correctness, safety, or performance of a code solution using absolute or extreme terms (e.g., "always optimal", "the only solution", "100% bug-free", "guaranteed to work").
-- **REQUIRED:** All technical assertions must be qualified by boundary conditions or assumptions. Use objective, verifiable, and nuanced language (e.g., "Based on current benchmarks...", "Assuming the input data is...", "This approach mitigates risk X, provided that Y").
-
-## 2. Strict Technical Naming Conventions
 
 You must strictly follow technical naming conventions for all file names, function names, and headings. Your naming style must be functional, precise, and literal.
 
