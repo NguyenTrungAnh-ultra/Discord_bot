@@ -23,9 +23,14 @@ def store_node(state: ResearchState):
     # Generate embedding
     try:
         # Using gemini-embedding-2 (3072 dimensions)
+        text_to_embed = insight.get("summary") or insight.get("title") or "No content available"
+        text_to_embed = text_to_embed.strip()
+        if not text_to_embed:
+            text_to_embed = "No content available"
+            
         response = client.models.embed_content(
             model="gemini-embedding-2",
-            contents=insight.get("summary", ""),
+            contents=text_to_embed,
         )
         embedding = response.embeddings[0].values
     except Exception as e:
