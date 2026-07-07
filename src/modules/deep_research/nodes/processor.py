@@ -24,8 +24,13 @@ def process_node(state: ResearchState):
         print(f"Failed to scrape content from {url}")
         return {"current_content": None, "current_title": "Failed to scrape", "current_insight": None}
 
-    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-    model = "gemma-4-26b-a4b-it"
+    from src.config.config_loader import Config
+    from src.core.ai.tracker import call_llm_with_tracking
+    
+    model = Config.get("llm", "models", {}).get("processor", "gemma-4-26b-a4b-it")
+    max_chars = Config.get("rag", "max_content_characters", 30000)
+
+    client = None
     
     prompt = (
         f"Bạn là một chuyên gia phân tích dữ liệu vĩ mô và tài chính (Deep Research AI). "
@@ -44,17 +49,19 @@ def process_node(state: ResearchState):
         f"  \"notes\": [\"Rủi ro 1\", \"Góc khuất/Cảnh báo 2\",...],\n"
         f"  \"sentiment\": \"Tích cực/Tiêu cực/Trung lập\"\n"
         f"}}\n\n"
-        f"Nội dung: {content[:30000]}"
+        f"Nội dung: {content[:max_chars]}"
     )
     
     try:
         print(f"🤖 AI is extracting insights from {url}...")
-        response = client.models.generate_content(
-            model=model, 
-            contents=prompt,
-            config={"response_mime_type": "application/json"}
+        response_text, updated_state = call_llm_with_tracking(
+            state=state,
+            node_name="Node_Processor",
+            prompt=prompt,
+            model_name=model,
+            json_mode=True
         )
-        insight = json.loads(response.text)
+        insight = json.loads(response_text)
         
         cot = insight.get("chain_of_thought", "")
         if cot:
@@ -69,6 +76,7 @@ def process_node(state: ResearchState):
             "key_facts": [], 
             "sentiment": "N/A"
         }
+        updated_state = state
 
     # RAM Garbage Collection
     del content
@@ -80,5 +88,6 @@ def process_node(state: ResearchState):
     return {
         "current_content": insight.get("summary", ""),
         "current_title": insight.get("title", ""),
-        "current_insight": insight
+        "current_insight": insight,
+        **updated_state
     }

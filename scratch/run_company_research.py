@@ -9,6 +9,10 @@ sys.path.append(os.getcwd())
 from src.modules.deep_research.company_graph import create_company_graph
 
 def main():
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except AttributeError:
+        pass
     load_dotenv()
     
     # Check for GEMINI_API_KEY

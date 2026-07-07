@@ -9,6 +9,10 @@ sys.path.append(os.getcwd())
 from src.modules.deep_research.main_graph import create_research_graph
 
 def main():
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except AttributeError:
+        pass
     load_dotenv()
     
     # Check for GEMINI_API_KEY
@@ -17,7 +21,7 @@ def main():
         return
 
     # Query choice
-    query = input("Enter query for macro research (e.g., Lạm phát Việt Nam 2025) [default: Lạm phát Việt Nam 2025]: ").strip()
+    query = input("Enter query for macro research (e.g., Lam phat Viet Nam 2025) [default: Lam phat Viet Nam 2025]: ").strip()
     if not query:
         query = "Lạm phát Việt Nam 2025"
         

@@ -5,7 +5,9 @@ from src.core.scraper.browser import get_random_desktop_user_agent
 
 load_dotenv()
 
-SEARXNG_URL = os.getenv("SEARXNG_URL", "http://localhost:8080")
+from src.config.config_loader import Config
+
+SEARXNG_URL = Config.get("rag", "searxng_url", "http://localhost:8080")
 
 def search_searxng(query, num_results=10):
     """Searches using SearxNG API."""

@@ -32,8 +32,12 @@ def call_llm_with_tracking(state: dict, node_name: str, prompt: str, model_name:
     from google import genai
     from google.genai import types
     from src.core.ai.client import get_genai_client
+    from src.config.config_loader import Config
 
-    if client is None:
+    provider = Config.get("llm", "provider", "gemini")
+    ollama_url = Config.get("llm", "ollama_url", "http://localhost:11434")
+
+    if client is None and provider == "gemini":
         client = get_genai_client()
 
     current_input_tokens = state.get("total_input_tokens", 0)
@@ -46,18 +50,44 @@ def call_llm_with_tracking(state: dict, node_name: str, prompt: str, model_name:
     current_input_tokens += node_input
 
     config = None
-    if json_mode:
+    if json_mode and provider == "gemini":
         config = types.GenerateContentConfig(response_mime_type="application/json")
 
     from tenacity import retry, stop_after_attempt, wait_exponential
 
     @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=2, max=10))
     def _generate():
-        return client.models.generate_content(
-            model=model_name,
-            contents=prompt,
-            config=config
-        )
+        if provider == "ollama":
+            import requests
+            payload = {
+                "model": model_name,
+                "messages": [{"role": "user", "content": prompt}],
+                "stream": False,
+                "options": {
+                    "temperature": 0.1
+                }
+            }
+            if json_mode:
+                payload["format"] = "json"
+                
+            response = requests.post(f"{ollama_url}/api/chat", json=payload, timeout=120)
+            response.raise_for_status()
+            res_json = response.json()
+            
+            # Create a mock response object matching the interface expected below
+            class OllamaResponse:
+                def __init__(self, text, output_tokens):
+                    self.text = text
+                    self.usage_metadata = type('Usage', (), {'candidates_token_count': output_tokens})()
+            
+            output_tokens = res_json.get("eval_count", estimate_tokens(res_json["message"]["content"]))
+            return OllamaResponse(res_json["message"]["content"], output_tokens)
+        else:
+            return client.models.generate_content(
+                model=model_name,
+                contents=prompt,
+                config=config
+            )
 
     try:
         response = _generate()

@@ -3,6 +3,7 @@ from src.modules.deep_research.company_state import CompanyState
 from src.modules.deep_research.tools.searxng_api import search_searxng
 from src.modules.deep_research.tools.pdf_scraper import scrape_pdf
 from src.core.ai.tracker import call_llm_with_tracking
+from src.config.config_loader import Config
 
 def build_profile(state: CompanyState):
     """
@@ -64,12 +65,14 @@ def build_profile(state: CompanyState):
     }}
     """
     
+    model = Config.get("llm", "models", {}).get("company_profile", "gemma-4-31b-it")
+    
     try:
         response_text, updated_state = call_llm_with_tracking(
             state=state,
             node_name="Node_1_Profile",
             prompt=prompt,
-            model_name="gemma-4-31b-it",
+            model_name=model,
             json_mode=True
         )
         
