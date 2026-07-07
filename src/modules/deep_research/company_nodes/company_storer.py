@@ -28,6 +28,9 @@ async def store_company_data(state: CompanyState):
         content_to_embed = json.dumps(profile.get("business_model", {})) + " " + json.dumps(profile.get("economic_moat", {}))
         
         print(f"Generating embedding for {ticker} business profile...")
+        if not content_to_embed.strip():
+            content_to_embed = "No profile content available"
+            
         try:
             current_requests += 1
             input_tokens = estimate_tokens(content_to_embed)
@@ -63,6 +66,9 @@ async def store_company_data(state: CompanyState):
         content_to_embed = insight.get("chain_of_thought", "") + " " + json.dumps(insight.get("key_metrics", {}))
         
         print(f"Generating embedding for {ticker} financial insight...")
+        if not content_to_embed.strip():
+            content_to_embed = "No financial content available"
+            
         try:
             current_requests += 1
             input_tokens = estimate_tokens(content_to_embed)

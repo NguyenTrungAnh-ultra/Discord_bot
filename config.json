@@ -1,14 +1,14 @@
 {
   "llm": {
-    "provider": "gemini",
+    "provider": "ollama",
     "ollama_url": "http://localhost:11434",
     "models": {
-      "translator": "gemma-4-26b-a4b-it",
-      "processor": "gemma-4-26b-a4b-it",
-      "reporter": "gemma-4-26b-a4b-it",
-      "company_profile": "gemma-4-31b-it",
-      "financial_audit": "gemma-4-31b-it",
-      "report_synthesizer": "gemma-4-31b-it"
+      "translator": "qwen3.5:4b",
+      "processor": "qwen3.5:4b",
+      "reporter": "qwen3.5:4b",
+      "company_profile": "qwen3.5:4b",
+      "financial_audit": "qwen3.5:4b",
+      "report_synthesizer": "qwen3.5:4b"
     }
   },
   "rag": {
@@ -16,6 +16,7 @@
     "max_iterations": 3,
     "similarity_threshold": 0.3,
     "num_search_results": 5,
-    "max_content_characters": 30000
+    "max_content_characters": 30000,
+    "use_gemini_search_fallback": true
   }
 }
