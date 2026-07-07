@@ -6,10 +6,13 @@ from pathlib import Path
 root_path = Path(__file__).resolve().parents[3]
 sys.path.append(str(root_path))
 
+import io
 from src.modules.news_summarizer.scanners.tin_doanh_nghiep import VCI_news
 from src.utils.text import clean_title, get_article
 from src.modules.news_summarizer.ai_helper import tomtat100
 from src.core.db.connection import AsyncDatabase
+from src.modules.deep_research.company_graph import create_company_graph
+from src.modules.deep_research.main_graph import create_research_graph
 from dotenv import load_dotenv
 from datetime import datetime
 import os
@@ -30,6 +33,10 @@ if hasattr(intents, 'threads'):
     intents.threads = True
 
 bot = commands.Bot(command_prefix='!', intents=intents)
+
+# Khởi tạo đồ thị phân tích RAG / Deep Research
+company_analyst = create_company_graph()
+research_analyst = create_research_graph()
 
 @bot.event
 async def on_ready():
@@ -223,5 +230,109 @@ async def cleanup(ctx, limit: int = 500):
         
     except Exception as e:
         await ctx.send(f"❌ Có lỗi xảy ra khi dọn dẹp: {e}")
+
+@bot.command(
+    name="profile",
+    help="Phân tích sâu mô hình kinh doanh và tài chính của doanh nghiệp. Cú pháp: !profile <TICKER>. Ví dụ: !profile TCB"
+)
+async def profile(ctx, ticker: str):
+    """
+    Phân tích mô hình kinh doanh và tình hình tài chính của một doanh nghiệp.
+    """
+    ticker = ticker.strip().upper()
+    if len(ticker) != 3 or not ticker.isalpha():
+        await ctx.send("⚠️ Mã cổ phiếu không hợp lệ. Vui lòng nhập mã có 3 chữ cái. Ví dụ: `!profile TCB`")
+        return
+        
+    status_msg = await ctx.send(f"⏳ **[1/3]** Đang kiểm tra dữ liệu cache & chuẩn bị phân tích cho **{ticker}**...")
+    
+    initial_state = {
+        "ticker": ticker,
+        "business_profile": None,
+        "financial_data": None,
+        "financial_insight": None,
+        "final_memo": None,
+        "total_input_tokens": 0,
+        "total_output_tokens": 0,
+        "total_requests": 0,
+        "node_tokens": {}
+    }
+    
+    try:
+        # Cập nhật trạng thái bắt đầu chạy LangGraph
+        await status_msg.edit(content=f"🔄 **[2/3]** Đang tiến hành thu thập thông tin và chạy phân tích AI cho **{ticker}** (quá trình này có thể mất 1-2 phút)...")
+        
+        # Invoke LangGraph
+        final_state = await company_analyst.ainvoke(initial_state)
+        memo = final_state.get("final_memo")
+        
+        if memo:
+            await status_msg.edit(content=f"✍️ **[3/3]** Đang tổng hợp và gửi báo cáo phân tích cho **{ticker}**...")
+            
+            # Gửi file Markdown đính kèm để không bị giới hạn 2000 ký tự
+            file_data = io.BytesIO(memo.encode('utf-8'))
+            discord_file = discord.File(fp=file_data, filename=f"Investment_Memo_{ticker}.md")
+            
+            # Gửi tệp tin đính kèm
+            await ctx.send(
+                content=f"✅ Đã hoàn thành báo cáo phân tích đầu tư cho **{ticker}**!",
+                file=discord_file
+            )
+            await status_msg.delete()
+        else:
+            await status_msg.edit(content=f"❌ Không thể tạo báo cáo phân tích cho **{ticker}**.")
+    except Exception as e:
+        print(f"Lỗi lệnh profile: {e}")
+        await status_msg.edit(content=f"❌ Đã xảy ra lỗi trong quá trình phân tích **{ticker}**: {e}")
+
+@bot.command(
+    name="research",
+    help="Nghiên cứu vĩ mô hoặc ngành theo chủ đề yêu cầu. Cú pháp: !research <chủ đề>. Ví dụ: !research Lạm phát 2025"
+)
+async def research(ctx, *, query: str):
+    """
+    Nghiên cứu vĩ mô/ngành theo chủ đề tự do qua luồng RAG Agent.
+    """
+    query = query.strip()
+    if not query:
+        await ctx.send("⚠️ Vui lòng nhập chủ đề cần nghiên cứu. Ví dụ: `!research Lạm phát 2025`")
+        return
+        
+    status_msg = await ctx.send(f"⏳ **[1/2]** Đang khởi động tiến trình nghiên cứu cho chủ đề: **'{query}'**...")
+    
+    initial_state = {
+        "query": query,
+        "search_queries": [],
+        "urls": [],
+        "current_url": None,
+        "current_title": None,
+        "current_content": None,
+        "current_insight": None,
+        "insights": [],
+        "db_insights": None,
+        "report": "",
+        "iteration": 0,
+        "max_iterations": 3
+    }
+    
+    try:
+        await status_msg.edit(content=f"🔄 **[2/2]** Đang cào thông tin web, thực hiện RAG và tổng hợp báo cáo cho: **'{query}'** (quá trình này mất khoảng 2-3 phút)...")
+        
+        final_state = await research_analyst.ainvoke(initial_state)
+        report = final_state.get("report")
+        
+        if report:
+            file_data = io.BytesIO(report.encode('utf-8'))
+            discord_file = discord.File(fp=file_data, filename=f"Macro_Research_Report.md")
+            await ctx.send(
+                content=f"✅ Đã hoàn thành báo cáo nghiên cứu vĩ mô cho chủ đề: **'{query}'**!",
+                file=discord_file
+            )
+            await status_msg.delete()
+        else:
+            await status_msg.edit(content=f"❌ Không thể sinh báo cáo nghiên cứu cho chủ đề: **'{query}'**.")
+    except Exception as e:
+        print(f"Lỗi lệnh research: {e}")
+        await status_msg.edit(content=f"❌ Đã xảy ra lỗi trong quá trình nghiên cứu: {e}")
 
 bot.run(token=token, log_handler=handler, log_level=logging.DEBUG)
