@@ -97,8 +97,4 @@ This is a massive LangGraph module but contains technical debt:
 - **`main.py`**: Root entry point. Launches the Bot and schedules subprocesses (`job_news`, `job_vision`, `job_daily_report`).
 - **`pytest.ini`**: Configuration to auto-discover tests for pytest.
 - **`tests/test_all_features.py`**: Contains all E2E and Unit tests running successfully (covering Bot, RAG DB, Utils, LangGraph).
-- **[SYSTEM TRASH]**:
-  - `tests/request.py`, `tests/sample.txt`, `image.png`, `discord.log`: Junk/draft files that should be deleted.
-  - `tests/test_db_schema.py`: Messy output/print code.
-  - `tests/test_company.py`, `tests/test_research.py`: Executed manually, not conforming to pytest standards.
-  - `tests/caution.txt`, `Implementation Plan.md`: Should be moved to the `docs/` folder.
+- **[SYSTEM TRASH]**: _(Cleaned up)_ Redundant test files (`tests/request.py`, `tests/test_db_schema.py`, etc.), temporary logs (`discord.log`), and draft plans have been completely removed from the workspace.

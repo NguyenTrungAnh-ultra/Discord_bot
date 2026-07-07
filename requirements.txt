@@ -16,3 +16,4 @@ langgraph
 trafilatura
 pymupdf
 sentence-transformers
+tenacity
