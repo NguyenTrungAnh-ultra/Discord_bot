@@ -6,8 +6,8 @@ from datetime import date
 # Ensure root directory is in Python path
 sys.path.append(os.getcwd())
 
-from src.modules.deep_research.db.pgvector_db import VectorDatabase
-from src.modules.deep_research.db.date_utils import parse_publish_date, format_date_display
+from src.core.db.vector import VectorDatabase
+from src.utils.date_parser import parse_publish_date, format_date_display
 
 def print_test_header(title):
     print("\n" + "="*80)

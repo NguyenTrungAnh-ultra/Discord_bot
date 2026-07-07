@@ -4,6 +4,18 @@ A modular Python-based Discord bot system designed for financial market monitori
 
 ---
 
+## Problem Statement & Achievements
+
+**Problem:** Tracking financial markets, aggregating news, parsing PDF reports, and conducting stock research manually is inefficient and time-consuming.
+
+**Achievements:**
+- **Automated Data Collection:** Scrapes financial news, downloads daily PDF reports from securities firms, and captures market dashboards for Discord delivery.
+- **AI Research Pipelines:** Implements automated macro and micro market analysis workflows using LangGraph and LLMs.
+- **Vector RAG Database:** Integrates PostgreSQL with `pgvector` for semantic search across research documents.
+- **Resource Optimization:** Utilizes a database caching mechanism to bypass redundant API calls, reducing AI execution costs and processing time.
+
+---
+
 ## 🌟 Core Modules
 
 ### 1. AI Market Researcher
@@ -168,6 +180,25 @@ graph TD
 
 ---
 
+## 📈 Financial & Industry Analysis Framework
+
+To balance analytical depth with computational efficiency (context window and API cost constraints), the system implements a **simplified and flexible adaptation** of the **CFA Industry Analysis Framework (Exhibit 9-2)**:
+
+![CFA Industry Analysis Framework](docs/industry_analysis_framework.png)
+
+### 1. Macro & Sector Analysis (Macro Graph)
+* **Macroeconomic & Governmental Influences**: Automatically parsed in [translator.py](file:///F:/Projects/Discord_bot/src/modules/deep_research/nodes/translator.py) and summarized in [reporter.py](file:///F:/Projects/Discord_bot/src/modules/deep_research/nodes/reporter.py). The system tracks FED/ECB interest rates, inflation, exchange rates, monetary policy shifts, and key global commodity prices.
+* **Supplier Bargaining Forces**: Evaluated via supply chain constraints, input cost fluctuations, and geopolitical bottlenecks.
+* **Internal Competitive Forces & Technological Influences**: Monitors key industry players' strategies, M&A movements, and emerging technology disruptions.
+* **Business Cycle Sensitivity**: Addressed through multi-scenario reporting (Positive, Negative, and Base cases) generated in [reporter.py](file:///F:/Projects/Discord_bot/src/modules/deep_research/nodes/reporter.py).
+
+### 2. Company Micro Analysis (Company Graph)
+* **Economic Moat (Internal Competitive Forces)**: Evaluated in [profile_builder.py](file:///F:/Projects/Discord_bot/src/modules/deep_research/company_nodes/profile_builder.py). The AI extracts and assesses the presence and strength of competitive advantages (e.g., Economies of Scale, Switching Costs, Brand Power) from annual reports.
+* **Quantitative Health Assessment**: Evaluated in [financial_auditor.py](file:///F:/Projects/Discord_bot/src/modules/deep_research/company_nodes/financial_auditor.py). Measures key performance indicators like gross margins, Operating Cash Flow (CFO) trends, and debt-to-equity structures.
+* **Synthesis & Thesis**: Combines qualitative and quantitative insights in [report_synthesizer.py](file:///F:/Projects/Discord_bot/src/modules/deep_research/company_nodes/report_synthesizer.py) to generate a concise, actionable investment thesis (*Investment Memo*).
+
+---
+
 ## 🛠 Tech Stack
 
 - **Language**: Python 3.10+
@@ -288,9 +319,10 @@ Currently, whole documents are embedded as single large vectors. A chunking stra
 ~~The `company_graph.py` runs sequentially. Even if `cache_checker` finds cached data, it does not truly skip the graph's execution path via `add_conditional_edges`, wasting node initialization cycles.~~
 _(Resolved: Implemented `add_conditional_edges` in `company_graph.py` with granular `profile_from_cache` and `finance_from_cache` state flags to bypass unnecessary API nodes.)_
 
-### 3. AI Error Handling & Retry Logic
+### ~~3. AI Error Handling & Retry Logic~~ [RESOLVED]
 
-If Gemini AI timeouts or hits a rate limit, nodes return an `{"error": ...}` dict and the graph proceeds. There is no retry logic or robust fallback mechanism for API failures.
+~~If Gemini AI timeouts or hits a rate limit, nodes return an `{"error": ...}` dict and the graph proceeds. There is no retry logic or robust fallback mechanism for API failures.~~
+_(Resolved: Integrated `tenacity` library in `tracker.py` to auto-retry LLM calls 3 times with exponential backoff. Added a graceful fallback returning `{"error": "AI unavailable"}` to prevent graph failure after exhausted retries.)_
 
 ### 4. Vector Model Migration Scripts
 
@@ -308,9 +340,10 @@ The `insert_document` upserts data, but there's no expiration or archival strate
 
 The `/research` command lacks a task queue. Concurrent requests from multiple users can crash the bot or hit API rate limits.
 
-### 8. SSRF & Web Scraping Timeouts
+### ~~8. SSRF & Web Scraping Timeouts~~ [RESOLVED]
 
-The `pdf_scraper` blindly trusts URLs from SearxNG. It lacks blacklist filtering (for internal IP protection) and a hard global timeout to prevent infinite hanging.
+~~The `pdf_scraper` blindly trusts URLs from SearxNG. It lacks blacklist filtering (for internal IP protection) and a hard global timeout to prevent infinite hanging.~~
+_(Resolved: Added `security.py` with `is_safe_url` resolving hostnames to IPs and blocking private/local subnets. Enforced a hard Global Timeout of 30s/45s using `ThreadPoolExecutor` to kill hanging scrape attempts.)_
 
 ### 9. Follow-up Chat (Conversational Memory)
 

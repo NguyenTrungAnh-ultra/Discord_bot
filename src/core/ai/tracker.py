@@ -49,12 +49,18 @@ def call_llm_with_tracking(state: dict, node_name: str, prompt: str, model_name:
     if json_mode:
         config = types.GenerateContentConfig(response_mime_type="application/json")
 
-    try:
-        response = client.models.generate_content(
+    from tenacity import retry, stop_after_attempt, wait_exponential
+
+    @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=2, max=10))
+    def _generate():
+        return client.models.generate_content(
             model=model_name,
             contents=prompt,
             config=config
         )
+
+    try:
+        response = _generate()
         node_output = count_response_tokens(response)
         current_output_tokens += node_output
         
@@ -85,4 +91,6 @@ def call_llm_with_tracking(state: dict, node_name: str, prompt: str, model_name:
             "total_requests": current_requests,
             "node_tokens": node_tokens
         }
-        raise Exception(f"LLM Error: {str(e)}", updated_state)
+        print(f"LLM Error after retries in {node_name}: {str(e)}")
+        # Fallback to prevent crash
+        return '{"error": "AI unavailable"}', updated_state
