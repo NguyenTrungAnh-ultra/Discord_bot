@@ -65,7 +65,7 @@ The chat interface where you talk to the system.
 ├── ./
 │   ├── main.py                # Main orchestrator entry point
 │   ├── pytest.ini             # Pytest configuration
-│   ├── DB_ARCHITECHTURE.md    # Database architecture documentation
+│   ├── DB_ARCH.md             # Database architecture documentation
 │   ├── ARCHITECTURE.md        # Core project architecture documentation
 │   ├── docs/                  # Project documentation
 │   ├── scripts/               # Admin and sync scripts
@@ -82,8 +82,8 @@ The chat interface where you talk to the system.
 │   │   └── modules/           # Feature modules
 │   │       ├── bot_main/      # Discord bot commands (Bot.py)
 │   │       ├── deep_research/ # LangGraph nodes (Macro & Micro systems)
-│   │       │   ├── company_nodes/ # Micro nodes (Profile, Finance, Storer)
-│   │       │   ├── nodes/         # Macro nodes (Search, Scrape, Report, Storer)
+│   │       │   ├── company_nodes/ # Micro nodes (Cache, Profile, Finance, Storer, Synthesizer)
+│   │       │   ├── nodes/         # Macro nodes (Translator, Retriever, Searcher, Dispatcher, Processor, Storer, Reporter)
 │   │       │   └── tools/         # Tools (PDF/HTML Scraper, SearxNG API)
 │   │       ├── news_summarizer/ # Scrapes and summarizes news (Firms_news.py)
 │   │       ├── report_collecter/# Daily scraping of financial reports (daily_job.py)
@@ -118,9 +118,13 @@ graph TD
 
         SearcherNode --> DispatcherNode{"4. Dispatcher Node (Vòng lặp URLs)"}
 
-        DispatcherNode -->|Còn URL và dưới giới hạn| ProcessorNode["5. Processor Node (Scrape HTML/PDF và AI trích xuất publish_date)"]
+        DispatcherNode -->|Còn URL| ProcessorCacheCheck{"Đã có trong DB?"}
+        
+        ProcessorCacheCheck -->|Chưa có| ProcessorNode["5. Processor Node (Scrape HTML/PDF và AI trích xuất)"]
+        ProcessorCacheCheck -->|Đã có - Bypass| SkipScrape["Bỏ qua Scrape và AI Extract"]
 
-        ProcessorNode --> StorerNode["6. Storer Node (Tạo Vector 3072 và Lưu DB kèm ticker, doc_type, publish_date)"]
+        ProcessorNode --> StorerNode["6. Storer Node (Tạo Vector 3072 và Lưu DB)"]
+        SkipScrape --> StorerNode
 
         StorerNode --> DispatcherNode
 
@@ -159,9 +163,10 @@ graph TD
 
     %% DB Connections
     MemoryRetrieverNode -. "Truy vấn tương đồng vector" .-> DB
-    StorerNode -->|Lưu tài liệu vĩ mô| DB
+    ProcessorCacheCheck -. "Truy vấn URL Bypass" .-> DB
+    StorerNode -->|Lưu tài liệu vĩ mô (nếu chưa có)| DB
     CacheCheckerNode -. "Truy vấn tương đồng metadata" .-> DB
-    CompanyStorerNode -->|Lưu hồ sơ và BCTC| DB
+    CompanyStorerNode -->|Lưu hồ sơ và BCTC (nếu chưa có)| DB
 
     %% Output
     ReporterNode --> FinalMacroReport[/"Báo cáo Vĩ mô và Ngành"/]
@@ -174,8 +179,8 @@ graph TD
     class TranslatorNode,MemoryRetrieverNode,SearcherNode,ProcessorNode,StorerNode,ReporterNode nodeClass;
     class CacheCheckerNode,ProfileBuilderNode,FinancialAuditorNode,CompanyStorerNode,ReportSynthesizerNode nodeClass;
     class DB dbClass;
-    class QueryRouter,ProfileCacheCheck,FinanceCacheCheck,DispatcherNode decisionClass;
-    class SkipProfile,SkipFinance skipClass;
+    class QueryRouter,ProcessorCacheCheck,ProfileCacheCheck,FinanceCacheCheck,DispatcherNode decisionClass;
+    class SkipScrape,SkipProfile,SkipFinance skipClass;
 ```
 
 ---
@@ -288,6 +293,17 @@ erDiagram
    ```bash
    python main.py
    ```
+
+### Using the Bot
+
+- **`!news`**: Fetches the latest financial news summaries.
+- **`!tomtat`**: Reply to a news message to receive a concise AI summary.
+- **`!profile <TICKER>`**: Fetches the company profile and financial health analysis.
+- **`!research <QUERY> [attachment.md]`**: Conducts deep market research. You can attach a markdown file containing custom insights to inject context.
+
+### API Cost Optimization (RAG Cache Retrieval Bypass)
+
+The system incorporates a highly optimized RAG Cache Bypass mechanism. Before web scraping or vector embedding generation (which consumes Gemini API tokens), the workflow queries the PostgreSQL database via `url` or metadata matching. If the data is already cached, it bypasses the execution of expensive nodes (`processor`, `storer`) and loads the `insight` directly from the database. This eliminates redundant API calls and minimizes AI costs.
 
 ### Running Tests
 

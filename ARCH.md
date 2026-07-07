@@ -89,6 +89,7 @@ This is a massive LangGraph module but contains technical debt:
   - **[PHANTOM MODULE]**: No function from `main.py` or `Bot.py` imports `create_research_graph` for actual production runs. This large feature is currently only invoked via the test file `test_all_features.py`.
   - **[PHANTOM COMPUTATION]**: The `translator` node generates 10 search queries -> the `searcher` node scrapes 50 URLs. However, the loop is capped at 5 iterations, wasting 45 scraped URLs without processing them.
   - **[FIXED]**: Migrated `company_nodes/cache_checker.py` to direct metadata-based search to fetch the latest records, completely removing the hardcoded URL containing `/2026`.
+  - **[CACHE BYPASS]**: `processor.py` actively checks `VectorDatabase` to bypass scraping for known URLs. Both `storer.py` and `company_storer.py` skip vector embedding generation and redundant DB insertions if data is sourced from the cache, strictly controlling API usage.
 
 ---
 
