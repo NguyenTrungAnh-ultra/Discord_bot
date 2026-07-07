@@ -9,12 +9,19 @@ def store_node(state: ResearchState):
     """Generates embedding for the insight and stores it in pgvector."""
     insight = state.get("current_insight")
     url = state.get("current_url")
+    already_cached = state.get("already_cached", False)
     
     # Lấy danh sách insights hiện có để trả về nếu có lỗi
     current_insights = list(state.get("insights", []))
     
     if not insight or not url:
         return {"insights": current_insights}
+
+    # Bỏ qua tạo embedding và lưu vào DB nếu dữ liệu đã được lấy từ cache
+    if already_cached:
+        print(f"-> Insight for {url} is already cached. Skipping database insert and embedding call.")
+        current_insights.append(insight)
+        return {"insights": current_insights, "already_cached": False}
 
     print(f"Storing insight for: {url}")
     
