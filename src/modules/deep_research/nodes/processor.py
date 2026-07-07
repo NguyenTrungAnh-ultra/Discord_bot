@@ -6,6 +6,8 @@ from src.modules.deep_research.state import ResearchState
 from src.modules.deep_research.tools.html_scraper import scrape_html
 from src.modules.deep_research.tools.pdf_scraper import scrape_pdf
 
+from src.core.db.vector import VectorDatabase
+
 def process_node(state: ResearchState):
     """Scrapes the current URL and extracts insights using Gemini."""
     url = state.get("current_url")
@@ -14,6 +16,22 @@ def process_node(state: ResearchState):
 
     print(f"--- Processing URL: {url} ---")
     
+    # Check if URL exists in pgvector database
+    try:
+        existing_doc = VectorDatabase.get_document_by_url(url)
+        if existing_doc and existing_doc.get("insight"):
+            print(f"-> Found cached insight for URL: {url}. Skipping scrape and LLM analysis.")
+            cached_insight = existing_doc["insight"]
+            cached_insight["url"] = url
+            return {
+                "current_content": cached_insight.get("summary", ""),
+                "current_title": cached_insight.get("title", ""),
+                "current_insight": cached_insight,
+                "already_cached": True
+            }
+    except Exception as e:
+        print(f"Error checking cache for URL {url}: {e}")
+
     content = None
     if url.lower().endswith(".pdf"):
         content = scrape_pdf(url)
