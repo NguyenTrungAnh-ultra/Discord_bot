@@ -12,7 +12,7 @@ This table is the heart of the RAG (Retrieval-Augmented Generation) system, used
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | `id` | `SERIAL PRIMARY KEY` | Auto-incrementing primary key. |
-| `url` | `TEXT UNIQUE` | Unique identifier for the document. Contains the real URL (Web PDF) or an internal URL like `internal://...`. Used to prevent duplicates and handle upserts. |
+| `url` | `TEXT UNIQUE` | Unique identifier for the document. Contains the real URL (Web PDF) or an internal URL like `internal://...`. Acts as the `UNIQUE` key for the RAG Cache Retrieval Bypass, preventing duplicates, handling upserts, and bypassing expensive scraping/embedding nodes. |
 | `title` | `TEXT` | Document title. |
 | `content` | `TEXT` | Raw text content of the document for LLM context. |
 | `insight` | `JSONB` | Structured data summarized by AI (e.g., financial metrics, business model summaries). |
@@ -52,4 +52,4 @@ This table is used by `Bot.py` and `Firms_news.py` to store financial news scrap
 
 ## Key Mechanisms:
 - **Upsert (Update or Insert):** The `research_documents` table uses `ON CONFLICT (url) DO UPDATE` to always keep the latest copy if re-analyzed. The `news` table uses `ON CONFLICT (id) DO NOTHING` to skip if the news already exists.
-- **RAG Cache:** Using the `url` field as a unique ID enables efficient caching, preventing token waste from calling APIs again for existing records.
+- **RAG Cache Retrieval Bypass:** The `url` field is strictly defined as `UNIQUE`. Before web scraping or vector embedding generation (which calls the Gemini API), the workflow queries this `url` or metadata (`search_by_metadata`). If found, it loads the `insight` (`JSONB`) directly from DB and bypasses execution, saving tokens, time, and API cost.

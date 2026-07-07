@@ -23,82 +23,88 @@ async def store_company_data(state: CompanyState):
     client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
     # 1. Lưu Profile (Dữ liệu Tĩnh)
-    if state.get("business_profile") and not state.get("profile_from_cache"):
-        profile = state["business_profile"]
-        content_to_embed = json.dumps(profile.get("business_model", {})) + " " + json.dumps(profile.get("economic_moat", {}))
-        
-        print(f"Generating embedding for {ticker} business profile...")
-        if not content_to_embed.strip():
-            content_to_embed = "No profile content available"
+    if state.get("business_profile"):
+        if state.get("profile_from_cache"):
+            print(f"-> Profile for {ticker} is already cached. Skipping database insert and embedding call.")
+        else:
+            profile = state["business_profile"]
+            content_to_embed = json.dumps(profile.get("business_model", {})) + " " + json.dumps(profile.get("economic_moat", {}))
             
-        try:
-            current_requests += 1
-            input_tokens = estimate_tokens(content_to_embed)
-            current_input_tokens += input_tokens
-            node_3_input += input_tokens
+            print(f"Generating embedding for {ticker} business profile...")
+            if not content_to_embed.strip():
+                content_to_embed = "No profile content available"
+                
+            try:
+                current_requests += 1
+                input_tokens = estimate_tokens(content_to_embed)
+                current_input_tokens += input_tokens
+                node_3_input += input_tokens
 
-            response = client.models.embed_content(
-                model="gemini-embedding-2",
-                contents=content_to_embed,
-            )
-            embedding = response.embeddings[0].values
-            
-            VectorDatabase.insert_document(
-                url=f"internal://company_profile/{ticker}",
-                title=f"Business Profile: {ticker}",
-                content=content_to_embed,
-                embedding=embedding,
-                insight=profile,
-                layer="MICRO",
-                entities={"tickers": [ticker], "type": "core_profile"},
-                doc_type="company_profile",
-                ticker=ticker,
-                publish_date=profile.get("report_date"),
-                embedded_by='gemini-embedding-2'
-            )
-            print(f"Successfully stored business profile for {ticker}.")
-        except Exception as e:
-            print(f"Error storing business profile: {e}")
+                response = client.models.embed_content(
+                    model="gemini-embedding-2",
+                    contents=content_to_embed,
+                )
+                embedding = response.embeddings[0].values
+                
+                VectorDatabase.insert_document(
+                    url=f"internal://company_profile/{ticker}",
+                    title=f"Business Profile: {ticker}",
+                    content=content_to_embed,
+                    embedding=embedding,
+                    insight=profile,
+                    layer="MICRO",
+                    entities={"tickers": [ticker], "type": "core_profile"},
+                    doc_type="company_profile",
+                    ticker=ticker,
+                    publish_date=profile.get("report_date"),
+                    embedded_by='gemini-embedding-2'
+                )
+                print(f"Successfully stored business profile for {ticker}.")
+            except Exception as e:
+                print(f"Error storing business profile: {e}")
 
     # 2. Lưu Tài chính (Dữ liệu Động)
-    if state.get("financial_insight") and not state.get("finance_from_cache"):
-        insight = state["financial_insight"]
-        content_to_embed = insight.get("chain_of_thought", "") + " " + json.dumps(insight.get("key_metrics", {}))
-        
-        print(f"Generating embedding for {ticker} financial insight...")
-        if not content_to_embed.strip():
-            content_to_embed = "No financial content available"
+    if state.get("financial_insight"):
+        if state.get("finance_from_cache"):
+            print(f"-> Financial insight for {ticker} is already cached. Skipping database insert and embedding call.")
+        else:
+            insight = state["financial_insight"]
+            content_to_embed = insight.get("chain_of_thought", "") + " " + json.dumps(insight.get("key_metrics", {}))
             
-        try:
-            current_requests += 1
-            input_tokens = estimate_tokens(content_to_embed)
-            current_input_tokens += input_tokens
-            node_3_input += input_tokens
+            print(f"Generating embedding for {ticker} financial insight...")
+            if not content_to_embed.strip():
+                content_to_embed = "No financial content available"
+                
+            try:
+                current_requests += 1
+                input_tokens = estimate_tokens(content_to_embed)
+                current_input_tokens += input_tokens
+                node_3_input += input_tokens
 
-            response = client.models.embed_content(
-                model="gemini-embedding-2",
-                contents=content_to_embed,
-            )
-            embedding = response.embeddings[0].values
-            # Determine report date from insight, falling back to 2026 if not found
-            report_date = insight.get("report_date") or "2026"
-            url_friendly_date = str(report_date).replace("/", "_").replace(" ", "_")
-            VectorDatabase.insert_document(
-                url=f"internal://financial_report/{ticker}/{url_friendly_date}",
-                title=f"Financial Analysis {report_date}: {ticker}",
-                content=content_to_embed,
-                embedding=embedding,
-                insight=insight,
-                layer="MICRO",
-                entities={"tickers": [ticker], "type": "financial_data"},
-                doc_type="financial_report",
-                ticker=ticker,
-                publish_date=report_date,
-                embedded_by='gemini-embedding-2'
-            )
-            print(f"Successfully stored financial insight for {ticker}.")
-        except Exception as e:
-            print(f"Error storing financial insight: {e}")
+                response = client.models.embed_content(
+                    model="gemini-embedding-2",
+                    contents=content_to_embed,
+                )
+                embedding = response.embeddings[0].values
+                # Determine report date from insight, falling back to 2026 if not found
+                report_date = insight.get("report_date") or "2026"
+                url_friendly_date = str(report_date).replace("/", "_").replace(" ", "_")
+                VectorDatabase.insert_document(
+                    url=f"internal://financial_report/{ticker}/{url_friendly_date}",
+                    title=f"Financial Analysis {report_date}: {ticker}",
+                    content=content_to_embed,
+                    embedding=embedding,
+                    insight=insight,
+                    layer="MICRO",
+                    entities={"tickers": [ticker], "type": "financial_data"},
+                    doc_type="financial_report",
+                    ticker=ticker,
+                    publish_date=report_date,
+                    embedded_by='gemini-embedding-2'
+                )
+                print(f"Successfully stored financial insight for {ticker}.")
+            except Exception as e:
+                print(f"Error storing financial insight: {e}")
 
     node_entry = node_tokens.get("Node_3_Storer", {"input": 0, "output": 0})
     node_tokens["Node_3_Storer"] = {
