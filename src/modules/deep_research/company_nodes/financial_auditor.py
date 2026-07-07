@@ -2,6 +2,7 @@ import json
 from src.modules.deep_research.company_state import CompanyState
 from src.utils.vci_client import get_financial_statement, format_financial_to_markdown
 from src.core.ai.tracker import call_llm_with_tracking
+from src.config.config_loader import Config
 
 def audit_finances(state: CompanyState):
     """
@@ -47,12 +48,14 @@ def audit_finances(state: CompanyState):
         }}
         """
         
+        model = Config.get("llm", "models", {}).get("financial_audit", "gemma-4-31b-it")
+        
         try:
             response_text, updated_state = call_llm_with_tracking(
                 state=state,
                 node_name="Node_2_Finance",
                 prompt=prompt,
-                model_name="gemma-4-31b-it",
+                model_name=model,
                 json_mode=True
             )
             

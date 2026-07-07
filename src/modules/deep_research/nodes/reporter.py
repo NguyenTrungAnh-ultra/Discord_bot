@@ -5,10 +5,8 @@ from src.modules.deep_research.state import ResearchState
 
 def report_node(state: ResearchState):
     """Generates the final research report based on collected insights."""
-    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-    # Switched to gemini-flash-latest to avoid quota issues
-    model = "gemma-4-26b-a4b-it"
-    
+    from src.config.config_loader import Config
+    from src.core.ai.tracker import call_llm_with_tracking
     from src.utils.date_parser import format_date_display
 
     insights = state.get("insights", [])
@@ -95,10 +93,17 @@ def report_node(state: ResearchState):
         f"--- THÔNG TIN LỊCH SỬ TỪ RAG DB ---\n{db_insights_str}\n"
     )
     
+    model = Config.get("llm", "models", {}).get("reporter", "gemma-4-26b-a4b-it")
+
     print("Generating final report...")
     try:
-        response = client.models.generate_content(model=model, contents=prompt)
-        response_text = response.text
+        response_text, updated_state = call_llm_with_tracking(
+            state=state,
+            node_name="Node_Reporter",
+            prompt=prompt,
+            model_name=model,
+            json_mode=False
+        )
         
         # Extract and print chain of thought
         think_match = re.search(r'<think>(.*?)</think>', response_text, re.DOTALL)
@@ -113,5 +118,6 @@ def report_node(state: ResearchState):
     except Exception as e:
         print(f"Error generating report: {e}")
         report = "Failed to generate report due to model error."
+        updated_state = state
 
-    return {"report": report}
+    return {"report": report, **updated_state}

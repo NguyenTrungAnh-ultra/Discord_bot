@@ -1,12 +1,12 @@
 import os
 import re
-from google import genai
 from src.modules.deep_research.state import ResearchState
+from src.core.ai.tracker import call_llm_with_tracking
+from src.config.config_loader import Config
 
 def translate_query(state: ResearchState):
     """Translates and optimizes the query for searching."""
-    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-    model = "gemma-4-26b-a4b-it"
+    model = Config.get("llm", "models", {}).get("translator", "gemma-4-26b-a4b-it")
     
     prompt = (
         f"Bạn là một hệ thống AI nghiên cứu chuyên sâu (Deep Research API) tương tự Perplexity. "
@@ -25,8 +25,13 @@ def translate_query(state: ResearchState):
         f"- Phần danh sách truy vấn phải NẰM NGOÀI thẻ <think>. Mỗi câu trên một dòng, không thêm bất kỳ lời giải thích nào khác.\n"
     )
     
-    response = client.models.generate_content(model=model, contents=prompt)
-    response_text = response.text
+    response_text, updated_state = call_llm_with_tracking(
+        state=state,
+        node_name="Node_Translator",
+        prompt=prompt,
+        model_name=model,
+        json_mode=False
+    )
     
     # Extract and print chain of thought
     think_match = re.search(r'<think>(.*?)</think>', response_text, re.DOTALL)
@@ -53,5 +58,6 @@ def translate_query(state: ResearchState):
         "search_queries": queries[:10], # Limit to top 10 queries
         "iteration": 0,
         "urls": [],
-        "insights": []
+        "insights": [],
+        **updated_state
     }

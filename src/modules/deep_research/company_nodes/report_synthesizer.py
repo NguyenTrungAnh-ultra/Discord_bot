@@ -1,5 +1,6 @@
 from src.modules.deep_research.company_state import CompanyState
 from src.core.ai.tracker import call_llm_with_tracking
+from src.config.config_loader import Config
 
 def synthesize_report(state: CompanyState):
     """
@@ -39,12 +40,14 @@ def synthesize_report(state: CompanyState):
         ## 4. Final Verdict (Kết luận & Hành động gợi ý)
     """
     
+    model = Config.get("llm", "models", {}).get("report_synthesizer", "gemma-4-31b-it")
+    
     try:
         response_text, updated_state = call_llm_with_tracking(
             state=state,
             node_name="Node_4_Synthesizer",
             prompt=prompt,
-            model_name="gemma-4-31b-it",
+            model_name=model,
             json_mode=False
         )
 

@@ -1,0 +1,21 @@
+{
+  "llm": {
+    "provider": "gemini",
+    "ollama_url": "http://localhost:11434",
+    "models": {
+      "translator": "gemma-4-26b-a4b-it",
+      "processor": "gemma-4-26b-a4b-it",
+      "reporter": "gemma-4-26b-a4b-it",
+      "company_profile": "gemma-4-31b-it",
+      "financial_audit": "gemma-4-31b-it",
+      "report_synthesizer": "gemma-4-31b-it"
+    }
+  },
+  "rag": {
+    "searxng_url": "http://localhost:8080",
+    "max_iterations": 3,
+    "similarity_threshold": 0.3,
+    "num_search_results": 5,
+    "max_content_characters": 30000
+  }
+}
